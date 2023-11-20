@@ -13,13 +13,13 @@ import mods.create.PressingManager;
 
 
 //adding recipes (refer to https://docs.blamejared.com/1.20.1/en/mods/CreateTweaker/SplashingManager for recipe managers)
-  //splashing
+  //splashing | SplashingManager.addRecipe(name as string, outputs as Percentaged<IItemStack>[], input as IIngredient, duration as int)
 <recipetype:create:splashing>.addRecipe("washing_the_infinite", [<item:kubejs:washed_grains_of_infinity> % 100], <item:kubejs:raw_grains_of_infinity>, 200);
-  //mixing
+  //mixing | MixingManager.addRecipe(name as string, heat as HeatCondition, outputs as IFluidStack[], itemInputs as IIngredientWithAmount[], fluidInputs as FluidIngredient[], duration as int)
 <recipetype:create:mixing>.addRecipe("dew_of_the_void/mixing", <constant:create:heat_condition:superheated>, [<fluid:enderio:dew_of_the_void> * 800], [<item:garnished:void_dust> * 2], [<fluid:kubejs:liquid_dragons_breath> * 50], 1000);
-  //deploying
+  //deploying | DeployerApplicationManager.addRecipe(name as string, processedItem as IIngredient, heldItem as IIngredient, outputs as Percentaged<IItemStack>[], keepHeldItem as boolean)
 <recipetype:create:deploying>.addRecipe("being_lonely", <item:enderio:enticing_crystal>, <item:garnished:desolate_spread>, [<item:kubejs:crystal_of_desolation> % 100], false);
-  //sequenced assembly
+  //sequenced assembly | SequencedAssemblyManager.addRecipe(builder as SequencedAssemblyRecipeBuilder)
 <recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("ingoting_the_infinite")
  .transitionTo(<item:kubejs:incomplete_ingot_of_infinity>)
  .require(<item:kubejs:crystal_of_infinity>)
@@ -29,3 +29,5 @@ import mods.create.PressingManager;
  .addStep<mods.createtweaker.PressingRecipe>((rb) => rb.duration(40))
  .addStep<mods.createtweaker.PressingRecipe>((rb) => rb.duration(55))
  .addStep<mods.createtweaker.CuttingRecipe>((rb) => rb.duration(80)));
+  //compacting | CompactingManager.addRecipe(name as string, heat as HeatCondition, outputs as IFluidStack[], itemInputs as IIngredientWithAmount[], fluidInputs as FluidIngredient[], duration as int)
+<recipetype:create:compacting>.addRecipe("compacting_glow_items", <constant:create:heat_condition:heated>, [<fluid:kubejs:glowing_liquid> * 350], [<tag:items:crafttweaker:glowing_items> * 1], 100);

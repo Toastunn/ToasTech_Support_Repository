@@ -1,0 +1,6 @@
+{
+    "item.create.example_item.tooltip": "AMETHYST_CLUSTER",
+    "item.create.example_item.tooltip.summary": "A very reflective surface.",
+    "item.create.example_item.tooltip.condition1": "When placed in the path of a beacon beam",
+    "item.create.example_item.tooltip.behaviour1": "It will redirect the beam in the direction it's facing."
+}
