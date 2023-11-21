@@ -74,7 +74,7 @@ Here's my implementation below.
 */
 
 let STANDARD_PALETTE = [
-    'item:minecraft:amethyst_cluster'
+    'minecraft:amethyst_cluster'
 ]
 let BLUE_PALETTE = [
  
