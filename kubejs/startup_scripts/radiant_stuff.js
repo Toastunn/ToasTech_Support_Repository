@@ -6,5 +6,5 @@ StartupEvents.registry('item', e => {
     //Radiant alloy
     e.create('radiant_alloy').displayName("Radiant Alloy")
     //The Sun
-    e.create('star').displayName("Star").burnTime(10000000000)
+    e.create('star').displayName("Star").burnTime(100000000)
 })
