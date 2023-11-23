@@ -13,5 +13,6 @@ import stdlib.List;
 <tag:items:crafttweaker:glowing_items>.add(<item:minecraft:glow_ink_sac>);
 <tag:items:crafttweaker:glowing_items>.add(<item:minecraft:glow_berries>);
 <tag:items:crafttweaker:glowing_items>.add(<item:minecraft:glow_lichen>);
+<tag:items:crafttweaker:glowing_items>.add(<item:extendedcrafting:luminessence>);
     //beacon base blocks
 <tag:blocks:minecraft:beacon_base_blocks>.add(<block:avaritia:infinity>);
