@@ -11,8 +11,11 @@ StartupEvents.registry('fluid', e =>{
     .thickTexture(0xc7bd32)
     .bucketColor(0xc7bd32)
     .displayName("Glowing Liquid")
+    e.create('liquid_sun')
+    .thickTexture(0x9b5514)
 })
 
 Color.of("#361d50")
 Color.of('#7e2f7e')
 Color.of('#c7bd32')
+Color.of('#9b5514')
