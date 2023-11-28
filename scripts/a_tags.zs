@@ -1,3 +1,4 @@
+#priority 100
 import crafttweaker.api.tag.MCTag;
 import crafttweaker.api.item.IItemStack;
 import crafttweaker.api.ingredient.IIngredient;
