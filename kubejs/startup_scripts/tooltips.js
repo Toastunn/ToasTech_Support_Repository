@@ -1,5 +1,7 @@
 // requires: create
 if (Platform.isClientEnvironment()) return
+// what -Weegeeday
+// i'm not sure -Toaster
 /**
  * 
  * @param {Internal.ItemStack} itemID 
