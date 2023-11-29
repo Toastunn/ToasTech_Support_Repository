@@ -4,6 +4,6 @@
 !/kubejs
 !/scripts
 !/data
+!config/ftbquests/
 config/*
-!config/ftbquests/*
 !.gitignore
