@@ -2,9 +2,5 @@
     "block.minecraft.amethyst_cluster.tooltip": "Amethyst Cluster",
     "block.minecraft.amethyst_cluster.tooltip.summary": "A very reflective surface.",
     "block.minecraft.amethyst_cluster.tooltip.condition1": "When placed in the path of a beacon beam:",
-    "block.minecraft.amethyst_cluster.tooltip.behaviour1": "It will redirect the beam in the direction it's facing. Make sure the _beacon beam_ ends up pointing to the sky. Don't cross the beams.",
-    "Item.of('minecraft:enchanted_book').enchant('create_sa:hellfire', 1).tooltip": "Enchanted book",
-    "Item.of('minecraft:enchanted_book').enchant('create_sa:hellfire', 1).tooltip.summary": "Scorch the earth",
-    "Item.of('minecraft:enchanted_book').enchant('create_sa:hellfire', 1).tooltip.condition1":"When enchanted on aa flamethrower:",
-    "Item.of('minecraft:enchanted_book').enchant('create_sa:hellfire', 1).tooltip.behaviour1": "The flamethrower deals more damage and places fire on the ground"
+    "block.minecraft.amethyst_cluster.tooltip.behaviour1": "It will redirect the beam in the direction it's facing. Make sure the _beacon beam_ ends up pointing to the sky. Don't cross the beams."
 }
