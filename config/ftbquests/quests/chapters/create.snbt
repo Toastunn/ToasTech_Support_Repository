@@ -1,0 +1,159 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "create"
+	group: ""
+	id: "07C6ED8DD9E21B8C"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"&6Create&r is a mod that uses &6roatational force&r to power machines to do &6&ocool things!&r The &n&6Ponder&r tooltip is on most items and explains the funcitonality of complex systems, like &6trains!&r"
+				""
+				"&6Create&r is very fun and pretty easy to learn, &o&cso enjoy it while it lasts...&r "
+			]
+			id: "1C4937554119EBD2"
+			rewards: [{
+				count: 2
+				id: "62DD84CF6C6743FB"
+				item: "create:large_water_wheel"
+				type: "item"
+			}]
+			subtitle: "We love spinning here!"
+			tasks: [{
+				id: "2397AED946E1F017"
+				title: "Welcome to Create!"
+				type: "checkmark"
+			}]
+			title: "Welcome to Create!"
+			x: -20.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["1C4937554119EBD2"]
+			description: ["&6Shafts&r are the main way of transmitting &6rotational force.&r Make sure, &oif applying multiple forces&r, that the shafts &6are rotating in the same direction!&r"]
+			id: "6C4B9BC7839EA81A"
+			rewards: [
+				{
+					count: 10
+					id: "5F2C03CF21AEC5A5"
+					item: "create:gearbox"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "4D5F0EFEF602D0A5"
+					item: "create:vertical_gearbox"
+					type: "item"
+				}
+			]
+			subtitle: "Try not to get shafted!"
+			tasks: [{
+				id: "2A897A69BE288B5C"
+				item: "create:shaft"
+				type: "item"
+			}]
+			title: "Shafts"
+			x: -19.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"1C4937554119EBD2"
+				"6C4B9BC7839EA81A"
+			]
+			description: ["&6Gearboxes&r &eallow you to change the orthogonal direction of transmission. You will need quite a few of these throughout your create experience, so stockpile a decent amount of them. "]
+			id: "536FA0C23FA5D16D"
+			rewards: [{
+				count: 32
+				id: "09CFFA1D570C710B"
+				item: "create:vertical_gearbox"
+				type: "item"
+			}]
+			subtitle: "Changing the direction of rotation"
+			tasks: [{
+				id: "302C49473A975AC3"
+				item: "create:gearbox"
+				type: "item"
+			}]
+			x: -19.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"6C4B9BC7839EA81A"
+				"1C4937554119EBD2"
+			]
+			description: ["&6Rotational force &eis the most important thing in &6Create&e! You can generate rotational force with &6water &eor &6wind&e."]
+			id: "4CD4E9BBB60BB831"
+			rewards: [{
+				count: 16
+				id: "427AEE7B9A9017DD"
+				item: "create:shaft"
+				type: "item"
+			}]
+			subtitle: "I live in Spain, but without the \"a\""
+			tasks: [
+				{
+					id: "5088BA390E701277"
+					item: "create:water_wheel"
+					type: "item"
+				}
+				{
+					id: "120D34D6940CEF2B"
+					item: "create:large_water_wheel"
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "2BC8899109832D87"
+					item: { Count: 20b, id: "create:white_sail" }
+					type: "item"
+				}
+			]
+			title: "Rotational generators"
+			x: -19.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4CD4E9BBB60BB831"]
+			description: ["&6Stress &eis a mesure of the amount of &6resistance&e a system applies to the &6motor force&e. Basically, keep the &6stress capacity&e higher that the &6current strss&e."]
+			id: "2DF936648D2D5B03"
+			rewards: [{
+				count: 16
+				id: "7DFA1ED0FE5D98E3"
+				item: "create:shaft"
+				type: "item"
+			}]
+			subtitle: "The shaft won't be the only thing that's stressed!"
+			tasks: [{
+				id: "455CFA899C1D05FE"
+				item: "create:stressometer"
+				type: "item"
+			}]
+			title: "Dealing with stress"
+			x: -18.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"6C4B9BC7839EA81A"
+				"4CD4E9BBB60BB831"
+			]
+			description: ["&6Mechanical belts &eare essential for &6Create &eautomation. You can transport items with it by using &6chutes&e or simply dropping items onto it."]
+			id: "0465A878637EF5EC"
+			subtitle: "Moving items"
+			tasks: [{
+				count: 16L
+				id: "19B7BBA3721BF036"
+				item: "create:belt_connector"
+				type: "item"
+			}]
+			title: "Belts"
+			x: -18.0d
+			y: 0.5d
+		}
+	]
+	title: "Create"
+}
