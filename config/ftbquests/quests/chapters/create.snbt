@@ -27,7 +27,7 @@
 				type: "checkmark"
 			}]
 			title: "Welcome to Create!"
-			x: -20.5d
+			x: -26.5d
 			y: 0.5d
 		}
 		{
@@ -55,14 +55,11 @@
 				type: "item"
 			}]
 			title: "Shafts"
-			x: -19.0d
+			x: -25.5d
 			y: 0.5d
 		}
 		{
-			dependencies: [
-				"1C4937554119EBD2"
-				"6C4B9BC7839EA81A"
-			]
+			dependencies: ["6C4B9BC7839EA81A"]
 			description: ["&6Gearboxes&r &eallow you to change the orthogonal direction of transmission. You will need quite a few of these throughout your create experience, so stockpile a decent amount of them. "]
 			id: "536FA0C23FA5D16D"
 			rewards: [{
@@ -77,14 +74,11 @@
 				item: "create:gearbox"
 				type: "item"
 			}]
-			x: -19.0d
+			x: -25.5d
 			y: -0.5d
 		}
 		{
-			dependencies: [
-				"6C4B9BC7839EA81A"
-				"1C4937554119EBD2"
-			]
+			dependencies: ["6C4B9BC7839EA81A"]
 			description: ["&6Rotational force &eis the most important thing in &6Create&e! You can generate rotational force with &6water &eor &6wind&e."]
 			id: "4CD4E9BBB60BB831"
 			rewards: [{
@@ -113,7 +107,7 @@
 				}
 			]
 			title: "Rotational generators"
-			x: -19.0d
+			x: -24.5d
 			y: 1.5d
 		}
 		{
@@ -133,14 +127,11 @@
 				type: "item"
 			}]
 			title: "Dealing with stress"
-			x: -18.0d
+			x: -25.5d
 			y: 1.5d
 		}
 		{
-			dependencies: [
-				"6C4B9BC7839EA81A"
-				"4CD4E9BBB60BB831"
-			]
+			dependencies: ["6C4B9BC7839EA81A"]
 			description: ["&6Mechanical belts &eare essential for &6Create &eautomation. You can transport items with it by using &6chutes&e or simply dropping items onto it."]
 			id: "0465A878637EF5EC"
 			subtitle: "Moving items"
@@ -151,7 +142,88 @@
 				type: "item"
 			}]
 			title: "Belts"
-			x: -18.0d
+			x: -24.5d
+			y: -0.5d
+		}
+		{
+			id: "4DE917F309C5DBCC"
+			tasks: [{
+				id: "41DEEB5A0E4701BE"
+				item: "create:sturdy_sheet"
+				type: "item"
+			}]
+			x: -12.0d
+			y: 0.5d
+		}
+		{
+			description: ["&6Casings &ecan also be made automaticaly by using &6deployers&e! No more placing and breaking."]
+			id: "70465B0372F737D6"
+			rewards: [{
+				count: 5
+				id: "56CD62E125B10310"
+				item: "create:belt_connector"
+				type: "item"
+			}]
+			subtitle: "Let the machine do stuff by hand"
+			tasks: [{
+				id: "3F6AE89EE7B42078"
+				item: "create:deployer"
+				type: "item"
+			}]
+			title: "Automatic casings"
+			x: -17.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"4CD4E9BBB60BB831"
+				"6C4B9BC7839EA81A"
+				"0465A878637EF5EC"
+			]
+			description: ["&eTo make the &6Mixer&e, you will need the &6Press &eto make &6plates &ewhich are necessary for many crafting recipes, including the &6whisk&e."]
+			id: "1A204FBEED9E3307"
+			rewards: [{
+				count: 10
+				id: "65380E9F25E0C429"
+				item: "create:belt_connector"
+				type: "item"
+			}]
+			size: 1.0d
+			subtitle: "Don't eat on the metal plates."
+			tasks: [{
+				id: "419566F3DE07EC42"
+				item: "create:mechanical_press"
+				type: "item"
+			}]
+			title: "Your first machine"
+			x: -23.5d
+			y: 0.5d
+		}
+		{
+			id: "5076ABF9E3914B5A"
+			rewards: [{
+				id: "610682002ED2FE60"
+				item: "create:chute"
+				type: "item"
+			}]
+			tasks: [{
+				count: 2L
+				id: "546A2405DDB43979"
+				item: "create:crushing_wheel"
+				type: "item"
+			}]
+			title: "Crushing"
+			x: -15.5d
+			y: 0.5d
+		}
+		{
+			id: "5E128E9F45A7C2FA"
+			tasks: [{
+				id: "29EB7900FA978B6A"
+				item: "create:brass_ingot"
+				type: "item"
+			}]
+			x: -21.5d
 			y: 0.5d
 		}
 	]
