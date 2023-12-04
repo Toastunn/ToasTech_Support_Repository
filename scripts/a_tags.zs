@@ -88,3 +88,11 @@ import crafttweaker.api.item.IItemStack;
 <tag:items:minecraft:beacon_payment_items>.add(<item:extendedcrafting:crystaltine_ingot>);
 <tag:items:minecraft:beacon_payment_items>.add(<item:enderio:enticing_crystal>);
 <tag:items:minecraft:beacon_payment_items>.add(<item:ae2:fluix_crystal>);
+    //Crystal clusters
+<tag:blocks:c:clusters>.add(<block:biomesoplenty:rose_quartz_cluster>);
+<tag:blocks:crafttweaker:crystal_clusters>.add(<tag:blocks:c:clusters>);
+<tag:blocks:c:clusters>.add(<block:biomesoplenty:brimstone_cluster>);
+    //beacon redirect
+<tag:blocks:better_beacons:beacon_redirect>.add(<block:minecraft:amethyst_cluster>);
+<tag:blocks:better_beacons:beacon_redirect>.add(<block:ae2:quartz_cluster>);
+<tag:blocks:better_beacons:beacon_redirect>.add(<block:biomesoplenty:rose_quartz_cluster>);
