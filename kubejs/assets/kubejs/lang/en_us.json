@@ -2,5 +2,15 @@
     "block.minecraft.amethyst_cluster.tooltip": "Amethyst Cluster",
     "block.minecraft.amethyst_cluster.tooltip.summary": "A very reflective surface.",
     "block.minecraft.amethyst_cluster.tooltip.condition1": "When placed in the path of a beacon beam:",
-    "block.minecraft.amethyst_cluster.tooltip.behaviour1": "It will redirect the beam in the direction it's facing. Make sure the _beacon beam_ ends up pointing to the sky. Don't cross the beams."
+    "block.minecraft.amethyst_cluster.tooltip.behaviour1": "It will _redirect the beam_ in the direction it's facing. Make sure the _beam_ ends up pointing to the sky. Don't cross the beams.",
+    "block.ae2.quartz_cluster.tooltip": "Quartz Cluster",
+    "block.ae2.quartz_cluster.tooltip.summary": "A very reflective surface.",
+    "block.ae2.quartz_cluster.tooltip.condition1": "When placed in the path of a beacon beam:",
+    "block.ae2.quartz_cluster.tooltip.behaviour1": "It will _redirect the beam_ in the direction it's facing. Make sure the _beam_ ends up pointing to the sky. Don't cross the beams.",
+    "block.biomesoplenty.rose_quartz_cluster.tooltip": "Rose Quartz Cluster",
+    "block.biomesoplenty.rose_quartz_cluster.tooltip.summary": "A very reflective surface.",
+    "block.biomesoplenty.rose_quartz_cluster.tooltip.condition1": "When placed in the path of a beacon beam:",
+    "block.biomesoplenty.rose_quartz_cluster.tooltip.behaviour1": "It will _redirect the beam_ in the direction it's facing. Make sure the _beam_ ends up pointing to the sky. Don't cross the beams.",
+
+    "": ""
 }
