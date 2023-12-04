@@ -13,9 +13,12 @@ StartupEvents.registry('fluid', e =>{
     .displayName("Glowing Liquid")
     e.create('liquid_sun')
     .thickTexture(0x9b5514)
+    e.create('fungal_mixture')
+    .thickTexture(0x3b2f3f)
 })
 
 Color.of("#361d50")
 Color.of('#7e2f7e')
 Color.of('#c7bd32')
 Color.of('#9b5514')
+Color.of("#3b2f3f")
