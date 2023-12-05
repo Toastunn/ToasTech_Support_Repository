@@ -12,11 +12,10 @@ StartupEvents.registry('item', e => {
     //Atomically Perfect Grains
     e.create('atomically_perfect_grains_of_infinity').displayName("Atomically Perfect Grains of Infinity").rarity('epic')
     //crystal
-    e.create('crystal_of_infinity').displayName("Crystal of Infinity").tooltip("A perfect lattice for a perfect crystal").rarity('epic')
+    e.create('crystal_of_infinity').displayName("Crystal of Infinity").rarity('epic')
     //ingot
     e.create('ingot_of_infinity').displayName("Ingot of Infinity").rarity('epic')
-    //incomplete ingot
-    e.create('incomplete_ingot_of_infinity').displayName("Incomplete Ingot of Infinity").rarity('uncommon')
+    //incomplete ingot (see sequenced_assembly_incomplete_items)
     //alloy
     e.create('alloy_of_infinity').displayName("Alloy of Infinity").rarity('epic')
 })
