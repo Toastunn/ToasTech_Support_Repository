@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "create"
 	group: "1576A69176AFDEA4"
+	icon: "create:mechanical_press"
 	id: "07C6ED8DD9E21B8C"
 	order_index: 0
 	quest_links: [ ]
@@ -139,7 +140,19 @@
 			y: -0.5d
 		}
 		{
+			dependencies: [
+				"792BA82E5782B0E6"
+				"5E95BE2A7ED793AD"
+			]
+			description: ["&eIn &6ToasTech&e, &5Mekanism&e is locked behind &6Sturdy Sheets&e, so I'd recommend stockpiling some, since they will be the basis for &5Mekanism&e. They are also used in trains ;)."]
 			id: "4DE917F309C5DBCC"
+			rewards: [{
+				count: 4
+				id: "009B03CAB3F23AFC"
+				item: "mekanism:ingot_osmium"
+				type: "item"
+			}]
+			subtitle: "Onto Mekanism"
 			tasks: [{
 				id: "41DEEB5A0E4701BE"
 				item: "create:sturdy_sheet"
@@ -149,6 +162,7 @@
 			y: 0.5d
 		}
 		{
+			dependencies: ["5E128E9F45A7C2FA"]
 			description: ["&6Casings &ecan also be made automaticaly by using &6deployers&e! No more placing and breaking."]
 			id: "70465B0372F737D6"
 			rewards: [{
@@ -164,8 +178,8 @@
 				type: "item"
 			}]
 			title: "Automatic casings"
-			x: -13.5d
-			y: -2.5d
+			x: -16.5d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -193,12 +207,15 @@
 			y: 0.5d
 		}
 		{
+			dependencies: ["34C35754A2323632"]
+			description: ["&6Crushing Wheels&e work in pairs, and &6crush&e items dropped on top of them. Most recipes &6add&e drops to the normal loot table through &6luck&e."]
 			id: "5076ABF9E3914B5A"
 			rewards: [{
 				id: "610682002ED2FE60"
 				item: "create:chute"
 				type: "item"
 			}]
+			subtitle: "Minor OSHA Violation"
 			tasks: [{
 				count: 2L
 				id: "546A2405DDB43979"
@@ -206,8 +223,8 @@
 				type: "item"
 			}]
 			title: "Crushing"
-			x: -13.5d
-			y: -1.0d
+			x: -15.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["2EC8624B073DA950"]
@@ -259,6 +276,102 @@
 			title: "Basic Alloying"
 			x: -19.0d
 			y: 0.5d
+		}
+		{
+			dependencies: ["5E128E9F45A7C2FA"]
+			description: ["&6Mechanical Crafters&e are a powerful tool in &6Create&e. They not only &6automate&e crafting through &6Mechanical Arms&e, but they also allow for &6bigger crafing grids&e."]
+			id: "34C35754A2323632"
+			rewards: [{
+				id: "3BE97A17F15B399C"
+				item: "create:cogwheel"
+				type: "item"
+			}]
+			subtitle: "If your hands can't craft it, rotation might."
+			tasks: [{
+				count: 21L
+				id: "2E42F3ED3E1EAF1F"
+				item: { Count: 24b, id: "create:mechanical_crafter" }
+				type: "item"
+			}]
+			title: "Mechanical Crafting"
+			x: -16.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5076ABF9E3914B5A"]
+			description: ["&eRequired for sturdy sheets."]
+			id: "5E95BE2A7ED793AD"
+			rewards: [{
+				id: "3D87F783FE2E615E"
+				item: "minecraft:lava_bucket"
+				type: "item"
+			}]
+			subtitle: "The Path of Strengh"
+			tasks: [{
+				count: 32L
+				id: "66F5EF735C42CE94"
+				item: { Count: 32b, id: "create:powdered_obsidian" }
+				type: "item"
+			}]
+			title: "Powdered Obsidian"
+			x: -14.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["5E95BE2A7ED793AD"]
+			description: [
+				"&6Sequenced Assembly Lines&e are chains of machines that output an item. They force you to &6automate processes&e and check your &6Create&e knowledge."
+				"{@pagebreak}"
+				"&eUse &2JEI&e on a &6Precision Mechanism&e to see an example."
+			]
+			id: "792BA82E5782B0E6"
+			subtitle: "Manufacturing at its finest."
+			tasks: [{
+				id: "10EBD89A899CE66A"
+				title: "Sequenced Assembly Lines"
+				type: "checkmark"
+			}]
+			x: -13.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4DE917F309C5DBCC"]
+			description: ["&eTrains"]
+			id: "66709D578B582019"
+			rewards: [{
+				count: 6
+				id: "41FDD3567B4E881F"
+				item: "create:metal_girder"
+				type: "item"
+			}]
+			subtitle: "I like Trai..."
+			tasks: [{
+				count: 2L
+				id: "56E17B06B029ABA0"
+				item: { Count: 2b, id: "create:track_station" }
+				type: "item"
+			}]
+			title: "Trains"
+			x: -12.0d
+			y: -1.0d
+		}
+		{
+			id: "0655BB4983A10182"
+			rewards: [{
+				count: 5
+				id: "5F32DA4BF1FEFF4B"
+				item: "create:fluid_pipe"
+				type: "item"
+			}]
+			subtitle: "Liquid Deploying"
+			tasks: [{
+				id: "26C1300EC90E30B4"
+				item: "create:spout"
+				type: "item"
+			}]
+			title: "Filling"
+			x: -21.5d
+			y: -3.0d
 		}
 	]
 	title: "Create"

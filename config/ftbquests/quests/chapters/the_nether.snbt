@@ -3,9 +3,206 @@
 	default_quest_shape: ""
 	filename: "the_nether"
 	group: "1576A69176AFDEA4"
+	icon: "minecraft:blaze_powder"
 	id: "3911C38ABFEB3292"
 	order_index: 1
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			dependencies: ["24D225215B1A34FA"]
+			description: ["&7Not only is &cThe Nether&7 important for beating the game &onormally&r&7, it's also used for the acquirement of blazes for &6Blaze Burners&7, which you'll need for progression."]
+			id: "12AF19A351B9E437"
+			rewards: [{
+				id: "561771AA13772240"
+				item: {
+					Count: 1b
+					id: "minecraft:golden_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			size: 5.0d
+			subtitle: "\"I'm only going once.\" -Buffoon"
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				icon: "minecraft:blaze_powder"
+				id: "61B381B1BE1586CF"
+				title: "Visit The Nether"
+				type: "dimension"
+			}]
+			x: 7.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["0BCAABD996338B20"]
+			description: ["&7You'll need some."]
+			id: "517B1D0115C854EA"
+			subtitle: "Shrooms"
+			tasks: [{
+				id: "42D3605189DF06E4"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:mushrooms"
+					}
+				}
+				title: "Any #forge:mushrooms"
+				type: "item"
+			}]
+			title: "Fungi"
+			x: -3.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"135EA57EFAA75C24"
+				"517B1D0115C854EA"
+				"2EC8624B073DA950"
+			]
+			description: ["&7You'll need to know a little about &6Create&7 to do this but since you got here, you should know how to &6mix&7 stuff"]
+			id: "7AA58D959E2019F9"
+			subtitle: "Liquid Shrooms"
+			tasks: [{
+				amount: 1000L
+				fluid: "kubejs:fungal_mixture"
+				id: "22DB96118C532ADF"
+				type: "fluid"
+			}]
+			title: "Fungal Mixture"
+			x: -2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["517B1D0115C854EA"]
+			description: ["&fTask Screens&7 are used to automatiaclly input items to a &fquest&7 or input fluid or energy into their &fquests&7."]
+			hide_dependency_lines: true
+			id: "135EA57EFAA75C24"
+			rewards: [{
+				id: "17BC2E68E3AC4D80"
+				item: "ftbquests:task_screen_configurator"
+				type: "item"
+			}]
+			subtitle: "Automatic Submission"
+			tasks: [{
+				id: "4128E45CA4BA169C"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "crafttweaker:task_screens_craftable_3x3"
+					}
+				}
+				title: "1x1 or 3x3 Task Screens"
+				type: "item"
+			}]
+			title: "Task Screens"
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"7AA58D959E2019F9"
+				"0655BB4983A10182"
+			]
+			description: ["&dMycelium&7 is produced by filling &fdirt&7 with the &fFungal Mixture&7 you just made."]
+			id: "490FB864F2AEF3C7"
+			rewards: [{
+				id: "1433811ECCC41A54"
+				item: "exdeorum:mycelium_spores"
+				type: "item"
+			}]
+			subtitle: "Mobs still spawn on it."
+			tasks: [{
+				id: "704D7C126B076D28"
+				item: "minecraft:mycelium"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["490FB864F2AEF3C7"]
+			description: ["&5Magical Water&7 is used in a variety of ways. Consult &2JEI&7 for more information."]
+			id: "6FCDF7909EBE792A"
+			rewards: [{
+				count: 5
+				id: "5A04FCB6B14C9349"
+				item: "minecraft:obsidian"
+				type: "item"
+			}]
+			subtitle: "It does Magical Things!"
+			tasks: [{
+				amount: 1000L
+				fluid: "exdeorum:witch_water"
+				id: "2E47F04E673D8F24"
+				type: "fluid"
+			}]
+			title: "Magical Water"
+			x: 1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["6FCDF7909EBE792A"]
+			description: ["&6Fire Water&7 is made by cooking &5Magical Water&7 on a campfire &8&o(since you dont have a blaze burner or a brewing stand yet)&r&7 It's only purpose is for your next &cquest..."]
+			id: "4611177B930A472A"
+			subtitle: "It won't burn you..."
+			tasks: [{
+				id: "2AD55A03F0D714D0"
+				item: "enderio:fire_water_bucket"
+				type: "item"
+			}]
+			title: "Fire Water"
+			x: 2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"4611177B930A472A"
+				"5076ABF9E3914B5A"
+				"792BA82E5782B0E6"
+			]
+			description: ["&7I hope you like &6Sequenced Assemblies&7 because you'll need one for your &oprimitive&r &cFire Water and Steel&7. Don't worry, there will be better ways of making it in the future, &4trust..."]
+			id: "24D225215B1A34FA"
+			rewards: [{
+				count: 5
+				id: "796A085E7EA381D1"
+				item: "minecraft:obsidian"
+				type: "item"
+			}]
+			subtitle: "The ToasTech Lighter"
+			tasks: [{
+				id: "410F891235C2AA2C"
+				item: {
+					Count: 1b
+					id: "minecraft:flint_and_steel"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.5d
+		}
+		{
+			description: ["&7Getting to &cThe Nether&7 in this pack isn't the easiest thing. So here's a guide."]
+			id: "0BCAABD996338B20"
+			rewards: [{
+				id: "1C2F012822B07D1B"
+				item: "framedblocks:framed_flat_elev_inner_double_slope_slab_corner"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7C66E9E1E28B37D8"
+				title: "Nether Progression"
+				type: "checkmark"
+			}]
+			x: -5.0d
+			y: -2.5d
+		}
+	]
 	title: "The Nether"
 }
