@@ -96,3 +96,11 @@ import crafttweaker.api.item.IItemStack;
 <tag:blocks:better_beacons:beacon_redirect>.add(<block:minecraft:amethyst_cluster>);
 <tag:blocks:better_beacons:beacon_redirect>.add(<block:ae2:quartz_cluster>);
 <tag:blocks:better_beacons:beacon_redirect>.add(<block:biomesoplenty:rose_quartz_cluster>);
+    //ftb task sceens
+<tag:blocks:crafttweaker:task_screens>.add(<block:ftbquests:screen_1>);
+<tag:blocks:crafttweaker:task_screens>.add(<block:ftbquests:screen_3>);
+<tag:blocks:crafttweaker:task_screens_craftable_3x3>.add(<tag:blocks:crafttweaker:task_screens>);
+<tag:blocks:crafttweaker:task_screens>.add(<block:ftbquests:screen_5>);
+<tag:blocks:crafttweaker:task_screens>.add(<block:ftbquests:screen_7>);
+        //this tag is only so it is compatible with ftbquests
+<tag:items:crafttweaker:task_screens_craftable_3x3>.add(<tag:blocks:crafttweaker:task_screens_craftable_3x3>);
