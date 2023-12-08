@@ -1,5 +1,6 @@
-//removing recipes
+//removing recipes | craftingTable.remove();
 craftingTable.remove(<item:minecraft:flint_and_steel>);
+craftingTable.remove(<item:mekanism:steel_casing>);
 
 //adding recipes
     /*Shaped | craftingTable.addShaped(name as string, output as IItemStack, [

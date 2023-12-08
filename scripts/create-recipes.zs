@@ -28,10 +28,12 @@ import mods.create.PressingManager;
   //Item Application | if you add a recipe from <recipetype:create:item_application>, it will also add it to <recipetype:create:deploying>, but not vice-versa. The recipe created will have using_deployer attached to it.
     //deploying | <recipetype:create:deploying>.addRecipe(name as string, processedItem as IIngredient, heldItem as IIngredient, outputs as Percentaged<IItemStack>[], keepHeldItem as boolean);
       <recipetype:create:deploying>.addRecipe("being_lonely", <item:enderio:enticing_crystal>, <item:garnished:desolate_spread>, [<item:kubejs:crystal_of_desolation> % 100], false);
-    //manual application | <recipetype:create:item_application>.addRecipe(name as string, outputs as Percentaged<IItemStack>[], block(item) as IIngredient, heldItem as IIngredient, keepHeldItem as boolean);
-      <recipetype:create:deploying>.addRecipe("andesite_casing_w/_frame", <tag:items:forge:stripped_wood>, <item:kubejs:andesite_frame>, [<item:create:andesite_casing> % 100], false);
-      <recipetype:create:deploying>.addRecipe("andesite_casing_w/_frame/spruce_advantage", <item:minecraft:spruce_planks>, <item:kubejs:andesite_frame>, [<item:create:andesite_casing> % 100], false);
-      <recipetype:create:deploying>.addRecipe("copper_casing_w/_frame", <item:create:andesite_casing>, <item:kubejs:copper_frame>, [<item:create:copper_casing> % 100], false);
+    //manual application | <recipetype:create:item_application>.addRecipe(name as string, outputs as Percentaged<IItemStack>[], block{item} as IIngredient, heldItem as IIngredient, keepHeldItem as boolean);
+      <recipetype:create:item_application>.addRecipe("brass_casing_w/_frame", [<item:create:brass_casing> %100], <item:create:copper_casing>, <item:kubejs:brass_frame>, false);
+      <recipetype:create:item_application>.addRecipe("copper_casing_w/_frame", [<item:create:copper_casing> %100], <item:create:andesite_casing>, <item:kubejs:copper_frame>, false);
+      <recipetype:create:item_application>.addRecipe("andesite_casing_w/_frame", [<item:create:andesite_casing> %100], <tag:items:forge:stripped_wood>, <item:kubejs:andesite_frame>, false);
+      <recipetype:create:item_application>.addRecipe("andesite_casing_w/_frame/spruce_advantage", [<item:create:andesite_casing> %100], <item:minecraft:spruce_planks>, <item:kubejs:andesite_frame>, false);
+      <recipetype:create:item_application>.addRecipe("steel_casing_w/_frame", [<item:mekanism:steel_casing> %100], <item:create_things_and_misc:sturdy_sheet_block>, <item:kubejs:andesite_frame>, false);
   //sequenced assembly | <recipetype:create:sequenced_assembly>.addRecipe(builder as SequencedAssemblyRecipeBuilder);
     //ingot of infinity
       <recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("ingoting_the_infinite") 
@@ -61,3 +63,7 @@ import mods.create.PressingManager;
     <recipetype:create:compacting>.addRecipe("compacting_glow_items", <constant:create:heat_condition:heated>, [<fluid:kubejs:glowing_liquid> * 350], [<tag:items:crafttweaker:glowing_items> * 1], [<fluid:minecraft:water> * 100], 100);
   //filling | <recipetype:create:filling>.addRecipe(name as string, output as Percentaged<IItemStack>, inputContainer as IIngredient, inputFluid as FluidIngredient, duration as int);
     <recipetype:create:filling>.addRecipe("myceliate_dirt", <item:minecraft:mycelium>, <item:minecraft:dirt>, (<fluid:kubejs:fungal_mixture> * 100 ), 60);
+  //cutting | <recipetype:create:cutting>.addRecipe(name as string, output as Percentaged<IItemStack>, input as IIngredient, duration as int);
+    <recipetype:create:cutting>.addRecipe("andesite_rod_w/_cutting", [(<item:kubejs:andesite_rod> *8) %100], <item:create:andesite_alloy> * 2, 100);
+    <recipetype:create:cutting>.addRecipe("copper_rod_w/_cutting", [(<item:kubejs:copper_rod> * 8) %100], <item:minecraft:copper_ingot> * 2, 60);
+    <recipetype:create:cutting>.addRecipe("brass_rod_w/_cutting", [(<item:kubejs:brass_rod> * 8) %100], <item:create:brass_ingot> * 2, 100);
