@@ -53,7 +53,10 @@
 			y: 0.5d
 		}
 		{
-			dependencies: ["6C4B9BC7839EA81A"]
+			dependencies: [
+				"6C4B9BC7839EA81A"
+				"49B9A9D1CEF75B1F"
+			]
 			description: ["&6Gearboxes&r &eallow you to change the orthogonal direction of transmission. You will need quite a few of these throughout your create experience, so stockpile a decent amount of them. "]
 			id: "536FA0C23FA5D16D"
 			rewards: [{
@@ -143,6 +146,7 @@
 			dependencies: [
 				"792BA82E5782B0E6"
 				"5E95BE2A7ED793AD"
+				"0655BB4983A10182"
 			]
 			description: ["&eIn &6ToasTech&e, &5Mekanism&e is locked behind &6Sturdy Sheets&e, so I'd recommend stockpiling some, since they will be the basis for &5Mekanism&e. They are also used in trains ;)."]
 			id: "4DE917F309C5DBCC"
@@ -186,6 +190,7 @@
 				"4CD4E9BBB60BB831"
 				"6C4B9BC7839EA81A"
 				"0465A878637EF5EC"
+				"49B9A9D1CEF75B1F"
 			]
 			description: ["&eTo make the &6Mixer&e, you will need the &6Press &eto make &6plates &ewhich are necessary for many crafting recipes, including the &6whisk&e."]
 			id: "1A204FBEED9E3307"
@@ -223,8 +228,8 @@
 				type: "item"
 			}]
 			title: "Crushing"
-			x: -15.0d
-			y: 1.5d
+			x: -15.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["2EC8624B073DA950"]
@@ -238,8 +243,8 @@
 				type: "item"
 			}]
 			title: "Brass"
-			x: -17.392857142857146d
-			y: 0.5357142857142847d
+			x: -17.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["1C4937554119EBD2"]
@@ -278,7 +283,7 @@
 			y: 0.5d
 		}
 		{
-			dependencies: ["5E128E9F45A7C2FA"]
+			dependencies: ["728D7FC2547D8577"]
 			description: ["&6Mechanical Crafters&e are a powerful tool in &6Create&e. They not only &6automate&e crafting through &6Mechanical Arms&e, but they also allow for &6bigger crafing grids&e."]
 			id: "34C35754A2323632"
 			rewards: [{
@@ -295,7 +300,7 @@
 			}]
 			title: "Mechanical Crafting"
 			x: -16.5d
-			y: 1.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["5076ABF9E3914B5A"]
@@ -353,9 +358,13 @@
 			}]
 			title: "Trains"
 			x: -12.0d
-			y: -1.0d
+			y: 2.5d
 		}
 		{
+			dependencies: [
+				"1682A5C6D8287E98"
+				"2FE85C692C0F8431"
+			]
 			id: "0655BB4983A10182"
 			rewards: [{
 				count: 5
@@ -370,8 +379,199 @@
 				type: "item"
 			}]
 			title: "Filling"
-			x: -21.5d
-			y: -3.0d
+			x: -12.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7A20A07DD5BB3668"]
+			description: ["&6Rods&e are used to make &6Frames&e, which are used to make &6Casings&e. There will be better recipes for this in the future. "]
+			id: "54AD23F59360D2E2"
+			rewards: [{
+				count: 16
+				id: "2E61AA1BFC13D336"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			subtitle: "How can you even make a recipe so inefficient?"
+			tasks: [{
+				count: 8L
+				id: "0DD4B25E582BDC98"
+				item: { Count: 8b, id: "kubejs:andesite_rod" }
+				type: "item"
+			}]
+			title: "Starter Rods"
+			x: -24.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["54AD23F59360D2E2"]
+			id: "41366CFFE4FA8031"
+			rewards: [{
+				count: 4
+				id: "482C5B1EBC864344"
+				item: "minecraft:spruce_log"
+				type: "item"
+			}]
+			tasks: [{
+				count: 2L
+				id: "2AFBA01F6152C992"
+				item: "kubejs:andesite_frame"
+				type: "item"
+			}]
+			title: "Frames"
+			x: -22.214285714285715d
+			y: -2.482142857142854d
+		}
+		{
+			dependencies: ["41366CFFE4FA8031"]
+			description: ["&eUsed for several machines and &6Copper Casings&e."]
+			id: "49B9A9D1CEF75B1F"
+			rewards: [{
+				count: 8
+				id: "4FD4DB7EAB05DCF5"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			subtitle: "The Basis of Machines"
+			tasks: [{
+				id: "0CDB019539B71AD2"
+				item: "create:andesite_casing"
+				type: "item"
+			}]
+			x: -20.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4349C345D4ABC660"]
+			id: "210A4DFF60A9E2D8"
+			rewards: [{
+				id: "27D6E6EEF5891F6D"
+				item: "minecraft:copper_block"
+				type: "item"
+			}]
+			tasks: [{
+				count: 2L
+				id: "0AA412C8F62BF7F9"
+				item: { Count: 2b, id: "kubejs:copper_frame" }
+				type: "item"
+			}]
+			title: "Copper Frames"
+			x: -16.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"1BED1A7A9A508F6B"
+				"1A204FBEED9E3307"
+			]
+			dependency_requirement: "one_completed"
+			id: "4349C345D4ABC660"
+			rewards: [{
+				id: "14642C64A2F6AE86"
+				item: "minecraft:spruce_log"
+				type: "item"
+			}]
+			subtitle: "Better rods"
+			tasks: [{
+				count: 8L
+				id: "4FECFD7737B87E30"
+				item: { Count: 8b, id: "kubejs:copper_rod" }
+				type: "item"
+			}]
+			title: "Copper Rods"
+			x: -18.5d
+			y: -1.5d
+		}
+		{
+			can_repeat: false
+			dependencies: [
+				"1A204FBEED9E3307"
+				"49B9A9D1CEF75B1F"
+			]
+			hide_dependency_lines: true
+			id: "1BED1A7A9A508F6B"
+			optional: true
+			tasks: [{
+				id: "6F6D7656C498AABE"
+				item: "create:mechanical_saw"
+				type: "item"
+			}]
+			x: -19.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["210A4DFF60A9E2D8"]
+			id: "2FE85C692C0F8431"
+			rewards: [{
+				id: "49F4053D5146553F"
+				item: "create:andesite_casing"
+				type: "item"
+			}]
+			subtitle: "Used for Fluid Transport"
+			tasks: [{
+				id: "1633388005386B2C"
+				item: "create:copper_casing"
+				type: "item"
+			}]
+			x: -13.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["10F60B0AE7D756DC"]
+			description: ["&6Create Pipes&e needs &6Pumps&e to actually move fluids. &6Pumps&e use &6Rotational Force&e to work."]
+			id: "1682A5C6D8287E98"
+			rewards: [{
+				count: 2
+				id: "4A2EF302709A0267"
+				item: "minecraft:copper_ingot"
+				type: "item"
+			}]
+			subtitle: "Moving Fluids With Rotation"
+			tasks: [{
+				count: 4L
+				id: "6F3D8C9E33781709"
+				item: { Count: 4b, id: "create:fluid_pipe" }
+				type: "item"
+			}]
+			title: "Create Pipes"
+			x: -12.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1A204FBEED9E3307"]
+			hide_dependency_lines: true
+			id: "10F60B0AE7D756DC"
+			rewards: [{
+				count: 4
+				id: "75ACA4534159A646"
+				item: "minecraft:copper_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				count: 8L
+				id: "65039178F95E709D"
+				item: "create:copper_sheet"
+				type: "item"
+			}]
+			title: "Copper Sheets"
+			x: -12.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5E128E9F45A7C2FA"]
+			id: "728D7FC2547D8577"
+			rewards: [{
+				id: "06DA033D6FA8350E"
+				item: "create:andesite_casing"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7DC0A54A75EDF8B5"
+				item: "create:brass_casing"
+				type: "item"
+			}]
+			x: -17.5d
+			y: 2.0d
 		}
 	]
 	title: "Create"

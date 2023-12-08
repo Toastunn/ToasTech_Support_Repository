@@ -2,10 +2,85 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "mekanism"
-	group: ""
+	group: "7BA7C5ADDAE03ED6"
+	icon: "mekanismgenerators:control_rod_assembly"
 	id: "525BC6FC85F98065"
 	order_index: 0
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			description: ["&dMekanism&5 is the next tech mod you will use in ToasTech. In my opinion, it is best played as &dautomated&5 as possible, but you can always input items in manually. &4&oJust don't say I didn't warn you..."]
+			id: "2EBFD335C0CE07AD"
+			rewards: [{
+				id: "634E46F650910161"
+				item: "mekanism:ingot_osmium"
+				type: "item"
+			}]
+			subtitle: "Machines, Reactors, Tools..."
+			tasks: [{
+				id: "64742433A956005D"
+				title: "Welcome to Mekanism"
+				type: "checkmark"
+			}]
+			x: -3.5d
+			y: 3.5d
+		}
+		{
+			id: "0AE1B978ECB77318"
+			tasks: [{
+				id: "70A20B1CBED767C2"
+				type: "checkmark"
+			}]
+			x: -9.0d
+			y: 2.5d
+		}
+		{
+			id: "39EB2EB1FCDD6F26"
+			tasks: [{
+				id: "74C6C0D5B489811F"
+				type: "checkmark"
+			}]
+			x: 8.0d
+			y: -5.5d
+		}
+		{
+			id: "4F368415B5A4AC44"
+			tasks: [{
+				id: "65B4074EBB3D74D0"
+				type: "checkmark"
+			}]
+			x: 8.0d
+			y: 2.5d
+		}
+		{
+			id: "2ADE4D1CA4A830F7"
+			tasks: [{
+				id: "1F1E06634038E8B2"
+				type: "checkmark"
+			}]
+			x: -9.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["2EBFD335C0CE07AD"]
+			description: ["&5Nearly every machine in &dMekanism&5 uses &dSturdy Andesite Casing&5 in its recipe. So you will need a lot of these... And I mean &d&lA LOT&r&5."]
+			id: "531AA217E6D36A24"
+			rewards: [{
+				count: 20
+				id: "56458214176A03EB"
+				item: "create:powdered_obsidian"
+				type: "item"
+			}]
+			subtitle: "The Casing of Mekanism"
+			tasks: [{
+				id: "7B052089F01A1B45"
+				item: "mekanism:steel_casing"
+				type: "item"
+			}]
+			title: "Sturdy Andesite Casing"
+			x: -3.5d
+			y: 2.0d
+		}
+	]
 	title: "Mekanism"
 }
