@@ -1,0 +1,13 @@
+{
+	id: "1CE94DEB45A4C91E"
+	loot_size: 1
+	order_index: 0
+	rewards: [
+		{ count: 4, item: "mekanism:ingot_osmium", weight: 20.0f }
+		{ item: "mekanism:yellow_cake_uranium", weight: 8.0f }
+		{ item: "minecraft:cake", weight: 2.0f }
+		{ count: 10, item: "create:sturdy_sheet", weight: 5.0f }
+		{ count: 2, item: "minecraft:diamond", weight: 4.0f }
+	]
+	title: "Mekanism Loot Table"
+}
