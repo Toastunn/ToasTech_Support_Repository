@@ -7,6 +7,7 @@ import mods.create.FillingManager;
 import mods.create.MixingManager;
 import mods.create.DeployerApplicationManager;
 import mods.create.PressingManager;
+import mods.create.MechanicalCrafterManager;
 
 //removing recipes | <recipetype:create:(recipe manager)>.remove(output as IIngredient);
   //Item Application | if you remove a recipe from <recipetype:create:item_application>, it will also remove it from <recipetype:create:deploying> if the recipe ID (F3+H) ends in using_deployer.
@@ -16,6 +17,9 @@ import mods.create.PressingManager;
       <recipetype:create:item_application>.remove(<item:create:copper_casing>);
       <recipetype:create:item_application>.remove(<item:create:brass_casing>);
       <recipetype:create:item_application>.remove(<item:create:andesite_casing>);
+  //Mixing
+    <recipetype:create:mixing>.remove(<item:createchromaticreturn:polonium_nugget>);
+    <recipetype:create:mixing>.remove(<item:createchromaticreturn:plutonium_nugget>);
 
 //adding recipes (refer to https://docs.blamejared.com/1.20.1/en/mods/CreateTweaker/SplashingManager for recipe managers)
   //splashing | <recipetype:create:splashing>.addRecipe(name as string, outputs as Percentaged<IItemStack>[], input as IIngredient, duration as int);
@@ -61,9 +65,18 @@ import mods.create.PressingManager;
         .addStep<mods.createtweaker.FillingRecipe>((rb) => rb.require(<fluid:enderio:fire_water> * 500)));
   //compacting | <recipetype:create:compacting>.addRecipe(name as string, heat as HeatCondition, outputs as IFluidStack[], itemInputs as IIngredientWithAmount[], fluidInputs as FluidIngredient[], duration as int);
     <recipetype:create:compacting>.addRecipe("compacting_glow_items", <constant:create:heat_condition:heated>, [<fluid:kubejs:glowing_liquid> * 350], [<tag:items:crafttweaker:glowing_items> * 1], [<fluid:minecraft:water> * 100], 100);
+    <recipetype:create:compacting>.addRecipe("sturdy_sheet_block_w/_compacting", <constant:create:heat_condition:heated>, [<item:create_things_and_misc:sturdy_sheet_block>], [<item:create:sturdy_sheet> * 15], [], 200);
   //filling | <recipetype:create:filling>.addRecipe(name as string, output as Percentaged<IItemStack>, inputContainer as IIngredient, inputFluid as FluidIngredient, duration as int);
     <recipetype:create:filling>.addRecipe("myceliate_dirt", <item:minecraft:mycelium>, <item:minecraft:dirt>, (<fluid:kubejs:fungal_mixture> * 100 ), 60);
   //cutting | <recipetype:create:cutting>.addRecipe(name as string, output as Percentaged<IItemStack>, input as IIngredient, duration as int);
     <recipetype:create:cutting>.addRecipe("andesite_rod_w/_cutting", [(<item:kubejs:andesite_rod> *8) %100], <item:create:andesite_alloy> * 2, 100);
     <recipetype:create:cutting>.addRecipe("copper_rod_w/_cutting", [(<item:kubejs:copper_rod> * 8) %100], <item:minecraft:copper_ingot> * 2, 60);
     <recipetype:create:cutting>.addRecipe("brass_rod_w/_cutting", [(<item:kubejs:brass_rod> * 8) %100], <item:create:brass_ingot> * 2, 100);
+  //mechanical crafting | <recipetype:create:mechanical_crafting>.addRecipe(name as string, output as IItemStack, ingredients as IIngredient[][])
+    val air = <item:minecraft:air>;
+    <recipetype:create:mechanical_crafting>.addRecipe("digital_miner", <item:mekanism:digital_miner>, [
+      [<item:create:andesite_alloy>, <item:mekanismgenerators:turbine_vent>, <item:mekanism:steel_casing>, <item:mekanismgenerators:turbine_vent>, <item:create:andesite_alloy>],
+      [<item:mekanism:steel_casing>, <item:mekanism:alloy_atomic>, <item:mekanism:ultimate_control_circuit>, <item:mekanism:alloy_atomic>, <item:ae2:cable_interface>],
+      [<item:mekanism:steel_casing>, <item:mekanism:logistical_sorter>, <item:mekanism:robit>, <item:mekanism:logistical_sorter>, <item:ae2:cable_interface>],
+      [<item:mekanism:steel_casing>, <item:mekanism:teleportation_core>, <item:mekanism:dimensional_stabilizer>, <item:mekanism:teleportation_core>, <item:ae2:cable_interface>],
+      [<item:create:andesite_alloy>, <item:mekanism:laser>, <item:mekanism:laser_amplifier>, <item:mekanism:laser>, <item:create:andesite_alloy>]]);

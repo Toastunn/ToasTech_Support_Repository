@@ -25,7 +25,7 @@ import mods.mekanism.api.ingredient.ItemStackIngredient;
     //injecting
 <recipetype:mekanism:injecting>.addRecipe("enchanting_grains_of_infinity", <item:kubejs:pure_grains_of_infinity>, <gas:kubejs:hyper_experience_gas> * 500, <item:kubejs:enchanted_grains_of_infinity>);
     //nucleosynthesizing
-<recipetype:mekanism:nucleosynthesizing>.addRecipe("perfecting_the_infinite", <item:kubejs:superheated_grains_of_infinity>, <gas:mekanism:antimatter> * 20, <item:kubejs:atomically_perfect_grains_of_infinity>, 200);
+<recipetype:mekanism:nucleosynthesizing>.addRecipe("perfecting_the_infinite", <item:kubejs:superheated_grains_of_infinity>, <gas:mekanism:antimatter> * 750, <item:kubejs:atomically_perfect_grains_of_infinity>, 200);
     //oxidisation
 <recipetype:mekanism:oxidizing>.addRecipe("infinite_gasification", <item:kubejs:atomically_perfect_grains_of_infinity>, <gas:kubejs:gaseous_infinity> * 60);
     //crystallisation
