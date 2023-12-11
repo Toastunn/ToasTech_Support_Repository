@@ -80,3 +80,9 @@ import mods.create.MechanicalCrafterManager;
       [<item:mekanism:steel_casing>, <item:mekanism:logistical_sorter>, <item:mekanism:robit>, <item:mekanism:logistical_sorter>, <item:ae2:cable_interface>],
       [<item:mekanism:steel_casing>, <item:mekanism:teleportation_core>, <item:mekanism:dimensional_stabilizer>, <item:mekanism:teleportation_core>, <item:ae2:cable_interface>],
       [<item:create:andesite_alloy>, <item:mekanism:laser>, <item:mekanism:laser_amplifier>, <item:mekanism:laser>, <item:create:andesite_alloy>]]);
+    <recipetype:create:mechanical_crafting>.addRecipe("robit", <item:mekanism:robit>, [
+      [<item:minecraft:white_concrete>, <item:minecraft:white_concrete>, <item:minecraft:white_concrete>],
+      [<item:minecraft:ender_eye>, <tag:items:ae2:smart_cable>, <item:minecraft:ender_eye>],
+      [<item:create:mechanical_arm>, <item:mekanism:elite_energy_cube>, <item:create:mechanical_arm>],
+      [<item:minecraft:white_concrete>, <tag:items:mekanism:personal_storage>, <item:minecraft:white_concrete>],
+      [<item:create:belt_connector>, <item:mekanism:steel_casing>, <item:create:belt_connector>]]);

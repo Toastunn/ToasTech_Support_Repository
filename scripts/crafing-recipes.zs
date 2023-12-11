@@ -14,6 +14,7 @@ craftingTable.remove(<item:mekanism:basic_fluid_tank>);
 craftingTable.remove(<item:mekanism:digital_miner>);
 craftingTable.remove(<item:mekanism:teleportation_core>);
 craftingTable.remove(<item:mekanism:dimensional_stabilizer>);
+craftingTable.remove(<item:mekanism:robit>);
 //adding recipes
     /*Shaped | craftingTable.addShaped(name as string, output as IItemStack, [
     row 1 [inputs as IIngredient], 
@@ -91,7 +92,7 @@ craftingTable.remove(<item:mekanism:dimensional_stabilizer>);
                     [<item:ae2:silicon>, <item:ae2:quantum_entangled_singularity>, <item:ae2:silicon>],
                     [<item:extendedcrafting:enhanced_ender_catalyst>, <item:enderio:prescient_crystal>, <item:extendedcrafting:enhanced_ender_catalyst>]]);
             //dimensional stabilizer
-                craftingTable.addShaped('dimensional_stabilizer' <item:mekanism:dimensional_stabilizer>, [
+                craftingTable.addShaped('dimensional_stabilizer', <item:mekanism:dimensional_stabilizer>, [
                     [<item:mekanism:ingot_refined_obsidian>, <item:mekanism:ultimate_control_circuit>, <item:mekanism:ingot_refined_obsidian>],
                     [<item:minecraft:end_crystal>, <item:mekanism:steel_casing>, <item:minecraft:end_crystal>],
                     [<item:mekanism:ingot_refined_obsidian>, <item:mekanism:ultimate_control_circuit>, <item:mekanism:ingot_refined_obsidian>]]);
