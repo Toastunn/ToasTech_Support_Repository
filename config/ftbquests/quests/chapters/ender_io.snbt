@@ -7,21 +7,46 @@
 	id: "28D21458ADBCB5FC"
 	order_index: 1
 	quest_links: [ ]
-	quests: [{
-		description: ["This questline will be shorter than the other ones, mainly because not much of it is relevant to the other mods."]
-		id: "4F10C65D50134303"
-		rewards: [{
-			id: "3E3991BFEA7949A9"
-			item: "minecraft:ender_pearl"
-			type: "item"
-		}]
-		tasks: [{
-			id: "45E74C7ED96DB7F1"
-			title: "Welcome to Ender IO"
-			type: "checkmark"
-		}]
-		x: 0.5d
-		y: -5.5d
-	}]
+	quests: [
+		{
+			description: ["This questline will be shorter than the other ones, mainly because not much of it is relevant to the other mods."]
+			id: "4F10C65D50134303"
+			rewards: [{
+				id: "3E3991BFEA7949A9"
+				item: "minecraft:ender_pearl"
+				type: "item"
+			}]
+			tasks: [{
+				id: "45E74C7ED96DB7F1"
+				title: "Welcome to Ender IO"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["4F10C65D50134303"]
+			id: "758235E3B14596CA"
+			tasks: [{
+				id: "4457D3AEC413D956"
+				item: "enderio:iron_gear"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["4F10C65D50134303"]
+			id: "0B817DE7B8D99F21"
+			subtitle: "Is that... another Sequenced Assembly?"
+			tasks: [{
+				id: "3E10EB7DD95E173B"
+				item: "enderio:void_chassis"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -4.5d
+		}
+	]
 	title: "Ender IO"
 }

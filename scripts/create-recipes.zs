@@ -38,7 +38,7 @@ import mods.create.MechanicalCrafterManager;
       <recipetype:create:item_application>.addRecipe("andesite_casing_w/_frame", [<item:create:andesite_casing> %100], <tag:items:forge:stripped_wood>, <item:kubejs:andesite_frame>, false);
       <recipetype:create:item_application>.addRecipe("andesite_casing_w/_frame/spruce_advantage", [<item:create:andesite_casing> %100], <item:minecraft:spruce_planks>, <item:kubejs:andesite_frame>, false);
       <recipetype:create:item_application>.addRecipe("steel_casing_w/_frame", [<item:mekanism:steel_casing> %100], <item:create_things_and_misc:sturdy_sheet_block>, <item:kubejs:andesite_frame>, false);
-  //sequenced assembly | <recipetype:create:sequenced_assembly>.addRecipe(builder as SequencedAssemblyRecipeBuilder);
+  //sequenced assembly | <recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder(name as string) builder);
     //ingot of infinity
       <recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("ingoting_the_infinite") 
         .loops(1) 
@@ -63,6 +63,14 @@ import mods.create.MechanicalCrafterManager;
         .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:createchromaticreturn:carbon_powder>))
         .addStep<mods.createtweaker.PressingRecipe>((rb) => rb.duration(100))
         .addStep<mods.createtweaker.FillingRecipe>((rb) => rb.require(<fluid:enderio:fire_water> * 500)));
+    //void chassis
+      <recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("void_chassis/seq_assem")
+        .loops(1)
+        .transitionTo(<item:kubejs:infinite_chassis>)
+        .require(<item:mekanism:steel_casing>)
+        .addOutput(<item:enderio:void_chassis>, 100)
+        .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:enderio:grains_of_infinity>))
+        .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:garnished:void_dust>)));
   //compacting | <recipetype:create:compacting>.addRecipe(name as string, heat as HeatCondition, outputs as IFluidStack[], itemInputs as IIngredientWithAmount[], fluidInputs as FluidIngredient[], duration as int);
     <recipetype:create:compacting>.addRecipe("compacting_glow_items", <constant:create:heat_condition:heated>, [<fluid:kubejs:glowing_liquid> * 350], [<tag:items:crafttweaker:glowing_items> * 1], [<fluid:minecraft:water> * 100], 100);
     <recipetype:create:compacting>.addRecipe("sturdy_sheet_block_w/_compacting", <constant:create:heat_condition:heated>, [<item:create_things_and_misc:sturdy_sheet_block>], [<item:create:sturdy_sheet> * 15], [], 200);

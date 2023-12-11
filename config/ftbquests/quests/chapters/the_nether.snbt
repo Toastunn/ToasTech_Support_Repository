@@ -221,6 +221,25 @@
 			x: 4.0d
 			y: -4.0d
 		}
+		{
+			dependencies: ["6FCDF7909EBE792A"]
+			description: ["&7Normally, you can only obtain soul sand after going to &cThe Nether&7, but &5Magical Water&7 allows you to bypass this step and go directly to &bHaunting&7! test it out on some powdered obsidian, like if you were &9washing&7."]
+			id: "7EE4C4BB9AEA0AFB"
+			rewards: [{
+				count: 7
+				id: "08DF01E9E11CA303"
+				item: "garnished:void_dust"
+				type: "item"
+			}]
+			tasks: [{
+				id: "62C64FEFF5CA3EB4"
+				item: "garnished:void_dust"
+				type: "item"
+			}]
+			title: "Bulk Haunting"
+			x: 1.0d
+			y: -1.0d
+		}
 	]
 	title: "The Nether"
 }
