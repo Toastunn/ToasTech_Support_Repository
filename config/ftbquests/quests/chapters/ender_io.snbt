@@ -3,9 +3,25 @@
 	default_quest_shape: ""
 	filename: "ender_io"
 	group: "7BA7C5ADDAE03ED6"
+	icon: "enderio:grains_of_infinity"
 	id: "28D21458ADBCB5FC"
-	order_index: 0
+	order_index: 1
 	quest_links: [ ]
-	quests: [ ]
+	quests: [{
+		description: ["This questline will be shorter than the other ones, mainly because not much of it is relevant to the other mods."]
+		id: "4F10C65D50134303"
+		rewards: [{
+			id: "3E3991BFEA7949A9"
+			item: "minecraft:ender_pearl"
+			type: "item"
+		}]
+		tasks: [{
+			id: "45E74C7ED96DB7F1"
+			title: "Welcome to Ender IO"
+			type: "checkmark"
+		}]
+		x: 0.5d
+		y: -5.5d
+	}]
 	title: "Ender IO"
 }

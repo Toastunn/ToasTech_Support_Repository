@@ -573,6 +573,38 @@
 			x: -17.5d
 			y: 2.0d
 		}
+		{
+			dependencies: ["1A204FBEED9E3307"]
+			description: [
+				"&eHa! You fool! You thought this was a simple introduction to &6Fans&e! How innocent... Anyways, go see "
+				""
+				"{ \"text\": \"this quest\",\"color\": \"red\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"0EA4E12A078A49A0\" } } "
+				""
+				"&efor context and use the &6Fan&e to wash the raw grains."
+			]
+			icon: "create:encased_fan"
+			id: "4BF4E478D4EA89CD"
+			rewards: [{
+				id: "5EF2CDF74200368F"
+				item: "kubejs:raw_grains_of_infinity"
+				type: "item"
+			}]
+			subtitle: "What the hell is that?"
+			tasks: [
+				{
+					id: "2C60B53B1D74B9B6"
+					item: "create:encased_fan"
+					type: "item"
+				}
+				{
+					id: "2ADAAD532972068E"
+					item: "kubejs:washed_grains_of_infinity"
+					type: "item"
+				}
+			]
+			x: -20.5d
+			y: 1.5d
+		}
 	]
 	title: "Create"
 }

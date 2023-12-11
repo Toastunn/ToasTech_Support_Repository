@@ -2,7 +2,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: "hexagon"
 	filename: "mekanism"
-	group: ""
+	group: "7BA7C5ADDAE03ED6"
 	icon: "mekanism:quantum_entangloporter"
 	id: "0000000000000859"
 	images: [
@@ -67,7 +67,7 @@
 			y: -3.0d
 		}
 	]
-	order_index: 1
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
@@ -778,7 +778,9 @@
 			description: ["Provides thick, radiation-proof metal plating to any MekaSuit armor piece."]
 			id: "00000000000008AB"
 			rewards: [{
-				id: "19056A3D5AD8E0FA"
+				exclude_from_claim_all: true
+				id: "4D2ADDCAAD7565E4"
+				table_id: 2083281975516645662L
 				type: "random"
 			}]
 			tasks: [{
@@ -854,7 +856,9 @@
 			description: ["Evenly distributes charge throughout all worn MekaSuit armor."]
 			id: "00000000000008B3"
 			rewards: [{
-				id: "34B136E2BB05D09F"
+				exclude_from_claim_all: true
+				id: "68CF2D880A7996E1"
+				table_id: 2083281975516645662L
 				type: "random"
 			}]
 			tasks: [{
@@ -1145,40 +1149,47 @@
 			]
 			tasks: [
 				{
+					consume_items: false
 					count: 8L
 					id: "00000000000008DB"
 					item: "mekanism:upgrade_speed"
 					type: "item"
 				}
 				{
+					consume_items: false
 					count: 8L
 					id: "31BA000021171CE8"
 					item: "mekanism:upgrade_energy"
 					type: "item"
 				}
 				{
+					consume_items: false
 					id: "4641C869EB874FD3"
 					item: "mekanism:upgrade_filter"
 					type: "item"
 				}
 				{
+					consume_items: false
 					count: 4L
 					id: "2D1C8C1A3DFF5697"
 					item: "mekanism:upgrade_muffling"
 					type: "item"
 				}
 				{
+					consume_items: false
 					count: 8L
 					id: "578AB692CA818E7E"
 					item: "mekanism:upgrade_gas"
 					type: "item"
 				}
 				{
+					consume_items: false
 					id: "0B7247C5F33209BD"
 					item: "mekanism:upgrade_anchor"
 					type: "item"
 				}
 			]
+			title: "Upgrades"
 			x: 0.5d
 			y: 4.0d
 		}
@@ -1227,7 +1238,7 @@
 				item: "mekanism:antiprotonic_nucleosynthesizer"
 				type: "item"
 			}]
-			x: 8.5d
+			x: 7.5d
 			y: -6.5d
 		}
 		{
@@ -1379,7 +1390,7 @@
 			y: 5.0d
 		}
 		{
-			dependencies: ["00000000000008EC"]
+			dependencies: ["7E9AD5B815F40263"]
 			description: ["The Quantum Entangloporter is a machine that allows liquids/items/energy/gas to be sent from one Quantum Entangloporter to another through a channel."]
 			id: "00000000000008F8"
 			rewards: [{
@@ -1392,11 +1403,11 @@
 				item: "mekanism:quantum_entangloporter"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 1.0d
+			x: 11.0d
+			y: -1.0d
 		}
 		{
-			dependencies: ["00000000000008EC"]
+			dependencies: ["7E9AD5B815F40263"]
 			description: [
 				"The Digital Miner can be configured to mine ores only within a certain area. "
 				"It can also be set to silk touch ores, but this results in higher power consumption."
@@ -1413,7 +1424,7 @@
 				item: "mekanism:digital_miner"
 				type: "item"
 			}]
-			x: 10.5d
+			x: 12.0d
 			y: 0.0d
 		}
 		{
@@ -1834,7 +1845,7 @@
 			y: -3.5d
 		}
 		{
-			dependencies: ["6888EBB4C5E39F1F"]
+			dependencies: ["4E360A9C4B0A7198"]
 			description: [
 				"The Induction Matrix is a highly configurable multi-block energy storage structure."
 				""
@@ -1864,11 +1875,11 @@
 				}
 			]
 			title: "Induction Matrix"
-			x: 9.5d
+			x: 9.0d
 			y: -4.5d
 		}
 		{
-			dependencies: ["36E35E10E83EF0EE"]
+			dependencies: ["4E360A9C4B0A7198"]
 			description: [
 				"The Thermal Evaporation Plant is a multiblock structure with the purpose of converting Water to Brine, which can be further converted to Lithium by the use of a second Thermal Evaporation Plant."
 				""
@@ -1901,11 +1912,11 @@
 				}
 			]
 			title: "Thermal Evaporation Plant"
-			x: 11.5d
+			x: 11.0d
 			y: -4.5d
 		}
 		{
-			dependencies: ["388675A67CC6C15F"]
+			dependencies: ["4E360A9C4B0A7198"]
 			description: [
 				"The Fusion Reactor is a multiblock structure that allows for variable input rates of 3 types of fuel: Deuterium, Tritium and D-T Fuel."
 				""
@@ -1975,11 +1986,11 @@
 				}
 			]
 			title: "Fusion Reactor"
-			x: 3.5d
+			x: 3.0d
 			y: -4.5d
 		}
 		{
-			dependencies: ["7793A1D816ED6291"]
+			dependencies: ["4E360A9C4B0A7198"]
 			description: [
 				"The Fission Reactor is a multiblock structure that generates massive amounts of heat but does not produce power on its own."
 				""
@@ -2030,7 +2041,7 @@
 				}
 			]
 			title: "Fission Reactor"
-			x: 5.5d
+			x: 5.0d
 			y: -4.5d
 		}
 		{
@@ -2055,7 +2066,7 @@
 				item: "mekanism:pellet_antimatter"
 				type: "item"
 			}]
-			x: 7.5d
+			x: 6.0d
 			y: -6.5d
 		}
 		{
@@ -2080,7 +2091,7 @@
 			y: 5.5d
 		}
 		{
-			dependencies: ["36E927EAE1EC49AA"]
+			dependencies: ["4E360A9C4B0A7198"]
 			description: ["The Supercritical Phase Shifter is a multiblock structure that consumes large amount of energy and polonium gas to create antimatter gas,"]
 			id: "000000000000094B"
 			rewards: [{
@@ -2129,63 +2140,7 @@
 				}
 			]
 			title: "Supercritical Phase Shifter"
-			x: 7.5d
-			y: -4.5d
-		}
-		{
-			dependencies: ["4E360A9C4B0A7198"]
-			id: "388675A67CC6C15F"
-			tasks: [{
-				id: "36913F11C6813959"
-				title: "Fusion Reactor"
-				type: "checkmark"
-			}]
-			x: 2.5d
-			y: -4.5d
-		}
-		{
-			dependencies: ["4E360A9C4B0A7198"]
-			id: "36E927EAE1EC49AA"
-			tasks: [{
-				id: "17600C24C58CBE4D"
-				title: "Supercritical Phase Shifter"
-				type: "checkmark"
-			}]
-			title: "Supercritical Phase Shifter"
-			x: 6.5d
-			y: -4.5d
-		}
-		{
-			dependencies: ["4E360A9C4B0A7198"]
-			id: "36E35E10E83EF0EE"
-			tasks: [{
-				id: "63F59F1FDB43CA0E"
-				title: "Thermal Evaporation"
-				type: "checkmark"
-			}]
-			x: 10.5d
-			y: -4.5d
-		}
-		{
-			dependencies: ["4E360A9C4B0A7198"]
-			id: "6888EBB4C5E39F1F"
-			tasks: [{
-				id: "0BC2A9F9DFB154D0"
-				title: "Energy Storage"
-				type: "checkmark"
-			}]
-			x: 8.5d
-			y: -4.5d
-		}
-		{
-			dependencies: ["4E360A9C4B0A7198"]
-			id: "7793A1D816ED6291"
-			tasks: [{
-				id: "17114B905F1E5628"
-				title: "Fission Reactor"
-				type: "checkmark"
-			}]
-			x: 4.5d
+			x: 7.0d
 			y: -4.5d
 		}
 		{
@@ -2213,8 +2168,9 @@
 			]
 			id: "74BCE9E73DCDF3E0"
 			rewards: [{
-				id: "46233A7F99E6D191"
-				type: "loot"
+				id: "2E6E5B330E4ACE7C"
+				type: "xp_levels"
+				xp_levels: 5
 			}]
 			tasks: [{
 				id: "22A87938CC3C9A37"
@@ -2403,7 +2359,9 @@
 			description: ["Applies an HDPE Reinforced Elytra to the MekaSuit."]
 			id: "0911324582B6823E"
 			rewards: [{
-				id: "01DF51766A723694"
+				exclude_from_claim_all: true
+				id: "0FED86E289189FB0"
+				table_id: 2083281975516645662L
 				type: "random"
 			}]
 			tasks: [{
@@ -2520,6 +2478,11 @@
 			y: 4.0d
 		}
 		{
+			description: [
+				"&5Welcome to &dMekanism&5, a Factory Maker's Dream! The Middle Game of &6ToasTech&5 will be all about &dMekanism&5, so get your configurators ready, because this is going to get complicated &4fast."
+				"{@pagebreak}"
+				"&8&o(also you can zoom out with ctrl + scroll wheel)"
+			]
 			hide_dependent_lines: true
 			icon: "mekanismgenerators:control_rod_assembly"
 			id: "4E360A9C4B0A7198"
@@ -2550,7 +2513,7 @@
 				type: "fluid"
 			}]
 			title: "Polonium"
-			x: 7.0d
+			x: 5.5d
 			y: -5.5d
 		}
 		{
@@ -2571,7 +2534,7 @@
 				id: "5AA88D1AD8B47614"
 				type: "fluid"
 			}]
-			x: 8.0d
+			x: 6.5d
 			y: -5.5d
 		}
 		{
@@ -2602,7 +2565,124 @@
 			x: 10.5d
 			y: -6.5d
 		}
+		{
+			dependencies: ["7D0BC26B33BBB358"]
+			description: ["You're about to get a lot of items, and you'll need to have some storage for all of them. Applied Energistics 2 can help you with that! I'd recommend geeting a good ME&8&o (matter-energy)&r system before continuing Mekanism. You'll also need some stuff from it to make some stuff here. "]
+			hide_dependency_lines: true
+			icon: "ae2:controller"
+			id: "15A89114EFA3B6F3"
+			rewards: [{
+				id: "034E4AD1266D9670"
+				item: "ae2:item_cell_housing"
+				type: "item"
+			}]
+			size: 2.0d
+			tasks: [{
+				id: "1D54866ED23F2B99"
+				title: "Slow Down There!"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"5490E75464035904"
+				"41BC802201632A91"
+			]
+			description: ["The Teleportation Core is a contained singularity capable of entangling objects into new positions. Basically, teleportation. &8&o(yes this defenition makes no sense but it sounds cool)&r It's commonly used in QIO and deep mining operations. "]
+			id: "7E9AD5B815F40263"
+			rewards: [{
+				count: 10
+				id: "0DC0C9E7189208C1"
+				item: "ae2:silicon"
+				type: "item"
+			}]
+			tasks: [{
+				id: "52AAB8A526AF8E2D"
+				item: "mekanism:teleportation_core"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["00000000000008EE"]
+			description: ["Ender IO doesn't really have a place in ToasTech, but it's integrated is some recipes so you'll need to do some progression in the Ender IO tab."]
+			hide_dependency_lines: true
+			icon: "enderio:slice_and_splice"
+			id: "5490E75464035904"
+			rewards: [{
+				count: 12
+				id: "75EC3669D96C68AC"
+				item: "enderio:conduit_binder"
+				type: "item"
+			}]
+			tasks: [{
+				id: "36F9B0D926C09D1A"
+				title: "About Time for Ender IO"
+				type: "checkmark"
+			}]
+			x: 10.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["00000000000008EC"]
+			description: ["Extended Crafting is a mod that adds more crafting methods and some new items, notably singularities and catalysts. It's usually reserved for endgame, but you'll need it for the teleportation core, so..."]
+			hide_dependency_lines: true
+			icon: "extendedcrafting:elite_component"
+			id: "41BC802201632A91"
+			rewards: [{
+				id: "64A976A8AF160A41"
+				item: "extendedcrafting:black_iron_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1CDBC54F66E223A8"
+				title: "I Heard You Want Better Crafting"
+				type: "checkmark"
+			}]
+			x: 11.0d
+			y: 1.0d
+		}
+		{
+			description: ["I'd like to thank the developpers of Ragnamod VI for the Mekanism questing tab, since I used it as a base for ToasTech."]
+			icon: "create:clipboard"
+			id: "6F98DF65C7869FE8"
+			rewards: [{
+				id: "5ABF15DE37A4165B"
+				item: "templates:cool_rivulet"
+				type: "item"
+			}]
+			tasks: [{
+				id: "24FE44104DCF3F2B"
+				title: "Some Credit"
+				type: "checkmark"
+			}]
+			x: 10.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["00000000000008EA"]
+			description: [
+				"I'll assume you've been doing the progression already."
+				"Use the enrichment chamber to make Grains of Infinity from the washed ones."
+			]
+			id: "51F51B1453E68582"
+			rewards: [{
+				id: "4E5E5FAFC8C8EE60"
+				item: "kubejs:raw_grains_of_infinity"
+				type: "item"
+			}]
+			subtitle: "Not this again..."
+			tasks: [{
+				id: "110B6F57A37C927D"
+				item: "enderio:grains_of_infinity"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 1.0d
+		}
 	]
-	subtitle: ["MEKANISM 10 !!!"]
 	title: "Mekanism"
 }
