@@ -85,7 +85,7 @@ craftingTable.remove(<item:mekanism:robit>);
                 craftingTable.addShaped('basic_fluid_tank', <item:mekanism:basic_fluid_tank>, [
                     [<item:minecraft:redstone>, <item:minecraft:iron_ingot>, <item:minecraft:redstone>],
                     [<item:minecraft:iron_ingot>, <tag:items:forge:glass>, <item:minecraft:iron_ingot>],
-                    [<item:minecraft:redstone>, <item:minecraft:iron_ingot>, <item:minecraft:redstone>]]);
+                    [<item:minecraft:redstone>, <item:minecraft:iron_ingot>, <item:minecraft:redstone>]]); //doesnt this not apply to higher level tanks?
             //teleportation core
                 craftingTable.addShaped('teleportation_core', <item:mekanism:teleportation_core>, [
                     [<item:extendedcrafting:enhanced_ender_catalyst>, <item:enderio:prescient_crystal>, <item:extendedcrafting:enhanced_ender_catalyst>],

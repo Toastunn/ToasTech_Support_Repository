@@ -13,3 +13,4 @@ import crafttweaker.api.recipe.StoneCutterManager;
 impossible to get through only create, so i'm adding an 'unpreferable route' that's more annoying, but you 
 should only do once. Feel free to delete this comment after you read it.
 */
+// ^ got it, maybe forcing create could be good, but maybe having multiple paths. otherwise keep this. -weegeeday
