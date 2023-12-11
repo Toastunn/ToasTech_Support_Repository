@@ -8,3 +8,4 @@
 config/*
 !config/ftbquests/
 !.gitignore
+!/tooltipgen
