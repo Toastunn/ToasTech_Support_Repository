@@ -15,6 +15,7 @@ craftingTable.remove(<item:mekanism:digital_miner>);
 craftingTable.remove(<item:mekanism:teleportation_core>);
 craftingTable.remove(<item:mekanism:dimensional_stabilizer>);
 craftingTable.remove(<item:mekanism:robit>);
+craftingTable.remove(<item:enderio:void_chassis>);
 //adding recipes
     /*Shaped | craftingTable.addShaped(name as string, output as IItemStack, [
     row 1 [inputs as IIngredient], 
