@@ -1,20 +1,20 @@
 {
-    "values": [
-      {
-        "block": "enderio:conductive_alloy_block",
-        "amplifier": 0
-      },
-      {
-        "block":  "enderio:vibrant_alloy_block",
-        "amplifier": 3
-      },
-      {
-        "block":  "enderio:pulsating_alloy_block",
-        "amplifier": 2
-      },
-      {
-        "block": "enderio:energetic_alloy_block",
-        "amplifier": 1
-      }
-    ]
-  }
+  "values": [
+    {
+      "block": "enderio:conductive_alloy_block",
+      "amplifier": 0
+    },
+    {
+      "block":  "enderio:vibrant_alloy_block",
+      "amplifier": 3
+    },
+    {
+      "block":  "enderio:pulsating_alloy_block",
+      "amplifier": 2
+    },
+    {
+      "block": "enderio:energetic_alloy_block",
+      "amplifier": 1
+    }
+  ]
+}

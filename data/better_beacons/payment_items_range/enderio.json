@@ -1,24 +1,24 @@
 {
-    "values": [
-      {
-        "item":   "enderio:pulsating_alloy_ingot",
-        "range": 30
-      },
-      {
-        "item": "enderio:vibrant_alloy_ingot",
-        "range": 50
-      },
-      {
-        "item": "enderio:energetic_alloy_ingot",
-        "range": 15
-      },
-      {
-        "item": "enderio:conductive_alloy_ingot",
-        "range": 5
-      },
-      {
-        "item": "enderio:enticing_crystal",
-        "range": 100
-      }
-    ]
-  }
+  "values": [
+    {
+      "item":   "enderio:pulsating_alloy_ingot",
+      "range": 30
+    },
+    {
+      "item": "enderio:vibrant_alloy_ingot",
+      "range": 50
+    },
+    {
+      "item": "enderio:energetic_alloy_ingot",
+      "range": 15
+    },
+    {
+      "item": "enderio:conductive_alloy_ingot",
+      "range": 5
+    },
+    {
+      "item": "enderio:enticing_crystal",
+      "range": 100
+    }
+  ]
+}

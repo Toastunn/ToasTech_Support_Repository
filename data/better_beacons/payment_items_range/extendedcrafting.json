@@ -1,8 +1,8 @@
 {
-    "values": [
-      {
-        "item": "extendedcrafting:crystaltine_ingot",
-        "range": 100
-      }
-    ]
-  }
+  "values": [
+    {
+      "item": "extendedcrafting:crystaltine_ingot",
+      "range": 100
+    }
+  ]
+}
