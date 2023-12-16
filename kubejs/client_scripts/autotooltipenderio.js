@@ -1,3 +1,7 @@
+//Adding create tooltip classes
+const $ItemDescription = Java.loadClass("com.simibubi.create.foundation.item.ItemDescription$Modifier")
+const $TooltipModifier = Java.loadClass("com.simibubi.create.foundation.item.TooltipModifier")
+const $Palette = Java.loadClass("com.simibubi.create.foundation.item.TooltipHelper$Palette")
 // Define the path to the JSON file
 const jsonFilePath = 'kubejs/config/tooltips.json'; //this can be updated using the python script to grab the wiki
 
@@ -13,14 +17,15 @@ if (jsonContent !== null && jsonContent.tooltips) {
         const content = entry.content;
         
         // Construct the item identifier
-        const itemIdentifier = 'enderio:' + title;
+        const itemIdentifier = "enderio:" + title;
 
         // Check if the item exists
         if (Item.exists(itemIdentifier)) {
             // Build the tooltip
             const tooltip = createTooltip(itemIdentifier)
                 .addSummary(toString(content)) //this doesnt exist? TypeError: Cannot find function addSummary in object [object Object].
-                .addBehaviour("Check the wiki for beter information") 
+                .addBehaviour("Check the wiki for beter information")
+                .setPalette($Palette.STANDARD_CREATE)
                 .build()
 
             // Add the tooltip to the event
