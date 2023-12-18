@@ -71,6 +71,17 @@ ClientEvents.lang("en_us", (event) => {
     .setPalette($Palette.PURPLE)
     .build()
   )
+  event.addAll(
+    createTooltip("enderio:yeta_wrench")
+    .addSummary("The Yeta Wrench is a tool that has a lot of uses: Conduit Facades are hidden while the Yeta Wrench is held.")
+    .addAction(["When Shift + Right Clicking with the Yeta Wrench,", "Machines and Conduits can be broken."])
+    .addAction(["When Right Clicking with the Yeta Wrench on a Conduit Bundle", "Extract and Insert(or Input and Output) modes can be changed."])
+    .addAction(["When Right Clicking with the Yeta Wrench on the connection", "Conduits can be disconnected."])
+    .addAction(["When scrolling through the display menu with Shift + Mouse Wheel or with Y,", "Different Types of Conduits and Facades can be Hidden"]) 
+    .addAction(["When the display menu is set to Facade,", "The Facades are shown and can be removed by Shift + Right Clicking with the Yeta Wrench."])
+    .setPalette($Palette.STANDARD_CREATE)
+    .build()
+  )
 })
 function createTooltip(/** @type {Special.Item} */ itemId){
   return new CreateTooltipBuilder(itemId)
