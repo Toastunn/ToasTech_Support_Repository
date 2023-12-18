@@ -4,9 +4,6 @@
 !/kubejs
 !/scripts
 !/data
-!config/
-config/*
-!config/ftbquests/
 !config/openloader/
 !.gitignore
 !/tooltipgen
