@@ -1,3 +1,7 @@
+import crafttweaker.api.recipe.replacement.Replacer;
+import crafttweaker.api.recipe.replacement.IFilteringRule;
+import crafttweaker.api.recipe.replacement.type.ModsFilteringRule;
+import crafttweaker.api.recipe.replacement.type.ManagerFilteringRule;
 //removing recipes | craftingTable.remove();
 craftingTable.remove(<item:minecraft:flint_and_steel>);
 craftingTable.remove(<item:mekanism:steel_casing>);
@@ -16,11 +20,12 @@ craftingTable.remove(<item:mekanism:teleportation_core>);
 craftingTable.remove(<item:mekanism:dimensional_stabilizer>);
 craftingTable.remove(<item:mekanism:robit>);
 craftingTable.remove(<item:enderio:void_chassis>);
+craftingTable.remove(<item:enderio:iron_gear>);
 //adding recipes
     /*Shaped | craftingTable.addShaped(name as string, output as IItemStack, [
-    row 1 [inputs as IIngredient], 
-    row 2 [inputs as IIngredient],
-    row 3 [inputs as IIngredient]]);
+         [inputs as IIngredient],
+         [inputs as IIngredient],
+         [inputs as IIngredient]]);
     */
     val air = <item:minecraft:air>;
         //create rods
@@ -97,4 +102,17 @@ craftingTable.remove(<item:enderio:void_chassis>);
                     [<item:mekanism:ingot_refined_obsidian>, <item:mekanism:ultimate_control_circuit>, <item:mekanism:ingot_refined_obsidian>],
                     [<item:minecraft:end_crystal>, <item:mekanism:steel_casing>, <item:minecraft:end_crystal>],
                     [<item:mekanism:ingot_refined_obsidian>, <item:mekanism:ultimate_control_circuit>, <item:mekanism:ingot_refined_obsidian>]]);
+        //ender io
+            //infinity bimetal gear
+                craftingTable.addShaped('infinity_bimetal_gear', <item:enderio:iron_gear>, [
+                    [<tag:items:forge:nuggets/zinc>, <item:minecraft:iron_ingot>, <tag:items:forge:nuggets/zinc>],
+                    [<item:minecraft:iron_ingot>, <item:enderio:grains_of_infinity>, <item:minecraft:iron_ingot>],
+                    [<tag:items:forge:nuggets/zinc>, <item:minecraft:iron_ingot>, <tag:items:forge:nuggets/zinc>]]);
+    //replacer | this shit is fricking complicated so refer to https://docs.blamejared.com/1.20.1/en/vanilla/api/recipe/replacement/Replacer for reference.
+        // forge:gears/stone to enderio:iron_gear
+            Replacer.create()
+                .filter(ModsFilteringRule.of("enderio"))
+                .filter(ManagerFilteringRule.of(<recipetype:minecraft:crafting>))
+                .replace<crafttweaker.api.ingredient.IIngredient>(<recipecomponent:crafttweaker:input/ingredients>, <tag:items:forge:gears/stone>, <item:enderio:iron_gear>)
+                .execute();    
                 
