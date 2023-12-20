@@ -3,7 +3,7 @@ const $ItemDescription = Java.loadClass("com.simibubi.create.foundation.item.Ite
 const $TooltipModifier = Java.loadClass("com.simibubi.create.foundation.item.TooltipModifier")
 const $Palette = Java.loadClass("com.simibubi.create.foundation.item.TooltipHelper$Palette")
 // Define the path to the JSON file
-const jsonFilePath = 'kubejs/config/tooltips.json'; //this can be updated using the python script to grab the wiki
+const jsonFilePath = 'kubejs/assets/enderio/tooltip_generated/tooltips.json'; //this can be updated using the python script to grab the wiki
 
 // Read the JSON content using JsonIO
 let jsonContent = JsonIO.read(jsonFilePath);
