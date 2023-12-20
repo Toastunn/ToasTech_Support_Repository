@@ -9,6 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["51F51B1453E68582"]
 			description: ["This questline will be shorter than the other ones, mainly because not much of it is relevant to the other mods."]
 			id: "4F10C65D50134303"
 			rewards: [{
@@ -26,7 +27,14 @@
 		}
 		{
 			dependencies: ["4F10C65D50134303"]
+			description: ["Infinity Bimetal Gears &7are used in the making of many machines. The recipe isn't too bad, consisting of &firon&7 and &fzinc nuggets&7."]
 			id: "758235E3B14596CA"
+			rewards: [{
+				id: "58DDD2E0B2CC567F"
+				item: "enderio:grains_of_infinity"
+				type: "item"
+			}]
+			subtitle: "Bimetal... as in TWO METALS?"
 			tasks: [{
 				id: "4457D3AEC413D956"
 				item: "enderio:iron_gear"
@@ -46,6 +54,22 @@
 			}]
 			x: 1.5d
 			y: -4.5d
+		}
+		{
+			id: "28093A45CAEE7FAC"
+			rewards: [{
+				count: 2
+				id: "02BCB08EEF1FFC47"
+				item: "minecraft:iron_block"
+				type: "item"
+			}]
+			tasks: [{
+				id: "33FC537E1A3411CF"
+				item: "enderio:primitive_alloy_smelter"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -3.5d
 		}
 	]
 	title: "Ender IO"
