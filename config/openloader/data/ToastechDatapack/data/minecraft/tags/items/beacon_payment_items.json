@@ -1,0 +1,14 @@
+{
+	"replace": false,
+    "values": [
+        "avaritia:infinity_ingot",
+        "ae2:charged_certus_quartz_crystal",
+        "enderio:pulsating_alloy_ingot",
+        "enderio:vibrant_alloy_ingot",
+        "enderio:energetic_alloy_ingot",
+        "enderio:conductive_alloy_ingot",
+        "extendedcrafting:crystaltine_ingot",
+        "enderio:enticing_crystal",
+        "ae2:fluix_crystal"
+    ]
+}
