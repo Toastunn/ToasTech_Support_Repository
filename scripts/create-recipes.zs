@@ -64,7 +64,7 @@ import mods.create.MechanicalCrafterManager;
         .addStep<mods.createtweaker.PressingRecipe>((rb) => rb.duration(100))
         .addStep<mods.createtweaker.FillingRecipe>((rb) => rb.require(<fluid:enderio:fire_water> * 500)));
     //void chassis
-      <recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("void_chassis/seq_assem")
+      <recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("void_chassis")
         .loops(1)
         .transitionTo(<item:kubejs:infinite_chassis>)
         .require(<item:mekanism:steel_casing>)
