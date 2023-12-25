@@ -20,6 +20,8 @@ import mods.mekanism.api.ingredient.ItemStackIngredient;
 <recipetype:mekanism:rotary>.addRecipe("hyper_experience_state_change", <fluid:create_enchantment_industry:hyper_experience> * 1, <gas:kubejs:hyper_experience_gas> * 1, <gas:kubejs:hyper_experience_gas>, <fluid:create_enchantment_industry:hyper_experience>);
 <recipetype:mekanism:rotary>.addRecipe("fluidic_infinity_state_change", <fluid:kubejs:liquid_infinity> * 1, <gas:kubejs:gaseous_infinity> * 1, <gas:kubejs:gaseous_infinity>, <fluid:kubejs:liquid_infinity>);
 <recipetype:mekanism:rotary>.addRecipe("dragons_breath_state_change", <fluid:kubejs:liquid_dragons_breath> * 1, <gas:kubejs:dragons_breath> * 1, <gas:kubejs:dragons_breath>, <fluid:kubejs:liquid_dragons_breath>);
+<recipetype:mekanism:rotary>.addRecipe("polonium_state_change", <fluid:kubejs:liquid_polonium> * 1, <gas:mekanism:polonium> * 1, <gas:mekanism:polonium>, <fluid:kubejs:liquid_polonium>);
+<recipetype:mekanism:rotary>.addRecipe("antimatter_state_change", <fluid:kubejs:liquid_antimatter> * 1, <gas:mekanism:antimatter> * 1, <gas:mekanism:antimatter>, <fluid:kubejs:liquid_antimatter>);
     //purifying
 <recipetype:mekanism:purifying>.addRecipe("purifying_grains_of_infinity", <item:enderio:grains_of_infinity>, <gas:mekanism:hydrofluoric_acid>, <item:kubejs:pure_grains_of_infinity>);
     //injecting
