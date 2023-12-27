@@ -9,6 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["51F51B1453E68582"]
 			description: ["This questline will be shorter than the other ones, mainly because not much of it is relevant to the other mods."]
 			id: "4F10C65D50134303"
 			rewards: [{
@@ -27,6 +28,12 @@
 		{
 			dependencies: ["4F10C65D50134303"]
 			id: "758235E3B14596CA"
+			rewards: [{
+				id: "114584A1370E7BB5"
+				item: "alltheores:zinc_ingot"
+				type: "item"
+			}]
+			subtitle: "Bimetal Means Two Metals"
 			tasks: [{
 				id: "4457D3AEC413D956"
 				item: "enderio:iron_gear"
@@ -38,6 +45,11 @@
 		{
 			dependencies: ["4F10C65D50134303"]
 			id: "0B817DE7B8D99F21"
+			rewards: [{
+				id: "3561DE1167B2CEFF"
+				item: "create_things_and_misc:sturdy_sheet_block"
+				type: "item"
+			}]
 			subtitle: "Is that... another Sequenced Assembly?"
 			tasks: [{
 				id: "3E10EB7DD95E173B"
@@ -46,6 +58,61 @@
 			}]
 			x: 1.5d
 			y: -4.5d
+		}
+		{
+			dependencies: [
+				"0B3E5837A71ECBDB"
+				"758235E3B14596CA"
+				"0B817DE7B8D99F21"
+			]
+			id: "4C42F17C2A3844D2"
+			rewards: [{
+				id: "5631E4D6FE4CDA3B"
+				item: "mekanism:steel_casing"
+				type: "item"
+			}]
+			subtitle: "The guy she told you not to worry about"
+			tasks: [{
+				id: "18AFFFF91F965B89"
+				item: "enderio:alloy_smelter"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["4F10C65D50134303"]
+			id: "0B3E5837A71ECBDB"
+			rewards: [{
+				id: "61ADF7EA01670191"
+				item: "kubejs:raw_grains_of_infinity"
+				type: "item"
+			}]
+			subtitle: "Don't use this for any longer than you should"
+			tasks: [{
+				id: "24B30AAD83749317"
+				item: "enderio:primitive_alloy_smelter"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["4C42F17C2A3844D2"]
+			id: "6A3C83FF24D3CDE1"
+			rewards: [{
+				id: "042B3900A00CDA45"
+				item: "enderio:grains_of_infinity"
+				type: "item"
+			}]
+			subtitle: "What does SAG mean?"
+			tasks: [{
+				id: "4C4BF16547953F35"
+				item: "enderio:sag_mill"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -2.0d
 		}
 	]
 	title: "Ender IO"
