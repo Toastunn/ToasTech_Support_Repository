@@ -18,12 +18,17 @@
   ---
 */
 
+//for non create tooltips (aka they dont have hold [shift] for summary)
 ItemEvents.tooltip((e) => {
   e.addAdvanced('mekanism:steel_casing', (block, isAdvanced, text) => {
     text.remove(1)
   });
+  e.addAdvanced('kubejs:infinite_chassis', (block, isAdvanced, text) => {
+    text.add(1, [Text.of('§fServes no purpose outside the assembly line.')])
+  })
 });
 
+//for create tooltips (aka they do have hold [shift] for summary)
 ClientEvents.lang("en_us", (event) => {
   /*
   event.addAll( // use for every item!
