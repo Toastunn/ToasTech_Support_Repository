@@ -87,3 +87,5 @@ import crafttweaker.api.tag.MCTag;
     //coal dusts
         <tag:items:forge:dusts/coal>.addId(<resource:mekanism:dust_charcoal>);
         <tag:items:forge:dusts/coal>.addId(<resource:createchromaticreturn:carbon_powder>);
+    //minecraft:stone?
+        <tag:items:minecraft:stone>.addId(<resource:minecraft:stone>);
