@@ -89,3 +89,8 @@ import crafttweaker.api.tag.MCTag;
         <tag:items:forge:dusts/coal>.addId(<resource:createchromaticreturn:carbon_powder>);
     //minecraft:stone?
         <tag:items:minecraft:stone>.addId(<resource:minecraft:stone>);
+    //ae2 printed
+        <tag:items:crafttweaker:inscriber/printed>.addId(<resource:ae2:printed_calculation_processor>);
+        <tag:items:crafttweaker:inscriber/printed>.addId(<resource:ae2:printed_engineering_processor>);
+        <tag:items:crafttweaker:inscriber/printed>.addId(<resource:ae2:printed_logic_processor>);
+        <tag:items:crafttweaker:inscriber/printed>.addId(<resource:ae2:printed_silicon>);
