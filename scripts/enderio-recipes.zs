@@ -10,6 +10,7 @@ import crafttweaker.api.ingredient.IIngredientWithAmount;
 <recipetype:enderio:fire_crafting>.removeAll();
 <recipetype:enderio:alloy_smelting>.removeByName("enderio:alloy_smelting/pulsating_alloy_ingot");
 <recipetype:enderio:alloy_smelting>.removeByName("enderio:alloy_smelting/vibrant_alloy_ingot");
+<recipetype:enderio:alloy_smelting>.removeByName("enderio:alloy_smelting/energetic_alloy_ingot");
 
 //recipe functions
 
@@ -100,5 +101,33 @@ import crafttweaker.api.ingredient.IIngredientWithAmount;
   ],
   "result": {
     "item": "enderio:vibrant_alloy_ingot"
+  }
+});
+<recipetype:enderio:alloy_smelting>.addJsonRecipe('energetic_alloy_ingot', {
+  "type": "enderio:alloy_smelting",
+  "energy": 4800,
+  "experience": 0.3,
+  "inputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "enderio:conductive_alloy_ingot"
+      }
+    },
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "ae2:certus_quartz_dust"
+      }
+    },
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "enderio:powdered_gold"
+      }
+    }
+  ],
+  "result": {
+    "item": "enderio:energetic_alloy_ingot"
   }
 });
