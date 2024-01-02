@@ -1,4 +1,4 @@
-StartupEvents.registry('fluid', e =>{
+StartupEvents.registry('fluid', e => {
     e.create('liquid_infinity')
     .thinTexture(0x361d50)
     .bucketColor(0x361d50)
@@ -20,10 +20,14 @@ StartupEvents.registry('fluid', e =>{
     .rarity('epic')
     e.create('liquid_polonium')
     .thinTexture(0x245c45)
+    e.create('pulsating_liquid')
+    .thinTexture(0x56ac68)
+    e.create('vibrant_liquid')
+    .thinTexture(0xe0ea6a)
 })
 
 Color.of("#361d50")
 Color.of('#b31eb3')
-Color.of('#c7bd32')
+Color.of('#e0ea6a')
 Color.of('#9b5514')
 Color.of("#245c45")
