@@ -489,8 +489,8 @@
       "content": ""
     },
     {
-      "title": "soul_vial",
-      "content": ""
+      "title": "empty_soul_vial",
+      "content": "Interact with a mob to capture it's soul in the Vial."
     },
     {
       "title": "staff_of_travelling",
