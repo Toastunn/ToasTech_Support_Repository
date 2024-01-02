@@ -1,8 +1,7 @@
 {
 	"credit": "Made with Blockbench",
-	"parent": "minecraft:block/scaffolding",
 	"textures": {
-		"0": "andesite_frame",
+		"0": "kubejs:block/andesite_frame",
 		"particle": "andesite_frame"
 	},
 	"elements": [

@@ -1,8 +1,7 @@
 {
 	"credit": "Made with Blockbench",
-	"parent": "minecraft:block/scaffolding",
 	"textures": {
-		"4": "copper_frame",
+		"4": "kubejs:block/copper_frame",
 		"particle": "copper_frame"
 	},
 	"elements": [
