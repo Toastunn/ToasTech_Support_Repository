@@ -2,25 +2,49 @@ import crafttweaker.api.recipe.replacement.Replacer;
 import crafttweaker.api.recipe.replacement.IFilteringRule;
 import crafttweaker.api.recipe.replacement.type.ModsFilteringRule;
 import crafttweaker.api.recipe.replacement.type.ManagerFilteringRule;
-//removing recipes | craftingTable.remove();
-craftingTable.remove(<item:minecraft:flint_and_steel>);
-craftingTable.remove(<item:mekanism:steel_casing>);
-craftingTable.remove(<item:mekanism:metallurgic_infuser>);
-craftingTable.removeByName('mekanism:induction/cell/basic');
-craftingTable.removeByName('mekanism:induction/provider/basic');
-craftingTable.remove(<item:mekanism:ultimate_induction_cell>);
-craftingTable.remove(<item:mekanism:elite_induction_cell>);
-craftingTable.remove(<item:mekanism:advanced_induction_cell>);
-craftingTable.remove(<item:mekanism:advanced_induction_provider>);
-craftingTable.remove(<item:mekanism:elite_induction_provider>);
-craftingTable.remove(<item:mekanism:ultimate_induction_provider>);
-craftingTable.remove(<item:mekanism:basic_fluid_tank>);
-craftingTable.remove(<item:mekanism:digital_miner>);
-craftingTable.remove(<item:mekanism:teleportation_core>);
-craftingTable.remove(<item:mekanism:dimensional_stabilizer>);
-craftingTable.remove(<item:mekanism:robit>);
-craftingTable.remove(<item:enderio:void_chassis>);
-craftingTable.remove(<item:enderio:iron_gear>);
+import crafttweaker.api.ingredient.IIngredient;
+//removing recipes 
+    //craftingTable.remove();
+        var removeArray = [
+            <item:minecraft:flint_and_steel>,
+            <item:mekanism:steel_casing>,
+            <item:mekanism:metallurgic_infuser>,
+            <item:mekanism:ultimate_induction_cell>,
+            <item:mekanism:elite_induction_cell>,
+            <item:mekanism:advanced_induction_cell>,
+            <item:mekanism:advanced_induction_provider>,
+            <item:mekanism:elite_induction_provider>,
+            <item:mekanism:ultimate_induction_provider>,
+            <item:mekanism:basic_fluid_tank>,
+            <item:mekanism:digital_miner>,
+            <item:mekanism:teleportation_core>,
+            <item:mekanism:dimensional_stabilizer>,
+            <item:mekanism:robit>,
+            <item:enderio:void_chassis>,
+            <item:enderio:iron_gear>,
+            <item:enderio:pulsating_crystal>,
+            <item:enderio:vibrant_crystal>,
+            <item:ae2:energy_acceptor>,
+            <item:ae2:chest>,
+            <item:ae2:charger>,
+            <item:ae2:vibration_chamber>,
+            <item:ae2:inscriber>
+        ] as IIngredient[];
+
+        for element in removeArray {
+            craftingTable.remove(element);
+        }
+
+    //craftingTable.removeByName();
+        var removeByNameArray = [
+            'mekanism:induction/cell/basic',
+            'mekanism:induction/provider/basic'
+        ] as string[];
+
+        for element in removeByNameArray {
+            craftingTable.removeByName(element);
+        }
+
 //adding recipes
     /*Shaped | craftingTable.addShaped(name as string, output as IItemStack, [
          [inputs as IIngredient],
@@ -28,32 +52,39 @@ craftingTable.remove(<item:enderio:iron_gear>);
          [inputs as IIngredient]]);
     */
     val air = <item:minecraft:air>;
-        //create rods
-            craftingTable.addShaped('andesite_rod/crafting', <item:kubejs:andesite_rod>, [
-                [<item:create:andesite_alloy>],
-                [<item:create:andesite_alloy>],
-                [<item:create:andesite_alloy>]]);
-            craftingTable.addShaped('brass_rod/crafting', <item:kubejs:brass_rod>, [
-                [<item:create:brass_ingot>],
-                [<item:create:brass_ingot>],
-                [<item:create:brass_ingot>]]);
-            craftingTable.addShaped('copper_rod/crafting', <item:kubejs:copper_rod>, [
-                [<item:minecraft:copper_ingot>],
-                [<item:minecraft:copper_ingot>],
-                [<item:minecraft:copper_ingot>]]);
-        //create frames
-            craftingTable.addShaped('andesite_frame', <item:kubejs:andesite_frame>, [
-                [<item:kubejs:andesite_rod>, <item:kubejs:andesite_rod>, <item:kubejs:andesite_rod>], 
-                [<item:kubejs:andesite_rod>, air, <item:kubejs:andesite_rod>],
-                [<item:kubejs:andesite_rod>, <item:kubejs:andesite_rod>, <item:kubejs:andesite_rod>]]);
-            craftingTable.addShaped('brass_frame', <item:kubejs:brass_frame>, [
-                [<item:kubejs:brass_rod>, <item:kubejs:brass_rod>, <item:kubejs:brass_rod>], 
-                [<item:kubejs:brass_rod>, air, <item:kubejs:brass_rod>],
-                [<item:kubejs:brass_rod>, <item:kubejs:brass_rod>, <item:kubejs:brass_rod>]]);
-            craftingTable.addShaped('copper_frame', <item:kubejs:copper_frame>, [
-                [<item:kubejs:copper_rod>, <item:kubejs:copper_rod>, <item:kubejs:copper_rod>], 
-                [<item:kubejs:copper_rod>, air, <item:kubejs:copper_rod>],
-                [<item:kubejs:copper_rod>, <item:kubejs:copper_rod>, <item:kubejs:copper_rod>]]);
+        //minecraft
+            var glass = <item:minecraft:glass>;
+            craftingTable.addShaped('end_crystal/crafting', <item:minecraft:end_crystal>, [
+                [glass, glass, glass],
+                [glass, <item:extendedcrafting:ender_star>, glass],
+                [glass, <item:mekanism:pellet_antimatter>, glass]]);
+        //create
+            //create rods
+                craftingTable.addShaped('andesite_rod/crafting', <item:kubejs:andesite_rod>, [
+                    [<item:create:andesite_alloy>],
+                    [<item:create:andesite_alloy>],
+                    [<item:create:andesite_alloy>]]);
+                craftingTable.addShaped('brass_rod/crafting', <item:kubejs:brass_rod>, [
+                    [<item:create:brass_ingot>],
+                    [<item:create:brass_ingot>],
+                    [<item:create:brass_ingot>]]);
+                craftingTable.addShaped('copper_rod/crafting', <item:kubejs:copper_rod>, [
+                    [<item:minecraft:copper_ingot>],
+                    [<item:minecraft:copper_ingot>],
+                    [<item:minecraft:copper_ingot>]]);
+            //create frames
+                craftingTable.addShaped('andesite_frame', <item:kubejs:andesite_frame>, [
+                    [<item:kubejs:andesite_rod>, <item:kubejs:andesite_rod>, <item:kubejs:andesite_rod>], 
+                    [<item:kubejs:andesite_rod>, air, <item:kubejs:andesite_rod>],
+                    [<item:kubejs:andesite_rod>, <item:kubejs:andesite_rod>, <item:kubejs:andesite_rod>]]);
+                craftingTable.addShaped('brass_frame', <item:kubejs:brass_frame>, [
+                    [<item:kubejs:brass_rod>, <item:kubejs:brass_rod>, <item:kubejs:brass_rod>], 
+                    [<item:kubejs:brass_rod>, air, <item:kubejs:brass_rod>],
+                    [<item:kubejs:brass_rod>, <item:kubejs:brass_rod>, <item:kubejs:brass_rod>]]);
+                craftingTable.addShaped('copper_frame', <item:kubejs:copper_frame>, [
+                    [<item:kubejs:copper_rod>, <item:kubejs:copper_rod>, <item:kubejs:copper_rod>], 
+                    [<item:kubejs:copper_rod>, air, <item:kubejs:copper_rod>],
+                    [<item:kubejs:copper_rod>, <item:kubejs:copper_rod>, <item:kubejs:copper_rod>]]);
         //mekanism
             craftingTable.addShaped('metallurgic_infuser', <item:mekanism:metallurgic_infuser>, [
                 [<item:create:andesite_alloy>, <item:create:spout>, <item:create:andesite_alloy>],
@@ -91,7 +122,7 @@ craftingTable.remove(<item:enderio:iron_gear>);
                 craftingTable.addShaped('basic_fluid_tank', <item:mekanism:basic_fluid_tank>, [
                     [<item:minecraft:redstone>, <item:minecraft:iron_ingot>, <item:minecraft:redstone>],
                     [<item:minecraft:iron_ingot>, <tag:items:forge:glass>, <item:minecraft:iron_ingot>],
-                    [<item:minecraft:redstone>, <item:minecraft:iron_ingot>, <item:minecraft:redstone>]]); //doesnt this not apply to higher level tanks?
+                    [<item:minecraft:redstone>, <item:minecraft:iron_ingot>, <item:minecraft:redstone>]]);
             //teleportation core
                 craftingTable.addShaped('teleportation_core', <item:mekanism:teleportation_core>, [
                     [<item:extendedcrafting:enhanced_ender_catalyst>, <item:enderio:prescient_crystal>, <item:extendedcrafting:enhanced_ender_catalyst>],
@@ -108,6 +139,47 @@ craftingTable.remove(<item:enderio:iron_gear>);
                     [<tag:items:forge:nuggets/zinc>, <item:minecraft:iron_ingot>, <tag:items:forge:nuggets/zinc>],
                     [<item:minecraft:iron_ingot>, <item:enderio:grains_of_infinity>, <item:minecraft:iron_ingot>],
                     [<tag:items:forge:nuggets/zinc>, <item:minecraft:iron_ingot>, <tag:items:forge:nuggets/zinc>]]);
+        //ae2
+            //inscriber presses
+                var HDPE = <item:mekanism:hdpe_sheet>;
+                craftingTable.addShaped('calculation_press', <item:ae2:calculation_processor_press> * 2, [
+                    [HDPE, <item:ae2:calculation_processor_press>, HDPE],
+                    [HDPE, <tag:items:crafttweaker:inscriber/printed>, HDPE],
+                    [HDPE, HDPE, HDPE]]);
+                craftingTable.addShaped('engineering_press', <item:ae2:engineering_processor_press> * 2, [
+                    [HDPE, <item:ae2:engineering_processor_press>, HDPE],
+                    [HDPE, <tag:items:crafttweaker:inscriber/printed>, HDPE],
+                    [HDPE, HDPE, HDPE]]);
+                craftingTable.addShaped('logic_press', <item:ae2:logic_processor_press> * 2, [
+                    [HDPE, <item:ae2:logic_processor_press>, HDPE],
+                    [HDPE, <tag:items:crafttweaker:inscriber/printed>, HDPE],
+                    [HDPE, HDPE, HDPE]]);
+                craftingTable.addShaped('silicon_press', <item:ae2:silicon_press> * 2, [
+                    [HDPE, <item:ae2:silicon_press>, HDPE],
+                    [HDPE, <tag:items:crafttweaker:inscriber/printed>, HDPE],
+                    [HDPE, HDPE, HDPE]]);
+            //other
+                var iron = <item:minecraft:iron_ingot>;
+                craftingTable.addShaped('energy_acceptor/ae2', <item:ae2:energy_acceptor>, [
+                    [iron, <item:ae2:quartz_glass>, iron],
+                    [<item:ae2:quartz_glass>, <item:enderio:conductive_alloy_ingot>, <item:ae2:quartz_glass>],
+                    [iron, <item:ae2:quartz_glass>, iron]]);
+                craftingTable.addShaped('me_chest/ae2', <item:ae2:chest>, [
+                    [<tag:items:forge:glass>, <item:ae2:terminal>, <tag:items:forge:glass>],
+                    [<item:ae2:fluix_glass_cable>, air, <item:ae2:fluix_glass_cable>],
+                    [iron, <item:enderio:conductive_alloy_ingot>, iron]]);
+                craftingTable.addShaped('charger/ae2', <item:ae2:charger>, [
+                    [iron, <item:enderio:conductive_alloy_ingot>, iron],
+                    [iron, air, air],
+                    [iron, <item:enderio:conductive_alloy_ingot>, iron]]);
+                craftingTable.addShaped('vibration_chamber/ae2', <item:ae2:vibration_chamber>, [
+                    [<item:enderio:conductive_alloy_ingot>, <item:ae2:fluix_crystal>, <item:enderio:conductive_alloy_ingot>],
+                    [iron, <item:minecraft:furnace>, iron],
+                    [iron, <item:ae2:energy_acceptor>, iron]]);
+                craftingTable.addShaped('inscriber/ae2', <item:ae2:inscriber>, [
+                    [iron, <item:minecraft:sticky_piston>, iron],
+                    [<item:enderio:conductive_alloy_ingot>, air, iron],
+                    [iron, <item:minecraft:sticky_piston>, iron]]);
     //replacer | this shit is fricking complicated so refer to https://docs.blamejared.com/1.20.1/en/vanilla/api/recipe/replacement/Replacer for reference.
         // forge:gears/stone to enderio:iron_gear
             Replacer.create()
