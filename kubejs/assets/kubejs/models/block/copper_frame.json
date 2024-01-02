@@ -1,8 +1,7 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"4": "kubejs:block/copper_frame",
-		"particle": "copper_frame"
+		"4": "kubejs:block/copper_frame"
 	},
 	"elements": [
 		{

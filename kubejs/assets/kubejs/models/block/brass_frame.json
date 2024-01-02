@@ -1,8 +1,7 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"1": "kubejs:block/brass_frame",
-		"particle": "brass_frame"
+		"1": "kubejs:block/brass_frame"
 	},
 	"elements": [
 		{

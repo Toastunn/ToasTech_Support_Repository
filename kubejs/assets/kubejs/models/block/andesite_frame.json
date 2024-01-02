@@ -1,8 +1,7 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "kubejs:block/andesite_frame",
-		"particle": "andesite_frame"
+		"0": "kubejs:block/andesite_frame"
 	},
 	"elements": [
 		{
