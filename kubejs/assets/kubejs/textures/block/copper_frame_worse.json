@@ -1,5 +1,6 @@
 {
 	"credit": "Made with Blockbench",
+	"parent": "minecraft:block/scaffolding",
 	"textures": {
 		"2": "copper_frame",
 		"particle": "copper_frame"

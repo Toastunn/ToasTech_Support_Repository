@@ -1,5 +1,6 @@
 {
 	"credit": "Made with Blockbench",
+	"parent": "minecraft:block/scaffolding",
 	"textures": {
 		"1": "brass_frame",
 		"particle": "brass_frame"
