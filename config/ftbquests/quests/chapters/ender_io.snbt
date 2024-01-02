@@ -5,7 +5,7 @@
 	group: "7BA7C5ADDAE03ED6"
 	icon: "enderio:grains_of_infinity"
 	id: "28D21458ADBCB5FC"
-	order_index: 1
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
@@ -98,21 +98,210 @@
 			y: -4.5d
 		}
 		{
-			dependencies: ["4C42F17C2A3844D2"]
-			id: "6A3C83FF24D3CDE1"
-			rewards: [{
-				id: "042B3900A00CDA45"
-				item: "enderio:grains_of_infinity"
+			dependencies: [
+				"36BFAE3103F829C8"
+				"0AB1A59F5824B2AF"
+			]
+			id: "214118ECAECEB8D4"
+			subtitle: "It Quite Simple Actually..."
+			tasks: [{
+				id: "6ADB3FE301C878DF"
+				item: "enderio:energetic_alloy_ingot"
 				type: "item"
 			}]
-			subtitle: "What does SAG mean?"
+			x: 1.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["1FFA24B82C06D9B5"]
+			id: "36BFAE3103F829C8"
+			rewards: [{
+				id: "082331AB30BA2135"
+				item: "ae2:damaged_budding_quartz"
+				type: "item"
+			}]
+			subtitle: "I Already Told You to Start It..."
 			tasks: [{
-				id: "4C4BF16547953F35"
-				item: "enderio:sag_mill"
+				count: 8L
+				id: "2E5AB183C40140A1"
+				item: { Count: 8b, id: "ae2:certus_quartz_dust" }
+				type: "item"
+			}]
+			title: "Whoops! All AE2!"
+			x: 2.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["214118ECAECEB8D4"]
+			id: "47B27B76D1F8E831"
+			rewards: [{
+				id: "401BDEE7C10B22EB"
+				item: "enderio:silicon"
+				type: "item"
+			}]
+			subtitle: "A Bit More to Go"
+			tasks: [{
+				id: "78612792D94C93E6"
+				item: "enderio:pulsating_alloy_ingot"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["47B27B76D1F8E831"]
+			id: "428D59AA8460D4A1"
+			rewards: [{
+				id: "496FAA8AE1B14890"
+				item: "minecraft:gold_block"
+				type: "item"
+			}]
+			subtitle: "The Final Tier"
+			tasks: [{
+				id: "1BF1C145764693C1"
+				item: "enderio:vibrant_alloy_ingot"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4C42F17C2A3844D2"]
+			id: "065C2E673E83EF34"
+			rewards: [{
+				id: "5DD068FFE5BD7B1D"
+				item: "minecraft:soul_soil"
+				type: "item"
+			}]
+			subtitle: "(souls included)"
+			tasks: [{
+				id: "7B8AAEE8A4005F3C"
+				item: "enderio:soularium_ingot"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["065C2E673E83EF34"]
+			id: "247F282D69F66884"
+			rewards: [{
+				id: "69600DE2C93EAD3D"
+				item: "minecraft:soul_soil"
+				type: "item"
+			}]
+			subtitle: "Arguably Better"
+			tasks: [{
+				id: "2E5FAB13D0F37A14"
+				item: "enderio:ensouled_chassis"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["065C2E673E83EF34"]
+			id: "15E51B53DC32C488"
+			rewards: [{
+				count: 12
+				id: "3802C297A62BB342"
+				item: "minecraft:glass"
+				type: "item"
+			}]
+			subtitle: "Capturing Souls Since 1840"
+			tasks: [{
+				id: "5A32C8E7E3F8CA28"
+				item: "enderio:empty_soul_vial"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"15E51B53DC32C488"
+				"247F282D69F66884"
+			]
+			id: "158A07C739962FFF"
+			subtitle: "Pretty Self Explanitory"
+			tasks: [{
+				id: "59D4D4962105B3ED"
+				item: "enderio:soul_binder"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"7A3E601959A03151"
+				"158A07C739962FFF"
+				"0000000000000906"
+			]
+			id: "39298437B55B2F45"
+			tasks: [{
+				id: "77108045C354B3C5"
+				item: "enderio:prescient_crystal"
 				type: "item"
 			}]
 			x: 0.5d
-			y: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["428D59AA8460D4A1"]
+			id: "7A3E601959A03151"
+			rewards: [{
+				id: "20FE4C3F46B57766"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "Who Doesn't Love Hydro Cloride?"
+			tasks: [{
+				amount: 1000L
+				fluid: "kubejs:vibrant_liquid"
+				id: "2829266FF048194B"
+				type: "fluid"
+			}]
+			title: "Vibrant Liquid"
+			x: 2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["47B27B76D1F8E831"]
+			id: "568D417968908551"
+			rewards: [{
+				count: 5
+				id: "02E385331677BD89"
+				item: "enderio:silicon"
+				type: "item"
+			}]
+			subtitle: "Taste The Sun."
+			tasks: [{
+				id: "571E127E79BCEAD2"
+				item: "enderio:pulsating_photovoltaic_module"
+				type: "item"
+			}]
+			title: "solar panels, i guess"
+			x: 1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4C42F17C2A3844D2"]
+			id: "0AB1A59F5824B2AF"
+			rewards: [{
+				count: 8
+				id: "4C21BF334FC5E7B5"
+				item: "minecraft:redstone"
+				type: "item"
+			}]
+			subtitle: "Wait, This is for AE2?"
+			tasks: [{
+				id: "622D971BE17A9368"
+				item: "enderio:conductive_alloy_ingot"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -2.5d
 		}
 	]
 	title: "Ender IO"
