@@ -1,12 +1,777 @@
 {
 	default_hide_dependency_lines: false
-	default_quest_shape: ""
+	default_quest_shape: "hexagon"
 	filename: "applied_energistics_2"
 	group: "7BA7C5ADDAE03ED6"
 	icon: "ae2:controller"
 	id: "4F361B4FF0C62E3F"
-	order_index: 2
+	order_index: 1
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			dependencies: ["6D9572EFC38CA8C7"]
+			id: "030C1798291ABD14"
+			rewards: [{
+				id: "5FC403F19AE92916"
+				item: "minecraft:iron_block"
+				type: "item"
+			}]
+			tasks: [{
+				id: "07927C9D3E72CA38"
+				item: "ae2:charger"
+				type: "item"
+			}]
+			x: -15.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"1C2EB287CB93A4D8"
+				"1B59B8F3489AB57D"
+				"5147B10CD68F690A"
+			]
+			description: [
+				"&bThe ME Controller is &othe&r&b block of AE2. It is the block that makes the ME system actually viable."
+				""
+				"&bThe Controller provides 32 channels (aka devices) per face."
+				""
+				"&bIt can also be multiblocked as long as they're connected, smaller than 7x7x7, and doesn't make a cross."
+			]
+			id: "22B7441B99114A02"
+			rewards: [{
+				count: 4
+				id: "1F1985C515F3523C"
+				item: "ae2:fluix_crystal"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "44A9B4A04D35594E"
+				item: "ae2:controller"
+				type: "item"
+			}]
+			x: -6.75d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"0AB1A59F5824B2AF"
+				"15A89114EFA3B6F3"
+			]
+			description: ["&bYou should already know what AE2 does, and if you don't, go check out the quest for it in the &5Mekanism &bpage."]
+			id: "6D9572EFC38CA8C7"
+			rewards: [{
+				id: "6D99B2C21BA9AEEB"
+				item: "minecraft:iron_block"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5EB904365A9D06D9"
+				title: "Start AE2"
+				type: "checkmark"
+			}]
+			x: -16.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["030C1798291ABD14"]
+			description: ["&bThe Meteorite Compass is very useful while finding meteorites and, therefore, Sky Stone, Certus Quartz Buds&8&o(which can be mined with silk touch)&r&b and Inscriber Presses."]
+			id: "2BE6280D6346230A"
+			rewards: [{
+				id: "6983EF7B7BFA0917"
+				item: "minecraft:iron_block"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "43105970CC0F3EE0"
+				item: "ae2:meteorite_compass"
+				type: "item"
+			}]
+			x: -14.25d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2BE6280D6346230A"]
+			description: ["&bPresses are used to make Processors with the Inscriber, and can be duplicated with HDPE and a printed processor."]
+			id: "32467543782C301D"
+			rewards: [{
+				id: "012C193E4964D815"
+				item: "mekanism:hdpe_sheet"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3BC686E5F5ACF512"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "ae2:inscriber_presses"
+					}
+				}
+				title: "Any Inscriber Press"
+				type: "item"
+			}]
+			x: -13.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2BE6280D6346230A"]
+			description: [
+				"&bCertus Quartz Clusters are grown on Certus Quartz Buds. Crystals will drop from fully grown Clusters, while Dust will drop from non-fully grown crystals. "
+				""
+				"&bBuds will take damage very occasionally and can be \"repaired\" by throwing it in water with a Charged Certus Quartz Crystal."
+			]
+			id: "1FFA24B82C06D9B5"
+			rewards: [{
+				id: "5A6445D2B936266F"
+				item: "ae2:damaged_budding_quartz"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6D6D5B2F5DDCDDAC"
+				item: "ae2:certus_quartz_crystal"
+				type: "item"
+			}]
+			x: -13.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["2BE6280D6346230A"]
+			description: ["&bSky Stone is most useful in its polished form, which will be used in the ME Controller recipe."]
+			id: "30F5B88A3C932051"
+			rewards: [{
+				id: "0E99548EDE3B9C07"
+				item: "ironfurnaces:iron_furnace"
+				type: "item"
+			}]
+			size: 1.0d
+			tasks: [{
+				count: 32L
+				id: "04D317B84DA711F9"
+				item: { Count: 32b, id: "ae2:sky_stone_block" }
+				type: "item"
+			}]
+			title: "Sky Stone"
+			x: -13.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["32467543782C301D"]
+			description: ["&bThe Inscriber is generally used to make processors with the aformentioned Presses."]
+			id: "670BF8D48E951631"
+			rewards: [{
+				count: 2
+				id: "1DC9DDB934CB9D51"
+				item: "enderio:conductive_alloy_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "44D31E2836D22EA0"
+				item: "ae2:inscriber"
+				type: "item"
+			}]
+			x: -12.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["670BF8D48E951631"]
+			id: "6B592D57718B1E16"
+			rewards: [{
+				id: "73151D7EBC3C35F0"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0FDA7F87E1150C40"
+				item: "ae2:printed_engineering_processor"
+				type: "item"
+			}]
+			x: -11.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["670BF8D48E951631"]
+			id: "6D7C69C71417803A"
+			rewards: [{
+				id: "02A2521DA5173470"
+				item: "ae2:silicon"
+				type: "item"
+			}]
+			tasks: [{
+				id: "23D9EA2403C35361"
+				item: "ae2:printed_silicon"
+				type: "item"
+			}]
+			x: -9.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["670BF8D48E951631"]
+			id: "7DC5199D7664DB50"
+			rewards: [{
+				id: "6E775ABDE7E02CAC"
+				item: "minecraft:gold_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1CD23578192FBA62"
+				item: "ae2:printed_logic_processor"
+				type: "item"
+			}]
+			x: -11.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["670BF8D48E951631"]
+			id: "3060DF018C4B69B8"
+			rewards: [{
+				id: "5D5985874B3DECC0"
+				item: "ae2:certus_quartz_crystal"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5B039053F6C48AA3"
+				item: "ae2:printed_calculation_processor"
+				type: "item"
+			}]
+			x: -11.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"6D7C69C71417803A"
+				"6B592D57718B1E16"
+			]
+			id: "5147B10CD68F690A"
+			rewards: [{
+				id: "0BF13C822552A0DE"
+				item: "minecraft:redstone_block"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1C6CEDCECB7E8B32"
+				item: "ae2:engineering_processor"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"6D7C69C71417803A"
+				"3060DF018C4B69B8"
+			]
+			id: "126E59DA30DE22FB"
+			rewards: [{
+				id: "2010783FC4412A87"
+				item: "minecraft:redstone_block"
+				type: "item"
+			}]
+			tasks: [{
+				id: "30F76D3F20BF9390"
+				item: "ae2:calculation_processor"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"6D7C69C71417803A"
+				"7DC5199D7664DB50"
+			]
+			hide_dependent_lines: true
+			id: "77C8D2395BBE61D8"
+			rewards: [{
+				id: "257391EDCACCD646"
+				item: "minecraft:redstone_block"
+				type: "item"
+			}]
+			tasks: [{
+				id: "061C89212C064B24"
+				item: "ae2:logic_processor"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1FFA24B82C06D9B5"]
+			description: ["&bCharged Certus Quartz is made in the Charger"]
+			id: "6738FB905D9E46FD"
+			rewards: [{
+				id: "0E5319D679383C57"
+				item: "minecraft:redstone"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7364139CF39E8612"
+				item: "ae2:charged_certus_quartz_crystal"
+				type: "item"
+			}]
+			x: -12.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6738FB905D9E46FD"]
+			description: ["&bFluix Crystals are made by throwing Charged Certus, Redstone, and Nether Quartz into water."]
+			id: "1C2EB287CB93A4D8"
+			rewards: [{
+				id: "3A213762F644C7A4"
+				item: "minecraft:quartz"
+				type: "item"
+			}]
+			tasks: [{
+				id: "33309DEC19635223"
+				item: "ae2:fluix_crystal"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["30F5B88A3C932051"]
+			id: "1B59B8F3489AB57D"
+			rewards: [{
+				count: 16
+				id: "556EBA9B7468F0C5"
+				item: "ae2:sky_stone_block"
+				type: "item"
+			}]
+			subtitle: "Smelt It"
+			tasks: [{
+				count: 8L
+				id: "562706A253A0D459"
+				item: "ae2:smooth_sky_stone_block"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1C2EB287CB93A4D8"]
+			description: [
+				"&bCables are used to &oattach&r &bdevices to the ME System. "
+				""
+				"&bYou can color the cables differently to seperate cables."
+			]
+			id: "043CE66045431E1B"
+			rewards: [{
+				count: 10
+				id: "0E3E1CD3F932BE72"
+				item: "minecraft:glass"
+				type: "item"
+			}]
+			tasks: [{
+				id: "78ED019B6AF98390"
+				item: "ae2:fluix_glass_cable"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["77C8D2395BBE61D8"]
+			id: "2D2F877A04663536"
+			rewards: [{
+				count: 4
+				id: "5DE84B3F5DB8CF9F"
+				item: "ae2:certus_quartz_crystal"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6B5D9C32BD4A303B"
+				item: "ae2:formation_core"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["77C8D2395BBE61D8"]
+			id: "0C97209BC7C69A67"
+			rewards: [{
+				count: 4
+				id: "7B126787FEF6883A"
+				item: "minecraft:quartz"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "3B5E9C7C9AA1E7B6"
+				item: "ae2:annihilation_core"
+				type: "item"
+			}]
+			x: -10.0d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"2D2F877A04663536"
+				"0C97209BC7C69A67"
+			]
+			description: ["&bThe Terminal is how you access your items from the Storage System. "]
+			id: "109C05616B6EBC61"
+			rewards: [{
+				id: "601DFBC16CBDC8D4"
+				item: "minecraft:glowstone"
+				type: "item"
+			}]
+			tasks: [{
+				id: "75DFA3B5E9A2B7FC"
+				item: "ae2:terminal"
+				type: "item"
+			}]
+			x: -9.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["109C05616B6EBC61"]
+			description: ["&bThe Crafting Terminal allows you to craft using the ME system directly."]
+			id: "50815F30AA1D5A95"
+			rewards: [{
+				id: "23056BB0AE6AB18B"
+				item: "minecraft:oak_log"
+				type: "item"
+			}]
+			tasks: [{
+				id: "46DD8DF60A6AE0CF"
+				item: "ae2:crafting_terminal"
+				type: "item"
+			}]
+			x: -10.5d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"043CE66045431E1B"
+				"5147B10CD68F690A"
+			]
+			description: ["&bThe ME Drive is used to store the Storage Cells. It can hold up to 10 Cells."]
+			hide_dependency_lines: true
+			id: "48BA6AF2AD60D02E"
+			rewards: [{
+				id: "1AEAFB11FC46F42A"
+				item: "minecraft:iron_block"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2340764B00B31C82"
+				item: "ae2:drive"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1486456E0C28FF50"]
+			id: "36FE85088A23FB5A"
+			rewards: [{
+				count: 6
+				id: "6AEE2132316E3A6C"
+				item: "minecraft:glass"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0D78E280C2FC1F13"
+				item: "ae2:quartz_glass"
+				type: "item"
+			}]
+			x: -12.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["36FE85088A23FB5A"]
+			description: [
+				"&bThe Item Housing is used as a case for the Storage Components."
+				""
+				"&bYou can Shift-Right-Click an empty cell to extract the component for upgrading."
+			]
+			id: "7FCE51455BEC3F1C"
+			rewards: [{
+				id: "5FE338E4DC0F5C88"
+				item: "minecraft:iron_block"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0E6555FF4C8ADD35"
+				item: "ae2:item_cell_housing"
+				type: "item"
+			}]
+			x: -11.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["126E59DA30DE22FB"]
+			description: ["&bStorage Components are merged with Housings to make Cells. The Components have various sizes, from 1k to 256k. These determine how many items the cell can hold."]
+			hide_dependency_lines: true
+			id: "3B6BA28AC8BD5F61"
+			rewards: [{
+				id: "3BDDE3753ABC927C"
+				item: "minecraft:redstone_block"
+				type: "item"
+			}]
+			tasks: [{
+				id: "137C05A5FE9A2735"
+				item: "ae2:cell_component_1k"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["3B6BA28AC8BD5F61"]
+			id: "354BBFA2F0F6011F"
+			rewards: [{
+				id: "7B6DFEECEB69E8C1"
+				item: "minecraft:redstone_block"
+				type: "item"
+			}]
+			tasks: [{
+				id: "391D6898DD0F4F96"
+				item: "ae2:cell_component_4k"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["354BBFA2F0F6011F"]
+			id: "2C0A9ABBF5472A54"
+			rewards: [{
+				id: "1F182EBDB37C8DE6"
+				item: "minecraft:redstone_block"
+				type: "item"
+			}]
+			tasks: [{
+				id: "73EE82183389F62C"
+				item: "ae2:cell_component_16k"
+				type: "item"
+			}]
+			x: -10.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["2C0A9ABBF5472A54"]
+			id: "4AF19E499BB32F76"
+			rewards: [{
+				id: "6605568FB9078506"
+				item: "minecraft:redstone_block"
+				type: "item"
+			}]
+			tasks: [{
+				id: "46D11336F724ED26"
+				item: "ae2:cell_component_64k"
+				type: "item"
+			}]
+			x: -11.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4AF19E499BB32F76"]
+			id: "5DBAD1D4F301B2E0"
+			rewards: [{
+				id: "30B72BF027119A16"
+				item: "minecraft:redstone_block"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7623B84248873F06"
+				item: "ae2:cell_component_256k"
+				type: "item"
+			}]
+			x: -12.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["36FE85088A23FB5A"]
+			description: ["&bThe Fluid Housing is used to make Fluid Cells, which hold buckets of fluid instead of items."]
+			id: "2B2B0296F96D10F4"
+			rewards: [{
+				id: "6CDFFEB193DAC203"
+				item: "minecraft:copper_block"
+				type: "item"
+			}]
+			tasks: [{
+				id: "35C667B68955575A"
+				item: "ae2:fluid_cell_housing"
+				type: "item"
+			}]
+			x: -11.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["043CE66045431E1B"]
+			description: [
+				"&bDense Cables allow more channels to flow through it, for a total of 32. Normal cables allow 8 channels."
+				""
+				"&bSmart Cables will show the total channels of the cable and how many are being used."
+			]
+			id: "57C6749D6AF86577"
+			rewards: [{
+				id: "08A4324917E142B5"
+				item: "minecraft:glowstone"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5AC7A6901FDC31FA"
+				item: "ae2:fluix_smart_dense_cable"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["36FE85088A23FB5A"]
+			description: [
+				"&bThe Energy Acceptor alloe you to input energy &8(FE) &binto the ME System without using one of the ME Controllers sides."
+				""
+				"&bFE is converted into AE at a 2:1 ratio."
+			]
+			id: "14FC73791E953720"
+			rewards: [{
+				id: "5F8DFE4B1161597A"
+				item: "enderio:conductive_alloy_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7F7B81284E3C0209"
+				item: "ae2:energy_acceptor"
+				type: "item"
+			}]
+			x: -12.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["1C2EB287CB93A4D8"]
+			description: ["&bThe Matter Condenser can void or condense items. It can be toggled between trash, matter ball or singularity. Matter balls need 256 items, while singularities need 256000."]
+			hide_dependency_lines: true
+			id: "0C7336A431FDA7A6"
+			rewards: [{
+				id: "7E145B2B607D4F8B"
+				item: "ae2:fluix_crystal"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3BCFCB609EF39076"
+				item: "ae2:condenser"
+				type: "item"
+			}]
+			x: -13.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0C7336A431FDA7A6"]
+			description: [
+				"&bIf you've made it here, it's for one of two reasons."
+				"&b1: You're trying to complete &6ToasTech &band you need this for the &cUltimate Singularity &brecipe."
+				"&b2: You &oreally&r &bwant the &5Digital Miner&b."
+			]
+			id: "35071838A0743F2B"
+			rewards: [{
+				count: 256
+				icon: "minecraft:cobblestone"
+				id: "62F5909BC58B4D2C"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
+			tasks: [{
+				id: "41E7B780E77A6CBF"
+				item: "ae2:singularity"
+				type: "item"
+			}]
+			x: -12.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["656ED76D09D72C37"]
+			description: ["&bEntangled Singularities are the basis of wireless ME."]
+			id: "1E63FBFFC918FB2F"
+			rewards: [{
+				id: "32E2EDBB3D4AF0DD"
+				item: "ae2:tiny_tnt"
+				type: "item"
+			}]
+			tasks: [{
+				count: 2L
+				id: "215F92EDFB8CFCB4"
+				item: "ae2:quantum_entangled_singularity"
+				type: "item"
+			}]
+			x: -10.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1E63FBFFC918FB2F"]
+			description: [
+				"&bA Quantum Bridge is built by surrounding a ME Link with ME Rings and inputting a Quantum Entangled Singularity into the Link at two different locations. "
+				""
+				"&bConnect one end to your ME System and the other end will be able to interact with the System."
+				""
+				"&bDon't forget to &5Dimensionaly Stabilize &bthe ME System if you're using it through dimensions."
+			]
+			icon: "ae2:quantum_ring"
+			id: "2C6FD4883D42F892"
+			rewards: [{
+				count: 10
+				id: "5B22AB6AEF17DA03"
+				item: "minecraft:iron_block"
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 2L
+					id: "5F8A34853632A6F9"
+					item: "ae2:quantum_link"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "79C9B263966EA1DC"
+					item: { Count: 16b, id: "ae2:quantum_ring" }
+					type: "item"
+				}
+			]
+			title: "Quantum Bridging"
+			x: -9.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1FFA24B82C06D9B5"]
+			id: "1486456E0C28FF50"
+			rewards: [{
+				id: "6A54EF14C4790D99"
+				item: "ae2:certus_quartz_crystal"
+				type: "item"
+			}]
+			tasks: [{
+				count: 8L
+				id: "7E0E731037D3C73F"
+				item: "ae2:certus_quartz_dust"
+				title: "Certus Quartz Dust"
+				type: "item"
+			}]
+			x: -13.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["35071838A0743F2B"]
+			id: "656ED76D09D72C37"
+			rewards: [{
+				id: "4DC31AB8DC736B3A"
+				item: "minecraft:ender_pearl"
+				type: "item"
+			}]
+			subtitle: "Totally not a filler quest..."
+			tasks: [{
+				id: "626B81671DFEE162"
+				item: "ae2:ender_dust"
+				type: "item"
+			}]
+			x: -11.5d
+			y: -0.5d
+		}
+	]
 	title: "AE 2"
 }

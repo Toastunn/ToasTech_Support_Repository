@@ -3,7 +3,7 @@
 	default_quest_shape: "hexagon"
 	filename: "mekanism"
 	group: "7BA7C5ADDAE03ED6"
-	icon: "mekanism:quantum_entangloporter"
+	icon: "mekanismgenerators:control_rod_assembly"
 	id: "0000000000000859"
 	images: [
 		{
@@ -985,101 +985,6 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["0000000000000948"]
-			description: ["QIO is a way of storing large amounts of items that can be stored, searched, and accessed remotely in late game."]
-			id: "00000000000008C1"
-			rewards: [{
-				count: 4
-				id: "1198B4A6798E082C"
-				item: "mekanism:pellet_polonium"
-				type: "item"
-			}]
-			tasks: [
-				{
-					id: "00000000000008C2"
-					item: "mekanism:qio_drive_array"
-					type: "item"
-				}
-				{
-					id: "00000000000008C3"
-					item: "mekanism:qio_dashboard"
-					type: "item"
-				}
-			]
-			x: -0.5d
-			y: 5.5d
-		}
-		{
-			dependencies: ["00000000000008C1"]
-			description: ["In this basic QIO Drive, you can store 16k items for 128 different types."]
-			id: "00000000000008C4"
-			rewards: [{
-				id: "5522CD4169C537A2"
-				item: "mekanism:pellet_polonium"
-				type: "item"
-			}]
-			tasks: [{
-				id: "00000000000008C5"
-				item: "mekanism:qio_drive_base"
-				type: "item"
-			}]
-			x: 0.5d
-			y: 5.5d
-		}
-		{
-			dependencies: ["00000000000008C4"]
-			description: ["In the Hyper-Dense QIO Drive, you can store 128k items for 256 different types."]
-			id: "00000000000008C6"
-			rewards: [{
-				count: 2
-				id: "20865B9BC588E6B1"
-				item: "mekanism:pellet_polonium"
-				type: "item"
-			}]
-			tasks: [{
-				id: "00000000000008C7"
-				item: "mekanism:qio_drive_hyper_dense"
-				type: "item"
-			}]
-			x: 1.5d
-			y: 5.5d
-		}
-		{
-			dependencies: ["00000000000008C6"]
-			description: ["In the Time-Dilating QIO Drive, you can store 1048k items for 1024 different types."]
-			id: "00000000000008C8"
-			rewards: [{
-				count: 4
-				id: "29A08220B1CDC997"
-				item: "mekanism:pellet_polonium"
-				type: "item"
-			}]
-			tasks: [{
-				id: "00000000000008C9"
-				item: "mekanism:qio_drive_time_dilating"
-				type: "item"
-			}]
-			x: 2.5d
-			y: 5.5d
-		}
-		{
-			dependencies: ["00000000000008C8"]
-			description: ["In the Supermassive QIO Drive, you can store 16 billion items for 8192 different types."]
-			id: "00000000000008CA"
-			rewards: [{
-				id: "4F8753971066D217"
-				item: "mekanism:pellet_antimatter"
-				type: "item"
-			}]
-			tasks: [{
-				id: "00000000000008CB"
-				item: "mekanism:qio_drive_supermassive"
-				type: "item"
-			}]
-			x: 3.5d
-			y: 5.5d
-		}
-		{
 			dependencies: ["000000000000090C"]
 			description: ["Get a stack of HDPE Sheet using Ethylene, Substrate and Oxygen."]
 			id: "00000000000008CC"
@@ -1194,36 +1099,6 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["00000000000008C1"]
-			description: ["QIO Importers are attached to a block with inventory and wirelessly transmit their contents to a drive array. The importer must be set to the same frequency as the drive array."]
-			id: "00000000000008DC"
-			rewards: [{
-				count: 4
-				id: "08028A9BBDBACE22"
-				item: "mekanism:pellet_polonium"
-				type: "item"
-			}]
-			tasks: [
-				{
-					id: "00000000000008DD"
-					item: "mekanism:qio_importer"
-					type: "item"
-				}
-				{
-					id: "00000000000008DE"
-					item: "mekanism:qio_exporter"
-					type: "item"
-				}
-				{
-					id: "00000000000008DF"
-					item: "mekanism:qio_redstone_adapter"
-					type: "item"
-				}
-			]
-			x: 1.5d
-			y: 4.5d
-		}
-		{
 			dependencies: ["0000000000000946"]
 			description: ["The Antiprotonic Nucleosynthesizer is used to transform an item into another using Antimatter."]
 			id: "00000000000008E2"
@@ -1331,15 +1206,11 @@
 		}
 		{
 			dependencies: ["00000000000008EC"]
-			description: [
-				"The Combiner allows you to create an ore block."
-				"You can use this machine to automate the production of Steel Casing."
-			]
+			description: ["The Combiner allows you to create an ore block."]
 			id: "00000000000008F2"
 			rewards: [{
-				count: 8
 				id: "6EDB46ECDA503C0A"
-				item: "kubejs:tungsten_ore"
+				item: "mekanism:steel_casing"
 				type: "item"
 			}]
 			tasks: [{
@@ -1353,7 +1224,7 @@
 		{
 			dependencies: ["00000000000008EC"]
 			description: [
-				"The Crusher is used to crushes."
+				"The Crusher is used to crush."
 				""
 				"Yep."
 			]
@@ -1361,7 +1232,7 @@
 			rewards: [{
 				count: 8
 				id: "4A507169A891FAE2"
-				item: "thermal:diamond_dust"
+				item: { Count: 8b, id: "mekanism:dust_diamond" }
 				type: "item"
 			}]
 			tasks: [{
@@ -1388,44 +1259,6 @@
 			}]
 			x: -1.5d
 			y: 5.0d
-		}
-		{
-			dependencies: ["7E9AD5B815F40263"]
-			description: ["The Quantum Entangloporter is a machine that allows liquids/items/energy/gas to be sent from one Quantum Entangloporter to another through a channel."]
-			id: "00000000000008F8"
-			rewards: [{
-				id: "32A1D06138C19C68"
-				item: "mekanism:quantum_entangloporter"
-				type: "item"
-			}]
-			tasks: [{
-				id: "00000000000008F9"
-				item: "mekanism:quantum_entangloporter"
-				type: "item"
-			}]
-			x: 11.0d
-			y: -1.0d
-		}
-		{
-			dependencies: ["7E9AD5B815F40263"]
-			description: [
-				"The Digital Miner can be configured to mine ores only within a certain area. "
-				"It can also be set to silk touch ores, but this results in higher power consumption."
-			]
-			id: "00000000000008FA"
-			rewards: [{
-				id: "076DB8B6398A4A9A"
-				type: "xp_levels"
-				xp_levels: 5
-			}]
-			size: 1.5d
-			tasks: [{
-				id: "00000000000008FB"
-				item: "mekanism:digital_miner"
-				type: "item"
-			}]
-			x: 12.0d
-			y: 0.0d
 		}
 		{
 			dependencies: ["00000000000008EC"]
@@ -1614,7 +1447,7 @@
 			rewards: [{
 				count: 16
 				id: "614335906025DE23"
-				item: "thermal:sulfur_dust"
+				item: { Count: 16b, id: "mekanism:dust_sulfur" }
 				type: "item"
 			}]
 			tasks: [{
@@ -2049,16 +1882,12 @@
 				"0000000000000906"
 				"11E9A3216FB47E41"
 			]
-			description: [
-				"Get an Antimatter Pellet."
-				""
-				"You can turn this Pellet into Tiny Antimatter Rubber for making, after, the Creative Essence."
-			]
+			description: ["Get an Antimatter Pellet."]
 			id: "0000000000000946"
 			rewards: [{
 				count: 4
-				id: "23CFDA24C8ECC502"
-				item: "kubejs:antimatter_silicon"
+				id: "2100FFC345199D91"
+				item: "ae2:silicon"
 				type: "item"
 			}]
 			tasks: [{
@@ -2498,14 +2327,14 @@
 		}
 		{
 			dependencies: ["000000000000093F"]
-			description: ["Gaseous Polonium is used to make Antimatter."]
+			description: ["&5Gaseous Polonium is used to make Antimatter."]
 			id: "6F34D924F80BAD00"
 			rewards: [{
 				id: "1973CBDF809ABDE7"
 				item: "mekanism:ingot_uranium"
 				type: "item"
 			}]
-			subtitle: "The following quests intake the liquid versions because FTB Quests does'n support gases."
+			subtitle: "The following quests intake the liquid versions because FTB Quests doesn't support gases."
 			tasks: [{
 				amount: 1000L
 				fluid: "kubejs:liquid_polonium"
@@ -2521,7 +2350,7 @@
 				"000000000000094B"
 				"6F34D924F80BAD00"
 			]
-			description: ["Antimatter is used in endgame refinement."]
+			description: ["&5Antimatter is used in endgame refinement."]
 			id: "11E9A3216FB47E41"
 			rewards: [{
 				id: "37C693D0C463D178"
@@ -2539,7 +2368,7 @@
 		}
 		{
 			dependencies: ["00000000000008E2"]
-			description: ["Perfecting Grains of Infinity requires a lot of Antimatter to refine."]
+			description: ["&o&5Perfecting Grains of Infinity requires a lot of Antimatter to refine."]
 			id: "7824A5D312459399"
 			rewards: [{
 				id: "54A59518219F3816"
@@ -2567,7 +2396,11 @@
 		}
 		{
 			dependencies: ["7D0BC26B33BBB358"]
-			description: ["You're about to get a lot of items, and you'll need to have some storage for all of them. Applied Energistics 2 can help you with that! I'd recommend geeting a good ME&8&o (matter-energy)&r system before continuing Mekanism. You'll also need some stuff from it to make some stuff here. "]
+			description: [
+				"&5You're about to get &da lot &5of items, and you'll need to have some &dstorage &5for all of them. &bApplied Energistics 2 &5can help you with that! I'd recommend geeting a good ME&8&o (matter-energy)&r &5system before continuing &dMekanism&5. You'll also need some stuff from it to make some stuff here*. "
+				"{@pagebreak}"
+				"&8*(citation needed)"
+			]
 			hide_dependency_lines: true
 			icon: "ae2:controller"
 			id: "15A89114EFA3B6F3"
@@ -2586,67 +2419,7 @@
 			y: -5.0d
 		}
 		{
-			dependencies: [
-				"5490E75464035904"
-				"41BC802201632A91"
-			]
-			description: ["The Teleportation Core is a contained singularity capable of entangling objects into new positions. Basically, teleportation. &8&o(yes this defenition makes no sense but it sounds cool)&r It's commonly used in QIO and deep mining operations. "]
-			id: "7E9AD5B815F40263"
-			rewards: [{
-				count: 10
-				id: "0DC0C9E7189208C1"
-				item: "ae2:silicon"
-				type: "item"
-			}]
-			tasks: [{
-				id: "52AAB8A526AF8E2D"
-				item: "mekanism:teleportation_core"
-				type: "item"
-			}]
-			x: 10.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["00000000000008EE"]
-			description: ["Ender IO doesn't really have a place in ToasTech, but it's integrated is some recipes so you'll need to do some progression in the Ender IO tab."]
-			hide_dependency_lines: true
-			icon: "enderio:slice_and_splice"
-			id: "5490E75464035904"
-			rewards: [{
-				count: 12
-				id: "75EC3669D96C68AC"
-				item: "enderio:conduit_binder"
-				type: "item"
-			}]
-			tasks: [{
-				id: "36F9B0D926C09D1A"
-				title: "About Time for Ender IO"
-				type: "checkmark"
-			}]
-			x: 10.0d
-			y: 1.0d
-		}
-		{
-			dependencies: ["00000000000008EC"]
-			description: ["Extended Crafting is a mod that adds more crafting methods and some new items, notably singularities and catalysts. It's usually reserved for endgame, but you'll need it for the teleportation core, so..."]
-			hide_dependency_lines: true
-			icon: "extendedcrafting:elite_component"
-			id: "41BC802201632A91"
-			rewards: [{
-				id: "64A976A8AF160A41"
-				item: "extendedcrafting:black_iron_ingot"
-				type: "item"
-			}]
-			tasks: [{
-				id: "1CDBC54F66E223A8"
-				title: "I Heard You Want Better Crafting"
-				type: "checkmark"
-			}]
-			x: 11.0d
-			y: 1.0d
-		}
-		{
-			description: ["I'd like to thank the developpers of Ragnamod VI for the Mekanism questing tab, since I used it as a base for ToasTech."]
+			description: ["&5I'd like to thank the developpers of Ragnamod VI for the Mekanism questing tab, since I used it as a base for ToasTech."]
 			icon: "create:clipboard"
 			id: "6F98DF65C7869FE8"
 			rewards: [{
@@ -2665,8 +2438,8 @@
 		{
 			dependencies: ["00000000000008EA"]
 			description: [
-				"I'll assume you've been doing the progression already."
-				"Use the enrichment chamber to make Grains of Infinity from the washed ones."
+				"&5I'll assume you've been doing the progression already."
+				"&5Use the &dEnrichment Chamber &5to make Grains of Infinity from the washed ones."
 			]
 			id: "51F51B1453E68582"
 			rewards: [{

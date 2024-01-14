@@ -9,24 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["51F51B1453E68582"]
-			description: ["This questline will be shorter than the other ones, mainly because not much of it is relevant to the other mods."]
-			id: "4F10C65D50134303"
-			rewards: [{
-				id: "3E3991BFEA7949A9"
-				item: "minecraft:ender_pearl"
-				type: "item"
-			}]
-			tasks: [{
-				id: "45E74C7ED96DB7F1"
-				title: "Welcome to Ender IO"
-				type: "checkmark"
-			}]
-			x: 0.5d
-			y: -5.5d
-		}
-		{
-			dependencies: ["4F10C65D50134303"]
+			dependencies: ["5490E75464035904"]
 			id: "758235E3B14596CA"
 			rewards: [{
 				id: "114584A1370E7BB5"
@@ -43,7 +26,7 @@
 			y: -4.5d
 		}
 		{
-			dependencies: ["4F10C65D50134303"]
+			dependencies: ["5490E75464035904"]
 			id: "0B817DE7B8D99F21"
 			rewards: [{
 				id: "3561DE1167B2CEFF"
@@ -81,7 +64,7 @@
 			y: -3.5d
 		}
 		{
-			dependencies: ["4F10C65D50134303"]
+			dependencies: ["5490E75464035904"]
 			id: "0B3E5837A71ECBDB"
 			rewards: [{
 				id: "61ADF7EA01670191"
@@ -302,6 +285,37 @@
 			}]
 			x: 0.5d
 			y: -2.5d
+		}
+		{
+			dependencies: ["00000000000008EE"]
+			description: [
+				"Ender IO doesn't really have a place in ToasTech, but it's integrated is some recipes so you'll need to do some progression in the Ender IO tab."
+				""
+				"This questline will be shorter than the other ones, mainly because not much of it is relevant to the other mods."
+			]
+			hide_dependency_lines: false
+			icon: "enderio:slice_and_splice"
+			id: "5490E75464035904"
+			rewards: [
+				{
+					count: 12
+					id: "75EC3669D96C68AC"
+					item: "enderio:conduit_binder"
+					type: "item"
+				}
+				{
+					id: "5204BA93D1EF1523"
+					item: "minecraft:ender_pearl"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "36F9B0D926C09D1A"
+				title: "About Time for Ender IO"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: -5.5d
 		}
 	]
 	title: "Ender IO"
