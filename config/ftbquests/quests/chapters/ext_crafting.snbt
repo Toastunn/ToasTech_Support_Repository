@@ -241,7 +241,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 2.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["3AF9D4875027A42B"]
@@ -262,6 +262,107 @@
 			title: "Pedestals"
 			x: 1.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["4578B64917E532B5"]
+			description: ["&0The Flux Crafter is a multiblock formed along with the Flux Alternator. It uses Redstone Flux (RF) and the number of Alternators to craft over time."]
+			id: "10405425A761D697"
+			rewards: [{
+				id: "3DABF19E2A16ECE2"
+				item: "enderio:redstone_alloy_block"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3E07C08019B6ED8F"
+				item: "extendedcrafting:flux_crafter"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4578B64917E532B5"]
+			description: ["&0The Ender Crafter is a multiblock formed along with the Ender Alternator. It uses Alternators to craft faster."]
+			id: "62CE30037140FD34"
+			rewards: [{
+				id: "4E2D3D7D31C3F39F"
+				item: "extendedcrafting:ender_ingot_block"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7685BB8675C72962"
+				item: "extendedcrafting:ender_crafter"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["10405425A761D697"]
+			id: "5F6ADCB642B82A55"
+			tasks: [{
+				id: "6A1FD4C3F5A761F9"
+				item: "extendedcrafting:enhanced_redstone_component"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["62CE30037140FD34"]
+			id: "01FE1640616D2F63"
+			tasks: [{
+				id: "1E23CDD39EDABF69"
+				item: "extendedcrafting:enhanced_ender_component"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5F6ADCB642B82A55"]
+			id: "68251687E89952C2"
+			tasks: [{
+				id: "2075C669CDCE801E"
+				item: "extendedcrafting:enhanced_redstone_catalyst"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["01FE1640616D2F63"]
+			id: "28A39B18EB3A68AC"
+			tasks: [{
+				id: "689B0725DCE0D460"
+				item: "extendedcrafting:enhanced_ender_catalyst"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["444E38D3237CE41F"]
+			id: "0774DAFF34591626"
+			rewards: [{
+				count: 2
+				id: "1F6B7A7EEAB3B392"
+				item: "enderio:dark_steel_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7392A8E9EBCF3F41"
+				item: {
+					Count: 1b
+					id: "minecraft:flint_and_steel"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 5.0d
 		}
 	]
 	title: "Ext. Crafting"
