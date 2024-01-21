@@ -45,7 +45,14 @@ import crafttweaker.api.util.random.Percentaged;
       <item:extendedcrafting:auto_flux_crafter>,
       <item:extendedcrafting:ender_crafter>,
       <item:extendedcrafting:auto_ender_crafter>,
-      <item:extendedcrafting:redstone_ingot>
+      <item:extendedcrafting:redstone_ingot>,
+      <item:alltheores:brass_block>,
+      <item:alltheores:brass_ingot>,
+      <item:alltheores:brass_nugget>,
+      <item:alltheores:brass_plate>,
+      <item:alltheores:brass_gear>,
+      <item:alltheores:brass_rod>,
+      <item:alltheores:brass_dust>
     ] as IIngredient[];
 
     for element in removeArray {
