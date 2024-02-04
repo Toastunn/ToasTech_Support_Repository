@@ -1,0 +1,22 @@
+{
+  "priority": 998,
+  "panel": "obscure_tooltips:palette_colors/dark_aqua",
+  "frame": "obscure_tooltips:sculk",
+  "icon": "obscure_tooltips:rare",
+  "filter": {
+    "items": [
+      "sculk",
+      "sculk_vein",
+      "sculk_catalyst",
+      "sculk_shrieker",
+      "sculk_sensor",
+      "calibrated_sculk_sensor",
+      "exdeorum:sculk_core",
+      "rats:rat_upgrade_sculked",
+      "echo_shard",
+      "recovery_compass",
+      "music_disc_5",
+      "disc_fragment_5"
+    ]
+  }
+}

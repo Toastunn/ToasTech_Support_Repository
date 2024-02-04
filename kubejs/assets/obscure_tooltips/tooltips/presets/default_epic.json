@@ -1,0 +1,9 @@
+{
+  "priority": 102,
+  "panel": "obscure_tooltips:rarities/golden",
+  "frame": "obscure_tooltips:golden",
+  "icon": "obscure_tooltips:epic",
+  "filter": {
+    "rarity": "epic"
+  }
+}

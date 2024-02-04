@@ -1,0 +1,10 @@
+{
+  "priority": 1,
+  "panel": "obscure_tooltips:palette_colors/gray",
+  "frame": "obscure_tooltips:plating",
+  "filter": {
+    "mods":[
+      "enderio"
+    ]
+  }
+}

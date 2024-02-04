@@ -1,0 +1,7 @@
+{
+  "priority": 1001,
+  "panel": "obscure_tooltips:rarities/pity",
+  "filter": {
+    "rarity": "pity"
+  }
+}

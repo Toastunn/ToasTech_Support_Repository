@@ -1,0 +1,9 @@
+{
+  "priority": 1000,
+  "effects": [ "obscure_tooltips:enchantment" ],
+  "filter": {
+    "mods": [
+      "avaritia"
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "priority": 999,
+  "panel": "obscure_tooltips:palette_colors/gray",
+  "frame": "obscure_tooltips:plating",
+  "filter": {
+    "mods": [
+      "mekanism",
+      "mekanismgenerators",
+      "mekaweapons",
+      "industrialforegoing"
+    ]
+  }
+}

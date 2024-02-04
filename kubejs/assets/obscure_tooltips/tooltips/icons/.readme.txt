@@ -1,0 +1,14 @@
+### Built-In Factories
+
+[obscure_tooltips:descent_simple]
+    - NO PARAMETERS
+
+[obscure_tooltips:descent_complex]
+    - NO PARAMETERS
+
+[obscure_tooltips:descent_shine]
+    "center_color": <ahex>
+    "start_color": <ahex>
+    "end_color": <ahex>
+    "particle_center_color": <ahex>
+    "particle_edge_color": <ahex>

@@ -1,0 +1,11 @@
+{
+  "priority": 1000,
+  "panel": "obscure_tooltips:palette_colors/yellow",
+  "frame": "obscure_tooltips:angel",
+  "icon": "obscure_tooltips:epic",
+  "filter": {
+    "tag": {
+      "Selected": "ARTIFACT"
+    }
+  }
+}

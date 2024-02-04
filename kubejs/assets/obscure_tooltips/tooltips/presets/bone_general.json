@@ -1,0 +1,19 @@
+{
+  "priority": 997,
+  "panel": "obscure_tooltips:palette_colors/white",
+  "frame": "obscure_tooltips:bones",
+  "filter": {
+    "items": [
+      "bone_block",
+      "bone",
+      "bone_meal",
+      "exdeorum:bone_crook",
+      "createchromaticreturn:bone_shadow_steel_sword",
+      "createchromaticreturn:bone_shadow_steel_paxel",
+      "avaritia:skull_fire_sword",
+      "skeleton_skull",
+      "wither_skeleton_skull",
+      "rats:rat_skull"
+    ]
+  }
+}

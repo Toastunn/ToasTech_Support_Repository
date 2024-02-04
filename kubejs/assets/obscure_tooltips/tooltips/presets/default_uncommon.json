@@ -1,0 +1,8 @@
+{
+  "priority": 100,
+  "panel": "obscure_tooltips:rarities/bronze",
+  "frame": "obscure_tooltips:bronze",
+  "filter": {
+    "rarity": [ "uncommon" ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "priority": 101,
+  "panel": "obscure_tooltips:rarities/silver",
+  "frame": "obscure_tooltips:silver",
+  "icon": "obscure_tooltips:rare",
+  "filter": {
+    "rarity": "rare"
+  }
+}

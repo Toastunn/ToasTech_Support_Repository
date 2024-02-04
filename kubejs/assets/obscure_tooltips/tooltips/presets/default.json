@@ -1,0 +1,11 @@
+{
+  "priority": 0,
+  "panel": "obscure_tooltips:default",
+  "frame": "obscure_tooltips:default",
+  "icon": "obscure_tooltips:default",
+  "effects": [
+    "obscure_tooltips:default_rim",
+    "obscure_tooltips:default_ender"
+  ],
+  "filter": {}
+}

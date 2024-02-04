@@ -1,0 +1,16 @@
+{
+  "priority": 1000,
+  "panel": "obscure_tooltips:default",
+  "frame": "obscure_tooltips:default",
+  "icon": "obscure_tooltips:default",
+  "effects": [
+    "obscure_tooltips:default_rim",
+    "obscure_tooltips:default_ender"
+  ],
+  "filter": {
+    "items": [
+      "avaritia:compressed_crafting_table",
+      "avaritia:double_compressed_crafting_table"
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "priority": 1000,
+  "panel": "obscure_tooltips:fire",
+  "frame": "obscure_tooltips:bones",
+  "icon": "obscure_tooltips:cosmic",
+  "filter": {
+    "items": [
+      "avaritia:skull_fire_sword"
+    ]
+  }
+}

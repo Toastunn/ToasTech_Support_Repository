@@ -1,0 +1,8 @@
+### Built-In Factories
+
+[obscure_tooltips:color_rect]
+    "back_top_color": <ahex>
+    "back_bottom_color": <ahex>
+    "border_top_color": <ahex>
+    "border_bottom_color": <ahex>
+    "slot_color": <ahex>
