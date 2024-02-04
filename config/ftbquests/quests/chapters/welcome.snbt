@@ -1,0 +1,67 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "welcome"
+	group: ""
+	id: "7E246CF4602950CE"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			icon: "minecraft:campfire"
+			id: "4581275E09079C65"
+			rewards: [{
+				count: 16
+				id: "5C90A718C2653B2E"
+				item: "minecraft:oak_log"
+				type: "item"
+			}]
+			size: 5.0d
+			subtitle: "It can't be that bad, right?"
+			tasks: [{
+				id: "55B8CAF3892C398E"
+				title: "...to heck."
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4581275E09079C65"]
+			description: [
+				"&bI'd like to thank:"
+				""
+				"- &5CelestialAbyss for the Create tooltip code;"
+				""
+				"- &dWeegeeday for making the EnderIO tooltip generation code;"
+				""
+				"- &aMLDEG for the Mekanism quest page;"
+				""
+				"- &6Grend_G for the tooltip borders (from Eclectic Trove);"
+				""
+				"- &bObscuria for the help with making the tooltip resource pack;"
+				""
+				"- &2The &5KubeJS &2and &9CraftTweaker &2discord servers;"
+				""
+				"And everyone else that helped me make ToasTech"
+			]
+			icon: "create:clipboard"
+			id: "34C3FA2D3AD7B2CF"
+			min_width: 350
+			rewards: [{
+				id: "2B71AA95AFC06BD3"
+				title: "Average amount of XP gained after death"
+				type: "xp_levels"
+				xp_levels: 7
+			}]
+			tasks: [{
+				id: "3572E3FC21BAE46A"
+				title: "Credits"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 1.0d
+		}
+	]
+	title: "Welcome!"
+}

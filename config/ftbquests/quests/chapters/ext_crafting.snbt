@@ -364,6 +364,39 @@
 			x: 2.0d
 			y: 5.0d
 		}
+		{
+			dependencies: ["444E38D3237CE41F"]
+			id: "779F99DBE166A422"
+			tasks: [{
+				id: "49D49FD968B02F8C"
+				item: "extendedcrafting:the_ultimate_ingot"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["444E38D3237CE41F"]
+			id: "2C05EF04DEEA2A65"
+			tasks: [{
+				id: "40EDFA07429BD45D"
+				item: "extendedcrafting:the_ultimate_component"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["444E38D3237CE41F"]
+			id: "6803685471E8EF9A"
+			tasks: [{
+				id: "57DD06177BFBF9C8"
+				item: "extendedcrafting:the_ultimate_catalyst"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 5.0d
+		}
 	]
 	title: "Ext. Crafting"
 }
