@@ -1,1 +1,1 @@
-Platform.mods.kubejs.name = 'ToasTech Support Registry'
+Platform.mods.kubejs.name = 'ToasTech Support Pack'
