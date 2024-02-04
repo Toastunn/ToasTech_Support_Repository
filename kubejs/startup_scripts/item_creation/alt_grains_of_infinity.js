@@ -6,16 +6,16 @@ StartupEvents.registry('item', e => {
     //Pure Grains
     e.create('pure_grains_of_infinity').displayName("Pure Grains of Infinity").rarity('uncommon')
     //Enchanted Grains
-    e.create('enchanted_grains_of_infinity').displayName("Enchanted Grains of Infinity").rarity('uncommon')
+    e.create('enchanted_grains_of_infinity').displayName("Enchanted Grains of Infinity").glow(true).rarity('uncommon')
     //Superheated Grains
-    e.create('superheated_grains_of_infinity').displayName("Superheated Grains of Infinity").rarity('rare')
+    e.create('superheated_grains_of_infinity').displayName("Superheated Grains of Infinity").glow(true).rarity('rare')
     //Atomically Perfect Grains
-    e.create('atomically_perfect_grains_of_infinity').displayName("Atomically Perfect Grains of Infinity").rarity('epic')
+    e.create('atomically_perfect_grains_of_infinity').displayName("Atomically Perfect Grains of Infinity").glow(true).rarity('epic')
     //crystal
-    e.create('crystal_of_infinity').displayName("Crystal of Infinity").rarity('epic')
+    e.create('crystal_of_infinity').displayName("Crystal of Infinity").glow(true).rarity('epic')
     //ingot
-    e.create('ingot_of_infinity').displayName("Ingot of Infinity").rarity('epic')
+    e.create('ingot_of_infinity').displayName("Ingot of Infinity").glow(true).rarity('epic')
     //incomplete ingot (see sequenced_assembly_incomplete_items)
     //alloy
-    e.create('alloy_of_infinity').displayName("Alloy of Infinity").rarity('epic')
+    e.create('alloy_of_infinity').displayName("Alloy of Infinity").glow(true).rarity('epic')
 })
