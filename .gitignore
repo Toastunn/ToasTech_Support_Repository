@@ -1,5 +1,6 @@
 #exclude everything but some things
 /*
+!/.vscode
 !/kubejs
 !/scripts
 !/data
