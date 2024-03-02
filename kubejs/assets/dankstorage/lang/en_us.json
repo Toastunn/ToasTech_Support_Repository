@@ -1,0 +1,9 @@
+{
+  "rarity.dark_gray.name": "Basic",
+  "rarity.dark_red.name": "Advanced",
+  "rarity.gold.name": "Epic",
+  "rarity.green.name": "Legendary",
+  "rarity.blue.name": "Mythic",
+  "rarity.dark_purple.name": "Exotic",
+  "rarity.white.name": "Divine"
+}
