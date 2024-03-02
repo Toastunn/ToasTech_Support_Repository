@@ -28,6 +28,8 @@ StartupEvents.registry('fluid', e => {
     e.create('vibrant_liquid')
     .thinTexture(0xe0ea6a)
     .tag('toastech:vibrant_liquid')
+    e.create('liquid_void')
+    .thickTexture(0x000000)
 })
 
 Color.of("#361d50")
