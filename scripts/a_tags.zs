@@ -97,6 +97,15 @@ import crafttweaker.api.tag.MCTag;
     <tag:blocks:minecraft:beacon_base_blocks>.removeId(<resource:minecraft:weathered_copper>);
     <tag:blocks:minecraft:beacon_base_blocks>.removeId(<resource:minecraft:weathered_cut_copper>);
     <tag:blocks:minecraft:beacon_base_blocks>.removeId(<resource:create:zinc_block>);
+    <tag:blocks:minecraft:beacon_base_blocks>.removeId(<resource:alltheores:aluminum_block>);
+    <tag:blocks:minecraft:beacon_base_blocks>.removeId(<resource:alltheores:lead_block>);
+    <tag:blocks:minecraft:beacon_base_blocks>.removeId(<resource:alltheores:nickel_block>);
+    <tag:blocks:minecraft:beacon_base_blocks>.removeId(<resource:alltheores:osmium_block>);
+    <tag:blocks:minecraft:beacon_base_blocks>.removeId(<resource:alltheores:platinum_block>);
+    <tag:blocks:minecraft:beacon_base_blocks>.removeId(<resource:alltheores:silver_block>);
+    <tag:blocks:minecraft:beacon_base_blocks>.removeId(<resource:alltheores:tin_block>);
+    <tag:blocks:minecraft:beacon_base_blocks>.removeId(<resource:alltheores:uranium_block>);
+    <tag:blocks:minecraft:beacon_base_blocks>.removeId(<resource:alltheores:zinc_block>);
 
 //adding tags
   //Glowing items
@@ -118,6 +127,8 @@ import crafttweaker.api.tag.MCTag;
     <tag:blocks:better_beacons:beacon_redirect>.addId(<resource:minecraft:amethyst_cluster>);
     <tag:blocks:better_beacons:beacon_redirect>.addId(<resource:ae2:quartz_cluster>);
     <tag:blocks:better_beacons:beacon_redirect>.addId(<resource:biomesoplenty:rose_quartz_cluster>);
+    //item tag
+    <tag:items:crafttweaker:beacon_redirect>.add(<tag:blocks:better_beacons:beacon_redirect>);
   //ftb task sceens
     <tag:blocks:crafttweaker:task_screens>.addId(<resource:ftbquests:screen_1>);
     <tag:blocks:crafttweaker:task_screens>.addId(<resource:ftbquests:screen_3>);
@@ -136,3 +147,39 @@ import crafttweaker.api.tag.MCTag;
     <tag:items:crafttweaker:inscriber/printed>.addId(<resource:ae2:printed_engineering_processor>);
     <tag:items:crafttweaker:inscriber/printed>.addId(<resource:ae2:printed_logic_processor>);
     <tag:items:crafttweaker:inscriber/printed>.addId(<resource:ae2:printed_silicon>);
+  //wither immune
+    <tag:blocks:minecraft:wither_immune>.addId(<resource:tougherglass:stronger_glass>);
+    <tag:blocks:minecraft:wither_immune>.addId(<resource:tougherglass:stronger_magenta_stained_glass>);
+    <tag:blocks:minecraft:wither_immune>.addId(<resource:tougherglass:stronger_orange_stained_glass>);
+    <tag:blocks:minecraft:wither_immune>.addId(<resource:tougherglass:stronger_lime_stained_glass>);
+    <tag:blocks:minecraft:wither_immune>.addId(<resource:tougherglass:stronger_red_stained_glass>);
+    <tag:blocks:minecraft:wither_immune>.addId(<resource:tougherglass:stronger_brown_stained_glass>);
+    <tag:blocks:minecraft:wither_immune>.addId(<resource:tougherglass:stronger_pink_stained_glass>);
+    <tag:blocks:minecraft:wither_immune>.addId(<resource:tougherglass:stronger_blue_stained_glass>);
+    <tag:blocks:minecraft:wither_immune>.addId(<resource:tougherglass:stronger_cyan_stained_glass>);
+    <tag:blocks:minecraft:wither_immune>.addId(<resource:tougherglass:stronger_black_stained_glass>);
+    <tag:blocks:minecraft:wither_immune>.addId(<resource:tougherglass:stronger_yellow_stained_glass>);
+    <tag:blocks:minecraft:wither_immune>.addId(<resource:tougherglass:stronger_white_stained_glass>);
+    <tag:blocks:minecraft:wither_immune>.addId(<resource:tougherglass:stronger_light_blue_stained_glass>);
+    <tag:blocks:minecraft:wither_immune>.addId(<resource:tougherglass:stronger_gray_stained_glass>);
+    <tag:blocks:minecraft:wither_immune>.addId(<resource:tougherglass:stronger_purple_stained_glass>);
+    <tag:blocks:minecraft:wither_immune>.addId(<resource:tougherglass:stronger_green_stained_glass>);
+    <tag:blocks:minecraft:wither_immune>.addId(<resource:tougherglass:stronger_light_gray_stained_glass>);
+  //dragon immune
+    <tag:blocks:minecraft:dragon_immune>.addId(<resource:tougherglass:stronger_glass>);
+    <tag:blocks:minecraft:dragon_immune>.addId(<resource:tougherglass:stronger_magenta_stained_glass>);
+    <tag:blocks:minecraft:dragon_immune>.addId(<resource:tougherglass:stronger_orange_stained_glass>);
+    <tag:blocks:minecraft:dragon_immune>.addId(<resource:tougherglass:stronger_lime_stained_glass>);
+    <tag:blocks:minecraft:dragon_immune>.addId(<resource:tougherglass:stronger_red_stained_glass>);
+    <tag:blocks:minecraft:dragon_immune>.addId(<resource:tougherglass:stronger_brown_stained_glass>);
+    <tag:blocks:minecraft:dragon_immune>.addId(<resource:tougherglass:stronger_pink_stained_glass>);
+    <tag:blocks:minecraft:dragon_immune>.addId(<resource:tougherglass:stronger_blue_stained_glass>);
+    <tag:blocks:minecraft:dragon_immune>.addId(<resource:tougherglass:stronger_cyan_stained_glass>);
+    <tag:blocks:minecraft:dragon_immune>.addId(<resource:tougherglass:stronger_black_stained_glass>);
+    <tag:blocks:minecraft:dragon_immune>.addId(<resource:tougherglass:stronger_yellow_stained_glass>);
+    <tag:blocks:minecraft:dragon_immune>.addId(<resource:tougherglass:stronger_white_stained_glass>);
+    <tag:blocks:minecraft:dragon_immune>.addId(<resource:tougherglass:stronger_light_blue_stained_glass>);
+    <tag:blocks:minecraft:dragon_immune>.addId(<resource:tougherglass:stronger_gray_stained_glass>);
+    <tag:blocks:minecraft:dragon_immune>.addId(<resource:tougherglass:stronger_purple_stained_glass>);
+    <tag:blocks:minecraft:dragon_immune>.addId(<resource:tougherglass:stronger_green_stained_glass>);
+    <tag:blocks:minecraft:dragon_immune>.addId(<resource:tougherglass:stronger_light_gray_stained_glass>);

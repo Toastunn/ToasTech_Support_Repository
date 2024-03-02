@@ -8,51 +8,69 @@ import crafttweaker.api.util.random.Percentaged;
 //removing recipes
   //craftingTable.remove();
     var removeArray = [
-      <item:minecraft:flint_and_steel>,
-      <item:minecraft:end_crystal>,
-      <item:mekanism:steel_casing>,
-      <item:mekanism:metallurgic_infuser>,
-      <item:mekanism:ultimate_induction_cell>,
-      <item:mekanism:elite_induction_cell>,
-      <item:mekanism:advanced_induction_cell>,
-      <item:mekanism:advanced_induction_provider>,
-      <item:mekanism:elite_induction_provider>,
-      <item:mekanism:ultimate_induction_provider>,
-      <item:mekanism:basic_fluid_tank>,
-      <item:mekanism:digital_miner>,
-      <item:mekanism:teleportation_core>,
-      <item:mekanism:dimensional_stabilizer>,
-      <item:mekanism:robit>,
-      <item:enderio:void_chassis>,
-      <item:enderio:iron_gear>,
-      <item:enderio:pulsating_crystal>,
-      <item:enderio:vibrant_crystal>,
-      <item:ae2:energy_acceptor>,
-      <item:ae2:chest>,
-      <item:ae2:charger>,
-      <item:ae2:vibration_chamber>,
-      <item:ae2:inscriber>,
-      <item:extendedcrafting:ultimate_component>,
-      <item:extendedcrafting:advanced_table>,
-      <item:extendedcrafting:elite_table>,
-      <item:extendedcrafting:ultimate_table>,
-      <item:extendedcrafting:basic_auto_table>,
-      <item:extendedcrafting:advanced_auto_table>,
-      <item:extendedcrafting:elite_auto_table>,
-      <item:extendedcrafting:ultimate_auto_table>,
-      <item:extendedcrafting:crafting_core>,
-      <item:extendedcrafting:flux_crafter>,
-      <item:extendedcrafting:auto_flux_crafter>,
-      <item:extendedcrafting:ender_crafter>,
-      <item:extendedcrafting:auto_ender_crafter>,
-      <item:extendedcrafting:redstone_ingot>,
-      <item:alltheores:brass_block>,
-      <item:alltheores:brass_ingot>,
-      <item:alltheores:brass_nugget>,
-      <item:alltheores:brass_plate>,
-      <item:alltheores:brass_gear>,
-      <item:alltheores:brass_rod>,
-      <item:alltheores:brass_dust>
+      //avaritia
+        <item:avaritia:extreme_crafting_table>,
+      //vanilla
+        <item:minecraft:flint_and_steel>,
+        <item:minecraft:end_crystal>,
+      //mekanism
+        <item:mekanism:steel_casing>,
+        <item:mekanism:metallurgic_infuser>,
+        <item:mekanism:ultimate_induction_cell>,
+        <item:mekanism:elite_induction_cell>,
+        <item:mekanism:advanced_induction_cell>,
+        <item:mekanism:advanced_induction_provider>,
+        <item:mekanism:elite_induction_provider>,
+        <item:mekanism:ultimate_induction_provider>,
+        <item:mekanism:basic_fluid_tank>,
+        <item:mekanism:digital_miner>,
+        <item:mekanism:teleportation_core>,
+        <item:mekanism:dimensional_stabilizer>,
+        <item:mekanism:robit>,
+        <item:mekanism:laser>,
+      //enderio
+        <item:enderio:void_chassis>,
+        <item:enderio:iron_gear>,
+        <item:enderio:pulsating_crystal>,
+        <item:enderio:vibrant_crystal>,
+      //ae2
+        <item:ae2:energy_acceptor>,
+        <item:ae2:chest>,
+        <item:ae2:charger>,
+        <item:ae2:vibration_chamber>,
+        <item:ae2:inscriber>,
+      //extendedcrafting
+        <item:extendedcrafting:ultimate_component>,
+        <item:extendedcrafting:advanced_table>,
+        <item:extendedcrafting:elite_table>,
+        <item:extendedcrafting:ultimate_table>,
+        <item:extendedcrafting:basic_auto_table>,
+        <item:extendedcrafting:advanced_auto_table>,
+        <item:extendedcrafting:elite_auto_table>,
+        <item:extendedcrafting:ultimate_auto_table>,
+        <item:extendedcrafting:crafting_core>,
+        <item:extendedcrafting:flux_crafter>,
+        <item:extendedcrafting:auto_flux_crafter>,
+        <item:extendedcrafting:ender_crafter>,
+        <item:extendedcrafting:auto_ender_crafter>,
+        <item:extendedcrafting:redstone_ingot>,
+        <item:extendedcrafting:the_ultimate_component>,
+        <item:extendedcrafting:the_ultimate_catalyst>,
+        <item:extendedcrafting:compressor>,
+      //alltheores
+        <item:alltheores:brass_block>,
+        <item:alltheores:brass_ingot>,
+        <item:alltheores:brass_nugget>,
+        <item:alltheores:brass_plate>,
+        <item:alltheores:brass_gear>,
+        <item:alltheores:brass_rod>,
+        <item:alltheores:brass_dust>,
+      //modularrouters
+        <item:modularrouters:modular_router>,
+      //industrialforegoing
+        <item:industrialforegoing:fluid_laser_base>,
+        <item:industrialforegoing:laser_drill>,
+        <item:industrialforegoing:ore_laser_base>
     ] as IIngredient[];
 
     for element in removeArray {
@@ -81,6 +99,11 @@ import crafttweaker.api.util.random.Percentaged;
      [inputs as IIngredient]]);
     */
     val air = <item:minecraft:air>;
+    //avaritia
+      craftingTable.addShaped('extreme_crafting_table', <item:avaritia:extreme_crafting_table>, [
+        [<item:avaritia:crystal_matrix_ingot>, <item:avaritia:crystal_matrix_ingot>, <item:avaritia:crystal_matrix_ingot>],
+        [<item:avaritia:crystal_matrix_ingot>, <item:extendedcrafting:ultimate_table>, <item:avaritia:crystal_matrix_ingot>],
+        [<item:avaritia:crystal_matrix_ingot>, <item:avaritia:crystal_matrix_ingot>, <item:avaritia:crystal_matrix_ingot>]]);
     //minecraft
       var glass = <item:minecraft:glass>;
       craftingTable.addShaped('end_crystal/crafting', <item:minecraft:end_crystal>, [
@@ -211,9 +234,13 @@ import crafttweaker.api.util.random.Percentaged;
           [iron, <item:minecraft:sticky_piston>, iron]]);
     //extendedcrafting
       //mekanism modif
-        craftingTable.addShapeless('ultimate_component/mekanism', <item:extendedcrafting:ultimate_component>,
-          [<item:extendedcrafting:black_iron_slate>, <item:extendedcrafting:luminessence>, <item:mekanism:pellet_polonium>, <item:mekanism:pellet_polonium>]);
+        craftingTable.addShapeless('ultimate_component/mekanism', <item:extendedcrafting:ultimate_component>, [<item:extendedcrafting:black_iron_slate>, <item:extendedcrafting:luminessence>, <item:mekanism:pellet_polonium>, <item:mekanism:pellet_polonium>]);
         //the table recipe is in extendedcrafting file
+    //industrialforegoing
+      craftingTable.addShaped('laser_drill/industrialforegoing', <item:industrialforegoing:laser_drill>, [
+        [<item:industrialforegoing:plastic>, <tag:items:forge:gears/diamond>, <item:industrialforegoing:plastic>],
+        [<item:mekanism:energy_tablet>, <item:mekanism:laser>, <item:mekanism:energy_tablet>],
+        [<tag:items:forge:gears/gold>, <item:industrialforegoing:machine_frame_simple>, <tag:items:forge:gears/gold>]]);
   //replacer | this shit is fricking complicated so refer to https://docs.blamejared.com/1.20.1/en/vanilla/api/recipe/replacement/Replacer for reference.
     // forge:gears/stone to enderio:iron_gear
       Replacer.create()

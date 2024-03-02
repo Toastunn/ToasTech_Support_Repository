@@ -8,6 +8,7 @@ import mods.create.MixingManager;
 import mods.create.DeployerApplicationManager;
 import mods.create.PressingManager;
 import mods.create.MechanicalCrafterManager;
+import mods.create.PressingManager;
 
 //removing recipes | <recipetype:create:(recipe manager)>.remove(output as IIngredient);
   //Item Application | if you remove a recipe from <recipetype:create:item_application>, it will also remove it from <recipetype:create:deploying> if the recipe ID (F3+H) ends in using_deployer.
@@ -36,11 +37,13 @@ import mods.create.MechanicalCrafterManager;
     //deploying | <recipetype:create:deploying>.addRecipe(name as string, processedItem as IIngredient, heldItem as IIngredient, outputs as Percentaged<IItemStack>[], keepHeldItem as boolean);
       <recipetype:create:deploying>.addRecipe("being_lonely", <item:enderio:enticing_crystal>, <item:garnished:desolate_spread>, [<item:kubejs:crystal_of_desolation> % 100], false);
     //manual application | <recipetype:create:item_application>.addRecipe(name as string, outputs as Percentaged<IItemStack>[], block{item} as IIngredient, heldItem as IIngredient, keepHeldItem as boolean);
-      <recipetype:create:item_application>.addRecipe("brass_casing_w/_frame", [<item:create:brass_casing> %100], <item:create:copper_casing>, <item:kubejs:brass_frame>, false);
-      <recipetype:create:item_application>.addRecipe("copper_casing_w/_frame", [<item:create:copper_casing> %100], <item:create:andesite_casing>, <item:kubejs:copper_frame>, false);
-      <recipetype:create:item_application>.addRecipe("andesite_casing_w/_frame", [<item:create:andesite_casing> %100], <tag:items:forge:stripped_wood>, <item:kubejs:andesite_frame>, false);
-      <recipetype:create:item_application>.addRecipe("andesite_casing_w/_frame/spruce_advantage", [<item:create:andesite_casing> %100], <item:minecraft:spruce_planks>, <item:kubejs:andesite_frame>, false);
-      <recipetype:create:item_application>.addRecipe("steel_casing_w/_frame", [<item:mekanism:steel_casing> %100], <item:create_things_and_misc:sturdy_sheet_block>, <item:kubejs:andesite_frame>, false);
+      <recipetype:create:item_application>.addRecipe("brass_casing_with_frame", [<item:create:brass_casing> %100], <item:create:copper_casing>, <item:kubejs:brass_frame>, false);
+      <recipetype:create:item_application>.addRecipe("brass_casing_with_frame/advantage", [<item:create:brass_casing> %100], <item:minecraft:dark_oak_planks>, <item:kubejs:brass_frame>, false);
+      <recipetype:create:item_application>.addRecipe("copper_casing_with_frame", [<item:create:copper_casing> %100], <item:create:andesite_casing>, <item:kubejs:copper_frame>, false);
+      <recipetype:create:item_application>.addRecipe("copper_casing_with_frame/advantage", [<item:create:copper_casing> %100], <item:biomesoplenty:dead_planks>, <item:kubejs:copper_frame>, false);
+      <recipetype:create:item_application>.addRecipe("andesite_casing_with_frame", [<item:create:andesite_casing> %100], <tag:items:forge:stripped_wood>, <item:kubejs:andesite_frame>, false);
+      <recipetype:create:item_application>.addRecipe("andesite_casing_with_frame/advantage", [<item:create:andesite_casing> %100], <item:minecraft:spruce_planks>, <item:kubejs:andesite_frame>, false);
+      <recipetype:create:item_application>.addRecipe("steel_casing_with_frame", [<item:mekanism:steel_casing> %100], <item:create_things_and_misc:sturdy_sheet_block>, <item:kubejs:andesite_frame>, false);
   //sequenced assembly | <recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder(name as string) builder);
     //ingot of infinity
       <recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("ingoting_the_infinite") 
@@ -54,18 +57,36 @@ import mods.create.MechanicalCrafterManager;
         .addStep<mods.createtweaker.PressingRecipe>((rb) => rb.duration(55))
         .addStep<mods.createtweaker.CuttingRecipe>((rb) => rb.duration(80))); 
     //fire water and steel
-      <recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("coating_steel_in_fire")
-        .loops(1)
-        .transitionTo(<item:kubejs:ingots_of_steel>)
-        .require(<item:minecraft:iron_ingot>)
-        .addOutput(<item:minecraft:flint_and_steel>.withDamage(32), 80)
-        .addOutput(<item:minecraft:flint_and_steel>.withDamage(44), 18)
-        .addOutput(<item:minecraft:flint_and_steel>.withDamage(16), 2)
-        .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:minecraft:iron_ingot>))
-        .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:createchromaticreturn:carbon_powder>))
-        .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:createchromaticreturn:carbon_powder>))
-        .addStep<mods.createtweaker.PressingRecipe>((rb) => rb.duration(100))
-        .addStep<mods.createtweaker.FillingRecipe>((rb) => rb.require(<fluid:enderio:fire_water> * 500)));
+      //part 1
+        <recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("primitive_steel_ish")
+          .loops(1)
+          .transitionTo(<item:minecraft:iron_ingot>)
+          .require(<item:minecraft:iron_ingot>)
+          .addOutput(<item:kubejs:ingots_of_steel_1> * 1, 100)
+          .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:minecraft:iron_ingot>))
+          .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:createchromaticreturn:carbon_powder>))
+          .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:createchromaticreturn:carbon_powder>))
+          .addStep<mods.createtweaker.PressingRecipe>((rb) => rb.duration(100)));
+      //part 2
+        <recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("the_great_pressing")
+          .loops(10)
+          .transitionTo(<item:kubejs:ingots_of_steel_1>)
+          .require(<item:kubejs:ingots_of_steel_1>)
+          .addOutput(<item:kubejs:ingots_of_steel_2> * 1, 100)
+          .addStep<mods.createtweaker.PressingRecipe>((rb) => rb.duration(100))
+          .addStep<mods.createtweaker.PressingRecipe>((rb) => rb.duration(100))
+          .addStep<mods.createtweaker.PressingRecipe>((rb) => rb.duration(100))
+          .addStep<mods.createtweaker.PressingRecipe>((rb) => rb.duration(100))
+          .addStep<mods.createtweaker.PressingRecipe>((rb) => rb.duration(100)));
+      //part 3
+        <recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("coating_steel_with_fire") 
+          .loops(1) 
+          .transitionTo(<item:kubejs:ingots_of_steel_2>) 
+          .require(<item:kubejs:ingots_of_steel_2>)  
+          .addOutput(<item:minecraft:flint_and_steel>.withDamage(32), 80)
+          .addOutput(<item:minecraft:flint_and_steel>.withDamage(44), 18) 
+          .addOutput(<item:minecraft:flint_and_steel>.withDamage(16), 2)
+          .addStep<mods.createtweaker.FillingRecipe>((rb) => rb.require(<fluid:enderio:fire_water> * 500 )));
     //void chassis
       <recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("void_chassis")
         .loops(1)
@@ -76,13 +97,15 @@ import mods.create.MechanicalCrafterManager;
         .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:garnished:void_dust>)));
   //compacting | <recipetype:create:compacting>.addRecipe(name as string, heat as HeatCondition, outputs as IFluidStack[], itemInputs as IIngredientWithAmount[], fluidInputs as FluidIngredient[], duration as int);
     <recipetype:create:compacting>.addRecipe("compacting_glow_items", <constant:create:heat_condition:heated>, [<fluid:kubejs:glowing_liquid> * 350], [<tag:items:crafttweaker:glowing_items> * 1], [<fluid:minecraft:water> * 100], 100);
-    <recipetype:create:compacting>.addRecipe("sturdy_sheet_block_w/_compacting", <constant:create:heat_condition:heated>, [<item:create_things_and_misc:sturdy_sheet_block>], [<item:create:sturdy_sheet> * 15], [], 200);
+    <recipetype:create:compacting>.addRecipe("sturdy_sheet_block_with_compacting", <constant:create:heat_condition:heated>, [<item:create_things_and_misc:sturdy_sheet_block>], [<item:create:sturdy_sheet> * 15], [], 200);
   //filling | <recipetype:create:filling>.addRecipe(name as string, output as Percentaged<IItemStack>, inputContainer as IIngredient, inputFluid as FluidIngredient, duration as int);
     <recipetype:create:filling>.addRecipe("myceliate_dirt", <item:minecraft:mycelium>, <item:minecraft:dirt>, (<fluid:kubejs:fungal_mixture> * 100 ), 60);
+    <recipetype:create:filling>.addRecipe('dragons_breath/filling', <item:minecraft:dragon_breath>, <item:minecraft:glass_bottle>, <fluid:kubejs:liquid_dragons_breath> * 250, 100);
+    <recipetype:create:filling>.addRecipe('void_in_a_bottle/filling', <item:minecraft:dragon_breath>, <item:minecraft:glass_bottle>, <fluid:kubejs:liquid_dragons_breath> * 250, 100);
   //cutting | <recipetype:create:cutting>.addRecipe(name as string, output as Percentaged<IItemStack>, input as IIngredient, duration as int);
-    <recipetype:create:cutting>.addRecipe("andesite_rod_w/_cutting", [(<item:kubejs:andesite_rod> *8) %100], <item:create:andesite_alloy> * 2, 100);
-    <recipetype:create:cutting>.addRecipe("copper_rod_w/_cutting", [(<item:kubejs:copper_rod> * 8) %100], <item:minecraft:copper_ingot> * 2, 60);
-    <recipetype:create:cutting>.addRecipe("brass_rod_w/_cutting", [(<item:kubejs:brass_rod> * 8) %100], <item:create:brass_ingot> * 2, 100);
+    <recipetype:create:cutting>.addRecipe("andesite_rod_with_cutting", [(<item:kubejs:andesite_rod> *8) %100], <item:create:andesite_alloy> * 2, 100);
+    <recipetype:create:cutting>.addRecipe("copper_rod_with_cutting", [(<item:kubejs:copper_rod> * 8) %100], <item:minecraft:copper_ingot> * 2, 60);
+    <recipetype:create:cutting>.addRecipe("brass_rod_with_cutting", [(<item:kubejs:brass_rod> * 8) %100], <item:create:brass_ingot> * 2, 100);
   //mechanical crafting | <recipetype:create:mechanical_crafting>.addRecipe(name as string, output as IItemStack, ingredients as IIngredient[][])
     val air = <item:minecraft:air>;
     <recipetype:create:mechanical_crafting>.addRecipe("digital_miner", <item:mekanism:digital_miner>, [
@@ -97,3 +120,15 @@ import mods.create.MechanicalCrafterManager;
       [<item:create:mechanical_arm>, <item:mekanism:elite_energy_cube>, <item:create:mechanical_arm>],
       [<item:minecraft:white_concrete>, <tag:items:mekanism:personal_storage>, <item:minecraft:white_concrete>],
       [<item:create:belt_connector>, <item:mekanism:steel_casing>, <item:create:belt_connector>]]);
+    <recipetype:create:mechanical_crafting>.addRecipe("fluid_laser_base", <item:industrialforegoing:fluid_laser_base>, [
+      [air, <item:minecraft:iron_block>, <item:minecraft:iron_block>, <item:minecraft:iron_block>, air],
+      [<item:minecraft:iron_block>, <item:mekanism:basic_fluid_tank>, <item:industrialforegoing:machine_frame_advanced>, <item:mekanism:basic_fluid_tank>, <item:minecraft:iron_block>],
+      [<item:industrialforegoing:plastic>, <item:industrialforegoing:laser_lens15>, <item:mekanism:laser_tractor_beam>, <item:industrialforegoing:laser_lens15>, <item:industrialforegoing:plastic>],
+      [<item:industrialforegoing:plastic>, <item:industrialforegoing:diamond_gear>, <item:enderio:redstone_alloy_ingot>, <item:industrialforegoing:diamond_gear>, <item:industrialforegoing:plastic>]]);
+    <recipetype:create:mechanical_crafting>.addRecipe("mekanism/laser", <item:mekanism:laser>, [
+      [<item:mekanism:alloy_reinforced>, <item:mekanism:energy_tablet>, <item:minecraft:amethyst_cluster>, <item:minecraft:amethyst_cluster>, <item:minecraft:amethyst_cluster>, air],
+      [<item:mekanism:alloy_reinforced>, <item:minecraft:beacon>, <item:connectedglass:clear_glass>, <item:connectedglass:clear_glass>, <item:mekanismgenerators:laser_focus_matrix>, <item:industrialforegoing:laser_lens14>],
+      [<item:mekanism:alloy_reinforced>, <item:mekanism:energy_tablet>,<item:minecraft:amethyst_cluster>, <item:minecraft:amethyst_cluster>, <item:minecraft:amethyst_cluster>, air]]);
+  //draining | <recipetype:create:emptying>.addRecipe(name as string, outputItem as Percentaged<IItemStack>, outputFluid as IFluidStack, inputContainer as IIngredient, duration as int)  
+    <recipetype:create:emptying>.addRecipe('dragons_breath/emptying', <item:minecraft:glass_bottle>, <fluid:kubejs:liquid_dragons_breath> * 250, <item:minecraft:dragon_breath>);
+    <recipetype:create:emptying>.addRecipe('void_in_a_bottle/emptying', <item:minecraft:glass_bottle>, <fluid:kubejs:void> * 250, <item:minecraft:dragon_breath>);

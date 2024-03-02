@@ -131,3 +131,14 @@ import crafttweaker.api.ingredient.IIngredientWithAmount;
     "item": "enderio:energetic_alloy_ingot"
   }
 });
+<recipetype:enderio:enchanting>.addJsonRecipe('hellfire', {
+  "type": "enderio:enchanting",
+  "cost_multiplier": 1,
+  "enchantment": "create_sa:hellfire",
+  "input": {
+    "count": 1,
+    "ingredient": {
+      "item": "minecraft:soul_campfire"
+    }
+  }
+});
