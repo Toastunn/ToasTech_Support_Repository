@@ -12,5 +12,18 @@
             ],
             "url": "./.vscode/probe.doc-schema.json"
         }
-    ]
+    ],
+    "[javascript]": {
+        "files.autoSaveWhenNoErrors": true,
+        "files.autoSave": "afterDelay",
+        "files.autoSaveDelay": 10000
+    },
+    "[zenscript]": {
+        "files.autoSaveWhenNoErrors": true,
+        "files.autoSave": "afterDelay",
+        "files.autoSaveDelay": 1000
+    },
+    "files.autoSaveWhenNoErrors": true,
+    "files.autoSaveDelay": 10000,
+    "files.autoSave": "afterDelay"
 }
