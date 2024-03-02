@@ -26,6 +26,30 @@ ItemEvents.tooltip((e) => {
   e.addAdvanced('kubejs:infinite_chassis', (block, isAdvanced, text) => {
     text.add(1, [Text.of('§fServes no purpose outside the assembly line.')])
   })
+  e.addAdvanced('kubejs:ingots_of_steel_2', (item, isAdvanced, text) => {
+    text.add(2, [Text.of('§7Sequence Chain')])
+    text.add(3, [Text.of('§8Step: 3/3')])
+    text.add(4, [Text.of('§bNext: Spout Fire Water')])
+  })
+  e.addAdvanced('kubejs:ingots_of_steel_1', (item, isAdvanced, text) => {
+    text.add(2, [Text.of('§7Sequence Chain')])
+    text.add(3, [Text.of('§8Step: 2/3')])
+    text.add(4, [Text.of('§bNext: The Great Pressing')])
+    text.add(5, [Text.of('§3-> Spout Fire Water')])
+  })
+  e.addAdvanced('kubejs:fan_void_catalyst', (item, isAdvanced, text) => {
+    text.add(1, [Text.of('Does not function as a Fan Catalyst')])
+  })
+  e.addAdvanced('kubejs:wand_of_recall', (item, isAdvanced, text) => {
+    let mode = item.nbt.getString('mode')
+    text.add(1, [Text.yellow('Mode: ').append(Text.aqua(mode))])
+    })
+  // cut this out when release
+  e.addAdvanced(Ingredient.all, (item, advanced, text) => {
+    if (e.alt && item.nbt && advanced) {
+      text.add(Text.of('NBT: ').append(Text.prettyPrintNbt(item.nbt)))
+    }
+  })
 });
 
 //for create tooltips (aka they do have hold [shift] for summary)
@@ -48,6 +72,11 @@ ClientEvents.lang("en_us", (event) => {
      .addBehaviour(["When Interacted With", "Opens a GUI allowing the Activation of _Beneficial Abilities_."]) 
      .setPalette($Palette.ofColors(Color.AQUA, Color.DARK_AQUA))
      .build()
+  )
+  event.addAll(
+    createTooltip('ae2:facade')
+      .addSummary("Facades can be crafted using any block, but the Infinity Block Facade is the only one that will show up in JEI.")
+      .build()
   )
   event.addAll(
     createTooltip("minecraft:amethyst_cluster")
