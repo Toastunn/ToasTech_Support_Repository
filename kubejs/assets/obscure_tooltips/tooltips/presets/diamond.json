@@ -60,7 +60,9 @@
       "extendedcrafting:crystaltine_component",
       "extendedcrafting:crystaltine_ingot",
       "extendedcrafting:crystaltine_nugget",
-      "ironfurnaces:crystal_furnace"
+      "ironfurnaces:crystal_furnace",
+      "blocksyouneed_luna:aquatrine",
+      "blocksyouneed_luna:aquatrine_block"
     ]
   }
 }

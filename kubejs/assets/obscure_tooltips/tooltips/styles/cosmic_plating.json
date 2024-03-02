@@ -1,0 +1,16 @@
+{
+  "priority": 1001,
+  "panel": "obscure_tooltips:rarities/cosmic",
+  "frame": "obscure_tooltips:plating",
+  "icon": "obscure_tooltips:cosmic",
+  "effects": [
+    "obscure_tooltips:default_rim",
+    "obscure_tooltips:default_ender"
+  ],
+  "filter": {
+    "items": [
+      "industrialforegoing:ore_laser_base",
+      "mekanism:digital_miner"
+    ]
+  }
+}

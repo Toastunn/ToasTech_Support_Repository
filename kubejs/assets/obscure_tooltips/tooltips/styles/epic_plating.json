@@ -1,0 +1,18 @@
+{
+  "priority": 1001,
+  "panel": "obscure_tooltips:rarities/golden",
+  "frame": "obscure_tooltips:plating",
+  "icon": "obscure_tooltips:epic",
+  "effects": [
+    "obscure_tooltips:default_rim",
+    "obscure_tooltips:default_ender"
+  ],
+  "filter": {
+    "items": [
+      "modularrouters:modular_router",
+      "mekanism:qio_drive_array",
+      "extendedcrafting:compressor",
+      "mekanism:quantum_entangloporter"
+    ]
+  }
+}
