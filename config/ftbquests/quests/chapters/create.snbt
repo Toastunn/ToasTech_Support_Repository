@@ -264,7 +264,7 @@
 		}
 		{
 			dependencies: ["1A204FBEED9E3307"]
-			description: ["&eThe &6Mixer&e allows you to make, notably, &6Alloys&e! It can also make &6 Andesite Alloys&e cheaper than crafting."]
+			description: ["&eThe &6Mixer&e allows you to make, notably, &6Alloys&e! It can also make &6Andesite Alloys&e cheaper than crafting."]
 			id: "2EC8624B073DA950"
 			rewards: [{
 				count: 10
@@ -405,6 +405,7 @@
 		}
 		{
 			dependencies: ["54AD23F59360D2E2"]
+			description: ["&6Frames &eare a key part of the casing rework. They can be used on "]
 			id: "41366CFFE4FA8031"
 			rewards: [{
 				count: 4
@@ -488,9 +489,16 @@
 				"1A204FBEED9E3307"
 				"49B9A9D1CEF75B1F"
 			]
+			description: ["&eThe &6Mechanical Saw &eallows you to make rods with less materials. It can also be used to chop down trees and automate wood processing."]
 			hide_dependency_lines: true
 			id: "1BED1A7A9A508F6B"
 			optional: true
+			rewards: [{
+				count: 3
+				id: "773565FF347C6554"
+				item: "create:iron_sheet"
+				type: "item"
+			}]
 			tasks: [{
 				id: "6F6D7656C498AABE"
 				item: "create:mechanical_saw"

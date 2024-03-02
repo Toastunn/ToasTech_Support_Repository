@@ -1,0 +1,218 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "modular_routers"
+	group: "7BA7C5ADDAE03ED6"
+	icon: "modularrouters:modular_router"
+	id: "32429317E2A67748"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"You have probably noticed that there are very few quests in this tab, and that's because the Modular Routers Manual does a great job at explaining how to use the items from the mod. So you can just use it as guide. "
+				""
+				"As for the quests, they are there to give you some return on investment. You're welcome!"
+			]
+			icon: {
+				Count: 1b
+				id: "patchouli:guide_book"
+				tag: {
+					"patchouli:book": "modularrouters:book"
+				}
+			}
+			id: "16802325908D3CCB"
+			rewards: [{
+				id: "52EB35791DAABAF8"
+				item: "modularrouters:blank_module"
+				type: "item"
+			}]
+			size: 3.0d
+			subtitle: "No, I'm not lazy... just efficient."
+			tasks: [{
+				id: "014C7218DB63C6FA"
+				title: "box"
+				type: "checkmark"
+			}]
+			title: "Modular Routers Manual"
+			x: 0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["16802325908D3CCB"]
+			description: ["The Modular Router is &othe &rmachine of Modular Routers. By adding modules to it, you can make it do stuff like move items or hit enemies. Very useful."]
+			id: "47B0B414649D5299"
+			rewards: [{
+				count: 4
+				id: "1726E08A1E077EB1"
+				item: "enderio:redstone_alloy_ingot"
+				type: "item"
+			}]
+			subtitle: "Oh my gosh, he said it! No way!"
+			tasks: [{
+				id: "50E38FAD616C8D2C"
+				item: "modularrouters:modular_router"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["16802325908D3CCB"]
+			description: ["If you want to set up some cool systems, I'd recommend using these modules."]
+			id: "6329DE00F88799F6"
+			rewards: [{
+				count: 8
+				id: "5589B1AA5D6B2846"
+				item: "modularrouters:blank_module"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "50225D48D5BA9FBE"
+					item: {
+						Count: 1b
+						id: "modularrouters:puller_module_1"
+						tag: {
+							modularrouters: {
+								ModuleFilter: { }
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5F400666302AF0BA"
+					item: {
+						Count: 1b
+						id: "modularrouters:sender_module_1"
+						tag: {
+							modularrouters: {
+								ModuleFilter: { }
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "772AF484B13A09AD"
+					item: {
+						Count: 1b
+						id: "modularrouters:activator_module"
+						tag: {
+							modularrouters: {
+								Direction: "NONE"
+								ModuleFilter: { }
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "39A626A05B7CAC82"
+					item: {
+						Count: 1b
+						id: "modularrouters:vacuum_module"
+						tag: {
+							modularrouters: {
+								Direction: "NONE"
+								ModuleFilter: { }
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "00FAA38991343CCA"
+					item: {
+						Count: 1b
+						id: "modularrouters:placer_module"
+						tag: {
+							modularrouters: {
+								Direction: "NONE"
+								ModuleFilter: { }
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3A1F59F3408CCA58"
+					item: {
+						Count: 1b
+						id: "modularrouters:fluid_module"
+						tag: {
+							modularrouters: {
+								Direction: "NONE"
+								FluidDir: 0b
+								MaxTransfer: 1000
+								ModuleFilter: { }
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7EC9AFAEF80EB26E"
+					item: {
+						Count: 1b
+						id: "modularrouters:breaker_module"
+						tag: {
+							modularrouters: {
+								Direction: "NONE"
+								ModuleFilter: { }
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "398C08E1E33C02A2"
+					item: {
+						Count: 1b
+						id: "modularrouters:player_module"
+						tag: {
+							modularrouters: {
+								ModuleFilter: { }
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Some Useful Modules"
+			x: -1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["16802325908D3CCB"]
+			id: "05F69345562FA345"
+			rewards: [{
+				count: 4
+				id: "0B1BC6F508DE6DD8"
+				item: "modularrouters:blank_upgrade"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "75F8C2C868E8503F"
+					item: "modularrouters:blast_upgrade"
+					type: "item"
+				}
+				{
+					id: "66802F13137291FC"
+					item: "modularrouters:speed_upgrade"
+					type: "item"
+				}
+				{
+					id: "674A79C93798D3EB"
+					item: "modularrouters:stack_upgrade"
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 0.5d
+		}
+	]
+	title: "Modular Routers"
+}

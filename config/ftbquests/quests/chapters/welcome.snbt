@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "welcome"
 	group: ""
+	icon: "minecraft:bread"
 	id: "7E246CF4602950CE"
 	order_index: 0
 	quest_links: [ ]
@@ -61,6 +62,23 @@
 			}]
 			x: 0.0d
 			y: 1.0d
+		}
+		{
+			dependencies: ["4581275E09079C65"]
+			description: ["/recall is a command added by ToasTech that telepoerts you to world spawn."]
+			id: "3D69059B922AA227"
+			rewards: [{
+				id: "4AE990A61C34E647"
+				item: "minecraft:command_block"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1E0F634D902199D0"
+				title: "/recall"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: 0.0d
 		}
 	]
 	title: "Welcome!"

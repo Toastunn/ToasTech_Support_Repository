@@ -1,0 +1,406 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "industrial_foregoing"
+	group: "7BA7C5ADDAE03ED6"
+	icon: "industrialforegoing:plastic"
+	id: "1B23130CC9B4BC8B"
+	images: [{
+		click: ""
+		corner: false
+		dev: false
+		height: 3.6d
+		hover: [ ]
+		image: "kubejs:textures/ftbquests/wither-cage-schema.png"
+		rotation: 0.0d
+		width: 3.0d
+		x: 8.5d
+		y: -10.0d
+	}]
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["&aIndustrial Foregoing &2is one of the tech mods of all time. I included it for a couple of reasons, mainly the stasis chamber and the black hole units. So, let me show you how to get there."]
+			id: "640FA0EB22A2D109"
+			rewards: [{
+				count: 16
+				id: "73F2E7EFEC375AEF"
+				item: "minecraft:oak_wood"
+				type: "item"
+			}]
+			subtitle: "Ah, Industrial, my old friend."
+			tasks: [{
+				id: "0315C8C2C4F7ABEF"
+				title: "boxcheck"
+				type: "checkmark"
+			}]
+			title: "that one latex mod"
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["73D8BA023780EBDC"]
+			description: [
+				"&2The &aFluid Extractor &2works by placing a log in front on the machine and waiting for latex to be produced. "
+				"&2I'd recommend setting up at least 25.7 of these."
+				""
+				"&2Acacia apparently produces twice as much latex as other woods."
+			]
+			id: "56CE3E9B2207E813"
+			rewards: [{
+				count: 16
+				id: "303FF57C834A3BFC"
+				item: { Count: 16b, id: "minecraft:acacia_sapling" }
+				type: "item"
+			}]
+			subtitle: "first machine yipee"
+			tasks: [{
+				id: "0ADAE2934727335C"
+				item: "industrialforegoing:fluid_extractor"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["640FA0EB22A2D109"]
+			description: ["&2Hope you've got a lot of redstone on hand, since you'll need it."]
+			id: "73D8BA023780EBDC"
+			rewards: [{
+				id: "15A68C2C59FC9B6A"
+				item: "minecraft:redstone_block"
+				type: "item"
+			}]
+			subtitle: "yes the quest page looks abysmal its intentional"
+			tasks: [{
+				id: "42AF5003020D9067"
+				item: "industrialforegoing:machine_frame_pity"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["56CE3E9B2207E813"]
+			description: ["&2There was once a time where this machine produced &aRubber Balls&2, which you had to craft into &aDry Rubber &2using nine of them. It was painful. Thankfully, your machine will produce &aDry Rubber &2from the start, which you can smelt into &aPlastic."]
+			id: "0028EFDC18891010"
+			rewards: [{
+				id: "34A743D6AEE6C769"
+				item: "minecraft:redstone_block"
+				type: "item"
+			}]
+			subtitle: "literal slowest machine ever"
+			tasks: [{
+				id: "31C469D2907826D8"
+				item: "industrialforegoing:latex_processing_unit"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0028EFDC18891010"]
+			id: "2C44D1F099F86CFE"
+			rewards: [{
+				count: 10
+				id: "4291C71942B6D816"
+				item: "industrialforegoing:dryrubber"
+				type: "item"
+			}]
+			subtitle: "don't pollute the oceans"
+			tasks: [{
+				id: "6C6AB7FED456367A"
+				item: "industrialforegoing:plastic"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2C44D1F099F86CFE"]
+			description: ["&2The &aDissolution Chamber &8&o(not to be confused with the &5Chemical Dissolution Chamber)&r &2is a crafting table that takes energy, time and has a fluid input as the center slot. It will be used frequently."]
+			id: "6F7646F79946C783"
+			rewards: [{
+				count: 4
+				id: "154D6F456CDCD377"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			subtitle: "another crafting table!"
+			tasks: [{
+				id: "234773EE9CEC0A7A"
+				item: "industrialforegoing:dissolution_chamber"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6F7646F79946C783"]
+			id: "2512F8E4B6338AF0"
+			rewards: [{
+				count: 4
+				id: "362E229308C35D0D"
+				item: "minecraft:gold_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "76CC67D7D6D21FB8"
+				item: "industrialforegoing:machine_frame_simple"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"6F7646F79946C783"
+				"3827258439BF678D"
+			]
+			id: "1976B96532587878"
+			rewards: [{
+				count: 4
+				id: "7FF8FBDD6A4CC9E7"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0F178402A90EFA10"
+				item: "industrialforegoing:machine_frame_advanced"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"6F7646F79946C783"
+				"2DF03915CEE99947"
+			]
+			id: "71626497D0A39189"
+			rewards: [{
+				count: 4
+				id: "678F53ADCEA2E191"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1D89F38EEA900CFC"
+				item: "industrialforegoing:machine_frame_supreme"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2C44D1F099F86CFE"]
+			description: ["&2The &aMob Slaughter Factory &2produces &aPink Slimke &2whenever a mob is killed by it."]
+			id: "3827258439BF678D"
+			rewards: [{
+				count: 4
+				id: "25AD5CEC468C5592"
+				item: "minecraft:gold_ingot"
+				type: "item"
+			}]
+			subtitle: "stealing juice from mobs"
+			tasks: [{
+				id: "1676017360C4773C"
+				item: "industrialforegoing:mob_slaughter_factory"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["1976B96532587878"]
+			description: ["&2The &aFluid Laser Base &2is a block that is mainly used to extract &aEther Gas &2from a Wither."]
+			id: "6DC7AD7115380311"
+			subtitle: "The only fluid drill you'll ever know"
+			tasks: [{
+				id: "554C4DF3754DDDC5"
+				item: "industrialforegoing:fluid_laser_base"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["2512F8E4B6338AF0"]
+			description: ["&2The &aLaser Drill &2powers the &aLaser Base."]
+			id: "1FEAB96C61D7C6DE"
+			rewards: [{
+				count: 4
+				id: "528E362E9F06A798"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			subtitle: "We love multiblocks"
+			tasks: [{
+				id: "1648865C1E89B87B"
+				item: "industrialforegoing:laser_drill"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["1976B96532587878"]
+			description: ["&2The &aStasis Chamber &2freezes entities inside of its working area. Very useful while working with Withers."]
+			id: "6CF63E45418AAF6D"
+			rewards: [{
+				id: "0F6A1765EF6E6A47"
+				item: "minecraft:gold_block"
+				type: "item"
+			}]
+			subtitle: "freeze!"
+			tasks: [{
+				id: "3AF86DC22AA0FA5C"
+				item: "industrialforegoing:stasis_chamber"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"6CF63E45418AAF6D"
+				"6DC7AD7115380311"
+				"1FEAB96C61D7C6DE"
+			]
+			description: [
+				"&2The &aWither Cage &2is a machine that traps a Wither so that it can be exploited &8(either for &aEther Gas &8or &fNether Stars&8). &2You shouldn't follow the schematic associated with this quest &8&o(considering it doesn't have a laser)&r&2, but take it as inspiration."
+				""
+				"&2For now, get some &aEther Gas."
+			]
+			icon: "minecraft:wither_skeleton_skull"
+			id: "2DF03915CEE99947"
+			rewards: [{
+				id: "3605D954D917720A"
+				item: "modularrouters:blank_module"
+				type: "item"
+			}]
+			subtitle: "stealing more fluid from mobs"
+			tasks: [
+				{
+					id: "4A4271DCD115875D"
+					item: "tougherglass:stronger_glass"
+					type: "item"
+				}
+				{
+					id: "0BF5189C6E083683"
+					item: "enderio:reinforced_obsidian_block"
+					type: "item"
+				}
+				{
+					amount: 1000L
+					fluid: "industrialforegoing:ether_gas"
+					id: "2845E7B6E94E5D09"
+					type: "fluid"
+				}
+			]
+			title: "Wither Cage"
+			x: 7.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["2DF03915CEE99947"]
+			description: [
+				"&2In addition to the previous cage, you can add a mechanism that switches from &aEther gas &2collection to Wither killing &8(or make another cage, i'm not your dad) &2I &nseriously&r&2 recommend investing in a &dMeka-Tana &2since, fully modded, it can deal up to 251 damage per swing."
+				""
+				"&2Get me a block of nether stars"
+			]
+			id: "20F7423A054C8EFE"
+			rewards: [{
+				count: 6
+				id: "58B775F4EB2A468B"
+				item: "minecraft:soul_sand"
+				type: "item"
+			}]
+			subtitle: "wither killing machine"
+			tasks: [
+				{
+					id: "7143846515DF6DC1"
+					item: "extendedcrafting:nether_star_block"
+					type: "item"
+				}
+				{
+					id: "7A5E77991C7A8CE4"
+					item: "industrialforegoing:wither_builder"
+					type: "item"
+				}
+				{
+					id: "1B102295882C60C3"
+					item: "mekaweapons:mekatana"
+					type: "item"
+				}
+			]
+			title: "Better Wither Cage"
+			x: 9.5d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"2DF03915CEE99947"
+				"71626497D0A39189"
+			]
+			description: ["&2The &aMycelial Reactor &2provides nearly infinite power as long as &a&nevery&r&a Mycelial Generator &2is running around it &aat the same time&2. It is a challenge, for sure, but that's why you're here, isn't it?"]
+			id: "38EAF71E02A36377"
+			rewards: [
+				{
+					count: 4
+					id: "28B42EBEE8A09071"
+					item: "industrialforegoing:machine_frame_simple"
+					type: "item"
+				}
+				{
+					count: 9
+					id: "7D7A3F71872C3363"
+					item: "industrialforegoing:machine_frame_advanced"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "47412514CA18A4E7"
+					item: "industrialforegoing:machine_frame_supreme"
+					type: "item"
+				}
+			]
+			subtitle: "infinite powah!"
+			tasks: [{
+				id: "1BC424319C9538EB"
+				item: "industrialforegoing:mycelial_reactor"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"640FA0EB22A2D109"
+				"70465B0372F737D6"
+			]
+			description: [
+				"&aBlock and Fluid Placers &2have been removed from survival ToasTech for two reasons:"
+				"&21- Modular Routers does the same thing."
+				"&22- Deployers do the same thing."
+				"&2&m3- Nobody likes Industrial"
+			]
+			id: "3E0F35E1E19B8E40"
+			rewards: [{
+				id: "5F64B71AFC392E5C"
+				item: "create:deployer"
+				type: "item"
+			}]
+			subtitle: "No, seriously, joke's over, right?"
+			tasks: [{
+				id: "163E2FFBEA4D75FA"
+				title: "Where are my Block Placers?"
+				type: "checkmark"
+			}]
+			x: 8.5d
+			y: -3.0d
+		}
+	]
+	title: "Industrial Foregoing"
+}
