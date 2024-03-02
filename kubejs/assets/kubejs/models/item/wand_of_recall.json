@@ -1,0 +1,8 @@
+{
+  "parent": "item/handheld",
+  "overrides": [
+    {"predicate": {"custom_model_data": 0}, "model": "kubejs:item/wand_of_recall/0"},
+    {"predicate": {"custom_model_data": 1}, "model": "kubejs:item/wand_of_recall/1"},
+    {"predicate": {"custom_model_data": 2}, "model": "kubejs:item/wand_of_recall/2"}
+  ]
+}
