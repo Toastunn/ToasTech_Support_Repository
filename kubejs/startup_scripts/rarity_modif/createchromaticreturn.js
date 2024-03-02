@@ -1,4 +1,3 @@
-const $Rarity = Java.loadClass("net.minecraft.world.item.Rarity")
 ItemEvents.modification(event => {
   event.modify([
     "createchromaticreturn:industrium_handle",
