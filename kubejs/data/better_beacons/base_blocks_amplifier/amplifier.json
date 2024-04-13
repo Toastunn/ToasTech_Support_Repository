@@ -1,6 +1,14 @@
 {
   "values": [
     {
+      "block": "avaritia:infinity",
+      "amplifier": 4
+    },
+    {
+      "block": "extendedcrafting:crystaltine_block",
+      "amplifier": 2
+    },
+    {
       "block": "enderio:conductive_alloy_block",
       "amplifier": 0
     },

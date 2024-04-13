@@ -1,0 +1,48 @@
+{
+  "values": [
+    {
+      "item": "extendedcrafting:crystaltine_ingot",
+      "range": 100
+    },
+    {
+      "item":   "enderio:pulsating_alloy_ingot",
+      "range": 40
+    },
+    {
+      "item": "enderio:vibrant_alloy_ingot",
+      "range": 55
+    },
+    {
+      "item": "enderio:energetic_alloy_ingot",
+      "range": 25
+    },
+    {
+      "item": "enderio:conductive_alloy_ingot",
+      "range": 5
+    },
+    {
+      "item": "enderio:enticing_crystal",
+      "range": 100
+    },
+    {
+      "item": "avaritia:infinity_ingot",
+      "range": 200
+    },
+    {
+      "item": "ae2:charged_certus_quartz_crystal",
+      "range": 15
+    },
+    {
+      "item": "ae2:fluix_crystal",
+      "range": 25
+    },
+    {
+      "item": "createchromaticreturn:refined_radiance",
+      "range": 250
+    },
+    {
+      "item": "kubejs:ethereal_brick",
+      "range": 45
+    }
+  ]
+}
