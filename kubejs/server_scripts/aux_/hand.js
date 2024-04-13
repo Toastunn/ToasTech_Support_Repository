@@ -1,6 +1,7 @@
 ServerEvents.commandRegistry(event => {
   const { commands: Commands, arguments: Arguments } = event
   event.register(Commands.literal('hand')
+    .requires(src => src.hasPermission(2))
     .executes(ctx => {
 
       const player = ctx.source.getEntity()
@@ -20,7 +21,7 @@ ServerEvents.commandRegistry(event => {
               Text.white(`Click to copy [`).append(Text.gold(`${ctResource}`)).append(Text.white(']'))
             ))
           player.tell('For JSON:')
-          player.tell(Text.gray('- ').append(Text.red(`"${key}"`).clickCopy(key).hover('Translation Key [Click to copy]')))
+          player.tell(Text.gray('- ').append(Text.red(`"${key}"`).clickCopy(`"${key}"`).hover('Translation Key [Click to copy]')))
           player.tell(Text.gray('- ').append(Text.red(`"${item}"`).clickCopy(`"${item}"`).hover('Item ID [Click to copy]')))
 
           return 1
