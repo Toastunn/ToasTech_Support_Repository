@@ -5,6 +5,18 @@
 	group: "7BA7C5ADDAE03ED6"
 	icon: "ae2:controller"
 	id: "4F361B4FF0C62E3F"
+	images: [{
+		click: ""
+		corner: false
+		dev: false
+		height: 15.965104166666666d
+		hover: [ ]
+		image: "kubejs:textures/ftbquests/spatial_storage_diff.png"
+		rotation: 0.0d
+		width: 29.0d
+		x: -11.0d
+		y: 3.5d
+	}]
 	order_index: 1
 	quest_links: [ ]
 	quests: [

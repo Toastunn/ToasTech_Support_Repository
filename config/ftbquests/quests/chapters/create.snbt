@@ -5,6 +5,18 @@
 	group: "1576A69176AFDEA4"
 	icon: "create:mechanical_press"
 	id: "07C6ED8DD9E21B8C"
+	images: [{
+		click: ""
+		corner: false
+		dev: false
+		height: 16.0d
+		hover: [ ]
+		image: "kubejs:textures/ftbquests/actual_crate_factory.png"
+		rotation: 0.0d
+		width: 29.063386944181648d
+		x: -18.5d
+		y: 0.0d
+	}]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -330,6 +342,12 @@
 				"&eUse &2JEI&e on a &6Precision Mechanism&e to see an example."
 			]
 			id: "792BA82E5782B0E6"
+			rewards: [{
+				count: 6
+				id: "3D7F3186ECA994C4"
+				item: "create:belt_connector"
+				type: "item"
+			}]
 			subtitle: "Manufacturing at its finest."
 			tasks: [{
 				id: "10EBD89A899CE66A"
@@ -384,7 +402,7 @@
 		}
 		{
 			dependencies: ["7A20A07DD5BB3668"]
-			description: ["&6Rods&e are used to make &6Frames&e, which are used to make &6Casings&e. There will be better recipes for this in the future. "]
+			description: ["&6Rods&e are a ToasTech exclusive used to make &6Frames&e, which are used to make &6Casings&e. There will be better recipes for this in the future. "]
 			id: "54AD23F59360D2E2"
 			rewards: [{
 				count: 16
@@ -405,7 +423,7 @@
 		}
 		{
 			dependencies: ["54AD23F59360D2E2"]
-			description: ["&6Frames &eare a key part of the casing rework. They can be used on "]
+			description: ["&6Frames &eare a key part of the casing rework. They can be used on any log or their &6Advantage &eplank to make casings. The &6Advantage &erecipes will save you a lot of resources, so I reccomend finding them."]
 			id: "41366CFFE4FA8031"
 			rewards: [{
 				count: 4
@@ -526,7 +544,7 @@
 		}
 		{
 			dependencies: ["10F60B0AE7D756DC"]
-			description: ["&6Create Pipes&e needs &6Pumps&e to actually move fluids. &6Pumps&e use &6Rotational Force&e to work."]
+			description: ["&6Create Pipes&e need &6Pumps&e to actually move fluids. &6Pumps&e use &6Rotational Force&e to work."]
 			id: "1682A5C6D8287E98"
 			rewards: [{
 				count: 2

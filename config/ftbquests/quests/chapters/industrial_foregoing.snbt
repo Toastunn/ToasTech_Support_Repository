@@ -5,23 +5,41 @@
 	group: "7BA7C5ADDAE03ED6"
 	icon: "industrialforegoing:plastic"
 	id: "1B23130CC9B4BC8B"
-	images: [{
-		click: ""
-		corner: false
-		dev: false
-		height: 3.6d
-		hover: [ ]
-		image: "kubejs:textures/ftbquests/wither-cage-schema.png"
-		rotation: 0.0d
-		width: 3.0d
-		x: 8.5d
-		y: -10.0d
-	}]
+	images: [
+		{
+			click: "#2DF03915CEE99947"
+			corner: false
+			dev: false
+			height: 3.6d
+			hover: [ ]
+			image: "kubejs:textures/ftbquests/wither-cage-schema.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 7.5d
+			y: -11.0d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 15.965104166666666d
+			hover: [ ]
+			image: "kubejs:textures/ftbquests/latex_unit.png"
+			rotation: 0.0d
+			width: 28.0d
+			x: 5.0d
+			y: -8.5d
+		}
+	]
 	order_index: 3
 	quest_links: [ ]
 	quests: [
 		{
-			description: ["&aIndustrial Foregoing &2is one of the tech mods of all time. I included it for a couple of reasons, mainly the stasis chamber and the black hole units. So, let me show you how to get there."]
+			description: [
+				"&aIndustrial Foregoing &2is one of the tech mods of all time. I included it for a couple of reasons, mainly the stasis chamber and the black hole units. So, let me show you how to get there."
+				"{@pagebreak}"
+				"&2Also refer to the manual if you don't know hoe to use things and I didn't provide a description."
+			]
 			id: "640FA0EB22A2D109"
 			rewards: [{
 				count: 16
@@ -36,8 +54,8 @@
 				type: "checkmark"
 			}]
 			title: "that one latex mod"
-			x: 6.0d
-			y: -1.5d
+			x: 5.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["73D8BA023780EBDC"]
@@ -60,16 +78,16 @@
 				item: "industrialforegoing:fluid_extractor"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -2.5d
+			x: 3.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["640FA0EB22A2D109"]
-			description: ["&2Hope you've got a lot of redstone on hand, since you'll need it."]
+			description: ["&2The &aPity Machine Frame &2now requires &dSturdy Andesite Casings."]
 			id: "73D8BA023780EBDC"
 			rewards: [{
-				id: "15A68C2C59FC9B6A"
-				item: "minecraft:redstone_block"
+				id: "47982281DB638E0E"
+				item: "minecraft:cobblestone"
 				type: "item"
 			}]
 			subtitle: "yes the quest page looks abysmal its intentional"
@@ -78,8 +96,8 @@
 				item: "industrialforegoing:machine_frame_pity"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -4.0d
+			x: 4.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["56CE3E9B2207E813"]
@@ -97,7 +115,7 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: -1.5d
+			y: -7.0d
 		}
 		{
 			dependencies: ["0028EFDC18891010"]
@@ -114,8 +132,8 @@
 				item: "industrialforegoing:plastic"
 				type: "item"
 			}]
-			x: 1.5d
-			y: -3.0d
+			x: 2.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["2C44D1F099F86CFE"]
@@ -133,8 +151,8 @@
 				item: "industrialforegoing:dissolution_chamber"
 				type: "item"
 			}]
-			x: 4.5d
-			y: -1.0d
+			x: 3.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["6F7646F79946C783"]
@@ -150,8 +168,8 @@
 				item: "industrialforegoing:machine_frame_simple"
 				type: "item"
 			}]
-			x: 5.0d
-			y: -4.0d
+			x: 4.5d
+			y: -7.0d
 		}
 		{
 			dependencies: [
@@ -170,8 +188,8 @@
 				item: "industrialforegoing:machine_frame_advanced"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -4.0d
+			x: 4.5d
+			y: -8.0d
 		}
 		{
 			dependencies: [
@@ -190,8 +208,8 @@
 				item: "industrialforegoing:machine_frame_supreme"
 				type: "item"
 			}]
-			x: 7.0d
-			y: -4.0d
+			x: 4.5d
+			y: -9.0d
 		}
 		{
 			dependencies: ["2C44D1F099F86CFE"]
@@ -209,8 +227,8 @@
 				item: "industrialforegoing:mob_slaughter_factory"
 				type: "item"
 			}]
-			x: 3.0d
-			y: -6.0d
+			x: 3.5d
+			y: -9.0d
 		}
 		{
 			dependencies: ["1976B96532587878"]
@@ -222,8 +240,8 @@
 				item: "industrialforegoing:fluid_laser_base"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -7.0d
+			x: 6.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["2512F8E4B6338AF0"]
@@ -241,8 +259,8 @@
 				item: "industrialforegoing:laser_drill"
 				type: "item"
 			}]
-			x: 5.0d
-			y: -6.5d
+			x: 6.5d
+			y: -7.0d
 		}
 		{
 			dependencies: ["1976B96532587878"]
@@ -259,8 +277,8 @@
 				item: "industrialforegoing:stasis_chamber"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -6.0d
+			x: 7.5d
+			y: -8.0d
 		}
 		{
 			dependencies: [
@@ -300,8 +318,8 @@
 				}
 			]
 			title: "Wither Cage"
-			x: 7.5d
-			y: -8.0d
+			x: 6.5d
+			y: -9.0d
 		}
 		{
 			dependencies: ["2DF03915CEE99947"]
@@ -310,6 +328,7 @@
 				""
 				"&2Get me a block of nether stars"
 			]
+			icon: "industrialforegoing:wither_builder"
 			id: "20F7423A054C8EFE"
 			rewards: [{
 				count: 6
@@ -336,8 +355,8 @@
 				}
 			]
 			title: "Better Wither Cage"
-			x: 9.5d
-			y: -8.0d
+			x: 7.5d
+			y: -9.0d
 		}
 		{
 			dependencies: [
@@ -372,8 +391,8 @@
 				item: "industrialforegoing:mycelial_reactor"
 				type: "item"
 			}]
-			x: 9.0d
-			y: -6.0d
+			x: 8.5d
+			y: -9.0d
 		}
 		{
 			dependencies: [
@@ -398,8 +417,146 @@
 				title: "Where are my Block Placers?"
 				type: "checkmark"
 			}]
-			x: 8.5d
-			y: -3.0d
+			x: 6.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["73D8BA023780EBDC"]
+			id: "60502A08CD246D11"
+			rewards: [{
+				count: 2
+				id: "1BA169451367812D"
+				item: "avaritia:singularity"
+				type: "item"
+			}]
+			subtitle: "black hole intermission"
+			tasks: [
+				{
+					id: "203E5EBF92684174"
+					item: "industrialforegoing:pity_black_hole_unit"
+					type: "item"
+				}
+				{
+					id: "4E7FF8A6BFF80855"
+					item: "industrialforegoing:pity_black_hole_tank"
+					type: "item"
+				}
+			]
+			title: "Pity Black Holes"
+			x: 5.5d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"60502A08CD246D11"
+				"2512F8E4B6338AF0"
+			]
+			id: "595F5776FB8951A1"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0AE271A5F39F0FD4"
+					table_id: 1520687482328805269L
+					type: "choice"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "23CABB0DACEA5B55"
+					table_id: 1520687482328805269L
+					type: "choice"
+				}
+			]
+			subtitle: "black hole intermission"
+			tasks: [
+				{
+					id: "0F29CAE0992D2DD2"
+					item: "industrialforegoing:simple_black_hole_unit"
+					type: "item"
+				}
+				{
+					id: "7FAE94884853454F"
+					item: "industrialforegoing:simple_black_hole_tank"
+					type: "item"
+				}
+			]
+			title: "Simple Black Holes"
+			x: 5.5d
+			y: -7.0d
+		}
+		{
+			dependencies: [
+				"595F5776FB8951A1"
+				"1976B96532587878"
+			]
+			id: "42651957D9B2B3B7"
+			rewards: [{
+				count: 2
+				id: "0DE34C06A8AB987F"
+				item: "ae2:singularity"
+				type: "item"
+			}]
+			subtitle: "black hole intermission"
+			tasks: [
+				{
+					id: "146873F3697D350D"
+					item: "industrialforegoing:advanced_black_hole_unit"
+					type: "item"
+				}
+				{
+					id: "2AFB31F0ADA1D050"
+					item: "industrialforegoing:advanced_black_hole_tank"
+					type: "item"
+				}
+			]
+			title: "Advanced Black Holes"
+			x: 5.5d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"42651957D9B2B3B7"
+				"71626497D0A39189"
+			]
+			id: "35CA25074C34F98E"
+			rewards: [{
+				count: 2
+				id: "57A5C77AD6B0A707"
+				item: "extendedcrafting:ultimate_singularity"
+				type: "item"
+			}]
+			subtitle: "black hole intermission"
+			tasks: [
+				{
+					id: "55AC122CB755AB55"
+					item: "industrialforegoing:supreme_black_hole_unit"
+					type: "item"
+				}
+				{
+					id: "4E0851D579ADD80C"
+					item: "industrialforegoing:supreme_black_hole_tank"
+					type: "item"
+				}
+			]
+			title: "Supreme Black Holes"
+			x: 5.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["35CA25074C34F98E"]
+			id: "32C44C006C04541E"
+			rewards: [{
+				id: "6D99030BF132305E"
+				item: "storagedrawers:controller"
+				type: "item"
+			}]
+			subtitle: "hey this doesn't work like a drawer controller at all!"
+			tasks: [{
+				id: "5B9CDDE8F4FCE17D"
+				item: "industrialforegoing:black_hole_controller"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -10.0d
 		}
 	]
 	title: "Industrial Foregoing"

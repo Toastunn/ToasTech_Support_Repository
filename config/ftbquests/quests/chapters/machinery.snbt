@@ -86,6 +86,454 @@
 			x: 2.732142857142861d
 			y: -0.9821428571428541d
 		}
+		{
+			dependencies: [
+				"0000000000000948"
+				"7E9AD5B815F40263"
+			]
+			description: ["QIO is a way of storing large amounts of items that can be stored, searched, and accessed remotely in late game."]
+			id: "00000000000008C1"
+			rewards: [{
+				count: 4
+				id: "1198B4A6798E082C"
+				item: "mekanism:pellet_polonium"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "00000000000008C2"
+					item: "mekanism:qio_drive_array"
+					type: "item"
+				}
+				{
+					id: "00000000000008C3"
+					item: "mekanism:qio_dashboard"
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["00000000000008C1"]
+			description: ["In this basic QIO Drive, you can store 16k items for 128 different types."]
+			id: "00000000000008C4"
+			rewards: [{
+				id: "5522CD4169C537A2"
+				item: "mekanism:pellet_polonium"
+				type: "item"
+			}]
+			tasks: [{
+				id: "00000000000008C5"
+				item: "mekanism:qio_drive_base"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["00000000000008C4"]
+			description: ["In the Hyper-Dense QIO Drive, you can store 128k items for 256 different types."]
+			id: "00000000000008C6"
+			rewards: [{
+				count: 2
+				id: "20865B9BC588E6B1"
+				item: "mekanism:pellet_polonium"
+				type: "item"
+			}]
+			tasks: [{
+				id: "00000000000008C7"
+				item: "mekanism:qio_drive_hyper_dense"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["00000000000008C6"]
+			description: ["In the Time-Dilating QIO Drive, you can store 1048k items for 1024 different types."]
+			id: "00000000000008C8"
+			rewards: [{
+				count: 4
+				id: "29A08220B1CDC997"
+				item: "mekanism:pellet_polonium"
+				type: "item"
+			}]
+			tasks: [{
+				id: "00000000000008C9"
+				item: "mekanism:qio_drive_time_dilating"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["00000000000008C8"]
+			description: ["In the Supermassive QIO Drive, you can store 16 billion items for 8192 different types."]
+			id: "00000000000008CA"
+			rewards: [{
+				id: "4F8753971066D217"
+				item: "mekanism:pellet_antimatter"
+				type: "item"
+			}]
+			tasks: [{
+				id: "00000000000008CB"
+				item: "mekanism:qio_drive_supermassive"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["00000000000008C1"]
+			description: ["QIO Importers are attached to a block with inventory and wirelessly transmit their contents to a drive array. The importer must be set to the same frequency as the drive array."]
+			id: "00000000000008DC"
+			rewards: [{
+				count: 4
+				id: "08028A9BBDBACE22"
+				item: "mekanism:pellet_polonium"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "00000000000008DD"
+					item: "mekanism:qio_importer"
+					type: "item"
+				}
+				{
+					id: "00000000000008DE"
+					item: "mekanism:qio_exporter"
+					type: "item"
+				}
+				{
+					id: "00000000000008DF"
+					item: "mekanism:qio_redstone_adapter"
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["19F5DDF4204F6E56"]
+			id: "1DA876F3AD8802E0"
+			tasks: [{
+				id: "03213A9D38FB1AC7"
+				item: "kubejs:ingot_of_infinity"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["1DA876F3AD8802E0"]
+			id: "0A15C9E8C61834AE"
+			tasks: [{
+				id: "270F09E98841BE4B"
+				item: "kubejs:alloy_of_infinity"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0A15C9E8C61834AE"]
+			description: ["&cYou made it, the Infinity Ingot is yours. "]
+			id: "54B689658A61DAF2"
+			rewards: [{
+				count: 10
+				id: "59A162B55CC6D4F5"
+				item: "avaritia:crystal_matrix_ingot"
+				type: "item"
+			}]
+			subtitle: "The Avaritia progression"
+			tasks: [{
+				id: "506AD9191596A34E"
+				item: "avaritia:infinity_ingot"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"0000000000000906"
+				"24DA98E8D5324F71"
+			]
+			description: ["&5You know the drill."]
+			id: "19F5DDF4204F6E56"
+			rewards: [{
+				id: "6B84E8DAA249B329"
+				type: "xp_levels"
+				xp_levels: 4
+			}]
+			tasks: [{
+				id: "41C92D056094C8C4"
+				item: "kubejs:crystal_of_infinity"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"0000000000000916"
+				"632A442FF26FF12B"
+			]
+			description: ["&5You know the drill."]
+			id: "24DA98E8D5324F71"
+			rewards: [{
+				id: "6B36F506DCD11BE3"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+			subtitle: "FTB quests forcing liquids once again."
+			tasks: [{
+				amount: 1000L
+				fluid: "kubejs:liquid_infinity"
+				id: "400600358CCE1DE0"
+				type: "fluid"
+			}]
+			title: "Gaseous Infinity"
+			x: -2.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"00000000000008E2"
+				"1A2BCE1CC89F429A"
+			]
+			description: ["&o&5Perfecting Grains of Infinity requires a lot of Antimatter."]
+			id: "632A442FF26FF12B"
+			rewards: [{
+				id: "7A9E74DB392F8E8D"
+				item: {
+					Count: 1b
+					id: "minecraft:enchanted_book"
+					tag: {
+						StoredEnchantments: [{
+							id: "create_sa:hellfire"
+							lvl: 1s
+						}]
+					}
+				}
+				title: "Hellfire Book"
+				type: "item"
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "2EF392EE97135F1B"
+				item: "kubejs:atomically_perfect_grains_of_infinity"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"444E38D3237CE41F"
+				"445E26160DDB7BFF"
+			]
+			description: ["&0I won't explain how to craft it, you already know how."]
+			id: "1A2BCE1CC89F429A"
+			rewards: [{
+				id: "5432DDA9B7AC9A84"
+				item: {
+					Count: 1b
+					id: "minecraft:enchanted_book"
+					tag: {
+						StoredEnchantments: [{
+							id: "create_sa:hellfire"
+							lvl: 1s
+						}]
+					}
+				}
+				title: "Hellfire Book"
+				type: "item"
+			}]
+			subtitle: "Woah, more progression out here?"
+			tasks: [{
+				id: "3223A4230696ADDB"
+				item: "kubejs:superheated_grains_of_infinity"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"000000000000090E"
+				"18389734DFB5C9A1"
+			]
+			description: ["&5Use the &dInjection Chamber &5to inject &6Hyper Experience Gas &5into the Grains."]
+			id: "445E26160DDB7BFF"
+			rewards: [{
+				id: "281378A7ACCBBF6A"
+				item: "kubejs:raw_grains_of_infinity"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2FF8A6D263C959EA"
+				item: "kubejs:enchanted_grains_of_infinity"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"00000000000008EA"
+				"151AF64607B63F77"
+			]
+			description: ["&5Purify the Grains using &dHydrofluoric Acid."]
+			id: "18389734DFB5C9A1"
+			rewards: [{
+				id: "7C65BE41A522EB90"
+				item: "kubejs:raw_grains_of_infinity"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4BC516D6BE0042C4"
+				item: "kubejs:pure_grains_of_infinity"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"00000000000008EE"
+				"22F4E20F03ECBFA0"
+			]
+			description: [
+				"&5I'll assume you've been doing the progression already."
+				"&5Use the &dEnrichment Chamber &5to make Grains of Infinity from the washed ones."
+			]
+			id: "151AF64607B63F77"
+			rewards: [{
+				id: "6DD02105DB90EEF4"
+				item: "kubejs:raw_grains_of_infinity"
+				type: "item"
+			}]
+			subtitle: "Not this again..."
+			tasks: [{
+				id: "1DED255A828E4BCF"
+				item: "enderio:grains_of_infinity"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"1A204FBEED9E3307"
+				"235B484A38924907"
+			]
+			description: ["&eUse a &6Fan&e to wash the raw grains."]
+			icon: "kubejs:washed_grains_of_infinity"
+			id: "22F4E20F03ECBFA0"
+			rewards: [{
+				id: "42F65B1BD39E2ABF"
+				item: "kubejs:raw_grains_of_infinity"
+				type: "item"
+			}]
+			subtitle: "I know what that is!"
+			tasks: [
+				{
+					id: "039FC88D9D559DA7"
+					item: "create:encased_fan"
+					type: "item"
+				}
+				{
+					id: "09CBD2616646D49D"
+					item: "kubejs:washed_grains_of_infinity"
+					type: "item"
+				}
+			]
+			title: "Washed Grains of Infinity"
+			x: -8.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["24D225215B1A34FA"]
+			description: ["&7I think it's about time for you to know the main progression item of ToasTech, Grains of Infinity &o&8(no, it's not toast... yet)&r&7 To get the raw form of Grains of Infinity you need to light bedrock on fire. (&2JEI&7 says you can use fire water, but you can't)"]
+			id: "235B484A38924907"
+			rewards: [{
+				id: "2F4AA89000E37641"
+				item: "kubejs:raw_grains_of_infinity"
+				type: "item"
+			}]
+			subtitle: "Finally, progression!"
+			tasks: [{
+				id: "57E5AAAA4550BEC6"
+				item: "kubejs:raw_grains_of_infinity"
+				type: "item"
+			}]
+			x: -9.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["7E9AD5B815F40263"]
+			id: "7C6740D20B44003F"
+			tasks: [{
+				id: "25FF5167485C3B16"
+				item: "create:schematicannon"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["54B689658A61DAF2"]
+			description: ["Turns out inverting the polarity of Infinity gives negaitve Infinity. "]
+			id: "25F677BEE902CAA4"
+			rewards: [{
+				id: "6552F9E700E65772"
+				item: "blocksyouneed_luna:antimetal_ingot"
+				type: "item"
+			}]
+			subtitle: "There's something better than the Infinity Ingot?"
+			tasks: [{
+				id: "05ADE44CF01E428E"
+				item: "kubejs:anti_infinity"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["25F677BEE902CAA4"]
+			id: "4DAD5404CBEBF6CC"
+			tasks: [{
+				id: "1C3BF825AF8E6AE1"
+				item: "createchromaticreturn:shadow_steel"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["4DAD5404CBEBF6CC"]
+			id: "7BCAFAF481F57B8B"
+			tasks: [{
+				id: "4E0EDEB9A8FCA270"
+				item: "createchromaticreturn:refined_radiance"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["7BCAFAF481F57B8B"]
+			id: "18D8E045FD32C0CA"
+			tasks: [{
+				id: "321DA4608508FDDE"
+				item: "createchromaticreturn:chromatic_compound"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 3.5d
+		}
 	]
 	title: "Machinery"
 }

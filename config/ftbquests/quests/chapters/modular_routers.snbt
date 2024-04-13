@@ -5,6 +5,18 @@
 	group: "7BA7C5ADDAE03ED6"
 	icon: "modularrouters:modular_router"
 	id: "32429317E2A67748"
+	images: [{
+		click: ""
+		corner: false
+		dev: false
+		height: 16.3125d
+		hover: [ ]
+		image: "kubejs:textures/ftbquests/router_meeting.png"
+		rotation: 0.0d
+		width: 29.0d
+		x: 0.5d
+		y: 0.0d
+	}]
 	order_index: 4
 	quest_links: [ ]
 	quests: [

@@ -44,7 +44,7 @@
 				""
 				"- &2The &5KubeJS &2and &9CraftTweaker &2discord servers;"
 				""
-				"And everyone else that helped me make ToasTech"
+				"&bAnd everyone else that helped me make &3ToasTech"
 			]
 			icon: "create:clipboard"
 			id: "34C3FA2D3AD7B2CF"
@@ -65,7 +65,7 @@
 		}
 		{
 			dependencies: ["4581275E09079C65"]
-			description: ["/recall is a command added by ToasTech that telepoerts you to world spawn."]
+			description: ["/recall &bis a command added by &3ToasTech &bthat telepoerts you to world spawn."]
 			id: "3D69059B922AA227"
 			rewards: [{
 				id: "4AE990A61C34E647"

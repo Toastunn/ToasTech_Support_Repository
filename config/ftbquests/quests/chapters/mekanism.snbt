@@ -66,6 +66,19 @@
 			x: 5.0d
 			y: -3.0d
 		}
+		{
+			click: ""
+			corner: true
+			dev: false
+			height: 19.6875d
+			hover: [ ]
+			image: "kubejs:textures/ftbquests/sps_uses_too_much_power.png"
+			order: -1
+			rotation: 0.0d
+			width: 35.0d
+			x: 3.5d
+			y: -0.5d
+		}
 	]
 	order_index: 0
 	quest_links: [ ]
@@ -518,8 +531,8 @@
 			description: ["The Hazmat Suit protects the player from Radiation."]
 			id: "0000000000000892"
 			rewards: [{
-				id: "5159F85876844740"
-				item: "factory_blocks:hazard"
+				id: "39B1C887B72397CD"
+				item: "createdeco:decal_radioactive"
 				type: "item"
 			}]
 			tasks: [
@@ -1015,8 +1028,8 @@
 			]
 			id: "00000000000008CE"
 			rewards: [{
-				id: "6E4B7A6E53A6EA59"
-				item: "factory_blocks:hazard"
+				id: "4640F1383AD3FAB4"
+				item: "blocksyouneed_luna:caution_wrap"
 				type: "item"
 			}]
 			tasks: [{
@@ -2363,12 +2376,13 @@
 				id: "5AA88D1AD8B47614"
 				type: "fluid"
 			}]
+			title: "Antimatter"
 			x: 6.5d
 			y: -5.5d
 		}
 		{
 			dependencies: ["00000000000008E2"]
-			description: ["&o&5Perfecting Grains of Infinity requires a lot of Antimatter to refine."]
+			description: ["&o&5Perfecting Grains of Infinity requires a lot of Antimatter."]
 			id: "7824A5D312459399"
 			rewards: [{
 				id: "54A59518219F3816"

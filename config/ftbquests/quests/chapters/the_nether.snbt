@@ -5,6 +5,18 @@
 	group: "1576A69176AFDEA4"
 	icon: "minecraft:blaze_powder"
 	id: "3911C38ABFEB3292"
+	images: [{
+		click: ""
+		corner: false
+		dev: false
+		height: 15.965104166666666d
+		hover: [ ]
+		image: "kubejs:textures/ftbquests/nether.png"
+		rotation: 0.0d
+		width: 29.0d
+		x: 2.0d
+		y: -2.0d
+	}]
 	order_index: 1
 	quest_links: [ ]
 	quests: [
@@ -136,7 +148,7 @@
 			subtitle: "It does Magical Things!"
 			tasks: [{
 				amount: 1000L
-				fluid: "exdeorum:witch_water"
+				fluid: "kubejs:magical_water"
 				id: "2E47F04E673D8F24"
 				type: "fluid"
 			}]

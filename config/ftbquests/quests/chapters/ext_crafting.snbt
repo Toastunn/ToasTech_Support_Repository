@@ -11,6 +11,18 @@
 		}
 	}
 	id: "059FC8CE94EBCB7D"
+	images: [{
+		click: ""
+		corner: false
+		dev: false
+		height: 15.0d
+		hover: [ ]
+		image: "kubejs:textures/ftbquests/scary_recipe.png"
+		rotation: 0.0d
+		width: 26.0d
+		x: 2.0d
+		y: 2.0d
+	}]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
