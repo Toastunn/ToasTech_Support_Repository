@@ -15,6 +15,7 @@ import mods.mekanism.api.ingredient.ChemicalStackIngredient.PigmentStackIngredie
   var Crystallizing = <recipetype:mekanism:crystallizing>;
   var Painting = <recipetype:mekanism:painting>;
   var Combining = <recipetype:mekanism:combining>;
+  var Crushing = <recipetype:mekanism:crushing>;
 //removing mekanism recipes
 
 Synthesizing.removeByName("mekanism:nucleosynthesizing/end_crystal");
@@ -36,15 +37,17 @@ Synthesizing.removeByName("mekanism:nucleosynthesizing/end_crystal");
     Rotary.addRecipe("antimatter/state_change", <fluid:kubejs:liquid_antimatter> * 1, <gas:mekanism:antimatter> * 1, <gas:mekanism:antimatter>, <fluid:kubejs:liquid_antimatter>);
     Rotary.addRecipe("pulsating_fluid/state_change", <fluid:kubejs:pulsating_liquid> * 1, <gas:kubejs:pulsating_gas> * 1, <gas:kubejs:pulsating_gas>, <fluid:kubejs:pulsating_liquid>);
     Rotary.addRecipe("vibrant_fluid/state_change", <fluid:kubejs:vibrant_liquid> * 1, <gas:kubejs:vibrant_gas> * 1, <gas:kubejs:vibrant_gas>, <fluid:kubejs:vibrant_liquid>);
+    Rotary.addRecipe("void/state_change", <fluid:kubejs:liquid_void> * 1, <gas:kubejs:void_gas> * 1, <gas:kubejs:void_gas>, <fluid:kubejs:liquid_void>);
   //purifying
     Purifying.addRecipe("purifying_grains_of_infinity", <item:enderio:grains_of_infinity>, <gas:mekanism:hydrofluoric_acid>, <item:kubejs:pure_grains_of_infinity>);
   //injecting
     Injecting.addRecipe('fan_void_catalyst', <item:create_connected:empty_fan_catalyst>, <gas:kubejs:void_gas> * 5, <item:kubejs:fan_void_catalyst>);
-    Injecting.addRecipe("enchanting_grains_of_infinity", <item:kubejs:pure_grains_of_infinity>, <gas:kubejs:hyper_experience_gas> * 500, <item:kubejs:enchanted_grains_of_infinity>);
+    Injecting.addRecipe("enchanting_grains_of_infinity", <item:kubejs:pure_grains_of_infinity>, <gas:kubejs:hyper_experience_gas> * 5, <item:kubejs:enchanted_grains_of_infinity>);
   //nucleosynthesizing
     Synthesizing.addRecipe("perfecting_the_infinite", <item:kubejs:superheated_grains_of_infinity>, <gas:mekanism:antimatter> * 750, <item:kubejs:atomically_perfect_grains_of_infinity>, 2000);
     Synthesizing.addRecipe("end_crystal", <item:minecraft:beacon>, <gas:mekanism:antimatter> * 1500, <item:minecraft:end_crystal>, 4000);
     Synthesizing.addRecipe("antimetal", <item:minecraft:crying_obsidian>, <gas:mekanism:antimatter> * 1, <item:blocksyouneed_luna:antimetal_ingot>, 2000);
+    Synthesizing.addRecipe("antiplite", <item:createchromaticreturn:antiplite_ingot>, <gas:mekanism:antimatter> * 2000, <item:createchromaticreturn:multiplite_ingot>, 2500);
   //oxidisation
     Oxidizing.addRecipe("infinite_gasification", <item:kubejs:atomically_perfect_grains_of_infinity>, <gas:kubejs:gaseous_infinity> * 60);
   //crystallisation
@@ -55,3 +58,6 @@ Synthesizing.removeByName("mekanism:nucleosynthesizing/end_crystal");
     Painting.addRecipe("black_iron/painting", ItemStackIngredient.from(<item:minecraft:iron_ingot>), PigmentStackIngredient.from(<pigment:mekanism:black>), <item:extendedcrafting:black_iron_ingot>);
   //combining
     Combining.addRecipe("pity_frame/combining", <item:mekanism:steel_casing>, <item:minecraft:cobblestone>, <item:industrialforegoing:machine_frame_pity>);
+  //crushing
+    Crushing.addRecipe("crushed_salt/mekanism", <item:mekanism:salt>, <item:garnished:crushed_salt>);
+    Crushing.addRecipe("crushed_salt/block/mekanism", <item:mekanism:block_salt>, <item:garnished:crushed_salt> * 5);

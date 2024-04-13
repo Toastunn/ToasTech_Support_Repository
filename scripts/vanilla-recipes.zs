@@ -10,5 +10,7 @@ import crafttweaker.api.recipe.BlastFurnaceRecipeManager;
       blastFurnace.remove(<item:blocksyouneed_luna:antimetal_ingot>);
   //adding recipes
     // campfire.addRecipe(name as string, output as IItemStack, input as IIngredient, xp as float, cookTime as int);
-      campfire.addRecipe("primitive/water_heating", <item:enderio:fire_water_bucket>, <item:exdeorum:witch_water_bucket>, 0.5, 3000);
+      campfire.addRecipe("primitive/water_heating", <item:enderio:fire_water_bucket>, <item:kubejs:magical_water_bucket>, 0.5, 3000);
+      
     // furnace.addRecipe(name as string, output as IItemStack, input as IIngredient, xp as float, cookTime as int);
+    furnace.addRecipe("ethereal_brick", <item:kubejs:ethereal_brick>, <item:garnished:ethereal_compound>, 0.5, 200);

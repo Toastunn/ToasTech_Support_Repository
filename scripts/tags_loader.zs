@@ -1,10 +1,9 @@
-  #loader tags
+#loader tags
 import crafttweaker.api.tag.MCTag;
 
 //removing tags
   //alltheores brass :(
     //dust
-      <tag:items:c:dusts>.removeId(<resource:alltheores:brass_dust>);
       <tag:items:minecraft:trim_materials>.removeId(<resource:alltheores:brass_dust>);
       <tag:items:forge:dusts>.removeId(<resource:alltheores:brass_dust>);
       <tag:items:forge:dusts/brass>.removeId(<resource:alltheores:brass_dust>);
@@ -23,7 +22,6 @@ import crafttweaker.api.tag.MCTag;
       <tag:items:forge:plates/brass>.removeId(<resource:alltheores:brass_plate>);
       <tag:items:minecraft:trim_materials>.removeId(<resource:alltheores:brass_plate>);
     //nugget
-      <tag:items:c:nuggets>.removeId(<resource:alltheores:brass_nugget>);
       <tag:items:forge:nuggets/brass>.removeId(<resource:alltheores:brass_nugget>);
       <tag:items:railways:internal/nuggets/brass_nuggets>.removeId(<resource:alltheores:brass_nugget>);
       <tag:items:balm:nuggets>.removeId(<resource:alltheores:brass_nugget>);
@@ -33,7 +31,6 @@ import crafttweaker.api.tag.MCTag;
       <tag:items:forge:ingots>.removeId(<resource:alltheores:brass_ingot>);
       <tag:items:ae2:metal_ingots>.removeId(<resource:alltheores:brass_ingot>);
       <tag:items:balm:ingots>.removeId(<resource:alltheores:brass_ingot>);
-      <tag:items:c:ingots>.removeId(<resource:alltheores:brass_ingot>);
       <tag:items:minecraft:trim_materials>.removeId(<resource:alltheores:brass_ingot>);
       <tag:items:forge:ingots/brass>.removeId(<resource:alltheores:brass_ingot>);
     //block
@@ -117,8 +114,6 @@ import crafttweaker.api.tag.MCTag;
   //rose quartzs
     <tag:items:crafttweaker:rose_quartz>.addId(<resource:create:rose_quartz>);
     <tag:items:crafttweaker:rose_quartz>.addId(<resource:biomesoplenty:rose_quartz_chunk>);
-  //beacon base blocks
-  //beacon payment resources
   //Crystal clusters
     <tag:blocks:c:clusters>.addId(<resource:biomesoplenty:rose_quartz_cluster>);
     <tag:blocks:crafttweaker:crystal_clusters>.add(<tag:blocks:c:clusters>);
@@ -147,24 +142,26 @@ import crafttweaker.api.tag.MCTag;
     <tag:items:crafttweaker:inscriber/printed>.addId(<resource:ae2:printed_engineering_processor>);
     <tag:items:crafttweaker:inscriber/printed>.addId(<resource:ae2:printed_logic_processor>);
     <tag:items:crafttweaker:inscriber/printed>.addId(<resource:ae2:printed_silicon>);
+  //tougher glass
+    <tag:items:crafttweaker:tougher_glass>.addId(<resource:tougherglass:stronger_glass>);
+    <tag:items:crafttweaker:tougher_glass>.addId(<resource:tougherglass:stronger_magenta_stained_glass>);
+    <tag:items:crafttweaker:tougher_glass>.addId(<resource:tougherglass:stronger_orange_stained_glass>);
+    <tag:items:crafttweaker:tougher_glass>.addId(<resource:tougherglass:stronger_lime_stained_glass>);
+    <tag:items:crafttweaker:tougher_glass>.addId(<resource:tougherglass:stronger_red_stained_glass>);
+    <tag:items:crafttweaker:tougher_glass>.addId(<resource:tougherglass:stronger_brown_stained_glass>);
+    <tag:items:crafttweaker:tougher_glass>.addId(<resource:tougherglass:stronger_pink_stained_glass>);
+    <tag:items:crafttweaker:tougher_glass>.addId(<resource:tougherglass:stronger_blue_stained_glass>);
+    <tag:items:crafttweaker:tougher_glass>.addId(<resource:tougherglass:stronger_cyan_stained_glass>);
+    <tag:items:crafttweaker:tougher_glass>.addId(<resource:tougherglass:stronger_black_stained_glass>);
+    <tag:items:crafttweaker:tougher_glass>.addId(<resource:tougherglass:stronger_yellow_stained_glass>);
+    <tag:items:crafttweaker:tougher_glass>.addId(<resource:tougherglass:stronger_white_stained_glass>);
+    <tag:items:crafttweaker:tougher_glass>.addId(<resource:tougherglass:stronger_light_blue_stained_glass>);
+    <tag:items:crafttweaker:tougher_glass>.addId(<resource:tougherglass:stronger_gray_stained_glass>);
+    <tag:items:crafttweaker:tougher_glass>.addId(<resource:tougherglass:stronger_purple_stained_glass>);
+    <tag:items:crafttweaker:tougher_glass>.addId(<resource:tougherglass:stronger_green_stained_glass>);
+    <tag:items:crafttweaker:tougher_glass>.addId(<resource:tougherglass:stronger_light_gray_stained_glass>);
   //wither immune
-    <tag:blocks:minecraft:wither_immune>.addId(<resource:tougherglass:stronger_glass>);
-    <tag:blocks:minecraft:wither_immune>.addId(<resource:tougherglass:stronger_magenta_stained_glass>);
-    <tag:blocks:minecraft:wither_immune>.addId(<resource:tougherglass:stronger_orange_stained_glass>);
-    <tag:blocks:minecraft:wither_immune>.addId(<resource:tougherglass:stronger_lime_stained_glass>);
-    <tag:blocks:minecraft:wither_immune>.addId(<resource:tougherglass:stronger_red_stained_glass>);
-    <tag:blocks:minecraft:wither_immune>.addId(<resource:tougherglass:stronger_brown_stained_glass>);
-    <tag:blocks:minecraft:wither_immune>.addId(<resource:tougherglass:stronger_pink_stained_glass>);
-    <tag:blocks:minecraft:wither_immune>.addId(<resource:tougherglass:stronger_blue_stained_glass>);
-    <tag:blocks:minecraft:wither_immune>.addId(<resource:tougherglass:stronger_cyan_stained_glass>);
-    <tag:blocks:minecraft:wither_immune>.addId(<resource:tougherglass:stronger_black_stained_glass>);
-    <tag:blocks:minecraft:wither_immune>.addId(<resource:tougherglass:stronger_yellow_stained_glass>);
-    <tag:blocks:minecraft:wither_immune>.addId(<resource:tougherglass:stronger_white_stained_glass>);
-    <tag:blocks:minecraft:wither_immune>.addId(<resource:tougherglass:stronger_light_blue_stained_glass>);
-    <tag:blocks:minecraft:wither_immune>.addId(<resource:tougherglass:stronger_gray_stained_glass>);
-    <tag:blocks:minecraft:wither_immune>.addId(<resource:tougherglass:stronger_purple_stained_glass>);
-    <tag:blocks:minecraft:wither_immune>.addId(<resource:tougherglass:stronger_green_stained_glass>);
-    <tag:blocks:minecraft:wither_immune>.addId(<resource:tougherglass:stronger_light_gray_stained_glass>);
+    <tag:blocks:minecraft:wither_immune>.add(<tag:items:crafttweaker:tougher_glass>);
   //dragon immune
     <tag:blocks:minecraft:dragon_immune>.addId(<resource:tougherglass:stronger_glass>);
     <tag:blocks:minecraft:dragon_immune>.addId(<resource:tougherglass:stronger_magenta_stained_glass>);
@@ -183,3 +180,12 @@ import crafttweaker.api.tag.MCTag;
     <tag:blocks:minecraft:dragon_immune>.addId(<resource:tougherglass:stronger_purple_stained_glass>);
     <tag:blocks:minecraft:dragon_immune>.addId(<resource:tougherglass:stronger_green_stained_glass>);
     <tag:blocks:minecraft:dragon_immune>.addId(<resource:tougherglass:stronger_light_gray_stained_glass>);
+  //singularities
+    <tag:items:crafttweaker:material_singularities>.addId(<resource:extendedcrafting:singularity>);
+  //charms
+    <tag:items:curios:charm>.addId(<resource:createchromaticreturn:silkstrum_charm>);
+    <tag:items:curios:charm>.addId(<resource:createchromaticreturn:antiplite_charm>);
+    <tag:items:curios:charm>.addId(<resource:createchromaticreturn:multiplite_charm>);
+    <tag:items:curios:charm>.addId(<resource:createchromaticreturn:refined_charm>);
+    <tag:items:curios:charm>.addId(<resource:createchromaticreturn:shadow_charm>);
+    <tag:items:curios:charm>.addId(<resource:createchromaticreturn:industrium_charm>);

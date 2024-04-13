@@ -198,12 +198,33 @@ craftingTable.removeByName("avaritia:diamond_lattice");
   },
   "show_notification": true
 });
- 
- 
- 
- 
- 
- 
- 
- 
+<recipetype:avaritia:extreme_craft_recipe>.addJsonRecipe("anti_infinity", {
+  "type": "avaritia:shaped_extreme_craft",
+  "category": "equipment",
+  "key": {
+    "V": {
+      "item": "kubejs:void_in_a_bottle"
+    },
+    "S": {
+      "item": "avaritia:singularity"
+    },
+    "A": {
+      "item": "blocksyouneed_luna:antimetal_ingot"
+    },
+    "I": {
+      "item": "avaritia:infinity_ingot"
+    },
+  },
+  "pattern": [
 
+    "  AA   AA",
+    "  AIISIIA",
+    "VVISSISSI" ,
+    "  AIISIIA",
+    "  AA   AA"
+  ],
+  "result": {
+    "item": "kubejs:anti_infinity"
+  },
+  "show_notification": true
+});
