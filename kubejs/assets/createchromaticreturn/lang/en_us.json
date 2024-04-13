@@ -1,5 +1,13 @@
 {
-  "fluid_type.createchromaticreturn.shadow_essence": "Shadow Essence",
-  "fluid_type.createchromaticreturn.refined_mixture": "Refined Mixture",
-  "fluid_type.createchromaticreturn.test": "Test"
+	"fluid_type.createchromaticreturn.shadow_essence": "Shadow Essence",
+	"fluid_type.createchromaticreturn.refined_mixture": "Radiant Mixture",
+	"fluid_type.createchromaticreturn.test": "Test",
+	"item.createchromaticreturn.refined_radiance": "Radiant Infinity",
+	"item.createchromaticreturn.shadow_steel": "Void Steel",
+	"item.createchromaticreturn.durasteel_charm_cast": "Durasteel Charm Cast",
+	"item.createchromaticreturn.charm_cast": "Void Steel Charm Cast",
+	"fluid.createchromaticreturn.refined_mixture": "Radiant Mixture",
+	"item.createchromaticreturn.refined_mixture_bucket": "Radiant Mixture Bucket",
+	"item.createchromaticreturn.refined_mechanism": "Radiant Mechanism",
+	"item.createchromaticreturn.antiplite_charm": "Antiplite Charm"
 }

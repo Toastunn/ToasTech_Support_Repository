@@ -1,3 +1,6 @@
 {
-  "rarity.cosmic.name": "Cosmic"
+	"rarity.cosmic.name": "Cosmic",
+	"item.avaritia.neutron_pile": "Neutronium Pile",
+	"item.avaritia.neutron_nugget": "Neutronium Nugget",
+	"block.avaritia.neutron": "Neutronium Block"
 }
