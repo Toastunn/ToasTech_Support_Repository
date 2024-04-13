@@ -1,11 +1,9 @@
 #exclude everything but some things
 /*
-!/.vscode
 !/kubejs
 !/scripts
 !/config
 config/*
 !/config/ftbquests
-!/config/openloader
 !.gitignore
 !/tooltipgen
