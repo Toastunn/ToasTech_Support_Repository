@@ -44,6 +44,20 @@ ItemEvents.tooltip((e) => {
     let mode = item.nbt.getString('mode')
     text.add(1, [Text.yellow('Mode: ').append(Text.aqua(mode))])
     })
+  e.addAdvanced('kubejs:limbo_steel', (item, isAdvanced, text) => {
+    text.add(1, [Text.gray('§oWhen metal lies on the line between reality and infinity.')])
+    text.add(2, [Text.darkRed('May serve no purpose outside the assembly line...')])
+  })
+  e.addAdvanced('createchromaticreturn:antiplite_charm', (item, isAdvanced, text) => {
+    text.remove(1)
+    text.remove(5)
+    text.add(1, [Text.red('Charm Gem Type: Antiplite')])
+    text.add(1, [Text.darkRed('Note: Has negative effects unless user has a Multiplite Charm')])
+  })
+  e.addAdvanced('createchromaticreturn:multiplite_charm', (item, isAdvanced, text) => {
+    text.remove(4)
+    text.add(1, [Text.darkPurple('Note: Has negative effects unless user has an Antiiplite Charm')])
+  })
   // cut this out when release
   e.addAdvanced(Ingredient.all, (item, advanced, text) => {
     if (e.alt && item.nbt && advanced) {
