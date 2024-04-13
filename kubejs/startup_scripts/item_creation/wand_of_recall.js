@@ -12,8 +12,7 @@ StartupEvents.registry('item', event => {
     let newList = Utils.newList()
     let newItem = originalItem.copy()
     newItem.setNbt({mode:"set"})
-    newItem.nbt.putInt('CustomModelData', 0)
-    newItem.setNbt({customModelData: modeToModel})
+    newItem.setNbt({CustomModelData: 0})
     newList.add(newItem)
     return newList
   })
