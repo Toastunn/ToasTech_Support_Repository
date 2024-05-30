@@ -1,0 +1,64 @@
+{
+  "name": "Elemental Transfigurator",
+  "controllerIds": "mm:elemental_transfigurator",
+  "layout": [
+    [
+      "AAA",
+      "AGA",
+      "AAA"
+    ],
+    [
+      "SMS",
+      "MNM",
+      "SMS"
+    ],
+    [
+      "PeP",
+      "fLk",
+      "iCo"
+    ]
+  ],
+  "key": {
+    "A": {
+      "block": "createchromaticreturn:andesite_component"
+    },
+    "G": {
+      "block": "ae2:growth_accelerator"
+    },
+    "S": {
+      "block": "ae2:spatial_pylon"
+    },
+    "M": {
+      "block": "ae2:molecular_assembler"
+    },
+    "N": {
+      "block": "mekanism:antiprotonic_nucleosynthesizer"
+    },
+    "L": {
+      "block": "industrialforegoing:laser_drill"
+    },
+    "P": {
+      "block": "ae2:pattern_provider"
+    },
+    "i": {
+      "port": "mm:et_item_port",
+      "input": true
+    },
+    "o": {
+      "port": "mm:et_item_port",
+      "input": false
+    },
+    "f": {
+      "port": "mm:et_fluid_port",
+      "input": true
+    },
+    "k": {
+      "port": "mm:et_kinetic_port",
+      "input": true
+    },
+    "e": {
+      "port": "mm:et_energy_port",
+      "input": true
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "name": "Cloud Condenser",
+  "controllerIds": "mm:cloud_condenser",
+  "layout": [
+    [
+      "ccc",
+      "cVc",
+      "coc"
+    ],
+    [
+      "cIc",
+      "I I",
+      "cIc"
+    ],
+    [
+      "ccc",
+      "c c",
+      "ccc"
+    ],
+    [
+      "ccc",
+      "c c",
+      "ccc"
+    ],
+    [
+      "cHc",
+      "H H",
+      "cHc"
+    ],
+    [
+      "ccc",
+      "c c",
+      "ccc"
+    ],
+    [
+      "cec",
+      "cEc",
+      "iCf"
+    ]
+  ],
+  "key": {
+    "c": {
+      "block": "blocksyouneed_luna:iron_boiler_plate"
+    },
+    "E": {
+      "block": "create:encased_fan"
+    },
+    "H": {
+      "block": "mekanism:superheating_element"
+    },
+    "I": {
+      "block": "minecraft:blue_ice"
+    },
+    "V": {
+      "block": "enderio:vacuum_chest"
+    },
+    "f": {
+      "port": "mm:cc_fluid_port",
+      "input": true
+    },
+    "o": {
+      "port": "mm:cc_fluid_port",
+      "input": false
+    },
+    "i": {
+      "port": "mm:cc_item_port",
+      "input": true
+    },
+    "e": {
+      "port": "mm:cc_energy_port",
+      "input": true
+    }
+  }
+}

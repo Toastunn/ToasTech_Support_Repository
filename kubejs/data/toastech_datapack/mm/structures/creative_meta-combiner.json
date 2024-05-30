@@ -1,0 +1,102 @@
+{
+  "name": "Creative Meta-Combiner",
+  "controllerIds": "mm:cmc_controller",
+  "layout": [
+    [
+      "11111",
+      "12221",
+      "12E21",
+      "12221",
+      "11111"
+    ],
+    [
+      "12221",
+      "22F22",
+      "2FNF2",
+      "22F22",
+      "12221"
+    ],
+    [
+      "12N21",
+      "2AIA2",
+      "NIMIN",
+      "2AGA2",
+      "12G21"
+    ],
+    [
+      "12221",
+      "22H22",
+      "2HSH2",
+      "22H22",
+      "12221"
+    ],
+    [
+      "11111",
+      "k222o",
+      "1212f",
+      "e222i",
+      "11C11"
+    ]
+  ],
+  "key": {
+    "1": {
+      "block": "createcasing:creative_casing"
+    },
+    "2": {
+      "block": "ae2:controller",
+      "properties": [
+        {
+        "property": "state",
+        "value": "online"
+        }
+      ]
+    },
+    "H": {
+      "block": "mekanism:superheating_element"
+    },
+    "S": {
+      "block": "ae2:spatial_anchor"
+    },
+    "A": {
+      "block": "mekanismgenerators:fission_fuel_assembly"
+    },
+    "I": {
+      "block": "avaritia:infinity"
+    },
+    "M": {
+      "block": "kubejs:multiversal_extractor"
+    },
+    "G": {
+      "block": "tougherglass:stronger_purple_stained_glass"
+    },
+    "F": {
+      "block": "ae2:fluix_block"
+    },
+    "N": {
+      "block": "ae2:not_so_mysterious_cube"
+    },
+    "E": {
+      "block": "mekanism:ultimate_energy_cube"
+    },
+    "i": {
+      "port": "mm:cmc_item_port",
+      "input": true
+    },
+    "o": {
+      "port": "mm:cmc_item_port",
+      "input": false
+    },
+    "f": {
+      "port": "mm:cmc_fluid_port",
+      "input": true
+    },
+    "k": {
+      "port": "mm:cmc_kinetic_port",
+      "input": true
+    },
+    "e": {
+      "port": "mm:cmc_energy_port",
+      "input": true
+    }
+  }
+}
