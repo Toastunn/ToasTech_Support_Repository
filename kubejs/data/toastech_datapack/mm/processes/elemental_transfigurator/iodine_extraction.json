@@ -1,0 +1,32 @@
+{
+  "ticks": 100,
+  "structureId": "toastech_datapack:elemental_transfigurator",
+  "inputs": [
+    {
+      "type": "mm:input/consume",
+      "ingredient": {
+        "type": "mm:item",
+        "item": "minecraft:kelp",
+        "count": 3
+      }
+    },
+    {
+      "type": "mm:input/consume",
+      "per_tick": true,
+      "ingredient": {
+        "type": "mm:energy",
+        "amount": 20
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "type": "mm:output/simple",
+      "ingredient": {
+        "type": "mm:item",
+        "item": "kubejs:iodine",
+        "count": 2
+      }
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "ticks": 1200,
+  "structureId": "toastech_datapack:creative_meta-combiner",
+  "inputs": [
+    {
+      "type": "mm:input/consume",
+      "ingredient": {
+        "type": "mm:item",
+        "item": "kubejs:creativium",
+        "count": 1
+      }
+    },
+    {
+      "type": "mm:input/consume",
+      "ingredient": {
+        "type": "mm:item",
+        "item": "minecraft:bedrock",
+        "count": 1
+      }
+    },
+    {
+      "type": "mm:input/consume",
+      "ingredient": {
+        "type": "mm:item",
+        "item": "rats:rat_upgrade_angel",
+        "count": 1
+      }
+    },
+    {
+      "type": "mm:input/consume",
+      "per_tick": true,
+      "ingredient": {
+        "type": "mm:energy",
+        "amount": 600
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "type": "mm:output/simple",
+      "ingredient": {
+        "type": "mm:item",
+        "item": "rats:rat_upgrade_creative",
+        "count": 1
+      }
+    }
+  ]
+}

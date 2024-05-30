@@ -1,0 +1,56 @@
+{
+  "ticks": 6000,
+  "structureId": "toastech_datapack:creative_meta-combiner",
+  "inputs": [
+    {
+      "type": "mm:input/consume",
+      "ingredient": {
+        "type": "mm:item",
+        "item": "kubejs:ringularity",
+        "count": 1
+      }
+    },
+    {
+      "type": "mm:input/consume",
+      "ingredient": {
+        "type": "mm:item",
+        "item": "createchromaticreturn:multiplite_ingot",
+        "count": 4
+      }
+    },
+    {
+      "type": "mm:input/consume",
+      "ingredient": {
+        "type": "mm:fluid",
+        "fluid": "mekanismgenerators:fusion_fuel",
+        "amount": 3000
+      }
+    },
+    {
+      "type": "mm:input/consume",
+      "per_tick": true,
+      "ingredient": {
+        "type": "mm:energy",
+        "amount": 2000
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "type": "mm:output/simple",
+      "ingredient": {
+        "type": "mm:item",
+        "item": "ae2:singularity",
+        "count": 1
+      }
+    },
+    {
+      "type": "mm:output/simple",
+      "ingredient": {
+        "type": "mm:item",
+        "item": "kubejs:creative_essence",
+        "count": 1
+      }
+    }
+  ]
+}

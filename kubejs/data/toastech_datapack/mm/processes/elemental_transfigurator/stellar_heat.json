@@ -1,0 +1,48 @@
+{
+  "ticks": 2000,
+  "structureId": "toastech_datapack:elemental_transfigurator",
+  "inputs": [
+    {
+      "type": "mm:input/consume",
+      "ingredient": {
+        "type": "mm:item",
+        "item": "avaritia:star_fuel",
+        "count": 8
+      }
+    },
+    {
+      "type": "mm:input/consume",
+      "ingredient": {
+        "type": "mm:item",
+        "item": "minecraft:fire_charge",
+        "count": 2
+      }
+    },
+    {
+      "type": "mm:input/consume",
+      "ingredient": {
+        "type": "mm:fluid",
+        "fluid": "enderio:liquid_sunshine",
+        "amount": 2000
+      }
+    },
+    {
+      "type": "mm:input/consume",
+      "per_tick": true,
+      "ingredient": {
+        "type": "mm:energy",
+        "amount": 1000
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "type": "mm:output/simple",
+      "ingredient": {
+        "type": "mm:item",
+        "item": "kubejs:star",
+        "count": 1
+      }
+    }
+  ]
+}

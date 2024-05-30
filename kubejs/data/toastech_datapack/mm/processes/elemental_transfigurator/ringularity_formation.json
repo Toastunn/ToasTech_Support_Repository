@@ -1,0 +1,56 @@
+{
+  "ticks": 900,
+  "structureId": "toastech_datapack:elemental_transfigurator",
+  "inputs": [
+    {
+      "type": "mm:input/consume",
+      "ingredient": {
+        "type": "mm:item",
+        "item": "ae2:singularity",
+        "count": 8
+      }
+    },
+    {
+      "type": "mm:input/consume",
+      "ingredient": {
+        "type": "mm:item",
+        "item": "create:flywheel",
+        "count": 1
+      }
+    },
+    {
+      "type": "mm:input/consume",
+      "per_tick": true,
+      "ingredient": {
+        "type": "mm:fluid",
+        "fluid": "mekanism:heavy_water",
+        "amount": 2000
+      }
+    },
+    {
+      "type": "mm:input/consume",
+      "ingredient": {
+        "type": "mm:create/kinetic",
+        "speed": 256
+      }
+    },
+    {
+      "type": "mm:input/consume",
+      "per_tick": true,
+      "ingredient": {
+        "type": "mm:energy",
+        "amount": 4000
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "type": "mm:output/simple",
+      "ingredient": {
+        "type": "mm:item",
+        "item": "kubejs:ringularity",
+        "count": 1
+      }
+    }
+  ]
+}

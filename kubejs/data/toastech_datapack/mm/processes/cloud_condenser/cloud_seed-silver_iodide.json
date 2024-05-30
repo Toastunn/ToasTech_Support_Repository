@@ -1,0 +1,42 @@
+{
+  "ticks": 1000,
+  "structureId": "toastech_datapack:cloud_condenser",
+  "inputs": [
+    {
+      "type": "mm:input/consume",
+      "ingredient": {
+        "type": "mm:item",
+        "item": "kubejs:silver_iodide",
+        "count": 12
+      }
+    },
+    {
+      "type": "mm:input/consume",
+      "per_tick": true,
+      "ingredient": {
+        "type": "mm:fluid",
+        "fluid": "mekanism:steam",
+        "amount": 120
+      }
+    },
+    {
+      "type": "mm:input/consume",
+      "per_tick": true,
+      "ingredient": {
+        "type": "mm:energy",
+        "amount": 5
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "type": "mm:output/simple",
+      "per_tick": true,
+      "ingredient": {
+        "type": "mm:fluid",
+        "fluid": "enderio:cloud_seed_concentrated",
+        "amount": 100
+      }
+    }
+  ]
+}

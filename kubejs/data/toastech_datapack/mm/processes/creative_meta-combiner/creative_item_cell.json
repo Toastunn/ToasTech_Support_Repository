@@ -1,0 +1,40 @@
+{
+  "ticks": 1200,
+  "structureId": "toastech_datapack:creative_meta-combiner",
+  "inputs": [
+    {
+      "type": "mm:input/consume",
+      "ingredient": {
+        "type": "mm:item",
+        "item": "kubejs:creativium",
+        "count": 1
+      }
+    },
+    {
+      "type": "mm:input/consume",
+      "ingredient": {
+        "type": "mm:item",
+        "item": "ae2:item_storage_cell_256k",
+        "count": 1
+      }
+    },
+    {
+      "type": "mm:input/consume",
+      "per_tick": true,
+      "ingredient": {
+        "type": "mm:energy",
+        "amount": 600
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "type": "mm:output/simple",
+      "ingredient": {
+        "type": "mm:item",
+        "item": "ae2:creative_item_cell",
+        "count": 1
+      }
+    }
+  ]
+}
