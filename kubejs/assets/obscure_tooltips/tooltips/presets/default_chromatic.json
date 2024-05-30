@@ -1,0 +1,10 @@
+{
+  "priority": 1003,
+  "panel": "obscure_tooltips:rarities/chromatic",
+  "frame": "obscure_tooltips:chromatic",
+  "icon": "obscure_tooltips:chromatic",
+  "effects": ["obscure_tooltips:enchantment", "obscure_tooltips:ender"],
+  "filter": {
+    "rarity": "chromatic"
+  }
+}
