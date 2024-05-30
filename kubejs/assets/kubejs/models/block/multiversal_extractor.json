@@ -1,0 +1,25 @@
+{
+	"credit": "Made with Blockbench",
+  "parent": "minecraft:block/block",
+	"textures": {
+		"0": "kubejs:block/multiversal_extractor_front",
+		"1": "kubejs:block/multiversal_extractor_side",
+		"2": "kubejs:block/multiversal_extractor_top",
+    "particle": "kubejs:block/multiversal_extractor_side"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#0"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#1"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#1"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#1"},
+				"up": {"uv": [0, 0, 16, 16], "rotation": 270, "texture": "#2"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#2"}
+			}
+		}
+	]
+}
