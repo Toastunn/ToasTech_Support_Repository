@@ -2,13 +2,6 @@ JEIEvents.hideItems(event => {
   event.hide('extendedcrafting:redstone_ingot')
   event.hide('extendedcrafting:redstone_nugget')
   event.hide('extendedcrafting:redstone_ingot_block')
-  event.hide('alltheores:brass_block')
-  event.hide('alltheores:brass_ingot')
-  event.hide('alltheores:brass_nugget')
-  event.hide('alltheores:brass_plate')
-  event.hide('alltheores:brass_gear')
-  event.hide('alltheores:brass_rod')
-  event.hide('alltheores:brass_dust')
   event.hide([
     '#enderio:clear_glass_p', 
     '#enderio:clear_glass_np', 
@@ -30,29 +23,33 @@ JEIEvents.hideItems(event => {
     '#enderio:clear_glass_enm', 
     '#enderio:clear_glass_ea', 
     '#enderio:clear_glass_ena',
-    'enderio:fused_quartz_e', 
-    'enderio:fused_quartz_ep', 
-    'enderio:fused_quartz_enp', 
-    'enderio:fused_quartz_em', 
-    'enderio:fused_quartz_enm', 
-    'enderio:fused_quartz_ea', 
-    'enderio:fused_quartz_ena', 
-    'enderio:fused_quartz_d', 
-    'enderio:fused_quartz_dp', 
-    'enderio:fused_quartz_dnp', 
-    'enderio:fused_quartz_dm', 
-    'enderio:fused_quartz_dnm', 
-    'enderio:fused_quartz_da', 
-    'enderio:fused_quartz_dna',
-    'enderio:fused_quartz', 
-    'enderio:fused_quartz_p', 
-    'enderio:fused_quartz_np', 
-    'enderio:fused_quartz_m', 
-    'enderio:fused_quartz_nm', 
-    'enderio:fused_quartz_a', 
-    'enderio:fused_quartz_na'
+    '#enderio:fused_quartz_e', 
+    '#enderio:fused_quartz_ep', 
+    '#enderio:fused_quartz_enp', 
+    '#enderio:fused_quartz_em', 
+    '#enderio:fused_quartz_enm', 
+    '#enderio:fused_quartz_ea', 
+    '#enderio:fused_quartz_ena', 
+    '#enderio:fused_quartz_d', 
+    '#enderio:fused_quartz_dp', 
+    '#enderio:fused_quartz_dnp', 
+    '#enderio:fused_quartz_dm', 
+    '#enderio:fused_quartz_dnm', 
+    '#enderio:fused_quartz_da', 
+    '#enderio:fused_quartz_dna',
+    '#enderio:fused_quartz', 
+    '#enderio:fused_quartz_p', 
+    '#enderio:fused_quartz_np', 
+    '#enderio:fused_quartz_m', 
+    '#enderio:fused_quartz_nm', 
+    '#enderio:fused_quartz_a', 
+    '#enderio:fused_quartz_na'
   ])
   event.hide('ae2:facade')
+  const removedItems = Utils.server.persistentData.removedItems
+  removedItems.forEach(item => {
+    event.hide(item)
+  })
 })
 
 JEIEvents.addItems(event => {
@@ -80,7 +77,28 @@ JEIEvents.addItems(event => {
     'enderio:clear_glass_m', 
     'enderio:clear_glass_nm', 
     'enderio:clear_glass_a', 
-    'enderio:clear_glass_na'
+    'enderio:clear_glass_na',
+    'enderio:fused_quartz_e',
+    'enderio:fused_quartz_ep',
+    'enderio:fused_quartz_enp',
+    'enderio:fused_quartz_em',
+    'enderio:fused_quartz_enm',
+    'enderio:fused_quartz_ea',
+    'enderio:fused_quartz_ena',
+    'enderio:fused_quartz_d',
+    'enderio:fused_quartz_dp',
+    'enderio:fused_quartz_dnp',
+    'enderio:fused_quartz_dm',
+    'enderio:fused_quartz_dnm',
+    'enderio:fused_quartz_da',
+    'enderio:fused_quartz_dna',
+    'enderio:fused_quartz',
+    'enderio:fused_quartz_p',
+    'enderio:fused_quartz_np',
+    'enderio:fused_quartz_m',
+    'enderio:fused_quartz_nm',
+    'enderio:fused_quartz_a',
+    'enderio:fused_quartz_na'
   ])
   event.add(Item.of('ae2:facade', '{item:"avaritia:infinity"}'))
 })
