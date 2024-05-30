@@ -18,6 +18,7 @@ import mods.create.PressingManager;
       <recipetype:create:item_application>.remove(<item:create:copper_casing>);
       <recipetype:create:item_application>.remove(<item:create:brass_casing>);
       <recipetype:create:item_application>.remove(<item:create:andesite_casing>);
+      <recipetype:create:item_application>.remove(<item:createcasing:creative_casing>);
   //Mixing
     <recipetype:create:mixing>.remove(<item:createchromaticreturn:polonium_nugget>);
     <recipetype:create:mixing>.remove(<item:createchromaticreturn:plutonium_nugget>);
@@ -25,8 +26,6 @@ import mods.create.PressingManager;
     <recipetype:create:mixing>.remove(<item:createchromaticreturn:shadow_steel>);
     <recipetype:create:mixing>.remove(<item:createchromaticreturn:refined_radiance>);
     <recipetype:create:mixing>.remove(<item:createchromaticreturn:shadow_mechanism>);
-    <recipetype:create:mixing>.remove(<item:createchromaticreturn:magmatic_mechanism>);
-    <recipetype:create:mixing>.remove(<item:createchromaticreturn:annealed_mechanism>);
     <recipetype:create:mixing>.remove(<item:createchromaticreturn:refined_mechanism>);
     <recipetype:create:mixing>.remove(<item:createchromaticreturn:creative_flour>);
     <recipetype:create:mixing>.remove(<item:createchromaticreturn:multiplite_ingot>);
@@ -35,6 +34,13 @@ import mods.create.PressingManager;
     <recipetype:create:mixing>.remove(<item:createchromaticreturn:silkstrum>);
     <recipetype:create:mixing>.remove(<item:createchromaticreturn:antiplite_ingot>);
     <recipetype:create:mixing>.remove(<item:createchromaticreturn:industrium_ingot>);
+    <recipetype:create:mixing>.remove(<item:mekanism:pellet_antimatter>);
+    <recipetype:create:mixing>.remove(<item:create:creative_blaze_cake>);
+    <recipetype:create:mixing>.remove(<item:create_sa:creative_filling_tank>);
+  //filling
+    <recipetype:create:filling>.remove(<item:createchromaticreturn:magmatic_mechanism>);
+    <recipetype:create:filling>.remove(<item:createchromaticreturn:annealed_mechanism>);
+  //pressing
     <recipetype:create:pressing>.remove(<item:createchromaticreturn:silkstrum_charm>);
     <recipetype:create:pressing>.remove(<item:createchromaticreturn:antiplite_charm>);
     <recipetype:create:pressing>.remove(<item:createchromaticreturn:multiplite_charm>);
@@ -43,12 +49,25 @@ import mods.create.PressingManager;
     <recipetype:create:pressing>.remove(<item:createchromaticreturn:industrium_charm>);
   //haunting
     <recipetype:create:haunting>.remove(<item:mekanism:raw_uranium>);
-
+  //compacting
+    <recipetype:create:compacting>.remove(<item:createchromaticreturn:silkstrum_charm>);
+    <recipetype:create:compacting>.remove(<item:createchromaticreturn:antiplite_charm>);
+    <recipetype:create:compacting>.remove(<item:createchromaticreturn:multiplite_charm>);
+    <recipetype:create:compacting>.remove(<item:createchromaticreturn:refined_charm>);
+    <recipetype:create:compacting>.remove(<item:createchromaticreturn:shadow_charm>);
+    <recipetype:create:compacting>.remove(<item:createchromaticreturn:industrium_charm>);
+    <recipetype:create:compacting>.remove(<item:createchromaticreturn:industrium_book>);
+    <recipetype:create:compacting>.remove(<item:createchromaticreturn:durasteel_book>);
+    <recipetype:create:compacting>.remove(<item:createchromaticreturn:silkstrum_book>);
+  //mechanical craft
+    <recipetype:create:mechanical_crafting>.remove(<item:createchromaticreturn:radiant_glow_saber>);
+    <recipetype:create:mechanical_crafting>.remove(<item:createchromaticreturn:radiant_glow_claws>);
+    <recipetype:create:mechanical_crafting>.remove(<item:create:creative_motor>);
 //adding recipes (refer to https://docs.blamejared.com/1.20.1/en/mods/CreateTweaker/SplashingManager for recipe managers)
   //splashing | <recipetype:create:splashing>.addRecipe(name as string, outputs as Percentaged<IItemStack>[], input as IIngredient, duration as int);
     <recipetype:create:splashing>.addRecipe("washing_the_infinite", [<item:kubejs:washed_grains_of_infinity> % 100], <item:kubejs:raw_grains_of_infinity>, 200);
   //mixing | <recipetype:create:mixing>.addRecipe(name as string, heat as HeatCondition, outputs as IFluidStack[] or Percentaged<IItemStack>[], itemInputs as IIngredientWithAmount[], fluidInputs as FluidIngredient[], duration as int);
-    <recipetype:create:mixing>.addRecipe("brass/mixing/unheated", <constant:create:heat_condition:none>, [<item:create:brass_ingot>], [<item:minecraft:copper_ingot>, <item:create:zinc_ingot>], [], 200);
+    <recipetype:create:mixing>.addRecipe("brass/mixing/unheated", <constant:create:heat_condition:none>, [<item:create:brass_ingot>], [<item:minecraft:copper_ingot>, <tag:items:forge:ingots/zinc>], [], 200);
     <recipetype:create:mixing>.addRecipe("fungi_liquifaction", <constant:create:heat_condition:none>, [<fluid:kubejs:fungal_mixture> * 50], [<tag:items:forge:mushrooms> * 1], [<fluid:minecraft:water> * 200], 3000);
     <recipetype:create:mixing>.addRecipe("dew_of_the_void/mixing", <constant:create:heat_condition:superheated>, [<fluid:enderio:dew_of_the_void> * 800], [<item:garnished:void_dust> * 2], [<fluid:kubejs:liquid_dragons_breath> * 50], 200);
     <recipetype:create:mixing>.addRecipe("radiant_alloy/mixing", <constant:create:heat_condition:superheated>, [(<fluid:createchromaticreturn:refined_mixture> * 800)], [<item:minecraft:copper_ingot>, <item:create:polished_rose_quartz> * 2], [<fluid:kubejs:glowing_liquid> * 300], 300);
@@ -59,10 +78,14 @@ import mods.create.PressingManager;
     <recipetype:create:mixing>.addRecipe("chromatic_compound/mixing", <constant:create:heat_condition:superheated>, [<item:createchromaticreturn:chromatic_compound> * 2], [<item:createchromaticreturn:refined_radiance>, <item:createchromaticreturn:shadow_steel>, <item:garnished:ethereal_compound>, <item:createchromaticreturn:glowing_ingot>, <item:extendedcrafting:flux_star>], [<fluid:mekanismgenerators:fusion_fuel>], 800);
     <recipetype:create:mixing>.addRecipe("magical_water", <constant:create:heat_condition:none>, [<fluid:kubejs:magical_water> * 1000], [<item:minecraft:mycelium>, <item:kubejs:ethereal_brick>], [<fluid:minecraft:water> * 1000], 3600);
     <recipetype:create:mixing>.addRecipe("magical_water/efficient", <constant:create:heat_condition:superheated>, [<fluid:kubejs:magical_water> * 1000], [<item:minecraft:mycelium>, <item:kubejs:ethereal_brick>], [<fluid:minecraft:water> * 1000], 600);
-    <recipetype:create:mixing>.addRecipe("durasteel_ingot", <constant:create:heat_condition:superheated>, <item:createchromaticreturn:durasteel_ingot>, [<item:createchromaticreturn:chromatic_compound> * 4, <item:createchromaticreturn:bedrock_shard>, <item:minecraft:netherite_ingot>], 600);
-    <recipetype:create:mixing>.addRecipe("multiplite_ingot",  <constant:create:heat_condition:superheated>, [<item:createchromaticreturn:multiplite_ingot>], [<item:enderio:weather_crystal>, <item:avaritia:singularity>.withTag({Id: "avaritia:chromatic"})], 300);
-    <recipetype:create:mixing>.addRecipe("silkstrum", <constant:create:heat_condition:superheated>, <item:createchromaticreturn:silkstrum>, [<item:createchromaticreturn:chromatic_compound>, <item:minecraft:string> * 6, <item:mekanism:block_refined_glowstone>], 200);
-    <recipetype:create:mixing>.addRecipe("industrium_ingot", <constant:create:heat_condition:superheated>, <item:createchromaticreturn:industrium_ingot>, [<item:createchromaticreturn:chromatic_compound> * 4, <item:create:wrench>, <item:mekanismgenerators:control_rod_assembly> * 32], 900)
+    <recipetype:create:mixing>.addRecipe("durasteel_ingot", <constant:create:heat_condition:superheated>, [<item:createchromaticreturn:durasteel_ingot>], [<item:createchromaticreturn:chromatic_compound> * 4, <item:createchromaticreturn:bedrock_shard>, <item:minecraft:netherite_ingot>], [], 600);
+    <recipetype:create:mixing>.addRecipe("multiplite_ingot",  <constant:create:heat_condition:superheated>, [<item:createchromaticreturn:multiplite_ingot>], [<item:enderio:weather_crystal>, <item:avaritia:singularity>.withTag({Id: "avaritia:chromatic"})], [], 300);
+    <recipetype:create:mixing>.addRecipe("silkstrum", <constant:create:heat_condition:superheated>, [<item:createchromaticreturn:silkstrum>], [<item:createchromaticreturn:chromatic_compound>, <item:minecraft:string> * 6, <item:mekanism:block_refined_glowstone>], [], 200);
+    <recipetype:create:mixing>.addRecipe("industrium_ingot", <constant:create:heat_condition:superheated>, [<item:createchromaticreturn:industrium_ingot>], [<item:createchromaticreturn:chromatic_compound> * 4, <item:create:wrench>, <item:mekanismgenerators:control_rod_assembly> * 32], [], 900);
+    <recipetype:create:mixing>.addRecipe("fortunite_bar", <constant:create:heat_condition:superheated>, [<item:createchromaticreturn:fortunite_bar>], [<item:createchromaticreturn:chromatic_compound> * 7, <item:createchromaticreturn:four_leaf_clover> * 7, <item:minecraft:gold_ingot> * 7], [], 200);
+    <recipetype:create:mixing>.addRecipe("antimatter_pellet", <constant:create:heat_condition:superheated>, [<item:mekanism:pellet_antimatter>], [<item:createchromaticreturn:multiplite_ingot>, <item:mekanism:pellet_polonium> * 4, <item:mekanism:pellet_plutonium> * 4, <item:blocksyouneed_luna:antimetal_block> * 32], [], 2000);
+    <recipetype:create:mixing>.addRecipe("cloud_seed/dilution", <constant:create:heat_condition:none>, [<fluid:enderio:cloud_seed> * 1000], [], [<fluid:mekanism:ethene> * 170, <fluid:enderio:cloud_seed_concentrated> * 830], 100);
+
   //Item Application | if you add a recipe from <recipetype:create:item_application>, it will also add it to <recipetype:create:deploying>, but not vice-versa. The recipe created will have using_deployer attached to it.
     //deploying | <recipetype:create:deploying>.addRecipe(name as string, processedItem as IIngredient, heldItem as IIngredient, outputs as Percentaged<IItemStack>[], keepHeldItem as boolean);
       <recipetype:create:deploying>.addRecipe("being_lonely", <item:enderio:enticing_crystal>, <item:garnished:desolate_spread>, [<item:kubejs:crystal_of_desolation> % 100], false);
@@ -74,6 +97,7 @@ import mods.create.PressingManager;
       <recipetype:create:item_application>.addRecipe("andesite_casing_with_frame", [<item:create:andesite_casing> %100], <tag:items:forge:stripped_wood>, <item:kubejs:andesite_frame>, false);
       <recipetype:create:item_application>.addRecipe("andesite_casing_with_frame/advantage", [<item:create:andesite_casing> %100], <item:minecraft:spruce_planks>, <item:kubejs:andesite_frame>, false);
       <recipetype:create:item_application>.addRecipe("steel_casing_with_frame", [<item:mekanism:steel_casing> %100], <item:create_things_and_misc:sturdy_sheet_block>, <item:kubejs:andesite_frame>, false);
+      <recipetype:create:item_application>.addRecipe("creative_casing", [<item:createcasing:creative_casing> % 100.0], <item:create:railway_casing>, <item:createchromaticreturn:multiplite_ingot>, false);
   //sequenced assembly | <recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder(name as string) builder);
     //ingot of infinity
       <recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("ingoting_the_infinite") 
@@ -154,7 +178,7 @@ import mods.create.PressingManager;
       .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:create:large_cogwheel>))
       .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:avaritia:neutron_nugget>)));
     //magmatic mechanism
-      <recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("magmatic mechanism")
+      <recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("magmatic_mechanism")
       .loops(3)
       .transitionTo(<item:kubejs:incomplete_shadow_mechanism>)
       .require(<item:createchromaticreturn:shadow_mechanism>)
@@ -166,15 +190,15 @@ import mods.create.PressingManager;
       <recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("annealed_mechanism")
       .loops(5)
       .transitionTo(<item:kubejs:incomplete_shadow_mechanism>)
-      .require(<item:createchromaticreturn:annealed_mechanism>)
-      .addOutput(<item:createchromaticreturn:magmatic_mechanism>, 100)
+      .require(<item:createchromaticreturn:magmatic_mechanism>)
+      .addOutput(<item:createchromaticreturn:annealed_mechanism>, 100)
       .addStep<mods.createtweaker.FillingRecipe>((rb) => rb.require(<fluid:mekanism:steam> * 1000))
       .addStep<mods.createtweaker.FillingRecipe>((rb) => rb.require(<fluid:minecraft:water> * 1000)));
     //refined mechanism
       <recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("refined_mechanism")
       .loops(3)
       .transitionTo(<item:kubejs:incomplete_shadow_mechanism>)
-      .require(<item:createchromaticreturn:annealed_steel>)
+      .require(<item:createchromaticreturn:annealed_mechanism>)
       .addOutput(<item:createchromaticreturn:refined_mechanism>, 100)
       .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:createchromaticreturn:refined_radiance>))
       .addStep<mods.createtweaker.PressingRecipe>((rb) => rb.duration(100))
@@ -183,6 +207,7 @@ import mods.create.PressingManager;
   //compacting | <recipetype:create:compacting>.addRecipe(name as string, heat as HeatCondition, outputs as IFluidStack[], itemInputs as IIngredientWithAmount[], fluidInputs as FluidIngredient[], duration as int);
     <recipetype:create:compacting>.addRecipe("compacting_glow_items", <constant:create:heat_condition:heated>, [<fluid:kubejs:glowing_liquid> * 350], [<tag:items:crafttweaker:glowing_items> * 1], [<fluid:minecraft:water> * 100], 100);
     <recipetype:create:compacting>.addRecipe("sturdy_sheet_block_with_compacting", <constant:create:heat_condition:heated>, [<item:create_things_and_misc:sturdy_sheet_block>], [<item:create:sturdy_sheet> * 15], [], 200);
+    <recipetype:create:compacting>.addRecipe("charm_token", <constant:create:heat_condition:superheated>, [<item:kubejs:charm_token>], [<item:createchromaticreturn:bedrock_charm_base>, <item:enderio:weather_crystal> * 8], [], 200);
   //filling | <recipetype:create:filling>.addRecipe(name as string, output as Percentaged<IItemStack>, inputContainer as IIngredient, inputFluid as FluidIngredient, duration as int);
     <recipetype:create:filling>.addRecipe("myceliate_dirt", <item:minecraft:mycelium>, <item:minecraft:dirt>, (<fluid:kubejs:fungal_mixture> * 100 ), 60);
     <recipetype:create:filling>.addRecipe('dragons_breath/filling', <item:minecraft:dragon_breath>, <item:minecraft:glass_bottle>, <fluid:kubejs:liquid_dragons_breath> * 250, 20);
@@ -215,8 +240,30 @@ import mods.create.PressingManager;
       [<item:mekanism:alloy_reinforced>, <item:mekanism:energy_tablet>, <item:minecraft:amethyst_cluster>, <item:minecraft:amethyst_cluster>, <item:minecraft:amethyst_cluster>, air],
       [<item:mekanism:alloy_reinforced>, <item:minecraft:beacon>, <item:connectedglass:clear_glass>, <item:connectedglass:clear_glass>, <item:mekanismgenerators:laser_focus_matrix>, <item:industrialforegoing:laser_lens14>],
       [<item:mekanism:alloy_reinforced>, <item:mekanism:energy_tablet>,<item:minecraft:amethyst_cluster>, <item:minecraft:amethyst_cluster>, <item:minecraft:amethyst_cluster>, air]]);
+    <recipetype:create:mechanical_crafting>.addRecipe("radiant_glow_claws", <item:createchromaticreturn:radiant_glow_claws>, [
+      [air, air, air, air, air, air, <item:createchromaticreturn:multiplite_ingot>, <item:createchromaticreturn:antiplite_ingot>, air, air],
+      [air, air, air, air, air, <item:createchromaticreturn:multiplite_ingot>, <item:createchromaticreturn:antiplite_ingot>, <item:createchromaticreturn:multiplite_ingot>, air, air],
+      [air, air, air, air, <item:createchromaticreturn:multiplite_ingot>, <item:createchromaticreturn:antiplite_ingot>, <item:createchromaticreturn:multiplite_ingot>, air, <item:createchromaticreturn:multiplite_ingot>, <item:createchromaticreturn:antiplite_ingot>],
+      [air, air, air, <item:createchromaticreturn:multiplite_ingot>, <item:createchromaticreturn:antiplite_ingot>, <item:createchromaticreturn:multiplite_ingot>, air, <item:createchromaticreturn:multiplite_ingot>, <item:createchromaticreturn:antiplite_ingot>, <item:createchromaticreturn:multiplite_ingot>],
+      [air, air, <item:createchromaticreturn:multiplite_ingot>, <item:createchromaticreturn:antiplite_ingot>, <item:createchromaticreturn:multiplite_ingot>, air, <item:createchromaticreturn:multiplite_ingot>, <item:createchromaticreturn:antiplite_ingot>, <item:createchromaticreturn:multiplite_ingot>, air],
+      [air, <item:createchromaticreturn:cyber_plating>, <item:createchromaticreturn:radiant_glow_saber>, <item:createchromaticreturn:multiplite_ingot>, air, <item:createchromaticreturn:multiplite_ingot>, <item:createchromaticreturn:antiplite_ingot>, <item:createchromaticreturn:multiplite_ingot>, air, air],
+      [<item:createchromaticreturn:cyber_plating>, <item:createchromaticreturn:refined_mechanism>, <item:createchromaticreturn:cyber_plating>, air, <item:createchromaticreturn:multiplite_ingot>, <item:createchromaticreturn:antiplite_ingot>, <item:createchromaticreturn:multiplite_ingot>, air, air, air],
+      [air, <item:createchromaticreturn:cyber_plating>, <item:createchromaticreturn:refined_radiance>, <item:createchromaticreturn:cyber_plating>, <item:createchromaticreturn:radiant_glow_saber>, <item:createchromaticreturn:multiplite_ingot>, air ,air ,air ,air],
+      [air, air, <item:createchromaticreturn:cyber_plating>, <item:createchromaticreturn:refined_mechanism>, <item:createchromaticreturn:cyber_plating>, air, air, air, air, air],
+      [air, air, air, <item:createchromaticreturn:cyber_plating>, air, air, air, air, air, air]]);
+    <recipetype:create:mechanical_crafting>.addRecipe("industrium_water_source", <item:watersources:water_source_tier_5>, [
+        [<item:createchromaticreturn:andesite_component>, <item:createchromaticreturn:andesite_component>, <item:createchromaticreturn:andesite_component>, <item:createchromaticreturn:andesite_component>, <item:createchromaticreturn:andesite_component>, <item:createchromaticreturn:andesite_component>, <item:createchromaticreturn:andesite_component>, <item:createchromaticreturn:andesite_component>, <item:createchromaticreturn:andesite_component>, <item:createchromaticreturn:andesite_component>, <item:createchromaticreturn:andesite_component>],
+        [<item:tougherglass:stronger_glass>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:tougherglass:stronger_glass>],
+        [<item:tougherglass:stronger_glass>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket> ,<item:tougherglass:stronger_glass>],
+        [<item:tougherglass:stronger_glass>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket> ,<item:tougherglass:stronger_glass>],
+        [<item:tougherglass:stronger_glass>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket> ,<item:tougherglass:stronger_glass>],
+        [<item:tougherglass:stronger_glass>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:watersources:water_source_tier_4>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:tougherglass:stronger_glass>],
+        [<item:tougherglass:stronger_glass>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket> ,<item:tougherglass:stronger_glass>],
+        [<item:tougherglass:stronger_glass>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket> ,<item:tougherglass:stronger_glass>],
+        [<item:tougherglass:stronger_glass>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket> ,<item:tougherglass:stronger_glass>],
+        [<item:tougherglass:stronger_glass>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket> ,<item:tougherglass:stronger_glass>],
+        [<item:createchromaticreturn:andesite_component>, <item:createchromaticreturn:andesite_component>, <item:createchromaticreturn:andesite_component>, <item:createchromaticreturn:andesite_component>, <item:createchromaticreturn:andesite_component>, <item:createchromaticreturn:andesite_component>, <item:createchromaticreturn:andesite_component>, <item:createchromaticreturn:andesite_component>, <item:createchromaticreturn:andesite_component>, <item:createchromaticreturn:andesite_component>, <item:createchromaticreturn:andesite_component>]]);
   //draining | <recipetype:create:emptying>.addRecipe(name as string, outputItem as Percentaged<IItemStack>, outputFluid as IFluidStack, inputContainer as IIngredient, duration as int)  
     <recipetype:create:emptying>.addRecipe('dragons_breath/emptying', <item:minecraft:glass_bottle>, <fluid:kubejs:liquid_dragons_breath> * 250, <item:minecraft:dragon_breath>);
     <recipetype:create:emptying>.addRecipe('void_in_a_bottle/emptying', <item:minecraft:glass_bottle>, <fluid:kubejs:liquid_void> * 250, <item:kubejs:void_in_a_bottle>);
   //crushing | <recipetype:create:crushing>.addRecipe(name as string, output as Percentaged<IItemStack>[], input as IIngredient, duration as int);
-    <recipetype:create:crushing>.addRecipe("creative_flour", [<item:createchromaticreturn:creative_flour> % 100], <item:createchromaticreturn:multiplite_ingot>, 650);

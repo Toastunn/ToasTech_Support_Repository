@@ -16,6 +16,7 @@ import mods.mekanism.api.ingredient.ChemicalStackIngredient.PigmentStackIngredie
   var Painting = <recipetype:mekanism:painting>;
   var Combining = <recipetype:mekanism:combining>;
   var Crushing = <recipetype:mekanism:crushing>;
+  var ItemToGas = <recipetype:mekanism:gas_conversion>;
 //removing mekanism recipes
 
 Synthesizing.removeByName("mekanism:nucleosynthesizing/end_crystal");
@@ -26,8 +27,9 @@ Synthesizing.removeByName("mekanism:nucleosynthesizing/end_crystal");
   //infusing
     Infusing.addRecipe("lattice_infusion", <item:minecraft:netherite_ingot>, <infuse_type:mekanism:diamond> * 80, <item:avaritia:diamond_lattice>);
   //reaction
-    Reaction.addRecipe("infalmming_water", <item:kubejs:radiant_catalyst>, <tag:fluids:minecraft:water> * 1000, <gas:mekanism:oxygen> * 1000, 600, <item:kubejs:radiant_catalyst>, <gas:kubejs:fire_vapor> * 2000, 1000);
+    Reaction.addRecipe("inflamming_water", <item:kubejs:radiant_catalyst>, <tag:fluids:minecraft:water> * 1000, <gas:mekanism:oxygen> * 1000, 600, <item:kubejs:radiant_catalyst>, <gas:kubejs:fire_vapor> * 2000, 1000);
     Reaction.addRecipe("breath_of_a_dead_dragon", <item:minecraft:dragon_head>, <tag:fluids:minecraft:water> * 500, <gas:mekanism:oxygen> * 300, 100, <item:minecraft:dragon_head>, <gas:kubejs:dragons_breath> * 850, 1000);
+    Reaction.addRecipe("dry_ice", <item:mekanism:enriched_carbon>, <fluid:mekanism:hydrogen> * 1000, <gas:mekanism:oxygen> * 5000, 60, <item:kubejs:dry_ice> * 2, <gas:mekanism:hydrogen> * 990, 2000);
   //rotary
     Rotary.addRecipe("flamming_water/state_change", <fluid:enderio:fire_water> * 1, <gas:kubejs:fire_vapor> * 1, <gas:kubejs:fire_vapor>, <fluid:enderio:fire_water>);
     Rotary.addRecipe("hyper_experience/state_change", <fluid:create_enchantment_industry:hyper_experience> * 1, <gas:kubejs:hyper_experience_gas> * 1, <gas:kubejs:hyper_experience_gas>, <fluid:create_enchantment_industry:hyper_experience>);
@@ -47,7 +49,7 @@ Synthesizing.removeByName("mekanism:nucleosynthesizing/end_crystal");
     Synthesizing.addRecipe("perfecting_the_infinite", <item:kubejs:superheated_grains_of_infinity>, <gas:mekanism:antimatter> * 750, <item:kubejs:atomically_perfect_grains_of_infinity>, 2000);
     Synthesizing.addRecipe("end_crystal", <item:minecraft:beacon>, <gas:mekanism:antimatter> * 1500, <item:minecraft:end_crystal>, 4000);
     Synthesizing.addRecipe("antimetal", <item:minecraft:crying_obsidian>, <gas:mekanism:antimatter> * 1, <item:blocksyouneed_luna:antimetal_ingot>, 2000);
-    Synthesizing.addRecipe("antiplite", <item:createchromaticreturn:antiplite_ingot>, <gas:mekanism:antimatter> * 2000, <item:createchromaticreturn:multiplite_ingot>, 2500);
+    Synthesizing.addRecipe("antiplite", <item:createchromaticreturn:multiplite_ingot>, <gas:mekanism:antimatter> * 2000, <item:createchromaticreturn:antiplite_ingot>, 2500);
   //oxidisation
     Oxidizing.addRecipe("infinite_gasification", <item:kubejs:atomically_perfect_grains_of_infinity>, <gas:kubejs:gaseous_infinity> * 60);
   //crystallisation
@@ -58,6 +60,11 @@ Synthesizing.removeByName("mekanism:nucleosynthesizing/end_crystal");
     Painting.addRecipe("black_iron/painting", ItemStackIngredient.from(<item:minecraft:iron_ingot>), PigmentStackIngredient.from(<pigment:mekanism:black>), <item:extendedcrafting:black_iron_ingot>);
   //combining
     Combining.addRecipe("pity_frame/combining", <item:mekanism:steel_casing>, <item:minecraft:cobblestone>, <item:industrialforegoing:machine_frame_pity>);
+    Combining.addRecipe("toast/combining", <item:minecraft:bread>, <item:kubejs:star>, <item:kubejs:toast>);
+    Combining.addRecipe("silver_iodide/combining", <tag:items:forge:ingots/silver>, <item:kubejs:iodine>, <item:kubejs:silver_iodide>);
   //crushing
     Crushing.addRecipe("crushed_salt/mekanism", <item:mekanism:salt>, <item:garnished:crushed_salt>);
     Crushing.addRecipe("crushed_salt/block/mekanism", <item:mekanism:block_salt>, <item:garnished:crushed_salt> * 5);
+    Crushing.addRecipe("creative_flour/mekanism", <item:kubejs:creative_essence>, <item:createchromaticreturn:creative_flour>);
+  //item to gas
+    ItemToGas.addRecipe("ethylene_from_biofuel/gas_conversion", <item:mekanism:bio_fuel>, <gas:mekanism:ethene> * 10);

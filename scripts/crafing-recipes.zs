@@ -32,6 +32,7 @@ import crafttweaker.api.util.random.Percentaged;
         <item:mekanism:laser>,
         <item:mekanism:basic_induction_cell>,
         <item:mekanism:basic_induction_provider>,
+        <item:mekanism:pellet_antimatter>,
       //enderio
         <item:enderio:void_chassis>,
         <item:enderio:iron_gear>,
@@ -43,6 +44,7 @@ import crafttweaker.api.util.random.Percentaged;
         <item:ae2:charger>,
         <item:ae2:vibration_chamber>,
         <item:ae2:inscriber>,
+        <item:ae2:entropy_manipulator>,
       //extendedcrafting
         <item:extendedcrafting:ultimate_component>,
         <item:extendedcrafting:advanced_table>,
@@ -62,13 +64,6 @@ import crafttweaker.api.util.random.Percentaged;
         <item:extendedcrafting:the_ultimate_catalyst>,
         <item:extendedcrafting:compressor>,
       //alltheores
-        <item:alltheores:brass_block>,
-        <item:alltheores:brass_ingot>,
-        <item:alltheores:brass_nugget>,
-        <item:alltheores:brass_plate>,
-        <item:alltheores:brass_gear>,
-        <item:alltheores:brass_rod>,
-        <item:alltheores:brass_dust>,
       //modularrouters
         <item:modularrouters:modular_router>,
       //industrialforegoing
@@ -89,6 +84,9 @@ import crafttweaker.api.util.random.Percentaged;
         <item:industrialforegoing:black_hole_controller>,
       //create
         <item:create:schematicannon>,
+        <item:createchromaticreturn:multiplite_tube>,
+      //mm
+        <item:watersources:water_source_tier_1>,
       //dankstorage
         <item:dankstorage:5_to_6>
     ] as IIngredient[];
@@ -158,7 +156,7 @@ import crafttweaker.api.util.random.Percentaged;
         [<item:kubejs:copper_rod>, air, <item:kubejs:copper_rod>],
         [<item:kubejs:copper_rod>, <item:kubejs:copper_rod>, <item:kubejs:copper_rod>]]);
     //other
-      craftingTable.addShaped('multiplite tube', <item:createchromaticreturn:multiplite_tube>, [
+      craftingTable.addShaped('multiplite_tube', <item:createchromaticreturn:multiplite_tube>, [
         [<item:createchromaticreturn:multiplite_ingot>],
         [<item:alltheores:silver_plate>],
         [<item:minecraft:redstone>]]);
@@ -265,6 +263,10 @@ import crafttweaker.api.util.random.Percentaged;
         [iron, <item:minecraft:sticky_piston>, iron],
         [<item:enderio:conductive_alloy_ingot>, air, iron],
         [iron, <item:minecraft:sticky_piston>, iron]]);
+      craftingTable.addShaped("entropy_manipulator/ae2", <item:ae2:entropy_manipulator>, [
+        [air, <item:ae2:energy_cell>, <item:enderio:weather_crystal>],
+        [air, <item:alltheores:iridium_ingot>, <item:ae2:engineering_processor>],
+        [<item:alltheores:iridium_ingot>, air, air]]);
   //extendedcrafting
     //mekanism modif
       craftingTable.addShapeless('ultimate_component/mekanism', <item:extendedcrafting:ultimate_component>, [<item:extendedcrafting:black_iron_slate>, <item:extendedcrafting:luminessence>, <item:mekanism:pellet_polonium>, <item:mekanism:pellet_polonium>]);

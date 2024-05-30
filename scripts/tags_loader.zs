@@ -2,45 +2,6 @@
 import crafttweaker.api.tag.MCTag;
 
 //removing tags
-  //alltheores brass :(
-    //dust
-      <tag:items:minecraft:trim_materials>.removeId(<resource:alltheores:brass_dust>);
-      <tag:items:forge:dusts>.removeId(<resource:alltheores:brass_dust>);
-      <tag:items:forge:dusts/brass>.removeId(<resource:alltheores:brass_dust>);
-    //rod
-      <tag:items:forge:rods>.removeId(<resource:alltheores:brass_rod>);
-      <tag:items:forge:rods/metal>.removeId(<resource:alltheores:brass_rod>);
-      <tag:items:forge:rods/brass>.removeId(<resource:alltheores:brass_rod>);
-      <tag:items:minecraft:trim_materials>.removeId(<resource:alltheores:brass_rod>);
-    //gear
-      <tag:items:forge:gears/brass>.removeId(<resource:alltheores:brass_gear>);
-      <tag:items:minecraft:trim_materials>.removeId(<resource:alltheores:brass_gear>);
-      <tag:items:forge:gears>.removeId(<resource:alltheores:brass_gear>);
-    //plate
-      <tag:items:railways:internal/plates/brass_plates>.removeId(<resource:alltheores:brass_plate>);
-      <tag:items:forge:plates>.removeId(<resource:alltheores:brass_plate>);
-      <tag:items:forge:plates/brass>.removeId(<resource:alltheores:brass_plate>);
-      <tag:items:minecraft:trim_materials>.removeId(<resource:alltheores:brass_plate>);
-    //nugget
-      <tag:items:forge:nuggets/brass>.removeId(<resource:alltheores:brass_nugget>);
-      <tag:items:railways:internal/nuggets/brass_nuggets>.removeId(<resource:alltheores:brass_nugget>);
-      <tag:items:balm:nuggets>.removeId(<resource:alltheores:brass_nugget>);
-      <tag:items:minecraft:trim_materials>.removeId(<resource:alltheores:brass_nugget>);
-      <tag:items:forge:nuggets>.removeId(<resource:alltheores:brass_nugget>);
-    //ingot
-      <tag:items:forge:ingots>.removeId(<resource:alltheores:brass_ingot>);
-      <tag:items:ae2:metal_ingots>.removeId(<resource:alltheores:brass_ingot>);
-      <tag:items:balm:ingots>.removeId(<resource:alltheores:brass_ingot>);
-      <tag:items:minecraft:trim_materials>.removeId(<resource:alltheores:brass_ingot>);
-      <tag:items:forge:ingots/brass>.removeId(<resource:alltheores:brass_ingot>);
-    //block
-      <tag:items:forge:storage_blocks/brass>.removeId(<resource:alltheores:brass_block>);
-      <tag:items:minecraft:trim_materials>.removeId(<resource:alltheores:brass_block>);
-      <tag:items:forge:storage_blocks>.removeId(<resource:alltheores:brass_block>);
-      <tag:blocks:cucumber:mineable/paxel>.removeId(<resource:alltheores:brass_block>);
-      <tag:blocks:forge:storage_blocks/brass>.removeId(<resource:alltheores:brass_block>);
-      <tag:blocks:minecraft:mineable/pickaxe>.removeId(<resource:alltheores:brass_block>);
-      <tag:blocks:forge:mineable/paxel>.removeId(<resource:alltheores:brass_block>);
   //beacon payment resources
     <tag:items:minecraft:beacon_payment_items>.removeId(<resource:mekanism:ingot_uranium>);
     <tag:items:minecraft:beacon_payment_items>.removeId(<resource:minecraft:emerald>);
@@ -189,3 +150,7 @@ import crafttweaker.api.tag.MCTag;
     <tag:items:curios:charm>.addId(<resource:createchromaticreturn:refined_charm>);
     <tag:items:curios:charm>.addId(<resource:createchromaticreturn:shadow_charm>);
     <tag:items:curios:charm>.addId(<resource:createchromaticreturn:industrium_charm>);
+  //mineable/pickaxe
+    <tag:blocks:minecraft:mineable/pickaxe>.addId(<resource:mm:elemental_transfigurator>);
+  //needs_iron_tool
+    <tag:blocks:minecraft:needs_iron_tool>.addId(<resource:mm:elemental_transfigurator>);
