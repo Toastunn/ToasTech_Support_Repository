@@ -1,12 +1,26 @@
 StartupEvents.registry('item', e => {
     //crystal of desolation
-    e.create('crystal_of_desolation').rarity('uncommon').glow(true)
+    e.create('crystal_of_desolation').glow(true).rarity('uncommon')
     //radiant catalyst
     e.create('radiant_catalyst').burnTime(2000)
     //void in a bottle
     e.create('void_in_a_bottle').rarity('uncommon')
     //ethereal brick
     e.create('ethereal_brick').rarity("common").displayName('Ethereal Ingot')
+    //lightning
+    e.create('lightning').glow(true).rarity('epic').tooltip(Text.darkGray("§o...in the palm of your hand."))
+    //iodine
+    e.create('iodine').rarity('rare')
+    //silver iodine
+    e.create('silver_iodide').rarity("rare")
+    //dry ice
+    e.create('dry_ice').rarity("uncommon")
+    //mass
+    e.create('ringularity').glow(true).rarity("cosmic").tooltip(Text.darkGray("§oSpinning Infinity."))
+    //creative essence
+    e.create("creative_essence").glow(true).rarity("cosmic").tooltip(Text.darkGray("§oAn alternate universe was needed to make this..."))
+    //creativium
+    e.create('creativium').glow(true).rarity("chromatic").tooltip(Text.darkGray("§oPush beyond Infinity."))
   //progression
     //Raw Grains
     e.create('raw_grains_of_infinity')
@@ -28,6 +42,10 @@ StartupEvents.registry('item', e => {
     e.create('alloy_of_infinity').glow(true).rarity('epic')
     //anti-infinity
     e.create('anti_infinity').displayName("Anti-Infinity").rarity('cosmic')
+    //Star
+    e.create('star').rarity("chromatic").displayName("Heat").burnTime(2147483647).tooltip(Text.darkGray("§oLike touching the sun."))
+    //Charm token
+    e.create('charm_token').displayName("Charm Slot Token").unstackable().rarity('chromatic')
   //sequenced assembly incomplete items
     //incomplete ingot of infinity
     e.create('incomplete_ingot_of_infinity').rarity('uncommon').tooltip(Text.gray("Serves no purpose outside the assembly line."))
@@ -48,5 +66,14 @@ StartupEvents.registry('item', e => {
     //Copper rod
     e.create('copper_rod')
   //singularities
-    //chromatic singularity
+    //unstable
+
+    //water
+      e.create('water_singularity').rarity('epic').tooltip(Text.darkGray("§o[SERVER] thinks it needs more water.")).modelJson({
+        parent: "minecraft:item/generated",
+        textures: {
+          layer0: "kubejs:item/water_singularity_base",
+          layer1: "kubejs:item/water_singularity_overlay"
+        }
+      })
 })
