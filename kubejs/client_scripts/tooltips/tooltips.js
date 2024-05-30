@@ -48,16 +48,32 @@ ItemEvents.tooltip((e) => {
     text.add(1, [Text.gray('§oWhen metal lies on the line between reality and infinity.')])
     text.add(2, [Text.darkRed('May serve no purpose outside the assembly line...')])
   })
+  e.addAdvanced("blocksyouneed_luna:bitumen", (item, isAdvanced, text) => {
+    text.add(1, [Text.gray('§oDrops from Asphalt Pitch')])
+  })
   e.addAdvanced('createchromaticreturn:antiplite_charm', (item, isAdvanced, text) => {
     text.remove(1)
-    text.remove(5)
+    text.remove(4)
     text.add(1, [Text.red('Charm Gem Type: Antiplite')])
-    text.add(1, [Text.darkRed('Note: Has negative effects unless user has a Multiplite Charm')])
+    text.add(5, [Text.darkRed('Note: Has negative effects unless user has a '), Text.lightPurple('Multiplite Charm')])
+    text.add(6, [Text.darkRed('Negative effects will not be removed in the Curios Charm Slot')])
   })
   e.addAdvanced('createchromaticreturn:multiplite_charm', (item, isAdvanced, text) => {
     text.remove(4)
-    text.add(1, [Text.darkPurple('Note: Has negative effects unless user has an Antiiplite Charm')])
+    text.add(4, [Text.darkPurple('Note: Has negative effects unless user has an '), Text.red('Antiplite Charm')])
+    text.add(5, [Text.darkRed('Negative effects will not be removed in the Curios Charm Slot')])
   })
+  e.addAdvanced('createchromaticreturn:bedrock_charm_base', (item, isAdvanced, text) => {
+    text.remove(1)
+    text.remove(2)
+    text.remove(3)
+  });
+  e.addAdvanced('createchromaticreturn:bedrock_charm_base', (item, isAdvanced, text) => {
+    text.remove(1)
+  });
+  e.addAdvanced('createchromaticreturn:bedrock_charm_base', (item, isAdvanced, text) => {
+    text.remove(1)
+  });
   // cut this out when release
   e.addAdvanced(Ingredient.all, (item, advanced, text) => {
     if (e.alt && item.nbt && advanced) {
