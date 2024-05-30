@@ -1,7 +1,7 @@
 {
   "priority": 1001,
   "panel": "obscure_tooltips:rarities/supreme",
-  "icon": "epic",
+  "icon": "obscure_tooltips:epic",
   "filter": {
     "rarity": "supreme"
   }

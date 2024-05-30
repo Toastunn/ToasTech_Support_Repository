@@ -1,0 +1,9 @@
+{
+  "priority": 1000,
+  "panel": "obscure_tooltips:rarities/supreme",
+  "filter": {
+    "items": [
+      "kubejs:toast"
+    ]
+  }
+}

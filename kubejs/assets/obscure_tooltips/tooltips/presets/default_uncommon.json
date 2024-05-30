@@ -1,5 +1,5 @@
 {
-  "priority": 100,
+  "priority": 1000,
   "panel": "obscure_tooltips:rarities/bronze",
   "frame": "obscure_tooltips:bronze",
   "filter": {

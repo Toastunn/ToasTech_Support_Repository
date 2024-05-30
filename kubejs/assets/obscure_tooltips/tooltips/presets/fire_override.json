@@ -1,0 +1,10 @@
+{
+  "priority": 996,
+  "panel": "obscure_tooltips:fire",
+  "frame": "obscure_tooltips:fire",
+  "filter": {
+    "items": [
+      "kubejs:star"
+    ]
+  }
+}
