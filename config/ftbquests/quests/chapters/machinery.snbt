@@ -222,7 +222,7 @@
 				item: "kubejs:ingot_of_infinity"
 				type: "item"
 			}]
-			x: -0.5d
+			x: -2.5d
 			y: 3.5d
 		}
 		{
@@ -233,7 +233,7 @@
 				item: "kubejs:alloy_of_infinity"
 				type: "item"
 			}]
-			x: 0.5d
+			x: -1.5d
 			y: 3.5d
 		}
 		{
@@ -252,7 +252,7 @@
 				item: "avaritia:infinity_ingot"
 				type: "item"
 			}]
-			x: 1.5d
+			x: -0.5d
 			y: 3.5d
 		}
 		{
@@ -272,7 +272,7 @@
 				item: "kubejs:crystal_of_infinity"
 				type: "item"
 			}]
-			x: -1.5d
+			x: -3.5d
 			y: 3.5d
 		}
 		{
@@ -295,7 +295,7 @@
 				type: "fluid"
 			}]
 			title: "Gaseous Infinity"
-			x: -2.5d
+			x: -4.5d
 			y: 3.5d
 		}
 		{
@@ -326,7 +326,7 @@
 				item: "kubejs:atomically_perfect_grains_of_infinity"
 				type: "item"
 			}]
-			x: -3.5d
+			x: -5.5d
 			y: 3.5d
 		}
 		{
@@ -357,7 +357,7 @@
 				item: "kubejs:superheated_grains_of_infinity"
 				type: "item"
 			}]
-			x: -4.5d
+			x: -6.5d
 			y: 3.5d
 		}
 		{
@@ -377,7 +377,7 @@
 				item: "kubejs:enchanted_grains_of_infinity"
 				type: "item"
 			}]
-			x: -5.5d
+			x: -7.5d
 			y: 3.5d
 		}
 		{
@@ -397,7 +397,7 @@
 				item: "kubejs:pure_grains_of_infinity"
 				type: "item"
 			}]
-			x: -6.5d
+			x: -8.5d
 			y: 3.5d
 		}
 		{
@@ -421,7 +421,7 @@
 				item: "enderio:grains_of_infinity"
 				type: "item"
 			}]
-			x: -7.5d
+			x: -9.5d
 			y: 3.5d
 		}
 		{
@@ -451,7 +451,7 @@
 				}
 			]
 			title: "Washed Grains of Infinity"
-			x: -8.5d
+			x: -10.5d
 			y: 3.5d
 		}
 		{
@@ -469,7 +469,7 @@
 				item: "kubejs:raw_grains_of_infinity"
 				type: "item"
 			}]
-			x: -9.5d
+			x: -11.5d
 			y: 3.5d
 		}
 		{
@@ -498,7 +498,7 @@
 				item: "kubejs:anti_infinity"
 				type: "item"
 			}]
-			x: 2.5d
+			x: 0.5d
 			y: 3.5d
 		}
 		{
@@ -509,7 +509,7 @@
 				item: "createchromaticreturn:shadow_steel"
 				type: "item"
 			}]
-			x: 3.5d
+			x: 1.5d
 			y: 3.5d
 		}
 		{
@@ -520,7 +520,7 @@
 				item: "createchromaticreturn:refined_radiance"
 				type: "item"
 			}]
-			x: 4.5d
+			x: 2.5d
 			y: 3.5d
 		}
 		{
@@ -531,8 +531,104 @@
 				item: "createchromaticreturn:chromatic_compound"
 				type: "item"
 			}]
+			x: 3.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["18D8E045FD32C0CA"]
+			id: "2ACC99ED231C589A"
+			tasks: [{
+				id: "45D866D4B7E158CF"
+				item: {
+					Count: 1b
+					id: "avaritia:singularity"
+					tag: {
+						Id: "avaritia:chromatic"
+					}
+				}
+				type: "item"
+			}]
+			x: 4.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["2ACC99ED231C589A"]
+			id: "36FE6664814FC42B"
+			tasks: [{
+				id: "65F535DDCBCD1B6D"
+				item: "createchromaticreturn:multiplite_ingot"
+				type: "item"
+			}]
 			x: 5.5d
 			y: 3.5d
+		}
+		{
+			dependencies: ["36FE6664814FC42B"]
+			id: "21A85F92FD481B27"
+			tasks: [{
+				id: "7ACD055A69663458"
+				item: "createchromaticreturn:antiplite_ingot"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["21A85F92FD481B27"]
+			id: "56D0340CD83920AF"
+			tasks: [{
+				id: "7E500CCAD27F5EB8"
+				item: "mm:elemental_transfigurator"
+				type: "item"
+			}]
+			title: "Elemental Transfigurator"
+			x: 7.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["56D0340CD83920AF"]
+			id: "05B08C7A9EE160BE"
+			tasks: [{
+				id: "73C444218BBF1FA3"
+				item: "kubejs:ringularity"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["1793DFE7CF566D4A"]
+			id: "48C30A6A670896C5"
+			tasks: [{
+				id: "3AF5FACC41742D72"
+				item: "kubejs:creative_essence"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["48C30A6A670896C5"]
+			id: "33A5F33B1F0DE678"
+			tasks: [{
+				id: "4FB78FEEE2A92026"
+				item: "kubejs:creativium"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["05B08C7A9EE160BE"]
+			id: "1793DFE7CF566D4A"
+			tasks: [{
+				id: "52902842952A1C84"
+				item: "mm:cmc_controller"
+				type: "item"
+			}]
+			title: "Creative Meta-Combiner"
+			x: 8.0d
+			y: 2.5d
 		}
 	]
 	title: "Machinery"
