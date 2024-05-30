@@ -1,7 +1,7 @@
 {
-    "variants": {
-        "": {
-            "model": "kubejs:block/copper_frame"
-        }
+  "variants": {
+    "": {
+      "model": "kubejs:block/copper_frame"
     }
+  }
 }
