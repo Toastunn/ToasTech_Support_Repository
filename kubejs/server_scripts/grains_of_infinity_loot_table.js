@@ -8,3 +8,4 @@ LootJS.modifiers((event) => {
         .randomChance(0.08)
         .addLoot("kubejs:raw_grains_of_infinity");
 });
+
