@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "mm:block/et_energy_port_input"
+    }
+  }
+}

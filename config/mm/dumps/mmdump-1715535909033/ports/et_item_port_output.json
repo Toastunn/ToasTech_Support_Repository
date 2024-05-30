@@ -1,0 +1,10 @@
+{
+  "id": "et_item_port",
+  "controllerIds": "mm:elemental_transfigurator",
+  "name": "Elemental Transfigurator Item Port",
+  "type": "mm:item",
+  "config": {
+    "rows": 2,
+    "columns": 2
+  }
+}

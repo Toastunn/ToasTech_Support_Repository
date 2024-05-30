@@ -1,0 +1,11 @@
+{
+  "id": "cmc_energy_port",
+  "controllerIds": "mm:cmc_controller",
+  "name": "Creative Meta-Combiner Energy Port",
+  "type": "mm:energy",
+  "config": {
+    "capacity": 256000000,
+    "maxReceive": 32000,
+    "maxExtract": 32000
+  }
+}

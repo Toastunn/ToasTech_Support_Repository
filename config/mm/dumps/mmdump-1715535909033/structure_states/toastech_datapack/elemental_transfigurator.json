@@ -1,0 +1,1122 @@
+{
+  "structureId": "toastech_datapack:elemental_transfigurator",
+  "name": "Elemental Transfigurator",
+  "controllerIds": [
+    "mm:elemental_transfigurator"
+  ],
+  "layout": {
+    "CLOCKWISE_90": {
+      "formed": false,
+      "rotation": "CLOCKWISE_90",
+      "pieces": [
+        {
+          "formed": false,
+          "expected": {
+            "portId": "mm:et_energy_port",
+            "requiresIOCheck": true,
+            "isInput": true
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator",
+            "isPort": false
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "ae2:pattern_provider"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "ae2:pattern_provider"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "portId": "mm:et_fluid_port",
+            "requiresIOCheck": true,
+            "isInput": true
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator",
+            "isPort": false
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "industrialforegoing:laser_drill"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "ae2:pattern_provider"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "portId": "mm:et_item_port",
+            "requiresIOCheck": true,
+            "isInput": true
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator",
+            "isPort": false
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "portId": "mm:et_item_port",
+            "requiresIOCheck": true,
+            "isInput": false
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator",
+            "isPort": false
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "ae2:spatial_pylon"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "ae2:molecular_assembler"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "ae2:spatial_pylon"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "ae2:molecular_assembler"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "mekanism:antiprotonic_nucleosynthesizer"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "ae2:molecular_assembler"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "ae2:spatial_pylon"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "ae2:molecular_assembler"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "ae2:spatial_pylon"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "createchromaticreturn:andesite_component"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "createchromaticreturn:andesite_component"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "createchromaticreturn:andesite_component"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "createchromaticreturn:andesite_component"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "ae2:growth_accelerator"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "createchromaticreturn:andesite_component"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "createchromaticreturn:andesite_component"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "createchromaticreturn:andesite_component"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "createchromaticreturn:andesite_component"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        }
+      ]
+    },
+    "COUNTERCLOCKWISE_90": {
+      "formed": false,
+      "rotation": "COUNTERCLOCKWISE_90",
+      "pieces": [
+        {
+          "formed": false,
+          "expected": {
+            "portId": "mm:et_energy_port",
+            "requiresIOCheck": true,
+            "isInput": true
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator",
+            "isPort": false
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "ae2:pattern_provider"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "ae2:pattern_provider"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "portId": "mm:et_fluid_port",
+            "requiresIOCheck": true,
+            "isInput": true
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator",
+            "isPort": false
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "industrialforegoing:laser_drill"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "ae2:pattern_provider"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "portId": "mm:et_item_port",
+            "requiresIOCheck": true,
+            "isInput": true
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator",
+            "isPort": false
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "portId": "mm:et_item_port",
+            "requiresIOCheck": true,
+            "isInput": false
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator",
+            "isPort": false
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "ae2:spatial_pylon"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "ae2:molecular_assembler"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "ae2:spatial_pylon"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "ae2:molecular_assembler"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "mekanism:antiprotonic_nucleosynthesizer"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "ae2:molecular_assembler"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "ae2:spatial_pylon"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "ae2:molecular_assembler"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "ae2:spatial_pylon"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "createchromaticreturn:andesite_component"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "createchromaticreturn:andesite_component"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "createchromaticreturn:andesite_component"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "createchromaticreturn:andesite_component"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "ae2:growth_accelerator"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "createchromaticreturn:andesite_component"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "createchromaticreturn:andesite_component"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "createchromaticreturn:andesite_component"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "createchromaticreturn:andesite_component"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        }
+      ]
+    },
+    "NONE": {
+      "formed": true,
+      "rotation": "NONE",
+      "pieces": [
+        {
+          "formed": false,
+          "expected": {
+            "portId": "mm:et_energy_port",
+            "requiresIOCheck": true,
+            "isInput": true
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator",
+            "isPort": false
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "ae2:pattern_provider"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "ae2:pattern_provider"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "portId": "mm:et_fluid_port",
+            "requiresIOCheck": true,
+            "isInput": true
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator",
+            "isPort": false
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "industrialforegoing:laser_drill"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "ae2:pattern_provider"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "portId": "mm:et_item_port",
+            "requiresIOCheck": true,
+            "isInput": true
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator",
+            "isPort": false
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "portId": "mm:et_item_port",
+            "requiresIOCheck": true,
+            "isInput": false
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator",
+            "isPort": false
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "ae2:spatial_pylon"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "ae2:molecular_assembler"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "ae2:spatial_pylon"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "ae2:molecular_assembler"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "mekanism:antiprotonic_nucleosynthesizer"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "ae2:molecular_assembler"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "ae2:spatial_pylon"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "ae2:molecular_assembler"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "ae2:spatial_pylon"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "createchromaticreturn:andesite_component"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "createchromaticreturn:andesite_component"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "createchromaticreturn:andesite_component"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "createchromaticreturn:andesite_component"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "ae2:growth_accelerator"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "createchromaticreturn:andesite_component"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "createchromaticreturn:andesite_component"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "createchromaticreturn:andesite_component"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "createchromaticreturn:andesite_component"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        }
+      ]
+    },
+    "CLOCKWISE_180": {
+      "formed": false,
+      "rotation": "CLOCKWISE_180",
+      "pieces": [
+        {
+          "formed": false,
+          "expected": {
+            "portId": "mm:et_energy_port",
+            "requiresIOCheck": true,
+            "isInput": true
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator",
+            "isPort": false
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "ae2:pattern_provider"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "ae2:pattern_provider"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "portId": "mm:et_fluid_port",
+            "requiresIOCheck": true,
+            "isInput": true
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator",
+            "isPort": false
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "industrialforegoing:laser_drill"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "ae2:pattern_provider"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "portId": "mm:et_item_port",
+            "requiresIOCheck": true,
+            "isInput": true
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator",
+            "isPort": false
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "portId": "mm:et_item_port",
+            "requiresIOCheck": true,
+            "isInput": false
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator",
+            "isPort": false
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "ae2:spatial_pylon"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "ae2:molecular_assembler"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "ae2:spatial_pylon"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "ae2:molecular_assembler"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "mekanism:antiprotonic_nucleosynthesizer"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "ae2:molecular_assembler"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "ae2:spatial_pylon"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "ae2:molecular_assembler"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "ae2:spatial_pylon"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "createchromaticreturn:andesite_component"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "createchromaticreturn:andesite_component"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "createchromaticreturn:andesite_component"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "createchromaticreturn:andesite_component"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "ae2:growth_accelerator"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "createchromaticreturn:andesite_component"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "createchromaticreturn:andesite_component"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "createchromaticreturn:andesite_component"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        },
+        {
+          "formed": false,
+          "expected": {
+            "block": "createchromaticreturn:andesite_component"
+          },
+          "found": {
+            "block": "mm:elemental_transfigurator"
+          },
+          "modifiers": []
+        }
+      ]
+    }
+  },
+  "_path": "toastech_datapack/elemental_transfigurator.json"
+}

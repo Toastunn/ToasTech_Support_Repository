@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "mm:block/cc_energy_port_output"
+    }
+  }
+}

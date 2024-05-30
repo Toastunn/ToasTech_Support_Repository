@@ -1,0 +1,11 @@
+{
+  "id": "cc_energy_port",
+  "controllerIds": "mm:cloud_condenser",
+  "name": "Cloud Condenser Energy Port",
+  "type": "mm:energy",
+  "config": {
+    "capacity": 16000,
+    "maxReceive": 4000,
+    "maxExtract": 4000
+  }
+}

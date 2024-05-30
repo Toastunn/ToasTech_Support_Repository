@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "mm:block/et_item_port_input"
+    }
+  }
+}

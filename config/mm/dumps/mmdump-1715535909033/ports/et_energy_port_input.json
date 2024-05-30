@@ -1,0 +1,11 @@
+{
+  "id": "et_energy_port",
+  "controllerIds": "mm:elemental_transfigurator",
+  "name": "Elemental Transfigurator Energy Port",
+  "type": "mm:energy",
+  "config": {
+    "capacity": 256000000,
+    "maxReceive": 16000,
+    "maxExtract": 16000
+  }
+}

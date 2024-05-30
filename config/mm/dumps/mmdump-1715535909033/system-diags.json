@@ -1,0 +1,11 @@
+{
+  "javaVersion": "17.0.8",
+  "javaVendor": "Microsoft",
+  "osName": "Windows 10",
+  "osVersion": "10.0",
+  "osArch": "amd64",
+  "availProcessors": 6,
+  "freeMemory": 836672848,
+  "maxMemory": 4294967296,
+  "totalMemory": 4294967296
+}

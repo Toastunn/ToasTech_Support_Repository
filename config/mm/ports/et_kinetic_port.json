@@ -1,0 +1,9 @@
+{
+  "id": "et_kinetic_port",
+  "controllerIds": "mm:elemental_transfigurator",
+  "name": "Elemental Transfigurator Rotational Port",
+  "type": "mm:create/kinetic",
+  "config": {
+    "stress": 1024
+  }
+}

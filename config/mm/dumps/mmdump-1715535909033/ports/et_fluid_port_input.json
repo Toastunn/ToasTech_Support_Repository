@@ -1,0 +1,11 @@
+{
+  "id": "et_fluid_port",
+  "controllerIds": "mm:elemental_transfigurator",
+  "name": "Elemental Transfigurator Fluid Port",
+  "type": "mm:fluid",
+  "config": {
+    "rows": 2,
+    "columns": 2,
+    "slotCapacity": 16000
+  }
+}

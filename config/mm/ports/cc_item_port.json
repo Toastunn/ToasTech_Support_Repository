@@ -1,0 +1,10 @@
+{
+  "id": "cc_item_port",
+  "controllerIds": "mm:cloud_condenser",
+  "name": "Cloud Condenser Item Port",
+  "type": "mm:item",
+  "config": {
+    "rows": 1,
+    "columns": 1
+  }
+}

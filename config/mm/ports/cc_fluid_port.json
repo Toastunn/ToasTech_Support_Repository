@@ -1,0 +1,11 @@
+{
+  "id": "cc_fluid_port",
+  "controllerIds": "mm:cloud_condenser",
+  "name": "Cloud Condenser Fluid Port",
+  "type": "mm:fluid",
+  "config": {
+    "rows": 1,
+    "columns": 1,
+    "slotCapacity": 200000
+  }
+}

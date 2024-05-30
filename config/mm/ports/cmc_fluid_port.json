@@ -1,0 +1,11 @@
+{
+  "id": "cmc_fluid_port",
+  "controllerIds": "mm:cmc_controller",
+  "name": "Creative Meta-Combiner Fluid Port",
+  "type": "mm:fluid",
+  "config": {
+    "rows": 2,
+    "columns": 3,
+    "slotCapacity": 4096000
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "id": "cmc_kinetic_port",
+  "controllerIds": "mm:cmc_controller",
+  "name": "Creative Meta-Combiner Rotational Port",
+  "type": "mm:create/kinetic",
+  "config": {
+    "stress": 16384
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "id": "cmc_item_port",
+  "controllerIds": "mm:cmc_controller",
+  "name": "Creative Meta-Combiner Item Port",
+  "type": "mm:item",
+  "config": {
+    "rows": 2,
+    "columns": 3
+  }
+}
