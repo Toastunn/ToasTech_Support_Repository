@@ -5,5 +5,6 @@
 !/config
 config/*
 !/config/ftbquests
+!/config/mm
 !.gitignore
 !/tooltipgen
