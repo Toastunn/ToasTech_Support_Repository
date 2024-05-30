@@ -18,7 +18,8 @@ const chromatic = createRarity("CHROMATIC", 0x6d0f80)
       "createchromaticreturn:refined_handle",
       "createchromaticreturn:durasteel_handle",
       "createchromaticreturn:silkstrum_handle",
-      "createchromaticreturn:multiplite_handle"
+      "createchromaticreturn:multiplite_handle",
+      "createchromaticreturn:shadow_steel"
     ], item => {
       item.rarity = "uncommon"
     })
@@ -38,7 +39,7 @@ const chromatic = createRarity("CHROMATIC", 0x6d0f80)
       'createchromaticreturn:durasteel_shadow_steel_sword',
       'createchromaticreturn:durasteel_shadow_steel_paxel',
       'createchromaticreturn:silkstrum_shadow_steel_sword',
-      'createchromaticreturn:silkstrum_shadow_steel_paxel'
+      'createchromaticreturn:silkstrum_shadow_steel_paxel',
     ];
     for (let x in sstools) {
       event.modify(sstools[x], item => {
@@ -49,18 +50,21 @@ const chromatic = createRarity("CHROMATIC", 0x6d0f80)
       "createchromaticreturn:brass_component",
       "createchromaticreturn:andesite_component",
       "createchromaticreturn:multiplite_shadow_steel_paxel",
-      "createchromaticreturn:multiplite_shadow_steel_sword"
+      "createchromaticreturn:multiplite_shadow_steel_sword",
+      "createchromaticreturn:chromatic_compound"
     ], item => {
       item.rarity = "epic"
     })
     event.modify([
-      "createchromaticreturn:bedrock_shard"
+      "createchromaticreturn:bedrock_shard",
+      "createchromaticreturn:multiplite_ingot"
     ], item => {
       item.rarity = "cosmic"
     })
     event.modify([
       "createchromaticreturn:radiant_glow_saber",
-      "createchromaticreturn:radiant_glow_claws"
+      "createchromaticreturn:radiant_glow_claws",
+      "createchromaticreturn:antiplite_ingot"
     ], item => {
       item.rarity = chromatic
     })
@@ -158,6 +162,30 @@ const chromatic = createRarity("CHROMATIC", 0x6d0f80)
   ItemEvents.modification(event => {
     event.modify(['mekanism:digital_miner'], item => {
       item.rarity = "supreme"
+    })
+  })
+  //avaritia
+  ItemEvents.modification(event => {
+    event.modify([
+      Item.of('avaritia:singularity', '{Id:"avaritia:chromatic"}')
+    ], item => {
+      item.rarity = "cosmic"
+    })
+  })
+  //mm
+  ItemEvents.modification(event => {
+    event.modify([
+      "mm:elemental_transfigurator"
+    ], item => {
+      item.rarity = chromatic
+    })
+  })
+  //enderio
+  ItemEvents.modification(event => {
+    event.modify([
+      'enderio:grains_of_infinity'
+    ], item => {
+      item.rarity = 'uncommon'
     })
   })
 
