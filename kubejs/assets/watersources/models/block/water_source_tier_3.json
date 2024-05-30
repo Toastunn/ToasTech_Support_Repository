@@ -1,0 +1,6 @@
+{
+  "parent": "watersources:block/water_source",
+  "textures": {
+    "material": "extendedcrafting:block/enhanced_redstone_ingot_block"
+  }
+}

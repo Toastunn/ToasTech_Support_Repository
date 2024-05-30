@@ -1,0 +1,6 @@
+{
+  "parent": "watersources:block/water_source",
+  "textures": {
+    "material": "enderio:block/end_steel_block"
+  }
+}

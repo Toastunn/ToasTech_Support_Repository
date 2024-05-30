@@ -1,0 +1,6 @@
+{
+  "parent": "watersources:block/water_source",
+  "textures": {
+    "material": "createchromaticreturn:block/andesite_component_top"
+  }
+}

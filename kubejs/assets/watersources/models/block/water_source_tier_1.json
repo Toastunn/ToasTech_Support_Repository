@@ -1,0 +1,6 @@
+{
+  "parent": "watersources:block/water_source",
+  "textures": {
+    "material": "create:block/industrial_iron_block"
+  }
+}

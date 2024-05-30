@@ -1,0 +1,6 @@
+{
+  "parent": "watersources:block/water_source",
+  "textures": {
+    "material": "avaritia:block/resource/neutron"
+  }
+}
