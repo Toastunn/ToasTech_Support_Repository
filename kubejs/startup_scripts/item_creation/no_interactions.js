@@ -1,20 +1,23 @@
 StartupEvents.registry('item', e => {
-    //crystal of desolation
-    e.create('crystal_of_desolation').glow(true).rarity('uncommon')
     //radiant catalyst
     e.create('radiant_catalyst').burnTime(2000)
     //void in a bottle
     e.create('void_in_a_bottle').rarity('uncommon')
     //ethereal brick
     e.create('ethereal_brick').rarity("common").displayName('Ethereal Ingot')
-    //lightning
-    e.create('lightning').glow(true).rarity('epic').tooltip(Text.darkGray("§o...in the palm of your hand."))
     //iodine
     e.create('iodine').rarity('rare')
     //silver iodine
     e.create('silver_iodide').rarity("rare")
     //dry ice
     e.create('dry_ice').rarity("uncommon")
+    //lazurite
+    e.create('lazurite')
+  //endgame stuff
+    //lightning
+    e.create('lightning').glow(true).rarity('epic').tooltip(Text.darkGray("§o...in the palm of your hand."))
+    //crystal of desolation
+    e.create('crystal_of_desolation').glow(true).rarity('uncommon')
     //mass
     e.create('ringularity').glow(true).rarity("cosmic").tooltip(Text.darkGray("§oSpinning Infinity."))
     //creative essence
