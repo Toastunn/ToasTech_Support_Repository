@@ -63,6 +63,8 @@ import mods.create.PressingManager;
     <recipetype:create:mechanical_crafting>.remove(<item:createchromaticreturn:radiant_glow_saber>);
     <recipetype:create:mechanical_crafting>.remove(<item:createchromaticreturn:radiant_glow_claws>);
     <recipetype:create:mechanical_crafting>.remove(<item:create:creative_motor>);
+  //crushing
+    <recipetype:create:crushing>.remove(<item:garnished:crushed_salt>);
 //adding recipes (refer to https://docs.blamejared.com/1.20.1/en/mods/CreateTweaker/SplashingManager for recipe managers)
   //splashing | <recipetype:create:splashing>.addRecipe(name as string, outputs as Percentaged<IItemStack>[], input as IIngredient, duration as int);
     <recipetype:create:splashing>.addRecipe("washing_the_infinite", [<item:kubejs:washed_grains_of_infinity> % 100], <item:kubejs:raw_grains_of_infinity>, 200);
@@ -85,7 +87,7 @@ import mods.create.PressingManager;
     <recipetype:create:mixing>.addRecipe("fortunite_bar", <constant:create:heat_condition:superheated>, [<item:createchromaticreturn:fortunite_bar>], [<item:createchromaticreturn:chromatic_compound> * 7, <item:createchromaticreturn:four_leaf_clover> * 7, <item:minecraft:gold_ingot> * 7], [], 200);
     <recipetype:create:mixing>.addRecipe("antimatter_pellet", <constant:create:heat_condition:superheated>, [<item:mekanism:pellet_antimatter>], [<item:createchromaticreturn:multiplite_ingot>, <item:mekanism:pellet_polonium> * 4, <item:mekanism:pellet_plutonium> * 4, <item:blocksyouneed_luna:antimetal_block> * 32], [], 2000);
     <recipetype:create:mixing>.addRecipe("cloud_seed/dilution", <constant:create:heat_condition:none>, [<fluid:enderio:cloud_seed> * 1000], [], [<fluid:mekanism:ethene> * 170, <fluid:enderio:cloud_seed_concentrated> * 830], 100);
-    <recipetype:create:mixing>.addRecipe("lapis/mixing", <constant:create:heat_condition:heated>, [<item:minecraft:lapis_lazuli> * 3], [<item:kubejs:lazurite> * 2, <item:create:limestone>], [], 500);
+    <recipetype:create:mixing>.addRecipe("lapis/mixing", <constant:create:heat_condition:heated>, [<item:minecraft:lapis_lazuli> * 3], [<item:kubejs:lazurite> * 2, <item:minectafy:calcite>], [], 500);
 
   //Item Application | if you add a recipe from <recipetype:create:item_application>, it will also add it to <recipetype:create:deploying>, but not vice-versa. The recipe created will have using_deployer attached to it.
     //deploying | <recipetype:create:deploying>.addRecipe(name as string, processedItem as IIngredient, heldItem as IIngredient, outputs as Percentaged<IItemStack>[], keepHeldItem as boolean);
@@ -264,7 +266,7 @@ import mods.create.PressingManager;
       [<item:tougherglass:stronger_glass>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket> ,<item:tougherglass:stronger_glass>],
       [<item:tougherglass:stronger_glass>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket> ,<item:tougherglass:stronger_glass>],
       [<item:createchromaticreturn:andesite_component>, <item:createchromaticreturn:andesite_component>, <item:createchromaticreturn:andesite_component>, <item:createchromaticreturn:andesite_component>, <item:createchromaticreturn:andesite_component>, <item:createchromaticreturn:andesite_component>, <item:createchromaticreturn:andesite_component>, <item:createchromaticreturn:andesite_component>, <item:createchromaticreturn:andesite_component>, <item:createchromaticreturn:andesite_component>, <item:createchromaticreturn:andesite_component>]]);
-    <recipetype:create:mechanical_crafting>.addRecipe("breaker_module", <item:modularrouters:breaker_module>, [
+    /*<recipetype:create:mechanical_crafting>.addRecipe("breaker_module", <item:modularrouters:breaker_module>, [
       [<item:modularrouters:vacuum_module>, <item:mekanismtools:refined_obsidian_pickaxe>],
       [<item:itemfilters:block>, <item:create:content_observer>]]);
     <recipetype:create:mechanical_crafting>.addRecipe("energy_distributor_module", <item:modularrouters:energy_distributor_module>, [
@@ -284,7 +286,7 @@ import mods.create.PressingManager;
       [<item:modularrouters:vacuum_module>]]);
     <recipetype:create:mechanical_crafting>.addRecipe("sender_module", <item:modularrouters:sender_module_1>, [
       [<item:modularrouters:flinger_module>, <item:ae2:quantum_link>]]);
-    
+    */
   //draining | <recipetype:create:emptying>.addRecipe(name as string, outputItem as Percentaged<IItemStack>, outputFluid as IFluidStack, inputContainer as IIngredient, duration as int)  
     <recipetype:create:emptying>.addRecipe('dragons_breath/emptying', <item:minecraft:glass_bottle>, <fluid:kubejs:liquid_dragons_breath> * 250, <item:minecraft:dragon_breath>);
     <recipetype:create:emptying>.addRecipe('void_in_a_bottle/emptying', <item:minecraft:glass_bottle>, <fluid:kubejs:liquid_void> * 250, <item:kubejs:void_in_a_bottle>);
