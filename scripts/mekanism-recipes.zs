@@ -30,7 +30,7 @@ Synthesizing.removeByName("mekanism:nucleosynthesizing/end_crystal");
     Reaction.addRecipe("inflamming_water", <item:kubejs:radiant_catalyst>, <tag:fluids:minecraft:water> * 1000, <gas:mekanism:oxygen> * 1000, 600, <item:kubejs:radiant_catalyst>, <gas:kubejs:fire_vapor> * 2000, 1000);
     Reaction.addRecipe("breath_of_a_dead_dragon", <item:minecraft:dragon_head>, <tag:fluids:minecraft:water> * 500, <gas:mekanism:oxygen> * 300, 100, <item:minecraft:dragon_head>, <gas:kubejs:dragons_breath> * 850, 1000);
     Reaction.addRecipe("dry_ice", <item:mekanism:enriched_carbon>, <fluid:mekanism:hydrogen> * 1000, <gas:mekanism:oxygen> * 5000, 60, <item:kubejs:dry_ice> * 2, <gas:mekanism:hydrogen> * 990, 2000);
-    Reaction.addRecipe("lazurite", <item:mekanism:sulfur>, <fluid:mekanism:sodium> * 130, <gas:mekanism:chlorine> * 385, 1200, <item:kubejs:lazurite>, 1500);
+    Reaction.addRecipe("lazurite", <item:mekanism:dust_sulfur>, <fluid:mekanism:sodium> * 130, <gas:mekanism:chlorine> * 385, 1200, <item:kubejs:lazurite>, 1500);
   //rotary
     Rotary.addRecipe("flamming_water/state_change", <fluid:enderio:fire_water> * 1, <gas:kubejs:fire_vapor> * 1, <gas:kubejs:fire_vapor>, <fluid:enderio:fire_water>);
     Rotary.addRecipe("hyper_experience/state_change", <fluid:create_enchantment_industry:hyper_experience> * 1, <gas:kubejs:hyper_experience_gas> * 1, <gas:kubejs:hyper_experience_gas>, <fluid:create_enchantment_industry:hyper_experience>);
