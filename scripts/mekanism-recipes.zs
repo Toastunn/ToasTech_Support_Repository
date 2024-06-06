@@ -17,6 +17,7 @@ import mods.mekanism.api.ingredient.ChemicalStackIngredient.PigmentStackIngredie
   var Combining = <recipetype:mekanism:combining>;
   var Crushing = <recipetype:mekanism:crushing>;
   var ItemToGas = <recipetype:mekanism:gas_conversion>;
+  var Dissolution = <recipetype:mekanism:dissolution>;
 //removing mekanism recipes
 
 Synthesizing.removeByName("mekanism:nucleosynthesizing/end_crystal");
@@ -31,6 +32,8 @@ Synthesizing.removeByName("mekanism:nucleosynthesizing/end_crystal");
     Reaction.addRecipe("breath_of_a_dead_dragon", <item:minecraft:dragon_head>, <tag:fluids:minecraft:water> * 500, <gas:mekanism:oxygen> * 300, 100, <item:minecraft:dragon_head>, <gas:kubejs:dragons_breath> * 850, 1000);
     Reaction.addRecipe("dry_ice", <item:mekanism:enriched_carbon>, <fluid:mekanism:hydrogen> * 1000, <gas:mekanism:oxygen> * 5000, 60, <item:kubejs:dry_ice> * 2, <gas:mekanism:hydrogen> * 990, 2000);
     Reaction.addRecipe("lazurite", <item:mekanism:dust_sulfur>, <fluid:mekanism:sodium> * 130, <gas:mekanism:chlorine> * 385, 1200, <item:kubejs:lazurite>, 1500);
+    Reaction.addRecipe("osmium_tetroxide", <item:kubejs:osmine>, <fluid:mekanism:hydrogen_chloride> * 530, <gas:mekanism:oxygen> * 400, 400, <item:kubejs:osmium_tetroxide>, <gas:mekanism:hydrogen_chloride> * 270);
+    Reaction.addRecipe("aluminum_dust/kaolin", <item:kubejs:kaolin>, <fluid:mekanism:hydrogen_chloride> * 1300, <gas:mekanism:superheated_sodium> * 320, 2000, <item:alltheores:aluminum_dust> * 4, <gas:mekanism:sodium>);
   //rotary
     Rotary.addRecipe("flamming_water/state_change", <fluid:enderio:fire_water> * 1, <gas:kubejs:fire_vapor> * 1, <gas:kubejs:fire_vapor>, <fluid:enderio:fire_water>);
     Rotary.addRecipe("hyper_experience/state_change", <fluid:create_enchantment_industry:hyper_experience> * 1, <gas:kubejs:hyper_experience_gas> * 1, <gas:kubejs:hyper_experience_gas>, <fluid:create_enchantment_industry:hyper_experience>);
@@ -46,6 +49,8 @@ Synthesizing.removeByName("mekanism:nucleosynthesizing/end_crystal");
   //injecting
     Injecting.addRecipe('fan_void_catalyst', <item:create_connected:empty_fan_catalyst>, <gas:kubejs:void_gas> * 5, <item:kubejs:fan_void_catalyst>);
     Injecting.addRecipe("enchanting_grains_of_infinity", <item:kubejs:pure_grains_of_infinity>, <gas:kubejs:hyper_experience_gas> * 5, <item:kubejs:enchanted_grains_of_infinity>);
+    Injecting.addRecipe("osmium_dust_from_oxide", <item:kubejs:osmium_tetroxide>, <gas:mekanism:hydrogen> * 2, <item:mekanism:dust_osmium>);
+    Injecting.addRecipe("nickel/copper", <item:mekanism:dust_copper>, <gas:kubejs:hydrogen_sulfide> * 1, <item:alltheores:nickel_dust>);
   //nucleosynthesizing
     Synthesizing.addRecipe("perfecting_the_infinite", <item:kubejs:superheated_grains_of_infinity>, <gas:mekanism:antimatter> * 750, <item:kubejs:atomically_perfect_grains_of_infinity>, 2000);
     Synthesizing.addRecipe("end_crystal", <item:minecraft:beacon>, <gas:mekanism:antimatter> * 1500, <item:minecraft:end_crystal>, 4000);
@@ -63,9 +68,12 @@ Synthesizing.removeByName("mekanism:nucleosynthesizing/end_crystal");
     Combining.addRecipe("pity_frame/combining", <item:mekanism:steel_casing>, <item:minecraft:cobblestone>, <item:industrialforegoing:machine_frame_pity>);
     Combining.addRecipe("toast/combining", <item:minecraft:bread>, <item:kubejs:star>, <item:kubejs:toast>);
     Combining.addRecipe("silver_iodide/combining", <tag:items:forge:ingots/silver>, <item:kubejs:iodine>, <item:kubejs:silver_iodide>);
+    Combining.addRecipe("kaolin/combining", <item:minecraft:clay>, <item:minecraft:granite>, <item:kubejs:kaolin>);
   //crushing
     Crushing.addRecipe("crushed_salt/mekanism", <item:mekanism:salt>, <item:garnished:crushed_salt>);
     Crushing.addRecipe("crushed_salt/block/mekanism", <item:mekanism:block_salt>, <item:garnished:crushed_salt> * 5);
     Crushing.addRecipe("creative_flour/mekanism", <item:kubejs:creative_essence>, <item:createchromaticreturn:creative_flour>);
   //item to gas
     ItemToGas.addRecipe("ethylene_from_biofuel/gas_conversion", <item:mekanism:bio_fuel>, <gas:mekanism:ethene> * 10);
+  //dissolution
+    Dissolution.addRecipe("hydrogen_sulfide", <item:mekanism:dust_sulfur>, <gas:mekanism:hydrogen> * 7, <gas:kubejs:hydrogen_sulfide> * 1025);

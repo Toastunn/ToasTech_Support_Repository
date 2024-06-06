@@ -41,6 +41,7 @@ import crafttweaker.api.ingredient.IIngredient;
       var charm = <item:createchromaticreturn:antiplite_charm>;
       <recipetype:extendedcrafting:combination>.addRecipe(charm.registryName.path + "_from_ingot", charm, 1000000, [<item:createchromaticreturn:bedrock_charm_base>, ingot, ingot, ingot, ingot, ingot, ingot, ingot, ingot, ingot, ingot, ingot, ingot]);  
   //compression
+    <recipetype:extendedcrafting:compressor>.addRecipe("coal/neutron_compressor", <item:minecraft:coal>, <item:minecraft:diamond>, 16, <item:create_things_and_misc:crushed_magma>, 2400);
   //tables <recipetype:extendedcrafting:table>.addShaped(name, tier, <output>, [array]); 
     //tier 0 applies the recipe to all tables that apply
     //3x3 | basic (tier 1)

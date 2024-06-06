@@ -29,8 +29,7 @@ import crafttweaker.api.ingredient.IIngredientWithAmount;
   ],
   "loot_table": "enderio:fire_crafting/infinity",
   "max_item_drops": 1
-}
-);
+});
 <recipetype:enderio:alloy_smelting>.addJsonRecipe('alloying_the_infinite', {
   "type": "enderio:alloy_smelting",
   "energy": 48000,
@@ -141,4 +140,29 @@ import crafttweaker.api.ingredient.IIngredientWithAmount;
       "item": "minecraft:soul_campfire"
     }
   }
+});
+<recipetype:enderio:sag_milling>.addJsonRecipe('netherite_scrap/sag_milling', {
+  "type": "enderio:sag_milling",
+  "energy": 2400,
+  "input": {
+    "item": "createchromaticreturn:glowing_ingot"
+  },
+  "outputs": [
+    {
+      "chance": 0.9,
+      "item": "create:brass_nugget"
+    },
+    {
+      "chance": 0.45,
+      "item": "minecraft:netherite_scrap"
+    },
+    {
+      "chance": 0.02,
+      "item": "create:crushed_raw_copper"
+    },
+    {
+      "chance": 0.02,
+      "item": "create:crushed_raw_copper"
+    }
+  ]
 });

@@ -28,6 +28,7 @@ ItemEvents.rightClicked(event => {
             let gas = event.player.mainHandItem.nbt.mekData.GasTanks[0].stored.gasName
             mod = gas.split(":")[0]
             key1 = "gas." + Fluid.getId(gas).toLanguageKey()
+            event.player.tell(Text.yellow('Recommend looking at the lang'))
           }
           //if you are holding a bucket, get the liquid in the bucket
           else if(item.id.includes('_bucket')) {

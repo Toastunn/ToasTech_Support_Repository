@@ -32,6 +32,8 @@ StartupEvents.registry('fluid', e => {
       .thickTexture(0x000001)
     e.create('magical_water')
       .thinTexture(0x1c0938)
+    e.create('hydrogen_sulfide')
+      .thinTexture(Color.of("#21f1f1f1"))
 })
 
 Color.of("#361d50")
@@ -39,3 +41,4 @@ Color.of('#b31eb3')
 Color.of('#f8ffab')
 Color.of('#9b5514')
 Color.of("#245c45")
+Color.of("#21f1f1f1")

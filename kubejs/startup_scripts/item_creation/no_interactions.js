@@ -11,8 +11,17 @@ StartupEvents.registry('item', e => {
     e.create('silver_iodide').rarity("rare")
     //dry ice
     e.create('dry_ice').rarity("uncommon")
-    //lazurite
-    e.create('lazurite')
+  //the great automation
+    //lapis
+      //lazurite
+      e.create('lazurite')
+    //osmium
+      //osmine
+      e.create('osmine').rarity("uncommon")
+      //osmium tetroxide
+      e.create('osmium_tetroxide').rarity("rare")
+    //aluminium
+      //kaolin (see blocks)
   //endgame stuff
     //lightning
     e.create('lightning').glow(true).rarity('epic').tooltip(Text.darkGray("§o...in the palm of your hand."))
