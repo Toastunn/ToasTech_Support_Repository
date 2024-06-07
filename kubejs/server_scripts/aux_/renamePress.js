@@ -42,12 +42,12 @@ ItemEvents.rightClicked(event => {
           }
 
           let lang = JsonIO.read(`kubejs/assets/${mod}/lang/en_us.json`)
-            //if the file wasn't found
+            //if the file is empty or smth idk
             if(!lang) {
               let tempLang = {"item.minecraft.stone": "Stone"}
               JsonIO.write(`kubejs/assets/${mod}/lang/en_us.json`, tempLang)
               console.log(`Failed reading file: kubejs/assets/${mod}/lang/en_us.json. Creating new file...`)
-            }
+            } else {
 
             //add the lang "key1": "renameMessage"
             lang.put(key1, renameMessage)
@@ -56,10 +56,11 @@ ItemEvents.rightClicked(event => {
 
             //write the lang to the file
             JsonIO.write(`kubejs/assets/${mod}/lang/en_us.json`, lang)
-            
+
             //clear renameMessage in case of missclicks
             renameMessage = null
-
+            }
+            
         } else event.player.tell(Text.red('[SERVER] reminds you to write something.'))
   }
 })

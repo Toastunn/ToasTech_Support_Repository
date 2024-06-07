@@ -51,6 +51,7 @@ Synthesizing.removeByName("mekanism:nucleosynthesizing/end_crystal");
     Injecting.addRecipe("enchanting_grains_of_infinity", <item:kubejs:pure_grains_of_infinity>, <gas:kubejs:hyper_experience_gas> * 5, <item:kubejs:enchanted_grains_of_infinity>);
     Injecting.addRecipe("osmium_dust_from_oxide", <item:kubejs:osmium_tetroxide>, <gas:mekanism:hydrogen> * 2, <item:mekanism:dust_osmium>);
     Injecting.addRecipe("nickel/copper", <item:mekanism:dust_copper>, <gas:kubejs:hydrogen_sulfide> * 1, <item:alltheores:nickel_dust>);
+    Injecting.addRecipe("silver/lead", <tag:items:forge:ingots/lead>, <gas:mekanism:oxygen>, <item:alltheores:silver_dust>);
   //nucleosynthesizing
     Synthesizing.addRecipe("perfecting_the_infinite", <item:kubejs:superheated_grains_of_infinity>, <gas:mekanism:antimatter> * 750, <item:kubejs:atomically_perfect_grains_of_infinity>, 2000);
     Synthesizing.addRecipe("end_crystal", <item:minecraft:beacon>, <gas:mekanism:antimatter> * 1500, <item:minecraft:end_crystal>, 4000);
