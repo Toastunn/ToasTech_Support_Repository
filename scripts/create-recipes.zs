@@ -91,6 +91,9 @@ import mods.create.PressingManager;
     <recipetype:create:mixing>.addRecipe("antimatter_pellet", <constant:create:heat_condition:superheated>, [<item:mekanism:pellet_antimatter>], [<item:createchromaticreturn:multiplite_ingot>, <item:mekanism:pellet_polonium> * 4, <item:mekanism:pellet_plutonium> * 4, <item:blocksyouneed_luna:antimetal_block> * 32], [], 2000);
     <recipetype:create:mixing>.addRecipe("cloud_seed/dilution", <constant:create:heat_condition:none>, [<fluid:enderio:cloud_seed> * 1000], [], [<fluid:mekanism:ethene> * 170, <fluid:enderio:cloud_seed_concentrated> * 830], 100);
     <recipetype:create:mixing>.addRecipe("lapis/mixing", <constant:create:heat_condition:heated>, [<item:minecraft:lapis_lazuli> * 3], [<item:kubejs:lazurite> * 2, <item:minecraft:calcite> * 1], [], 500);
+    <recipetype:create:mixing>.addRecipe("lead_oxide/mixing", <constant:create:heat_condition:superheated>, [<item:kubejs:lead_oxide>], [<item:mekanism:dust_sulfur>], [], 400);
+    <recipetype:create:mixing>.addRecipe("impure_lead/mixing", <constant:create:heat_condition:heated>, [<item:alltheores:dirty_lead_dust>], [<item:kubejs:lead_oxide>, <item:blocksyouneed_luna:coke>], [], 400);
+    <recipetype:create:mixing>.addRecipe("lead_form_impure/mixing", <constant:create:heat_condition:heated>, [<item:mekanism:dust_lead>], [<item:alltheores:dirty_lead_dust>, <item:mekanism:dust_sulfur>], [<fluid:mekanism:steam>], 400);
 
   //Item Application | if you add a recipe from <recipetype:create:item_application>, it will also add it to <recipetype:create:deploying>, but not vice-versa. The recipe created will have using_deployer attached to it.
     //deploying | <recipetype:create:deploying>.addRecipe(name as string, processedItem as IIngredient, heldItem as IIngredient, outputs as Percentaged<IItemStack>[], keepHeldItem as boolean);

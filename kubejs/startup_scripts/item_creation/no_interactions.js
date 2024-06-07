@@ -22,6 +22,9 @@ StartupEvents.registry('item', e => {
       e.create('osmium_tetroxide').rarity("rare")
     //aluminium
       //kaolin (see blocks)
+    //lead
+      //impure lead oxide
+      e.create("lead_oxide").displayName("Impure Lead Oxide Dust")
   //endgame stuff
     //lightning
     e.create('lightning').glow(true).rarity('epic').tooltip(Text.darkGray("§o...in the palm of your hand."))

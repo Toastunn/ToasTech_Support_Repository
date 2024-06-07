@@ -5,18 +5,10 @@ StartupEvents.registry("block", event => {
       let x = entity.x
       let z = entity.z
       let seeVoid = true
-      let voidY = 0;
-      switch (entity.level.dimension) {
-        case 'minecraft:the_nether':
-        case 'minecraft:the_end':
-          voidY = 0
-          break;
-        case 'minecraft:overworld':
-          voidY = -64
-      }
+      let voidY = entity.level.getMinBuildHeight();
       for(let y = entity.y-1; y >= voidY; y--) {
         let checkBlock = entity.level.getBlock(x, y, z)
-          if(!(checkBlock.getId() === ('minecraft:air' || 'minecraft:cave_air'))) seeVoid = false;
+          if(!(checkBlock.getId() == ('minecraft:air' || 'minecraft:cave_air'))) seeVoid = false;
           if(seeVoid == false) y = voidY;
       }
       console.log(seeVoid)
