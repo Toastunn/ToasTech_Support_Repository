@@ -95,6 +95,7 @@ import mods.create.PressingManager;
     <recipetype:create:mixing>.addRecipe("impure_lead/mixing", <constant:create:heat_condition:heated>, [<item:alltheores:dirty_lead_dust>], [<item:kubejs:lead_oxide>, <item:blocksyouneed_luna:coke>], [], 400);
     <recipetype:create:mixing>.addRecipe("lead_form_impure/mixing", <constant:create:heat_condition:heated>, [<item:mekanism:dust_lead>], [<item:alltheores:dirty_lead_dust>, <item:mekanism:dust_sulfur>], [<fluid:mekanism:steam>], 400);
     <recipetype:create:mixing>.addRecipe("silver/lead/mixing", <constant:create:heat_condition:none>, [<item:mekanism:dirty_dust_tin>, <item:minecraft:sand>], [<item:minecraft:gravel>], [<fluid:mekanism:hydrogen_chloride> * 1440], 400);
+    <recipetype:create:mixing>.addRecipe("iridium/platinum/mixing", <constant:create:heat_condition:none>, [<item:alltheores:iridium_dust>, <item:alltheores:platinum_dust> * 2], [<item:create:crushed_raw_platinum> * 2], [<fluid:mekanism:hydrofluoric_acid> * 760], 400);
 
   //Item Application | if you add a recipe from <recipetype:create:item_application>, it will also add it to <recipetype:create:deploying>, but not vice-versa. The recipe created will have using_deployer attached to it.
     //deploying | <recipetype:create:deploying>.addRecipe(name as string, processedItem as IIngredient, heldItem as IIngredient, outputs as Percentaged<IItemStack>[], keepHeldItem as boolean);

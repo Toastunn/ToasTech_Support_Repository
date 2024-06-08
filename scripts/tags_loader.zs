@@ -154,3 +154,5 @@ import crafttweaker.api.tag.MCTag;
     <tag:blocks:minecraft:mineable/pickaxe>.addId(<resource:mm:elemental_transfigurator>);
   //needs_iron_tool
     <tag:blocks:minecraft:needs_iron_tool>.addId(<resource:mm:elemental_transfigurator>);
+  //lithium
+    <tag:fluids:toastech:lithium>.addId(<resource:mekanism:lithium>);
