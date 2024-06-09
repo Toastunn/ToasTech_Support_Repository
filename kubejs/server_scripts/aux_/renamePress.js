@@ -41,12 +41,13 @@ ItemEvents.rightClicked(event => {
             event.player.tell(Text.yellow('Recommend looking at the lang'))
           }
 
-          let lang = JsonIO.read(`kubejs/assets/${mod}/lang/en_us.json`)
+          let lang = JsonIO.read('kubejs/client_scripts/globalLang.json')
             //if the file wasn't found
             if(!lang) {
               let tempLang = {"item.minecraft.stone": "Stone"}
-              JsonIO.write(`kubejs/assets/${mod}/lang/en_us.json`, tempLang)
-              console.log(`Failed reading file: kubejs/assets/${mod}/lang/en_us.json. Creating new file...`)
+              JsonIO.write('kubejs/client_scripts/globalLang.json', tempLang)
+              event.player.tell(`Failed reading file: kubejs/client_scripts/globalLang.json. Creating new file...`)
+              lang = JsonIO.read('kubejs/client_scripts/globalLang.json')
             }
 
             //add the lang "key1": "renameMessage"
@@ -54,11 +55,11 @@ ItemEvents.rightClicked(event => {
             //for buckets
             if(renameMessage2) lang.put(key2, renameMessage2)
 
-            //write the lang to the file
-            JsonIO.write(`kubejs/assets/${mod}/lang/en_us.json`, lang)
+            //write the lang to the central file
+            JsonIO.write('kubejs/client_scripts/globalLang.json', lang)
             
             //clear renameMessage in case of missclicks
-            renameMessage = null
+            event.player.persistentData.renameMessage = null
 
         } else event.player.tell(Text.red('[SERVER] reminds you to write something.'))
   }
