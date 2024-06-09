@@ -3,6 +3,7 @@ StartupEvents.registry('item', event => {
   .glow(true)
   .rarity('chromatic')
   .tooltip('It Spreads...')
+  .texture("kubejs:item/toast")
   .food(food => {
     food
       .hunger(20)
