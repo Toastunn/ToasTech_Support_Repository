@@ -1,0 +1,61 @@
+{
+  "name": "Industrial Alloy Smelter",
+  "controllerIds": "mm:industrial_alloy_smelter",
+  "layout": [
+    [
+      "   ",
+      " S ",
+      "   "
+    ],
+    [
+      "WWW",
+      "WVW",
+      "WWW"
+    ],
+    [
+      "ccc",
+      "c c",
+      "ccc"
+    ],
+    [
+      "ieW",
+      "iHW",
+      "iCo"
+    ]
+  ],
+  "key": {
+    "c": {
+      "block": "blocksyouneed_luna:waxed_copper_coil"
+    },
+    "W": {
+      "block": "blocksyouneed_luna:wrought_plate_block"
+    },
+    "H": {
+      "block": "mekanism:superheating_element"
+    },
+    "S": {
+      "block": "railways:smokestack_streamlined",
+      "properties": [
+        {
+        "property": "enabled",
+        "value": "true"
+        }
+      ]
+    },
+    "V": {
+      "block": "mekanismgenerators:turbine_valve"
+    },
+    "o": {
+      "port": "mm:ias_item_port",
+      "input": false
+    },
+    "i": {
+      "port": "mm:ias_item_port",
+      "input": true
+    },
+    "e": {
+      "port": "mm:ias_energy_port",
+      "input": true
+    }
+  }
+}

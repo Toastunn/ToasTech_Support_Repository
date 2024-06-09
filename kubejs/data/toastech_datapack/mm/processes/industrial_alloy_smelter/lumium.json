@@ -1,0 +1,48 @@
+{
+  "ticks": 200,
+  "structureId": "toastech_datapack:industrial_alloy_smelter",
+  "inputs": [
+    {
+      "type": "mm:input/consume",
+      "ingredient": {
+        "type": "mm:item",
+        "tag": "forge:dusts/silver",
+        "count": 1
+      }
+    },
+    {
+      "type": "mm:input/consume",
+      "ingredient": {
+        "type": "mm:item",
+        "tag": "forge:dusts/tin",
+        "count": 3
+      }
+    },
+    {
+      "type": "mm:input/consume",
+      "ingredient": {
+        "type": "mm:item",
+        "item": "minecraft:glowstone_dust",
+        "count": 4
+      }
+    },
+    {
+      "type": "mm:input/consume",
+      "per_tick": true,
+      "ingredient": {
+        "type": "mm:energy",
+        "amount": 50
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "type": "mm:output/simple",
+      "ingredient": {
+        "type": "mm:item",
+        "item": "alltheores:lumium_dust",
+        "count": 8
+      }
+    }
+  ]
+}

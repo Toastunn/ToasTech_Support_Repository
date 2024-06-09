@@ -1,0 +1,48 @@
+{
+  "ticks": 200,
+  "structureId": "toastech_datapack:industrial_alloy_smelter",
+  "inputs": [
+    {
+      "type": "mm:input/consume",
+      "ingredient": {
+        "type": "mm:item",
+        "tag": "forge:dusts/platinum",
+        "count": 1
+      }
+    },
+    {
+      "type": "mm:input/consume",
+      "ingredient": {
+        "type": "mm:item",
+        "tag": "forge:dusts/lead",
+        "count": 3
+      }
+    },
+    {
+      "type": "mm:input/consume",
+      "ingredient": {
+        "type": "mm:item",
+        "item": "ae2:ender_dust",
+        "count": 2
+      }
+    },
+    {
+      "type": "mm:input/consume",
+      "per_tick": true,
+      "ingredient": {
+        "type": "mm:energy",
+        "amount": 50
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "type": "mm:output/simple",
+      "ingredient": {
+        "type": "mm:item",
+        "item": "alltheores:enderium_dust",
+        "count": 6
+      }
+    }
+  ]
+}
