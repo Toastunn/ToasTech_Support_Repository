@@ -1,4 +1,4 @@
-// 1.20.1	2024-05-20T10:03:23.9862394	Item Models: mm
+// 1.20.1	2024-06-09T10:56:44.6379769	Item Models: mm
 f020b04cf787b9152b54c249f933557667d51316 assets/mm/models/item/cc_energy_port_input.json
 050562fbf14a0d53f7dc286b00372f3d89824422 assets/mm/models/item/cc_energy_port_output.json
 a6a2d1b346f65bb83672b6a43e9349aa86f6e10f assets/mm/models/item/cc_fluid_port_input.json
@@ -24,3 +24,8 @@ accbef19575d34dc5de454362911168d43769b1c assets/mm/models/item/elemental_transfi
 da98002bc6219097dbed64a305bfe5de6313b37c assets/mm/models/item/et_item_port_output.json
 e1d966852da47bdea4461687b685d5bc03499964 assets/mm/models/item/et_kinetic_port_input.json
 7f9de3c674a7bc162d92e10385eec6dd039d260c assets/mm/models/item/et_kinetic_port_output.json
+1d612383656a0599e1c858cf47761c241df29248 assets/mm/models/item/ias_energy_port_input.json
+08f781f55b2b62f070ad3f4aeec84c3b576d501b assets/mm/models/item/ias_energy_port_output.json
+f7e07379d0243015833e69b8a31822eeb2ab8f96 assets/mm/models/item/ias_item_port_input.json
+8159337ab02b1ac17d96347b552c530d7ba8342c assets/mm/models/item/ias_item_port_output.json
+9c0a5e4b61c3423a4c1aa05891e9ccdad86a6a4a assets/mm/models/item/industrial_alloy_smelter.json

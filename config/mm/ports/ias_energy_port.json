@@ -1,0 +1,11 @@
+{
+  "id": "ias_energy_port",
+  "controllerIds": "mm:industrial_alloy_smelter",
+  "name": "Industrial Alloy Smelter Energy Port",
+  "type": "mm:energy",
+  "config": {
+    "capacity": 16000,
+    "maxReceive": 800,
+    "maxExtract": 800
+  }
+}

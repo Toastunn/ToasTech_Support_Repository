@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "mm:block/ias_energy_port_output"
+    }
+  }
+}

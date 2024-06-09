@@ -6,7 +6,7 @@
       "parent": "minecraft:block/cube_all",
       "render_type": "minecraft:solid",
       "textures": {
-        "all": "mm:block/et_port"
+        "all": "ae2:block/pattern_provider"
       }
     },
     "overlay": {

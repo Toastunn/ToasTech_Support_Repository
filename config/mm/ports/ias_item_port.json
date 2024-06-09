@@ -1,0 +1,10 @@
+{
+  "id": "ias_item_port",
+  "controllerIds": "mm:industrial_alloy_smelter",
+  "name": "Industrial Alloy Smelter Item Port",
+  "type": "mm:item",
+  "config": {
+    "rows": 2,
+    "columns": 2
+  }
+}

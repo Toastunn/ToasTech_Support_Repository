@@ -1,4 +1,4 @@
-// 1.20.1	2024-05-20T10:03:23.9842445	Loot Tables
+// 1.20.1	2024-06-09T10:56:44.6369802	Loot Tables
 68a37b655dd663d8e8491161d77c2aa88aa4ab15 data/mm/loot_tables/blocks/cc_energy_port_input.json
 6956fd58ac761323219d996b7f77c80c82f376e7 data/mm/loot_tables/blocks/cc_energy_port_output.json
 52c57aab25ce4877d0cf757b6b7829244efafded data/mm/loot_tables/blocks/cc_fluid_port_input.json
@@ -24,3 +24,8 @@ bac24c29f43ea8c011c9b8a773c8d794579ddfa9 data/mm/loot_tables/blocks/et_fluid_por
 7c72889c8b2b97ac566b8ce9c948f5d8a07c5c91 data/mm/loot_tables/blocks/et_item_port_output.json
 89f1df41737aff1c6b71798ddb3a93cf51351786 data/mm/loot_tables/blocks/et_kinetic_port_input.json
 23b3f915d77ba19a2c74b038552f7912ed080da5 data/mm/loot_tables/blocks/et_kinetic_port_output.json
+782aeff2dd0b3b534dbb51eac0e844fe4560d10c data/mm/loot_tables/blocks/ias_energy_port_input.json
+f0c77d76791891b31226eff309436b4f1547cf90 data/mm/loot_tables/blocks/ias_energy_port_output.json
+b16da0ba740018ef2ca66ec6ca5295bfc8058b9d data/mm/loot_tables/blocks/ias_item_port_input.json
+936f3dbe914c2a7a5f95d97010f8aff2cf2affa1 data/mm/loot_tables/blocks/ias_item_port_output.json
+f8ba45e57ef4426fdb878d31578df821de81c5e9 data/mm/loot_tables/blocks/industrial_alloy_smelter.json

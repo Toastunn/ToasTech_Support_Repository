@@ -3,6 +3,7 @@
     "mm:cloud_condenser",
     "mm:cmc_controller",
     "mm:elemental_transfigurator",
+    "mm:industrial_alloy_smelter",
     "mm:cc_energy_port_input",
     "mm:cc_energy_port_output",
     "mm:cc_fluid_port_input",
@@ -24,6 +25,10 @@
     "mm:et_item_port_input",
     "mm:et_item_port_output",
     "mm:et_kinetic_port_input",
-    "mm:et_kinetic_port_output"
+    "mm:et_kinetic_port_output",
+    "mm:ias_energy_port_input",
+    "mm:ias_energy_port_output",
+    "mm:ias_item_port_input",
+    "mm:ias_item_port_output"
   ]
 }

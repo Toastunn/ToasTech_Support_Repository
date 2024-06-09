@@ -6,7 +6,7 @@
       "parent": "minecraft:block/cube_all",
       "render_type": "minecraft:solid",
       "textures": {
-        "all": "mm:block/creative_port"
+        "all": "create:block/creative_casing"
       }
     },
     "overlay": {

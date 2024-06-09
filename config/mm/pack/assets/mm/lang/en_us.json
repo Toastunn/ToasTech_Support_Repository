@@ -24,5 +24,10 @@
   "block.mm.et_item_port_output": "Elemental Transfigurator Item Port Output",
   "block.mm.et_kinetic_port_input": "Elemental Transfigurator Rotational Port Input",
   "block.mm.et_kinetic_port_output": "Elemental Transfigurator Rotational Port Output",
+  "block.mm.ias_energy_port_input": "Industrial Alloy Smelter Energy Port Input",
+  "block.mm.ias_energy_port_output": "Industrial Alloy Smelter Energy Port Output",
+  "block.mm.ias_item_port_input": "Industrial Alloy Smelter Item Port Input",
+  "block.mm.ias_item_port_output": "Industrial Alloy Smelter Item Port Output",
+  "block.mm.industrial_alloy_smelter": "Industrial Alloy Smelter Controller",
   "item.mm.blueprint": "Blueprint"
 }
