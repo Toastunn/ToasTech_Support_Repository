@@ -18,6 +18,7 @@ const removedItems = [
   "mm:cmc_energy_port_output",
   "mm:cmc_fluid_port_output",
   "mm:cmc_kinetic_port_output",
+  "mm:ias_energy_port_output"
 ];
 
 ServerEvents.tags('item', event => {
