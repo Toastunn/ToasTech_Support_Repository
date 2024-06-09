@@ -64,6 +64,12 @@ import crafttweaker.api.util.random.Percentaged;
         <item:extendedcrafting:the_ultimate_catalyst>,
         <item:extendedcrafting:compressor>,
       //alltheores
+        <item:alltheores:constantan_dust>,
+        <item:alltheores:electrum_dust>,
+        <item:alltheores:enderium_dust>,
+        <item:alltheores:lumium_dust>,
+        <item:alltheores:signalum_dust>,
+        <item:alltheores:invar_dust>,
       //modularrouters
         <item:modularrouters:modular_router>,
         <item:modularrouters:breaker_module>,
