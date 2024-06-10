@@ -11,8 +11,6 @@ StartupEvents.registry('fluid', e => {
       .thickTexture(0xf8ffab)
       .bucketColor(0xf8ffab)
       .displayName("Glowing Liquid")
-    e.create('liquid_sun')
-      .thickTexture(0x9b5514)
     e.create('fungal_mixture')
       .thickTexture(0x3b2f3f)
     e.create('liquid_antimatter')
