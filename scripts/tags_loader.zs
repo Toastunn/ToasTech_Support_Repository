@@ -156,3 +156,44 @@ import crafttweaker.api.tag.MCTag;
     <tag:blocks:minecraft:needs_iron_tool>.addId(<resource:mm:elemental_transfigurator>);
   //lithium
     <tag:fluids:toastech:lithium>.addId(<resource:mekanism:lithium>);
+  //mekanism factories
+    //basic
+      <tag:items:toastech:basic_factory>.addId(<resource:mekanism:basic_combining_factory>);
+      <tag:items:toastech:basic_factory>.addId(<resource:mekanism:basic_injecting_factory>);
+      <tag:items:toastech:basic_factory>.addId(<resource:mekanism:basic_enriching_factory>);
+      <tag:items:toastech:basic_factory>.addId(<resource:mekanism:basic_compressing_factory>);
+      <tag:items:toastech:basic_factory>.addId(<resource:mekanism:basic_purifying_factory>);
+      <tag:items:toastech:basic_factory>.addId(<resource:mekanism:basic_infusing_factory>);
+      <tag:items:toastech:basic_factory>.addId(<resource:mekanism:basic_smelting_factory>);
+      <tag:items:toastech:basic_factory>.addId(<resource:mekanism:basic_crushing_factory>);
+      <tag:items:toastech:basic_factory>.addId(<resource:mekanism:basic_sawing_factory>);
+    //advanced
+      <tag:items:toastech:advanced_factory>.addId(<resource:mekanism:advanced_compressing_factory>);
+      <tag:items:toastech:advanced_factory>.addId(<resource:mekanism:advanced_combining_factory>);
+      <tag:items:toastech:advanced_factory>.addId(<resource:mekanism:advanced_injecting_factory>);
+      <tag:items:toastech:advanced_factory>.addId(<resource:mekanism:advanced_enriching_factory>);
+      <tag:items:toastech:advanced_factory>.addId(<resource:mekanism:advanced_purifying_factory>);
+      <tag:items:toastech:advanced_factory>.addId(<resource:mekanism:advanced_smelting_factory>);
+      <tag:items:toastech:advanced_factory>.addId(<resource:mekanism:advanced_crushing_factory>);
+      <tag:items:toastech:advanced_factory>.addId(<resource:mekanism:advanced_sawing_factory>);
+      <tag:items:toastech:advanced_factory>.addId(<resource:mekanism:advanced_infusing_factory>);
+    //elite
+      <tag:items:toastech:elite_factory>.addId(<resource:mekanism:elite_injecting_factory>);
+      <tag:items:toastech:elite_factory>.addId(<resource:mekanism:elite_compressing_factory>);
+      <tag:items:toastech:elite_factory>.addId(<resource:mekanism:elite_purifying_factory>);
+      <tag:items:toastech:elite_factory>.addId(<resource:mekanism:elite_combining_factory>);
+      <tag:items:toastech:elite_factory>.addId(<resource:mekanism:elite_enriching_factory>);
+      <tag:items:toastech:elite_factory>.addId(<resource:mekanism:elite_sawing_factory>);
+      <tag:items:toastech:elite_factory>.addId(<resource:mekanism:elite_smelting_factory>);
+      <tag:items:toastech:elite_factory>.addId(<resource:mekanism:elite_infusing_factory>);
+      <tag:items:toastech:elite_factory>.addId(<resource:mekanism:elite_crushing_factory>);
+    //ultimate
+      <tag:items:toastech:ultimate_factory>.addId(<resource:mekanism:ultimate_injecting_factory>);
+      <tag:items:toastech:ultimate_factory>.addId(<resource:mekanism:ultimate_combining_factory>);
+      <tag:items:toastech:ultimate_factory>.addId(<resource:mekanism:ultimate_sawing_factory>);
+      <tag:items:toastech:ultimate_factory>.addId(<resource:mekanism:ultimate_smelting_factory>);
+      <tag:items:toastech:ultimate_factory>.addId(<resource:mekanism:ultimate_compressing_factory>);
+      <tag:items:toastech:ultimate_factory>.addId(<resource:mekanism:ultimate_purifying_factory>);
+      <tag:items:toastech:ultimate_factory>.addId(<resource:mekanism:ultimate_crushing_factory>);
+      <tag:items:toastech:ultimate_factory>.addId(<resource:mekanism:ultimate_enriching_factory>);
+      <tag:items:toastech:ultimate_factory>.addId(<resource:mekanism:ultimate_infusing_factory>);
