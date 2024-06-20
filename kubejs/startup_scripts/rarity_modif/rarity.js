@@ -175,9 +175,15 @@ const chromatic = createRarity("CHROMATIC", 0x6d0f80)
   //mm
   ItemEvents.modification(event => {
     event.modify([
-      "mm:elemental_transfigurator"
+      "mm:elemental_transfigurator",
+      "mm:creative_meta-combiner"
     ], item => {
       item.rarity = chromatic
+    })
+    event.modify([
+      'kubejs:multiversal_extractor'
+    ], item => {
+      item.rarity = "cosmic"
     })
   })
   //enderio
