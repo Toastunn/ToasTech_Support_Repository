@@ -9,12 +9,12 @@
 		click: ""
 		corner: false
 		dev: false
-		height: 15.965104166666666d
+		height: 15.0d
 		hover: [ ]
-		image: "kubejs:textures/ftbquests/spatial_storage_diff.png"
+		image: "kubejs:textures/ftbquests/ae2_good_background.png"
 		rotation: 0.0d
-		width: 29.0d
-		x: -11.0d
+		width: 26.666666666666668d
+		x: -10.5d
 		y: 3.5d
 	}]
 	order_index: 1

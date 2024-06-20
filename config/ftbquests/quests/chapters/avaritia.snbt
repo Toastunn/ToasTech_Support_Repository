@@ -3,9 +3,570 @@
 	default_quest_shape: ""
 	filename: "avaritia"
 	group: "6EC53AEFE78C5F36"
+	icon: "avaritia:infinity_ingot"
 	id: "108B9EC66CDD44F7"
-	order_index: 2
+	images: [
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 1.0d
+			hover: [ ]
+			image: "itemfilters:item/xor"
+			rotation: 0.0d
+			width: 1.0d
+			x: 0.0d
+			y: -18.5d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 34.0d
+			hover: [ ]
+			image: "kubejs:textures/ftbquests/wither_kill.png"
+			rotation: 0.0d
+			width: 30.0d
+			x: 0.0d
+			y: 1.5d
+		}
+	]
+	order_index: 1
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			dependencies: [
+				"6B71E4BFB8422BDA"
+				"778AE42B725E0A49"
+				"11C2F20746AF4B6F"
+				"53AD540920B81A8D"
+				"07D4547CB06E396F"
+				"476A1A04D59BF041"
+				"7DA6AC11B958D176"
+				"35071838A0743F2B"
+				"1358305BA26E4364"
+				"7E9AD5B815F40263"
+				"0000000000000946"
+				"7064A1E827EDDA23"
+				"755FFE6B67641814"
+				"49C8EBD959BB483F"
+				"1D31F9B3EDF3FD35"
+			]
+			id: "16F3FB36B6F8B864"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0C63C37D3B56868B"
+				table_id: 6860116340087251564L
+				type: "loot"
+			}]
+			size: 2.0d
+			tasks: [{
+				id: "650977815DB03214"
+				item: "avaritia:infinity_catalyst"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2587439DD133BDD4"
+				"1A8FA0A5EF0AD4B2"
+			]
+			id: "6B71E4BFB8422BDA"
+			rewards: [{
+				id: "1543D5DECA2CAA00"
+				item: "avaritia:neutron_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "74311B4BB4A2F1CC"
+				item: "avaritia:neutron_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"428D59AA8460D4A1"
+				"1A8FA0A5EF0AD4B2"
+			]
+			id: "778AE42B725E0A49"
+			rewards: [{
+				id: "708D7C751DDA04E8"
+				item: "enderio:weather_crystal"
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 2L
+					id: "4A633EC8123D118C"
+					item: "enderio:pulsating_crystal"
+					type: "item"
+				}
+				{
+					id: "0529C43654381F2C"
+					item: "enderio:ender_crystal"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "2EA07DA4743EDD1C"
+					item: "enderio:vibrant_crystal"
+					type: "item"
+				}
+				{
+					id: "7DEABC65C60A4027"
+					item: "enderio:player_token"
+					type: "item"
+				}
+			]
+			title: "EnderIO Mastery"
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1A8FA0A5EF0AD4B2"]
+			id: "11C2F20746AF4B6F"
+			rewards: [{
+				count: 12
+				id: "6C8731B175BEC69F"
+				item: "ae2:spatial_pylon"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "4C679E6009640D5A"
+					item: "ae2:spatial_cell_component_128"
+					type: "item"
+				}
+				{
+					id: "5C2D333BA43949F6"
+					item: "ae2:cell_component_256k"
+					type: "item"
+				}
+				{
+					id: "7A6E76612E767DD0"
+					item: "kubejs:void_in_a_bottle"
+					type: "item"
+				}
+			]
+			title: "AE2 Storage Mastery"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1A8FA0A5EF0AD4B2"]
+			id: "53AD540920B81A8D"
+			rewards: [{
+				id: "770EF6CEB213DA79"
+				item: "blocksyouneed_luna:aquatrine_block"
+				type: "item"
+			}]
+			tasks: [{
+				id: "06265179183866EC"
+				item: "blocksyouneed_luna:uhe_solar_panel"
+				type: "item"
+			}]
+			title: "Blocks You Need Mastery"
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1A8FA0A5EF0AD4B2"]
+			id: "7DA6AC11B958D176"
+			rewards: [{
+				id: "670EE182938D90C6"
+				item: "avaritia:neutron_ingot"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "68A60CE4123FB3AB"
+					item: "avaritia:cosmic_meatballs"
+					type: "item"
+				}
+				{
+					id: "2048A8DA842C2745"
+					item: "avaritia:ultimate_stew"
+					type: "item"
+				}
+			]
+			title: "Garnished Mastery"
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1A8FA0A5EF0AD4B2"]
+			id: "476A1A04D59BF041"
+			rewards: [{
+				id: "7573690FBF452987"
+				item: "minecraft:music_disc_otherside"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "1046BB040D472F54"
+					item: "avaritia:record_fragment"
+					type: "item"
+				}
+				{
+					id: "123640DDFF3C5A48"
+					item: "minecraft:wither_skeleton_skull"
+					type: "item"
+				}
+			]
+			title: "Vanilla Mastery"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1A8FA0A5EF0AD4B2"]
+			id: "07D4547CB06E396F"
+			rewards: [{
+				id: "5D81ACFBA70C1325"
+				item: "rats:tangled_rat_tails"
+				type: "item"
+			}]
+			tasks: [{
+				id: "108FB76FBE83113E"
+				item: "rats:corrupt_rat_skull"
+				type: "item"
+			}]
+			title: "Rats Mastery"
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			description: ["&bFrom this point on, I won't be helping you much, since if you got here, you must prove worth one last time to achieve &cInfinity&b. Now, show me a &4SPECTACLE."]
+			hide_dependent_lines: true
+			icon: "avaritia:infinity_sword"
+			id: "1A8FA0A5EF0AD4B2"
+			rewards: [{
+				id: "2AAF500E3CC57F37"
+				item: "rats:plague_tome"
+				type: "item"
+			}]
+			size: 1.3d
+			subtitle: "The beginning of the end"
+			tasks: [{
+				id: "281929D6FABFB51B"
+				title: "Start Avaritia"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -5.2d
+		}
+		{
+			dependencies: [
+				"0000000000000906"
+				"11E9A3216FB47E41"
+			]
+			description: ["Get an Antimatter Pellet."]
+			id: "7064A1E827EDDA23"
+			rewards: [{
+				count: 4
+				id: "5EC21B5E1BD1E966"
+				item: "ae2:silicon"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2633272EA72B1458"
+				item: "mekanism:pellet_antimatter"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["0C7336A431FDA7A6"]
+			description: [
+				"&bIf you've made it here, it's for one of two reasons."
+				"&b1: You're trying to complete &6ToasTech &band you need this for the &cUltimate Singularity &brecipe."
+				"&b2: You &oreally&r &bwant the &5Digital Miner&b."
+			]
+			id: "755FFE6B67641814"
+			rewards: [{
+				count: 256
+				icon: "minecraft:cobblestone"
+				id: "533E398F2FFC9A72"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
+			tasks: [{
+				id: "070F430CBB1533A2"
+				item: "ae2:singularity"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["48C7FF33C0975D81"]
+			description: ["&0The Ultamate Singularity is a combination of all of the other singularities and the &bAE2 Singularity. &0It is used in End Game Avaritia."]
+			id: "49C8EBD959BB483F"
+			rewards: [{
+				id: "5C535291367039CB"
+				item: "ae2:singularity"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1A0F49155372563B"
+				item: "extendedcrafting:ultimate_singularity"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"5490E75464035904"
+				"41BC802201632A91"
+			]
+			description: ["&4The &dTeleportation Core &4is a contained singularity capable of entangling objects into new positions. Basically, teleportation. &8&o(yes this defenition makes no sense but it sounds cool)&r &4It's commonly used in &dQIO &4and deep mining operations. "]
+			id: "1D31F9B3EDF3FD35"
+			rewards: [{
+				count: 10
+				id: "206AF367FF32E834"
+				item: "ae2:silicon"
+				type: "item"
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "0E522E72D4CBBCF9"
+				item: "mekanism:teleportation_core"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"0A15C9E8C61834AE"
+				"16F3FB36B6F8B864"
+			]
+			description: ["&cYou made it, the Infinity Ingot is yours. "]
+			id: "7B2DB29945AAA4D1"
+			rewards: [{
+				count: 10
+				id: "310F96C242D132C3"
+				item: "avaritia:crystal_matrix_ingot"
+				type: "item"
+			}]
+			size: 4.0d
+			subtitle: "The Avaritia progression"
+			tasks: [{
+				id: "620F0514C2368142"
+				item: "avaritia:infinity_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["7B2DB29945AAA4D1"]
+			id: "5C72B1821CBB319D"
+			rewards: [{
+				id: "42FCE8C3D09A45DD"
+				item: "avaritia:infinity_catalyst"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7092FA39062F71F8"
+				item: "avaritia:infinity_sword"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["7B2DB29945AAA4D1"]
+			id: "7A04D9DFE93FD7DB"
+			rewards: [{
+				count: 7
+				id: "20375E020034A465"
+				item: "minecraft:white_wool"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2BF6119BE5C770A7"
+				item: {
+					Count: 1b
+					id: "avaritia:infinity_bow"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 2.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["7B2DB29945AAA4D1"]
+			id: "48DCA2DEE8E58670"
+			rewards: [{
+				id: "198A4CC0A5C29FE0"
+				item: "avaritia:infinity_catalyst"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4C2C97C0D52FAE6A"
+				item: {
+					Count: 1b
+					id: "avaritia:infinity_pickaxe"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["7B2DB29945AAA4D1"]
+			id: "2B0DD65656879BA2"
+			rewards: [{
+				id: "719D04CD95F2A5E5"
+				item: "avaritia:infinity_catalyst"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5F408AE9766D424B"
+				item: {
+					Count: 1b
+					id: "avaritia:infinity_shovel"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["7B2DB29945AAA4D1"]
+			id: "2356971DD0F54537"
+			rewards: [{
+				id: "2807756C3C3D2DD4"
+				item: "avaritia:infinity_catalyst"
+				type: "item"
+			}]
+			tasks: [{
+				id: "77E646AD497785EF"
+				item: "avaritia:infinity_hoe"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["7B2DB29945AAA4D1"]
+			id: "637FA1A3465AE800"
+			rewards: [{
+				id: "256C2F22ED1748A3"
+				item: "avaritia:infinity_catalyst"
+				type: "item"
+			}]
+			tasks: [{
+				id: "635B4F807FD948CC"
+				item: "avaritia:infinity_axe"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["7B2DB29945AAA4D1"]
+			id: "7984A85F955A6A95"
+			rewards: [{
+				id: "2A6366ED2D4B4DB1"
+				item: "avaritia:crystal_matrix"
+				type: "item"
+			}]
+			tasks: [{
+				id: "41F64D7BE572DE96"
+				item: "avaritia:infinity_chestplate"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["7B2DB29945AAA4D1"]
+			id: "7F2419EE2D84F107"
+			rewards: [{
+				count: 2
+				id: "222B4D548CC90322"
+				item: "avaritia:infinity_catalyst"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3DC63E8BAA0526D2"
+				item: "avaritia:infinity_helmet"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["7B2DB29945AAA4D1"]
+			id: "02835E18F1B12A46"
+			rewards: [{
+				count: 2
+				id: "4D0A7118F725D49E"
+				item: "avaritia:infinity_catalyst"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2D3013A64ACF51A3"
+				item: "avaritia:infinity_pants"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["7B2DB29945AAA4D1"]
+			id: "59DDB9A963E6817D"
+			rewards: [{
+				id: "4B27C94B34B602E3"
+				item: {
+					Count: 1b
+					id: "minecraft:enchanted_book"
+					tag: {
+						StoredEnchantments: [{
+							id: "minecraft:feather_falling"
+							lvl: 10s
+						}]
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0C90622287489787"
+				item: "avaritia:infinity_boots"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["7B2DB29945AAA4D1"]
+			description: ["&cJust put a minus sign in front of it, they said..."]
+			id: "4D05E7704AC89227"
+			rewards: [{
+				id: "1A2AE4F527DB5950"
+				item: "avaritia:singularity"
+				type: "item"
+			}]
+			size: 2.0d
+			subtitle: "Whoa, whoa... What the fu-"
+			tasks: [{
+				id: "7376D3A01B220B50"
+				item: "kubejs:anti_infinity"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 12.0d
+		}
+	]
 	title: "Avaritia"
 }

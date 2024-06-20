@@ -5,7 +5,7 @@
 	group: "6EC53AEFE78C5F36"
 	icon: "mekanism:digital_miner"
 	id: "6CE92DDB57980D70"
-	order_index: 1
+	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{
@@ -50,7 +50,7 @@
 		{
 			dependencies: ["7E9AD5B815F40263"]
 			description: [
-				"&4The &dDigital Miner &4unironically has one of the hardest recipes in &6ToasTech&4."
+				"&4The &dDigital Miner &4has a pretty hard recipe in &3ToasTech&4."
 				"&4It can be configured to mine ores only within a certain area. "
 				"&4It can also be set to silk touch ores, but this results in higher power consumption."
 				"&4Good luck..."
@@ -73,10 +73,16 @@
 		{
 			dependencies: ["00000000000008FA"]
 			description: [
-				"&4This is the hardest machine to make in &6ToasTech&4. It can create ores out of thin air."
+				"&4This is one of the hardest machines to make in &3ToasTech&4. It can create ores out of thin air."
 				"&4Read the &2Industrial Foregoing Manual &4for more &o&8(outdated)&r &4info."
 			]
 			id: "0F2CA5AF9F90B216"
+			rewards: [{
+				count: 10
+				id: "4BF4B22DD2919543"
+				item: "alltheores:enderium_ingot"
+				type: "item"
+			}]
 			size: 3.0d
 			tasks: [{
 				id: "4A57F2AF84B5EB86"
@@ -237,25 +243,6 @@
 			y: 3.5d
 		}
 		{
-			dependencies: ["0A15C9E8C61834AE"]
-			description: ["&cYou made it, the Infinity Ingot is yours. "]
-			id: "54B689658A61DAF2"
-			rewards: [{
-				count: 10
-				id: "59A162B55CC6D4F5"
-				item: "avaritia:crystal_matrix_ingot"
-				type: "item"
-			}]
-			subtitle: "The Avaritia progression"
-			tasks: [{
-				id: "506AD9191596A34E"
-				item: "avaritia:infinity_ingot"
-				type: "item"
-			}]
-			x: -0.5d
-			y: 3.5d
-		}
-		{
 			dependencies: [
 				"0000000000000906"
 				"24DA98E8D5324F71"
@@ -351,7 +338,6 @@
 				title: "Hellfire Book"
 				type: "item"
 			}]
-			subtitle: "Woah, more progression out here?"
 			tasks: [{
 				id: "3223A4230696ADDB"
 				item: "kubejs:superheated_grains_of_infinity"
@@ -484,17 +470,107 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["54B689658A61DAF2"]
-			description: ["Turns out inverting the polarity of Infinity gives negaitve Infinity. "]
-			id: "25F677BEE902CAA4"
+			dependencies: ["1C48ED4E090917DB"]
+			description: ["&9Water Duplicators &1are jsut infinite water sources that produce more water every upgrade."]
+			id: "30811B39D2B03242"
 			rewards: [{
-				id: "6552F9E700E65772"
-				item: "blocksyouneed_luna:antimetal_ingot"
+				id: "0A38BA20F9B55624"
+				item: "minecraft:water_bucket"
 				type: "item"
 			}]
-			subtitle: "There's something better than the Infinity Ingot?"
+			subtitle: "Infinite water in a 1x1x1 space!"
 			tasks: [{
-				id: "05ADE44CF01E428E"
+				id: "4B64C6F17FDB6504"
+				item: "watersources:water_source_tier_1"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["30811B39D2B03242"]
+			id: "5663D5F6F9ED1CDB"
+			rewards: [{
+				id: "0A4601FAE1C0F7BE"
+				item: "minecraft:water_bucket"
+				type: "item"
+			}]
+			subtitle: "Tier 2"
+			tasks: [{
+				id: "39B2A8AC1574FEEB"
+				item: "watersources:water_source_tier_2"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5663D5F6F9ED1CDB"]
+			id: "08E07B6AD37A5633"
+			rewards: [{
+				id: "229CC196C328E538"
+				item: "minecraft:water_bucket"
+				type: "item"
+			}]
+			subtitle: "Tier 3"
+			tasks: [{
+				id: "7C321012872D9C13"
+				item: "watersources:water_source_tier_3"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["08E07B6AD37A5633"]
+			id: "30CC82E1CD3A6BA6"
+			rewards: [{
+				id: "36E68AF6042D8F47"
+				item: "minecraft:water_bucket"
+				type: "item"
+			}]
+			subtitle: "Tier 4"
+			tasks: [{
+				id: "6B5360DFDBF23F1E"
+				item: "watersources:water_source_tier_4"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["30CC82E1CD3A6BA6"]
+			id: "20BBA62119254141"
+			rewards: [{
+				id: "5C8AEFA8C57A868A"
+				item: "minecraft:water_bucket"
+				type: "item"
+			}]
+			subtitle: "Tier 5"
+			tasks: [{
+				id: "58BF0B5D16F4854D"
+				item: "watersources:water_source_tier_5"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"7B2DB29945AAA4D1"
+				"6480971FB21D6972"
+			]
+			description: ["&cJust put a minus sign in front of it, they said..."]
+			id: "466F57D753D8E618"
+			rewards: [{
+				id: "0A1EEB117A26D2CB"
+				item: "avaritia:singularity"
+				type: "item"
+			}]
+			size: 1.0d
+			subtitle: "Whoa, whoa... What the fu-"
+			tasks: [{
+				id: "45A894C0BC0B30B2"
 				item: "kubejs:anti_infinity"
 				type: "item"
 			}]
@@ -502,10 +578,42 @@
 			y: 3.5d
 		}
 		{
-			dependencies: ["25F677BEE902CAA4"]
-			id: "4DAD5404CBEBF6CC"
+			dependencies: [
+				"0A15C9E8C61834AE"
+				"16F3FB36B6F8B864"
+			]
+			description: ["&cYou made it, the Infinity Ingot is yours. "]
+			id: "6480971FB21D6972"
+			rewards: [{
+				count: 10
+				id: "0ACF0D4D1D2CE8AC"
+				item: "avaritia:crystal_matrix_ingot"
+				type: "item"
+			}]
+			size: 1.0d
+			subtitle: "The Avaritia progression"
 			tasks: [{
-				id: "1C3BF825AF8E6AE1"
+				id: "6EB58E88AD79D703"
+				item: "avaritia:infinity_ingot"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"4D05E7704AC89227"
+				"40D0AC9BC2DB3DEC"
+				"466F57D753D8E618"
+			]
+			id: "0459F29827AB3B16"
+			rewards: [{
+				id: "41A9C606702D1724"
+				item: "mekanism:pellet_antimatter"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3170CF9732722A7B"
 				item: "createchromaticreturn:shadow_steel"
 				type: "item"
 			}]
@@ -513,10 +621,18 @@
 			y: 3.5d
 		}
 		{
-			dependencies: ["4DAD5404CBEBF6CC"]
-			id: "7BCAFAF481F57B8B"
+			dependencies: [
+				"45D5EC91A10ADE34"
+				"0459F29827AB3B16"
+			]
+			id: "2A986676825BB59D"
+			rewards: [{
+				id: "4535AE7C83FCE3B9"
+				item: "avaritia:infinity_nugget"
+				type: "item"
+			}]
 			tasks: [{
-				id: "4E0EDEB9A8FCA270"
+				id: "534B26FD7C6E2A1A"
 				item: "createchromaticreturn:refined_radiance"
 				type: "item"
 			}]
@@ -524,10 +640,18 @@
 			y: 3.5d
 		}
 		{
-			dependencies: ["7BCAFAF481F57B8B"]
-			id: "18D8E045FD32C0CA"
+			dependencies: [
+				"498DC90F1F3A17E8"
+				"2A986676825BB59D"
+			]
+			id: "522E6903B7A155BD"
+			rewards: [{
+				id: "026F6643EE921C0F"
+				item: "minecraft:nether_star"
+				type: "item"
+			}]
 			tasks: [{
-				id: "321DA4608508FDDE"
+				id: "0DA30CEBDF1C018F"
 				item: "createchromaticreturn:chromatic_compound"
 				type: "item"
 			}]
@@ -535,10 +659,18 @@
 			y: 3.5d
 		}
 		{
-			dependencies: ["18D8E045FD32C0CA"]
-			id: "2ACC99ED231C589A"
+			dependencies: [
+				"2CCF0107D9264D01"
+				"522E6903B7A155BD"
+			]
+			id: "5BE3631EDB5120B4"
+			rewards: [{
+				id: "329A8AB9231F921F"
+				item: "extendedcrafting:flux_star"
+				type: "item"
+			}]
 			tasks: [{
-				id: "45D866D4B7E158CF"
+				id: "1D2F37F10FFB2861"
 				item: {
 					Count: 1b
 					id: "avaritia:singularity"
@@ -552,10 +684,18 @@
 			y: 3.5d
 		}
 		{
-			dependencies: ["2ACC99ED231C589A"]
-			id: "36FE6664814FC42B"
+			dependencies: [
+				"36D6126AA1D51BA0"
+				"5BE3631EDB5120B4"
+			]
+			id: "4D7A6E914CD8DB0F"
+			rewards: [{
+				id: "0F446AAEB3F9F586"
+				item: "enderio:vibrant_crystal"
+				type: "item"
+			}]
 			tasks: [{
-				id: "65F535DDCBCD1B6D"
+				id: "0694BE4BEBDCC4F5"
 				item: "createchromaticreturn:multiplite_ingot"
 				type: "item"
 			}]
@@ -563,10 +703,18 @@
 			y: 3.5d
 		}
 		{
-			dependencies: ["36FE6664814FC42B"]
-			id: "21A85F92FD481B27"
+			dependencies: [
+				"2B427700A23E7EA0"
+				"4D7A6E914CD8DB0F"
+			]
+			id: "70904FD51435E6FF"
+			rewards: [{
+				id: "1EAB240CD96BDC23"
+				item: "mekanism:pellet_antimatter"
+				type: "item"
+			}]
 			tasks: [{
-				id: "7ACD055A69663458"
+				id: "5226347E6CF1E902"
 				item: "createchromaticreturn:antiplite_ingot"
 				type: "item"
 			}]
@@ -574,61 +722,70 @@
 			y: 3.5d
 		}
 		{
-			dependencies: ["21A85F92FD481B27"]
-			id: "56D0340CD83920AF"
-			tasks: [{
-				id: "7E500CCAD27F5EB8"
-				item: "mm:elemental_transfigurator"
+			dependencies: [
+				"31082619924C685B"
+				"2B02104FD01C931B"
+				"65BE25C79BDCFCC3"
+			]
+			description: ["&dCreative Toast &9breaks all known laws of the universe, duplicating upon comsumption. &4Do not eat under any circumstances."]
+			id: "63B13989DE1750D4"
+			rewards: [{
+				id: "5085764E64862CF1"
+				item: "kubejs:anti_infinity"
 				type: "item"
 			}]
-			title: "Elemental Transfigurator"
-			x: 7.0d
-			y: 2.5d
-		}
-		{
-			dependencies: ["56D0340CD83920AF"]
-			id: "05B08C7A9EE160BE"
+			size: 1.0d
+			subtitle: "Push beyond perfection."
 			tasks: [{
-				id: "73C444218BBF1FA3"
-				item: "kubejs:ringularity"
-				type: "item"
-			}]
-			x: 7.5d
-			y: 3.5d
-		}
-		{
-			dependencies: ["1793DFE7CF566D4A"]
-			id: "48C30A6A670896C5"
-			tasks: [{
-				id: "3AF5FACC41742D72"
-				item: "kubejs:creative_essence"
-				type: "item"
-			}]
-			x: 8.5d
-			y: 3.5d
-		}
-		{
-			dependencies: ["48C30A6A670896C5"]
-			id: "33A5F33B1F0DE678"
-			tasks: [{
-				id: "4FB78FEEE2A92026"
-				item: "kubejs:creativium"
+				id: "23750A97D979E874"
+				item: "kubejs:creative_toast"
 				type: "item"
 			}]
 			x: 9.5d
 			y: 3.5d
 		}
 		{
-			dependencies: ["05B08C7A9EE160BE"]
-			id: "1793DFE7CF566D4A"
-			tasks: [{
-				id: "52902842952A1C84"
-				item: "mm:cmc_controller"
+			dependencies: [
+				"2B2E1A91A3FF0E61"
+				"70904FD51435E6FF"
+			]
+			description: ["&bHeat &9is used to cook bread into &3Toast&9."]
+			id: "326FF45ACD247A6E"
+			rewards: [{
+				id: "6FCB6FC3FBE91A28"
+				item: "avaritia:infinity_catalyst"
 				type: "item"
 			}]
-			title: "Creative Meta-Combiner"
-			x: 8.0d
-			y: 2.5d
+			subtitle: "Your PC is at 3807 degees Celsius"
+			tasks: [{
+				id: "14BEFBF8B98F0D90"
+				item: "kubejs:star"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"70E0F931E8D3D4FB"
+				"326FF45ACD247A6E"
+			]
+			description: ["&3Perfect Toast &9is a sacred item, worthy of the best factory makers. It is &bperfect&9, &dInfinite&4..."]
+			id: "65BE25C79BDCFCC3"
+			rewards: [{
+				id: "2B7209CD373494CE"
+				item: "minecraft:bread"
+				type: "item"
+			}]
+			size: 1.0d
+			subtitle: "This is it."
+			tasks: [{
+				id: "1719F15C038C3EAD"
+				item: "kubejs:toast"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 3.5d
 		}
 	]
 	title: "Machinery"

@@ -47,7 +47,14 @@
 		}
 		{
 			dependencies: ["41BC802201632A91"]
+			description: ["&0Black Iron is made in the &dPainting Machine&0."]
 			id: "3AF9D4875027A42B"
+			rewards: [{
+				id: "7409631206E53C77"
+				item: "mekanism:painting_machine"
+				type: "item"
+			}]
+			subtitle: "Why are the recipes so random?"
 			tasks: [{
 				id: "468FA4B577714F57"
 				item: "extendedcrafting:black_iron_ingot"
@@ -200,6 +207,11 @@
 		{
 			dependencies: ["271C99FA25E8EA76"]
 			id: "592B00728EB7D5A3"
+			rewards: [{
+				id: "35CDB9C70EFA303E"
+				item: "extendedcrafting:black_iron_slate"
+				type: "item"
+			}]
 			tasks: [{
 				id: "3570001DA904AFA7"
 				item: "extendedcrafting:basic_catalyst"
@@ -211,6 +223,11 @@
 		{
 			dependencies: ["75D2ED1FC0FC2674"]
 			id: "482A481CA7FE3C3E"
+			rewards: [{
+				id: "27D5DEB151B040C2"
+				item: "extendedcrafting:black_iron_slate"
+				type: "item"
+			}]
 			tasks: [{
 				id: "61EF9601635AEFC9"
 				item: "extendedcrafting:advanced_catalyst"
@@ -222,6 +239,11 @@
 		{
 			dependencies: ["1C972EB62454A696"]
 			id: "663A8F0EA2B3A576"
+			rewards: [{
+				id: "1C9F09958E825BED"
+				item: "extendedcrafting:black_iron_slate"
+				type: "item"
+			}]
 			tasks: [{
 				id: "25C19145B1B9BEC8"
 				item: "extendedcrafting:elite_catalyst"
@@ -233,6 +255,11 @@
 		{
 			dependencies: ["41B872D5ADC5E04F"]
 			id: "2518658F7FC9715A"
+			rewards: [{
+				id: "596242275937ED9A"
+				item: "extendedcrafting:black_iron_slate"
+				type: "item"
+			}]
 			tasks: [{
 				id: "35C1C71426D424C5"
 				item: "extendedcrafting:ultimate_catalyst"
@@ -314,7 +341,14 @@
 		}
 		{
 			dependencies: ["10405425A761D697"]
+			description: ["&0Signalum is an alloy made in the Industrial Alloy Smelter. You would've needed it anyway, so go make one."]
 			id: "5F6ADCB642B82A55"
+			rewards: [{
+				id: "2206575A2CA6FE47"
+				item: "alltheores:signalum_ingot"
+				type: "item"
+			}]
+			subtitle: "What the hell is Signalum?"
 			tasks: [{
 				id: "6A1FD4C3F5A761F9"
 				item: "extendedcrafting:enhanced_redstone_component"
@@ -326,6 +360,11 @@
 		{
 			dependencies: ["62CE30037140FD34"]
 			id: "01FE1640616D2F63"
+			rewards: [{
+				id: "7D8730F5B3ACBCE3"
+				item: "extendedcrafting:black_iron_slate"
+				type: "item"
+			}]
 			tasks: [{
 				id: "1E23CDD39EDABF69"
 				item: "extendedcrafting:enhanced_ender_component"
@@ -337,6 +376,11 @@
 		{
 			dependencies: ["5F6ADCB642B82A55"]
 			id: "68251687E89952C2"
+			rewards: [{
+				id: "3ADDDF7F4050A2D0"
+				item: "extendedcrafting:black_iron_slate"
+				type: "item"
+			}]
 			tasks: [{
 				id: "2075C669CDCE801E"
 				item: "extendedcrafting:enhanced_redstone_catalyst"
@@ -348,6 +392,11 @@
 		{
 			dependencies: ["01FE1640616D2F63"]
 			id: "28A39B18EB3A68AC"
+			rewards: [{
+				id: "1EF234736027CE31"
+				item: "extendedcrafting:black_iron_slate"
+				type: "item"
+			}]
 			tasks: [{
 				id: "689B0725DCE0D460"
 				item: "extendedcrafting:enhanced_ender_catalyst"
@@ -380,7 +429,10 @@
 			y: 5.0d
 		}
 		{
-			dependencies: ["444E38D3237CE41F"]
+			dependencies: [
+				"444E38D3237CE41F"
+				"5C31308C4799C46B"
+			]
 			id: "779F99DBE166A422"
 			tasks: [{
 				id: "49D49FD968B02F8C"
@@ -393,6 +445,11 @@
 		{
 			dependencies: ["444E38D3237CE41F"]
 			id: "2C05EF04DEEA2A65"
+			rewards: [{
+				id: "519A7D9E23EF6491"
+				item: "extendedcrafting:black_iron_slate"
+				type: "item"
+			}]
 			tasks: [{
 				id: "40EDFA07429BD45D"
 				item: "extendedcrafting:the_ultimate_component"
@@ -408,6 +465,11 @@
 				"28A39B18EB3A68AC"
 			]
 			id: "6803685471E8EF9A"
+			rewards: [{
+				id: "67C933F08DD725E8"
+				item: "extendedcrafting:black_iron_slate"
+				type: "item"
+			}]
 			tasks: [{
 				id: "57DD06177BFBF9C8"
 				item: "extendedcrafting:the_ultimate_catalyst"

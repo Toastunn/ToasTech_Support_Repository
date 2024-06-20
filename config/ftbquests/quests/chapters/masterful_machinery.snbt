@@ -3,9 +3,571 @@
 	default_quest_shape: ""
 	filename: "masterful_machinery"
 	group: "6EC53AEFE78C5F36"
+	icon: "kubejs:multiversal_extractor"
 	id: "060161093415B969"
-	order_index: 4
+	images: [
+		{
+			click: "command:create ponder mm:cloud_condenser"
+			corner: false
+			dev: false
+			height: 3.0d
+			hover: ["Click to Ponder"]
+			image: "kubejs:textures/ftbquests/cloud_condenser.png"
+			rotation: 0.0d
+			width: 2.1055045871559632d
+			x: -3.0d
+			y: 9.5d
+		}
+		{
+			click: "command:create ponder mm:cmc_controller"
+			corner: false
+			dev: false
+			height: 3.0d
+			hover: ["Click to Ponder"]
+			image: "kubejs:textures/ftbquests/creative_meta-combiner.png"
+			rotation: 0.0d
+			width: 2.8413897280966767d
+			x: 0.0d
+			y: 9.5d
+		}
+		{
+			click: "command:create ponder mm:elemental_transfigurator"
+			corner: false
+			dev: false
+			height: 3.0d
+			hover: ["Click to Ponder"]
+			image: "kubejs:textures/ftbquests/elemental_transfigurator.png"
+			rotation: 0.0d
+			width: 3.066914498141264d
+			x: -6.0d
+			y: 9.5d
+		}
+		{
+			click: "command:create ponder mm:industrial_alloy_smelter"
+			corner: false
+			dev: false
+			height: 3.0d
+			hover: ["Click to Ponder"]
+			image: "kubejs:textures/ftbquests/industrial_alloy_smelter.png"
+			order: 12
+			rotation: 0.0d
+			width: 3.0103806228373706d
+			x: -9.5d
+			y: 9.5d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 40.0d
+			hover: [ ]
+			image: "kubejs:textures/ftbquests/totally_not_filler_background_pt2.png"
+			order: -3
+			rotation: 0.0d
+			width: 51.44385026737968d
+			x: -4.5d
+			y: 14.0d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 1.0d
+			hover: [ ]
+			image: "itemfilters:item/xor"
+			rotation: 0.0d
+			width: 1.0d
+			x: -4.5d
+			y: -14.0d
+		}
+	]
+	order_index: 3
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			dependencies: ["1F9E4B44F2AF4CB2"]
+			description: ["&9The &bIndustrial Alloy Smelter &9is a multiblock that turns various dusts and energy into alloys."]
+			id: "624D20362635376D"
+			rewards: [{
+				count: 4
+				id: "55F85870975632A3"
+				item: "blocksyouneed_luna:wrought_iron_boiler_plate"
+				type: "item"
+			}]
+			subtitle: "EnderIO isn't real according to my eyes"
+			tasks: [{
+				id: "6BB684BA6884EC97"
+				item: "mm:industrial_alloy_smelter"
+				type: "item"
+			}]
+			title: "Industrial Alloy Smelter"
+			x: -9.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["1F9E4B44F2AF4CB2"]
+			description: ["&9The &bEelemental Transfigurator &9is a multiblock that turns various materials into an &dElemental Form&9. Are the elements completely arbitrary? Maybe. &m&8&oI'm just an intern here."]
+			hide_dependent_lines: true
+			id: "2B2E1A91A3FF0E61"
+			rewards: [{
+				count: 4
+				id: "3C7A8B2E5891D4DB"
+				item: "createchromaticreturn:refined_radiance"
+				type: "item"
+			}]
+			subtitle: "What is an element?"
+			tasks: [{
+				id: "1B544766A955C379"
+				item: "mm:elemental_transfigurator"
+				type: "item"
+			}]
+			title: "Elemental Transfigurator"
+			x: -6.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["1F9E4B44F2AF4CB2"]
+			description: ["&9The &bCloud Condenser &9forms clouds out of water, seeds them with cloud seed, and liquifies the cloud to form &bSeeded Cloud Conentrate&9."]
+			hide_dependent_lines: true
+			id: "6DAB9BBC68E65B88"
+			rewards: [{
+				id: "25022CA6FD5AF9AA"
+				item: "extendedcrafting:crystaltine_block"
+				type: "item"
+			}]
+			subtitle: "Based on real facts*"
+			tasks: [{
+				id: "6CFA5BF27334A7B6"
+				item: "mm:cloud_condenser"
+				type: "item"
+			}]
+			title: "Cloud Condenser"
+			x: -3.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["1F9E4B44F2AF4CB2"]
+			description: ["&9The &bCreative Meta-Combiner &9extracts &dCreative Essence &9from players in alternate universes to imbue items with the power of &dCreative&9."]
+			hide_dependent_lines: true
+			id: "76A8522846383F6E"
+			rewards: [{
+				id: "326524B50C54E721"
+				item: "avaritia:neutron"
+				type: "item"
+			}]
+			subtitle: "Stealing across universes"
+			tasks: [{
+				id: "1E0002A531F0EBB9"
+				item: "mm:cmc_controller"
+				type: "item"
+			}]
+			title: "Creative Meta-Combiner"
+			x: 0.0d
+			y: 7.0d
+		}
+		{
+			description: ["&bMasterful Machinery &9adds four new mumltiblock machines to &3ToasTech&9. Get used to them, since you will be using quite a few of them."]
+			icon: "mm:blueprint"
+			id: "1F9E4B44F2AF4CB2"
+			rewards: [{
+				id: "3B72F8345E9B41E5"
+				item: {
+					Count: 1b
+					id: "mekanism:ultimate_energy_cube"
+					tag: {
+						mekData: {
+							EnergyContainers: [{
+								Container: 0b
+								stored: "256000000"
+							}]
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Biiiiiiiig machines"
+			tasks: [{
+				id: "313B8DE67F0F2884"
+				title: "Masterful Machinery"
+				type: "checkmark"
+			}]
+			x: -4.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["2B2E1A91A3FF0E61"]
+			description: ["&9The &bRingularity &9is used in the &dCreative Essence&9."]
+			id: "203661C08F872E64"
+			rewards: [{
+				id: "0C4B0299AD5FDC2B"
+				item: "ae2:singularity"
+				type: "item"
+			}]
+			subtitle: "Singularities usually spin"
+			tasks: [{
+				id: "563105E855D48280"
+				item: "kubejs:ringularity"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 12.0d
+		}
+		{
+			dependencies: [
+				"6DAB9BBC68E65B88"
+				"7EA97E4D62A5DA31"
+			]
+			id: "6BB649110E900DB9"
+			subtitle: "useless for now"
+			tasks: [{
+				amount: 1000L
+				fluid: "enderio:cloud_seed_concentrated"
+				id: "5C89FA005558A078"
+				type: "fluid"
+			}]
+			x: -3.0d
+			y: 13.0d
+		}
+		{
+			dependencies: [
+				"203661C08F872E64"
+				"76A8522846383F6E"
+			]
+			description: ["&dCreativium &9is used to make &dCreative Items&9."]
+			hide_dependent_lines: true
+			id: "2B02104FD01C931B"
+			rewards: [{
+				id: "2B65B0E6EDF8BAC8"
+				item: "createchromaticreturn:durasteel_ingot"
+				type: "item"
+			}]
+			subtitle: "Push beyond infinity"
+			tasks: [{
+				id: "2689634544820E6A"
+				item: "kubejs:creativium"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["624D20362635376D"]
+			description: ["&9Most of these alloys are used only in the &0Ultimate Ingot recipe&9, except for &bSignalum &o&8(notably)&r&9. It is used in the &0Enhanced Redstone Ingot &9recipe. So get all of them."]
+			hide_dependency_lines: true
+			id: "5C31308C4799C46B"
+			rewards: [{
+				id: "3F435EC3D6EF1A4C"
+				item: {
+					Count: 1b
+					id: "mekanism:energy_tablet"
+					tag: {
+						mekData: {
+							EnergyContainers: [{
+								Container: 0b
+								stored: "1000000"
+							}]
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV"
+			tasks: [
+				{
+					id: "102930EE3C3C8DAF"
+					item: "alltheores:signalum_ingot"
+					type: "item"
+				}
+				{
+					id: "341E220E25A183B6"
+					item: "alltheores:invar_ingot"
+					type: "item"
+				}
+				{
+					id: "24DB74962C572B1F"
+					item: "alltheores:electrum_ingot"
+					type: "item"
+				}
+				{
+					id: "5FB85F067F99FA0D"
+					item: "alltheores:enderium_ingot"
+					type: "item"
+				}
+				{
+					id: "0C2A84508A6742F7"
+					item: "alltheores:lumium_ingot"
+					type: "item"
+				}
+				{
+					id: "55ACF5AB73E0E76F"
+					item: "alltheores:constantan_ingot"
+					type: "item"
+				}
+				{
+					id: "266236845528715B"
+					item: "alltheores:platinum_ingot"
+					type: "item"
+				}
+			]
+			title: "Alloys"
+			x: -9.5d
+			y: 12.0d
+		}
+		{
+			dependencies: [
+				"2B2E1A91A3FF0E61"
+				"6BB649110E900DB9"
+			]
+			id: "4EAF9F210475CE1A"
+			subtitle: "useless for now"
+			tasks: [{
+				id: "406769526ACDDF6F"
+				item: "kubejs:lightning"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["2B2E1A91A3FF0E61"]
+			id: "74CB70F543C1378B"
+			subtitle: "useless for now"
+			tasks: [{
+				id: "7659F98994160BCE"
+				item: "kubejs:iodine"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["74CB70F543C1378B"]
+			id: "7EA97E4D62A5DA31"
+			subtitle: "useless for now"
+			tasks: [{
+				id: "79C756BE70AB20BE"
+				item: "kubejs:silver_iodide"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["2B2E1A91A3FF0E61"]
+			description: ["&9The &bWater Singularity &9is used in the &bWater Duplicator &9recipes."]
+			id: "1C48ED4E090917DB"
+			rewards: [{
+				id: "199007EB8E444CCC"
+				item: "kubejs:liquid_void_bucket"
+				type: "item"
+			}]
+			subtitle: "Dense water"
+			tasks: [{
+				id: "731AE8E1730065A7"
+				item: "kubejs:water_singularity"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["2B2E1A91A3FF0E61"]
+			description: ["&bHeat &9is used to cook bread into &3Toast&9."]
+			id: "70E0F931E8D3D4FB"
+			rewards: [{
+				id: "7B8CE4C6A60A6B91"
+				item: "avaritia:infinity_catalyst"
+				type: "item"
+			}]
+			subtitle: "Your PC is at 3807 degees Celsius"
+			tasks: [{
+				id: "1C3B2951F1D4E1C2"
+				item: "kubejs:star"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["70E0F931E8D3D4FB"]
+			description: ["&3Perfect Toast &9is a sacred item, worthy of the best factory makers. It is &bperfect&9, &dInfinite&4..."]
+			id: "31082619924C685B"
+			rewards: [{
+				id: "2A1FD6EB3344C529"
+				item: "minecraft:bread"
+				type: "item"
+			}]
+			size: 2.0d
+			subtitle: "This is it."
+			tasks: [{
+				id: "5CFD010B87CC3E06"
+				item: "kubejs:toast"
+				type: "item"
+			}]
+			x: -4.494898302633331d
+			y: 18.76190476190476d
+		}
+		{
+			dependencies: [
+				"31082619924C685B"
+				"2B02104FD01C931B"
+			]
+			description: ["&dCreative Toast &9breaks all known laws of the universe, duplicating upon comsumption. &4Do not eat under any circumstances."]
+			id: "05FC195185D53532"
+			rewards: [{
+				id: "0F0CBFA9F5724E11"
+				item: "kubejs:anti_infinity"
+				type: "item"
+			}]
+			size: 3.0d
+			subtitle: "Push beyond perfection."
+			tasks: [{
+				id: "4F5AA08B946F855A"
+				item: "kubejs:creative_toast"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 22.5d
+		}
+		{
+			dependencies: ["2B02104FD01C931B"]
+			description: ["&dCreative Items are at the end of some modpacks, and &3ToasTech &dis part of this group."]
+			id: "2DC33DA05BB8E59F"
+			rewards: [{
+				count: 5
+				id: "6AB545D0838755EC"
+				item: "kubejs:creative_essence"
+				type: "item"
+			}]
+			subtitle: "The End..."
+			tasks: [
+				{
+					id: "1127552C001A2B32"
+					item: {
+						Count: 1b
+						id: "mekanism:creative_energy_cube"
+						tag: {
+							mekData: {
+								componentConfig: {
+									config0: {
+										side0: 1
+										side1: 1
+										side2: 1
+										side3: 1
+										side4: 1
+										side5: 1
+									}
+								}
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6EB7F8AB83C073A3"
+					item: "mekanism:creative_bin"
+					type: "item"
+				}
+				{
+					id: "11DECF0E7A9C5245"
+					item: "mekanism:creative_fluid_tank"
+					type: "item"
+				}
+				{
+					id: "7AB47897C9499688"
+					item: "mekanism:creative_chemical_tank"
+					type: "item"
+				}
+				{
+					id: "1A794BEAC6702324"
+					item: "rats:creative_cheese"
+					type: "item"
+				}
+				{
+					id: "53394EC37E85363A"
+					item: "rats:rat_upgrade_creative"
+					type: "item"
+				}
+				{
+					id: "6734748F7E937E9F"
+					item: "rats:rat_upgrade_combined_creative"
+					type: "item"
+				}
+				{
+					id: "4FD29F6F73E75085"
+					item: "kubejs:creative_toast"
+					type: "item"
+				}
+				{
+					id: "5E52EB062ABDC549"
+					item: "ae2:creative_item_cell"
+					type: "item"
+				}
+				{
+					id: "093CDB5F04191BFF"
+					item: "ae2:creative_fluid_cell"
+					type: "item"
+				}
+				{
+					id: "371D77233F12D161"
+					item: "ae2:creative_energy_cell"
+					type: "item"
+				}
+				{
+					id: "159BE2C8E3DEE0BD"
+					item: "create:handheld_worldshaper"
+					type: "item"
+				}
+				{
+					id: "47A88A16EAF3212A"
+					item: "create:creative_motor"
+					type: "item"
+				}
+				{
+					id: "5B2D77D4967B1CE9"
+					item: "create:creative_fluid_tank"
+					type: "item"
+				}
+				{
+					id: "7CD11E26B03C6710"
+					item: "create:creative_crate"
+					type: "item"
+				}
+				{
+					id: "7E7718FE7DAA1DD4"
+					item: "create:creative_blaze_cake"
+					type: "item"
+				}
+				{
+					id: "338358C7983D40F9"
+					item: "createcasing:creative_cogwheel"
+					type: "item"
+				}
+				{
+					id: "7B22ACD40BE5F493"
+					item: "create_sa:creative_filling_tank"
+					type: "item"
+				}
+				{
+					id: "259A237AD5BC13A7"
+					item: "storagedrawers:creative_storage_upgrade"
+					type: "item"
+				}
+				{
+					id: "6BCD41EB5B6D8191"
+					item: "storagedrawers:creative_vending_upgrade"
+					type: "item"
+				}
+				{
+					id: "38B59B0846151950"
+					item: "modularrouters:creative_module"
+					type: "item"
+				}
+			]
+			title: "Creative Completion"
+			x: 0.0d
+			y: 14.0d
+		}
+	]
 	title: "Masterful Machinery"
 }

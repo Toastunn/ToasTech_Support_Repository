@@ -1,0 +1,24 @@
+{
+	id: "5F34077700C0E26C"
+	loot_size: 1
+	order_index: 2
+	rewards: [
+		{ item: "avaritia:ultimate_stew" }
+		{ item: "avaritia:cosmic_meatballs" }
+		{ item: "avaritia:endest_pearl" }
+		{ item: "avaritia:record_fragment" }
+		{ item: "rats:corrupt_rat_skull" }
+		{ item: "minecraft:wither_skeleton_skull" }
+		{ item: "kubejs:void_in_a_bottle" }
+		{ item: "enderio:player_token" }
+		{ item: "enderio:weather_crystal" }
+		{ item: "mekanism:pellet_antimatter" }
+		{ item: "mekanism:teleportation_core" }
+		{ item: "ae2:singularity" }
+		{ item: "ae2:spatial_cell_component_128" }
+		{ item: "ae2:cell_component_256k" }
+		{ item: "blocksyouneed_luna:uhe_solar_panel" }
+		{ item: "extendedcrafting:ultimate_singularity" }
+	]
+	title: "Infinity Catalyst table"
+}

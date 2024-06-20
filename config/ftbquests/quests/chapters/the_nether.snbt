@@ -123,7 +123,7 @@
 			id: "490FB864F2AEF3C7"
 			rewards: [{
 				id: "1433811ECCC41A54"
-				item: "exdeorum:mycelium_spores"
+				item: "garnished:salt_compound"
 				type: "item"
 			}]
 			subtitle: "Mobs still spawn on it."
@@ -200,7 +200,7 @@
 			y: -2.5d
 		}
 		{
-			description: ["&7Getting to &cThe Nether&7 in this pack isn't the easiest thing. So here's a guide."]
+			description: ["&7Getting to &cThe Nether&7 in this pack isn't the easiest thing. So here's a guide. &4And yes, fire ticking is off by default :)"]
 			id: "0BCAABD996338B20"
 			rewards: [{
 				id: "1C2F012822B07D1B"
@@ -235,7 +235,7 @@
 		}
 		{
 			dependencies: ["6FCDF7909EBE792A"]
-			description: ["&7Normally, you can only obtain soul sand after going to &cThe Nether&7, but &5Magical Water&7 allows you to bypass this step and go directly to &bHaunting&7! test it out on some powdered obsidian, like if you were &9washing&7."]
+			description: ["&7Normally, you can only obtain soul sand after going to &cThe Nether&7, but &5Magical Water&7 allows you to bypass this step and go directly to &bHaunting&7! Test it out on some powdered obsidian, like if you were &9washing&7."]
 			id: "7EE4C4BB9AEA0AFB"
 			rewards: [{
 				count: 7

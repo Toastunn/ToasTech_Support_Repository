@@ -25,6 +25,7 @@
 			height: 15.965104166666666d
 			hover: [ ]
 			image: "kubejs:textures/ftbquests/latex_unit.png"
+			order: -3
 			rotation: 0.0d
 			width: 28.0d
 			x: 5.0d
@@ -38,7 +39,7 @@
 			description: [
 				"&aIndustrial Foregoing &2is one of the tech mods of all time. I included it for a couple of reasons, mainly the stasis chamber and the black hole units. So, let me show you how to get there."
 				"{@pagebreak}"
-				"&2Also refer to the manual if you don't know hoe to use things and I didn't provide a description."
+				"&2Also refer to the manual if you don't know how to use things that I didn't provide a description for."
 			]
 			id: "640FA0EB22A2D109"
 			rewards: [{
@@ -326,7 +327,7 @@
 			description: [
 				"&2In addition to the previous cage, you can add a mechanism that switches from &aEther gas &2collection to Wither killing &8(or make another cage, i'm not your dad) &2I &nseriously&r&2 recommend investing in a &dMeka-Tana &2since, fully modded, it can deal up to 251 damage per swing."
 				""
-				"&2Get me a block of nether stars"
+				"&2Get me a block of nether stars."
 			]
 			icon: "industrialforegoing:wither_builder"
 			id: "20F7423A054C8EFE"
@@ -543,6 +544,7 @@
 		}
 		{
 			dependencies: ["35CA25074C34F98E"]
+			description: ["&2The &aBlack Hole Controller &2is used by putting &aBlack Hole Units &2or &aTanks &2into its inventory. The &aController &2can then receive items or fluids and store them in the respective &aBlack Hole Unit&2 or &aTank&2."]
 			id: "32C44C006C04541E"
 			rewards: [{
 				id: "6D99030BF132305E"

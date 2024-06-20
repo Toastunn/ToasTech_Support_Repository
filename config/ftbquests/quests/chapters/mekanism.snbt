@@ -7,236 +7,77 @@
 	id: "0000000000000859"
 	images: [
 		{
-			click: "#0000000000000938"
+			click: "command:create ponder mekanismgenerators:fusion_reactor_controller"
 			corner: false
 			dev: false
-			height: 2.5d
-			hover: ["Fusion Reactor"]
+			height: 1.985239852398524d
+			hover: ["Click to Ponder"]
 			image: "kubejs:textures/ftbquests/fusion_reactor.png"
 			rotation: 0.0d
 			width: 2.0d
-			x: 3.0d
-			y: -3.0d
+			x: 13.75d
+			y: -1.75d
 		}
 		{
-			click: "#000000000000094B"
+			click: "command:create ponder mekanism:supercharged_coil"
 			corner: false
 			dev: false
-			height: 2.5d
-			hover: ["Supercritical Phase Shifter"]
+			height: 1.9875930521091811d
+			hover: ["Click to Ponder"]
 			image: "kubejs:textures/ftbquests/supercritical_phase_shifter.png"
 			rotation: 0.0d
 			width: 2.0d
-			x: 7.0d
-			y: -3.0d
+			x: 13.75d
+			y: 2.25d
 		}
 		{
-			click: "#0000000000000933"
+			click: "command:create ponder mekanismgenerators:control_rod_assembly"
 			corner: false
 			dev: false
-			height: 2.5d
-			hover: ["Thermal Evaporation"]
-			image: "kubejs:textures/ftbquests/thermal_evaporation.png"
-			rotation: 0.0d
-			width: 2.0d
-			x: 11.0d
-			y: -3.0d
-		}
-		{
-			click: "#0000000000000930"
-			corner: false
-			dev: false
-			height: 2.5d
-			hover: ["Energy Storage"]
-			image: "kubejs:textures/ftbquests/energy_storage.png"
-			rotation: 0.0d
-			width: 2.0d
-			x: 9.0d
-			y: -3.0d
-		}
-		{
-			click: "#000000000000093F"
-			corner: false
-			dev: false
-			height: 2.5d
-			hover: ["Fission Reactor"]
+			height: 2.139130434782609d
+			hover: ["Click to Ponder"]
 			image: "kubejs:textures/ftbquests/fission_reactor.png"
 			rotation: 0.0d
 			width: 2.0d
-			x: 5.0d
-			y: -3.0d
+			x: 13.75d
+			y: 0.25d
 		}
 		{
 			click: ""
 			corner: true
 			dev: false
-			height: 19.6875d
+			height: 25.0d
 			hover: [ ]
 			image: "kubejs:textures/ftbquests/sps_uses_too_much_power.png"
 			order: -1
 			rotation: 0.0d
-			width: 35.0d
-			x: 3.5d
-			y: -0.5d
+			width: 44.44444444444444d
+			x: 6.5d
+			y: -2.25d
+		}
+		{
+			click: "command:create ponder mekanism:thermal_evaporation_controller"
+			corner: false
+			dev: false
+			height: 5.160883280757098d
+			hover: ["Click to Ponder"]
+			image: "kubejs:textures/ftbquests/thermal_evaporation.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: 13.75d
+			y: -5.0d
 		}
 	]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["4E360A9C4B0A7198"]
-			description: ["Tier Installers are used to upgrade various machines into their Factory equivalent."]
-			id: "000000000000085E"
-			rewards: [{
-				id: "6A25A4AC9662AEC1"
-				item: "mekanism:basic_control_circuit"
-				type: "item"
-			}]
-			tasks: [{
-				id: "000000000000085F"
-				item: "mekanism:basic_tier_installer"
-				type: "item"
-			}]
-			x: 6.5d
-			y: 1.0d
-		}
-		{
-			dependencies: ["000000000000085E"]
-			description: ["Tier Installers are used to upgrade various machines into their Factory equivalent."]
-			id: "0000000000000860"
-			rewards: [{
-				count: 2
-				id: "3F1942629855CC8E"
-				item: "mekanism:advanced_control_circuit"
-				type: "item"
-			}]
-			tasks: [{
-				id: "0000000000000861"
-				item: "mekanism:advanced_tier_installer"
-				type: "item"
-			}]
-			x: 6.5d
-			y: 2.0d
-		}
-		{
-			dependencies: ["0000000000000860"]
-			description: ["Tier Installers are used to upgrade various machines into their Factory equivalent."]
-			id: "0000000000000862"
-			rewards: [{
-				count: 2
-				id: "402FA207C1F97FF0"
-				item: "mekanism:elite_control_circuit"
-				type: "item"
-			}]
-			tasks: [{
-				id: "0000000000000863"
-				item: "mekanism:elite_tier_installer"
-				type: "item"
-			}]
-			x: 6.5d
-			y: 3.0d
-		}
-		{
-			dependencies: ["0000000000000862"]
-			description: ["Tier Installers are used to upgrade various machines into their Factory equivalent."]
-			id: "0000000000000864"
-			rewards: [{
-				count: 2
-				id: "5158AAE0939521FF"
-				item: "mekanism:ultimate_control_circuit"
-				type: "item"
-			}]
-			tasks: [{
-				id: "0000000000000865"
-				item: "mekanism:ultimate_tier_installer"
-				type: "item"
-			}]
-			x: 6.5d
-			y: 4.0d
-		}
-		{
-			dependencies: ["4E360A9C4B0A7198"]
-			description: ["You can store 1.60MRF in the Basic Energy Cube."]
-			id: "0000000000000866"
-			rewards: [{
-				id: "62296CE8FB06DA72"
-				item: "mekanism:steel_casing"
-				type: "item"
-			}]
-			tasks: [{
-				id: "0000000000000867"
-				item: "mekanism:basic_energy_cube"
-				type: "item"
-			}]
-			x: 5.5d
-			y: 1.0d
-		}
-		{
-			dependencies: ["0000000000000866"]
-			description: ["You can store 6.40MRF in the Advanced Energy Cube."]
-			id: "0000000000000868"
-			rewards: [{
-				count: 4
-				id: "6A630879A6D6238F"
-				item: "mekanism:alloy_infused"
-				type: "item"
-			}]
-			tasks: [{
-				id: "0000000000000869"
-				item: "mekanism:advanced_energy_cube"
-				type: "item"
-			}]
-			x: 5.5d
-			y: 2.0d
-		}
-		{
-			dependencies: ["0000000000000868"]
-			description: ["You can store 25.60MRF in the Elite Energy Cube."]
-			id: "000000000000086A"
-			rewards: [{
-				count: 4
-				id: "710DA5AA306B94D6"
-				item: "mekanism:alloy_reinforced"
-				type: "item"
-			}]
-			tasks: [{
-				id: "000000000000086B"
-				item: "mekanism:elite_energy_cube"
-				type: "item"
-			}]
-			x: 5.5d
-			y: 3.0d
-		}
-		{
-			dependencies: ["000000000000086A"]
-			description: ["You can store 102.40MRF in the Ultimate Energy Cube."]
-			id: "000000000000086C"
-			rewards: [{
-				count: 4
-				id: "769ED2EB9C2C09E3"
-				item: "mekanism:alloy_atomic"
-				type: "item"
-			}]
-			tasks: [{
-				id: "000000000000086D"
-				item: "mekanism:ultimate_energy_cube"
-				type: "item"
-			}]
-			x: 5.5d
-			y: 4.0d
-		}
-		{
-			dependencies: ["4E360A9C4B0A7198"]
-			description: [
-				"Basic Universal Cable can transfer 3.20kRF/t."
-				"Basic Mechanical Pipe can transfer 512mB/t and has an internal buffer of 4,000mB."
-				"Basic Pressurized Tube can transfer 1,000mB/t of gas and has an internal buffer of 8,000mB."
-				"Basic Logistical Transporter can transfer 2 items/sec and works 1 block distance per second."
-			]
+			dependencies: ["00000000000008EC"]
+			description: ["&5In &dMekanism&5, there are 4(5)&m7&r&5 types of 'conduits': &dUniversal Cables&5, &dPressurized Tubes&5, and &dMechanical Pipes&5, and &dLogistical Transporters&5. They transport &cFE, &dGases&5, &dLiquids&5, and &dItems &5respectively."]
 			id: "000000000000086E"
 			rewards: [{
-				id: "45F63E4BBA9D5303"
-				item: "mekanism:block_steel"
+				id: "5509D9344AECC9A6"
+				item: "mekanism:ingot_steel"
 				type: "item"
 			}]
 			tasks: [
@@ -261,20 +102,16 @@
 					type: "item"
 				}
 			]
-			x: 8.5d
-			y: 1.0d
+			title: "Basic Conduits"
+			x: 8.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["000000000000086E"]
-			description: [
-				"Advanced Universal Cable can transfer 51.20kRF/t."
-				"Advanced Mechanical Pipe can transfer 1,000mB/t and has an internal buffer of 8,000mB."
-				"Advanced Pressurized Tube can transfer 4,000mB/t of gas and has an internal buffer of 64,000mB."
-				"Advanced Logistical Transporter can transfer 32 items/sec and works 2 blocks distance per second."
-			]
+			description: [""]
 			id: "0000000000000870"
 			rewards: [{
-				count: 8
+				count: 4
 				id: "0DACBD1F446CD85D"
 				item: "mekanism:alloy_infused"
 				type: "item"
@@ -301,20 +138,16 @@
 					type: "item"
 				}
 			]
-			x: 8.5d
-			y: 2.0d
+			title: "Advanced Conduits"
+			x: 9.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["0000000000000870"]
-			description: [
-				"Elite Universal Cable can transfer 409.60kRF/t."
-				"Elite Mechanical Pipe can transfer 16,000mB/t and has an internal buffer of 64,000mB."
-				"Elite Pressurized Tube can transfer 128,000mB/t of gas and has an internal buffer of 1,000,000mB."
-				"Elite Logistical Transporter can transfer 64 items/sec and works 4 blocks distance per second."
-			]
+			description: [""]
 			id: "0000000000000872"
 			rewards: [{
-				count: 8
+				count: 4
 				id: "0ADD65C73ACC6ED5"
 				item: "mekanism:alloy_reinforced"
 				type: "item"
@@ -341,20 +174,16 @@
 					type: "item"
 				}
 			]
-			x: 8.5d
-			y: 3.0d
+			title: "Elite Conduits"
+			x: 10.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["0000000000000872"]
-			description: [
-				"Ultimate Universal Cable can transfer 3.27MRF/t."
-				"Ultimate Mechanical Pipe can transfer 64,000mB/t and has an internal buffer of 512,000mB."
-				"Ultimate Pressurized Tube can transfer 1,024,000mB/t of gas and has an internal buffer of 16,000,000mB."
-				"Ultimate Logistical Transporter can transfer 128 items/sec and works 10 blocks distance per second."
-			]
+			description: [""]
 			id: "0000000000000874"
 			rewards: [{
-				count: 8
+				count: 4
 				id: "6767CA12B27F4033"
 				item: "mekanism:alloy_atomic"
 				type: "item"
@@ -381,154 +210,139 @@
 					type: "item"
 				}
 			]
-			x: 8.5d
-			y: 4.0d
+			title: "Ultimate Conduits"
+			x: 11.0d
+			y: 0.0d
 		}
 		{
-			dependencies: ["4E360A9C4B0A7198"]
-			description: ["You can store 14,000mB in the Basic Fluid Tank."]
-			id: "0000000000000882"
-			rewards: [{
-				id: "2E5E5873B9D65917"
-				item: "minecraft:iron_block"
-				type: "item"
-			}]
-			tasks: [{
-				id: "0000000000000883"
-				item: "mekanism:basic_fluid_tank"
-				type: "item"
-			}]
-			x: 7.5d
-			y: 1.0d
-		}
-		{
-			dependencies: ["0000000000000882"]
-			description: ["You can store 28,000mB in the Advanced Fluid Tank."]
-			id: "0000000000000884"
-			rewards: [{
-				count: 4
-				id: "3FBA0B4587264B25"
-				item: "mekanism:alloy_infused"
-				type: "item"
-			}]
-			tasks: [{
-				id: "0000000000000885"
-				item: "mekanism:advanced_fluid_tank"
-				type: "item"
-			}]
-			x: 7.5d
-			y: 2.0d
-		}
-		{
-			dependencies: ["0000000000000884"]
-			description: ["You can store 56,000mB in the Elite Fluid Tank."]
-			id: "0000000000000886"
-			rewards: [{
-				count: 4
-				id: "29E39E53A0E2C6C2"
-				item: "mekanism:alloy_reinforced"
-				type: "item"
-			}]
-			tasks: [{
-				id: "0000000000000887"
-				item: "mekanism:elite_fluid_tank"
-				type: "item"
-			}]
-			x: 7.5d
-			y: 3.0d
-		}
-		{
-			dependencies: ["0000000000000886"]
-			description: ["You can store 112,000mB in the Ultimate Fluid Tank."]
-			id: "0000000000000888"
-			rewards: [{
-				count: 4
-				id: "30DE73CFD3D5BE88"
-				item: "mekanism:alloy_atomic"
-				type: "item"
-			}]
-			tasks: [{
-				id: "0000000000000889"
-				item: "mekanism:ultimate_fluid_tank"
-				type: "item"
-			}]
-			x: 7.5d
-			y: 4.0d
-		}
-		{
-			dependencies: ["4E360A9C4B0A7198"]
-			description: ["You can store 64,000mB of gas in the Basic Chemical Tank."]
+			dependencies: [
+				"4E360A9C4B0A7198"
+				"00000000000008EC"
+			]
+			description: ["&5In &dMekanism&5, there are 3 types of storage: &dFluid Tanks&5, &dChemical Tanks&5, and &dEnergy Cubes&5. They store &dLiquids&5, &dGases&5, and &cFE &5respectively."]
 			id: "000000000000088A"
 			rewards: [{
-				id: "6CEC6B46579798F5"
-				item: "mekanism:block_osmium"
+				id: "539ECC2FAE800B7E"
+				item: "minecraft:redstone_block"
 				type: "item"
 			}]
-			tasks: [{
-				id: "000000000000088B"
-				item: "mekanism:basic_chemical_tank"
-				type: "item"
-			}]
-			x: 4.5d
-			y: 1.0d
+			tasks: [
+				{
+					id: "000000000000088B"
+					item: "mekanism:basic_chemical_tank"
+					type: "item"
+				}
+				{
+					id: "282434E18F7E14ED"
+					item: "mekanism:basic_energy_cube"
+					type: "item"
+				}
+				{
+					id: "59FDBCF133E6456B"
+					item: "mekanism:basic_fluid_tank"
+					type: "item"
+				}
+			]
+			title: "Basic Storage"
+			x: 8.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["000000000000088A"]
-			description: ["You can store 128,000mB of gas in the Advanced Chemical Tank."]
+			description: [""]
 			id: "000000000000088C"
 			rewards: [{
-				count: 4
+				count: 8
 				id: "5A95882E904CE24D"
 				item: "mekanism:alloy_infused"
 				type: "item"
 			}]
-			tasks: [{
-				id: "000000000000088D"
-				item: "mekanism:advanced_chemical_tank"
-				type: "item"
-			}]
-			x: 4.5d
-			y: 2.0d
+			tasks: [
+				{
+					id: "000000000000088D"
+					item: "mekanism:advanced_chemical_tank"
+					type: "item"
+				}
+				{
+					id: "2ABEE8989DB5BAEC"
+					item: "mekanism:advanced_energy_cube"
+					type: "item"
+				}
+				{
+					id: "193EA41F2CF20524"
+					item: "mekanism:advanced_fluid_tank"
+					type: "item"
+				}
+			]
+			title: "Advanced Storage"
+			x: 9.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["000000000000088C"]
-			description: ["You can store 256,000mB of gas in the Elite Chemical Tank."]
+			description: [""]
 			id: "000000000000088E"
 			rewards: [{
-				count: 4
+				count: 8
 				id: "7F6CE7D03103A17F"
 				item: "mekanism:alloy_reinforced"
 				type: "item"
 			}]
-			tasks: [{
-				id: "000000000000088F"
-				item: "mekanism:elite_chemical_tank"
-				type: "item"
-			}]
-			x: 4.5d
-			y: 3.0d
+			tasks: [
+				{
+					id: "000000000000088F"
+					item: "mekanism:elite_chemical_tank"
+					type: "item"
+				}
+				{
+					id: "42B8945DAC57B6B2"
+					item: "mekanism:elite_energy_cube"
+					type: "item"
+				}
+				{
+					id: "2486504172012DFD"
+					item: "mekanism:elite_fluid_tank"
+					type: "item"
+				}
+			]
+			title: "Elite Storage"
+			x: 10.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["000000000000088E"]
-			description: ["You can store 512,000mB of gas in the Ultimate Chemical Tank."]
+			description: [""]
 			id: "0000000000000890"
 			rewards: [{
-				count: 4
+				count: 8
 				id: "658ABC637D3F0AB7"
 				item: "mekanism:alloy_atomic"
 				type: "item"
 			}]
-			tasks: [{
-				id: "0000000000000891"
-				item: "mekanism:ultimate_chemical_tank"
-				type: "item"
-			}]
-			x: 4.5d
-			y: 4.0d
+			tasks: [
+				{
+					id: "0000000000000891"
+					item: "mekanism:ultimate_chemical_tank"
+					type: "item"
+				}
+				{
+					id: "2C10796713241A79"
+					item: "mekanism:ultimate_energy_cube"
+					type: "item"
+				}
+				{
+					id: "33690BC62D58CA85"
+					item: "mekanism:ultimate_fluid_tank"
+					type: "item"
+				}
+			]
+			title: "Ultimate Storage"
+			x: 11.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["4E360A9C4B0A7198"]
-			description: ["The Hazmat Suit protects the player from Radiation."]
+			description: ["&5The &dHazmat Suit &5blocks incoming radiation when worn."]
 			id: "0000000000000892"
 			rewards: [{
 				id: "39B1C887B72397CD"
@@ -582,18 +396,16 @@
 				}
 			]
 			title: "Hazmat Suit"
-			x: 5.5d
-			y: -1.0d
+			x: 6.5d
+			y: 2.25d
 		}
 		{
 			dependencies: [
 				"0000000000000948"
 				"00000000000008CC"
 			]
-			description: [
-				"he MekaSuit is a highly configurable set of late-game modular armor."
-				"Each part of the MekaSuit can be upgraded with Modules that are installed with the Modification Station."
-			]
+			description: ["&5The &dMekaSuit &5is set of armor that can be modified with &dUnits &5to enhance its abilities drastically."]
+			hide_dependent_lines: true
 			id: "0000000000000898"
 			rewards: [{
 				count: 8
@@ -649,289 +461,201 @@
 				}
 			]
 			title: "MekaSuit Armor"
-			x: -3.0d
-			y: 3.75d
+			x: 6.0d
+			y: -7.5d
 		}
 		{
-			dependencies: ["0000000000000898"]
-			description: ["Uses Powerful Magnets to draw distant items towards the player."]
-			id: "000000000000089D"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "66F049587E804003"
-				table_id: 2083281975516645662L
-				type: "random"
-			}]
-			tasks: [{
-				count: 4L
-				id: "000000000000089E"
-				item: "mekanism:module_magnetic_attraction_unit"
-				type: "item"
-			}]
-			title: "Magnetic Attraction Unit"
-			x: -3.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["0000000000000898"]
-			description: ["Automatically feeds the player Nutritional Paste when hungry."]
-			id: "000000000000089F"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "22BB3B0BB323A37C"
-				table_id: 2083281975516645662L
-				type: "random"
-			}]
-			tasks: [{
-				id: "00000000000008A0"
-				item: "mekanism:module_nutritional_injection_unit"
-				type: "item"
-			}]
-			x: -4.0d
-			y: 0.5d
-		}
-		{
-			dependencies: ["0000000000000898"]
-			description: ["Displays the user's current radiation dose in the HUD."]
-			id: "00000000000008A1"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "724ACE8EF24D6BA0"
-				table_id: 2083281975516645662L
-				type: "random"
-			}]
-			tasks: [{
-				id: "00000000000008A2"
-				item: "mekanism:module_dosimeter_unit"
-				type: "item"
-			}]
-			x: -2.0d
-			y: -1.5d
-		}
-		{
-			dependencies: ["0000000000000898"]
-			description: ["Using experimental technologies and the tremendous energy of antimatter, allows the user to defy gravity."]
-			id: "00000000000008A3"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "11F35E2533986367"
-				table_id: 2083281975516645662L
-				type: "random"
-			}]
-			tasks: [{
-				id: "00000000000008A4"
-				item: "mekanism:module_gravitational_modulating_unit"
-				type: "item"
-			}]
-			x: -4.0d
-			y: -0.5d
-		}
-		{
-			dependencies: ["0000000000000898"]
-			description: ["Increases maximum energy capacity."]
-			id: "00000000000008A5"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "500F31445C5FA9A4"
-				table_id: 2083281975516645662L
-				type: "random"
-			}]
-			tasks: [{
-				count: 8L
-				id: "00000000000008A6"
-				item: "mekanism:module_energy_unit"
-				type: "item"
-			}]
-			title: "Energy Unit"
-			x: -3.0d
-			y: -1.0d
-		}
-		{
-			dependencies: ["0000000000000898"]
-			description: ["Increases the user's sprinting speed (and jumping distance)."]
-			id: "00000000000008A7"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "5E86C1C33E5EFCD0"
-				table_id: 2083281975516645662L
-				type: "random"
-			}]
-			tasks: [{
-				count: 4L
-				id: "00000000000008A8"
-				item: "mekanism:module_locomotive_boosting_unit"
-				type: "item"
-			}]
-			title: "Locomotive Boosting Unit"
-			x: -3.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["0000000000000898"]
-			description: ["Allows the user to both step and jump higher."]
-			id: "00000000000008A9"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "1A01B00528B11702"
-				table_id: 2083281975516645662L
-				type: "random"
-			}]
-			tasks: [{
-				count: 4L
-				id: "00000000000008AA"
-				item: "mekanism:module_hydraulic_propulsion_unit"
-				type: "item"
-			}]
-			title: "Hydraulic Propulsion Unit"
-			x: -3.0d
-			y: 1.0d
-		}
-		{
-			dependencies: ["0000000000000898"]
-			description: ["Provides thick, radiation-proof metal plating to any MekaSuit armor piece."]
-			id: "00000000000008AB"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "4D2ADDCAAD7565E4"
-				table_id: 2083281975516645662L
-				type: "random"
-			}]
-			tasks: [{
-				id: "00000000000008AC"
-				item: "mekanism:module_radiation_shielding_unit"
-				type: "item"
-			}]
-			x: -2.5d
-			y: 2.0d
-		}
-		{
-			dependencies: ["0000000000000898"]
-			description: ["Harness the power of the sun to charge your MekaSuit. Install multiple for faster charging. Requires Mekanism: Generators."]
-			id: "00000000000008AD"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "53C43CB242D3C951"
-				table_id: 2083281975516645662L
-				type: "random"
-			}]
-			tasks: [{
-				count: 8L
-				id: "00000000000008AE"
-				item: "mekanismgenerators:module_solar_recharging_unit"
-				type: "item"
-			}]
-			title: "Solar Recharging Unit"
-			x: -2.0d
-			y: -0.5d
-		}
-		{
-			dependencies: ["0000000000000898"]
-			description: ["Brightens the surrounding environment, allowing the user to see through the darkness. Install multiple for more effective night vision."]
-			id: "00000000000008AF"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "55213EFD32FCF3AA"
-				table_id: 2083281975516645662L
-				type: "random"
-			}]
-			tasks: [{
-				count: 4L
-				id: "00000000000008B0"
-				item: "mekanism:module_vision_enhancement_unit"
-				type: "item"
-			}]
-			title: "Vision Enhancement Unit"
-			x: -2.0d
-			y: 0.5d
-		}
-		{
-			dependencies: ["0000000000000898"]
-			description: ["Uses electrolysis to create breathable oxygen from water. Will also fill a jetpack module with hydrogen when necessary."]
-			id: "00000000000008B1"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "0E9EF5C78C2DEEC5"
-				table_id: 2083281975516645662L
-				type: "random"
-			}]
-			tasks: [{
-				count: 4L
-				id: "00000000000008B2"
-				item: "mekanism:module_electrolytic_breathing_unit"
-				type: "item"
-			}]
-			title: "Electrolytic Breathing Unit"
-			x: -4.0d
-			y: -1.5d
-		}
-		{
-			dependencies: ["0000000000000898"]
-			description: ["Evenly distributes charge throughout all worn MekaSuit armor."]
-			id: "00000000000008B3"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "68CF2D880A7996E1"
-				table_id: 2083281975516645662L
-				type: "random"
-			}]
-			tasks: [{
-				id: "00000000000008B4"
-				item: "mekanism:module_charge_distribution_unit"
-				type: "item"
-			}]
-			x: -3.5d
-			y: 2.0d
-		}
-		{
-			dependencies: ["4E360A9C4B0A7198"]
-			description: [
-				"The Dosimeter show you the Radiation Dose you have."
-				""
-				"The Geiger Counter show you the Radiation Exposure you have."
-				""
-				"The Configuration card can be used to copy side configurations from one machine to another machine of the same type."
-				""
-				"Cardboard Box is used for boxing up other blocks to move them, preserving the inventory while being moved."
+			dependencies: [
+				"0000000000000898"
+				"36D86F3E65554DF4"
 			]
-			id: "00000000000008B5"
-			rewards: [{
-				id: "4F232E47EAFA8F81"
-				item: "create:andesite_alloy_block"
-				type: "item"
-			}]
+			description: ["&5These ar eall of the &dUnits &5that are compatible with the &dMekaSuit &5armor. Try them out, and see which ones you like!"]
+			id: "00000000000008A3"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "11F35E2533986367"
+					table_id: 2083281975516645662L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7F26CFF47CE1FB20"
+					table_id: 2083281975516645662L
+					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "72D67F55A11EBA51"
+					table_id: 2083281975516645662L
+					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "22C7B2DF8DEA1D50"
+					table_id: 2083281975516645662L
+					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "17F9630A5706A54A"
+					table_id: 2083281975516645662L
+					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "34EA353DF5012373"
+					table_id: 2083281975516645662L
+					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7BCBDA56E40BD765"
+					table_id: 2083281975516645662L
+					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6ED6864034411F10"
+					table_id: 2083281975516645662L
+					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "61B905F4C38A5825"
+					table_id: 2083281975516645662L
+					type: "loot"
+				}
+			]
 			tasks: [
 				{
-					id: "00000000000008B6"
-					item: "mekanism:dosimeter"
+					id: "00000000000008A4"
+					item: "mekanism:module_gravitational_modulating_unit"
 					type: "item"
 				}
 				{
-					id: "5CE2FDA91AE62C6A"
-					item: "mekanism:geiger_counter"
+					id: "614A9AE6A89A711E"
+					item: "mekanism:module_energy_unit"
 					type: "item"
 				}
 				{
-					id: "4EC635AF800457AC"
-					item: "mekanism:configuration_card"
+					id: "1031961AE3442DDB"
+					item: "mekanism:module_color_modulation_unit"
 					type: "item"
 				}
 				{
-					id: "5BE3A58AA9880260"
-					item: "mekanism:cardboard_box"
+					id: "2AD8DD41341918E2"
+					item: "mekanism:module_laser_dissipation_unit"
+					type: "item"
+				}
+				{
+					id: "25392301A5257BA0"
+					item: "mekanism:module_radiation_shielding_unit"
+					type: "item"
+				}
+				{
+					id: "494F89ED08E3BA47"
+					item: "mekanism:module_electrolytic_breathing_unit"
+					type: "item"
+				}
+				{
+					id: "4C3CAECD12FFE0BC"
+					item: "mekanism:module_inhalation_purification_unit"
+					type: "item"
+				}
+				{
+					id: "76759A5DAB0AAB26"
+					item: "mekanism:module_vision_enhancement_unit"
+					type: "item"
+				}
+				{
+					id: "4DA97F270E11F67E"
+					item: "mekanism:module_nutritional_injection_unit"
+					type: "item"
+				}
+				{
+					id: "7D8CE9A7252E9D20"
+					item: "mekanism:module_dosimeter_unit"
+					type: "item"
+				}
+				{
+					id: "5E9213BDB20F95BB"
+					item: "mekanism:module_geiger_unit"
+					type: "item"
+				}
+				{
+					id: "746D15424DCFCA28"
+					item: "mekanism:module_jetpack_unit"
+					type: "item"
+				}
+				{
+					id: "2E4AEE9C46DF6E13"
+					item: "mekanism:module_charge_distribution_unit"
+					type: "item"
+				}
+				{
+					id: "4E87E9C57FF3AC2D"
+					item: "mekanism:module_elytra_unit"
+					type: "item"
+				}
+				{
+					id: "0D4570E3AEDE5954"
+					item: "mekanism:module_gyroscopic_stabilization_unit"
+					type: "item"
+				}
+				{
+					id: "46D014F2482DAB1A"
+					item: "mekanism:module_hydrostatic_repulsor_unit"
+					type: "item"
+				}
+				{
+					id: "239B5B75C6BA9223"
+					item: "mekanism:module_motorized_servo_unit"
+					type: "item"
+				}
+				{
+					id: "03922191A4A12C6F"
+					item: "mekanism:module_locomotive_boosting_unit"
+					type: "item"
+				}
+				{
+					id: "52F43CD28ED843B1"
+					item: "mekanism:module_hydraulic_propulsion_unit"
+					type: "item"
+				}
+				{
+					id: "7CECBD4FDE53CAC3"
+					item: "mekanism:module_magnetic_attraction_unit"
+					type: "item"
+				}
+				{
+					id: "30336B4F8F037738"
+					item: "mekanism:module_frost_walker_unit"
+					type: "item"
+				}
+				{
+					id: "05C4B04A639F4158"
+					item: "mekanismgenerators:module_solar_recharging_unit"
+					type: "item"
+				}
+				{
+					id: "296EC4048AEACB67"
+					item: "mekanismgenerators:module_geothermal_generator_unit"
 					type: "item"
 				}
 			]
-			title: "Mekanism Stuff"
-			x: 0.5d
-			y: 2.0d
+			title: "Armor Units"
+			x: 6.0d
+			y: -9.25d
 		}
 		{
-			dependencies: ["4E360A9C4B0A7198"]
-			description: ["The Atomic Disassembler is an all-in-one tool, essentially the ultimate, electronic version of the paxel."]
+			dependencies: ["6D1B50ABF04889CC"]
+			description: ["&5The &dAtomic Disassembler &5is a tool that can do many things. It's basically a better paxel that uses energy as durability."]
+			hide_dependency_lines: true
 			id: "00000000000008BB"
 			rewards: [{
-				id: "01A663DBAF704490"
-				item: "mekanism:alloy_atomic"
+				id: "4A8F95453957AE37"
+				item: "mekanism:dust_obsidian"
 				type: "item"
 			}]
 			tasks: [{
@@ -945,16 +669,17 @@
 				}
 				type: "item"
 			}]
-			x: 0.5d
-			y: -3.0d
+			x: 10.5d
+			y: -2.75d
 		}
 		{
-			dependencies: ["4E360A9C4B0A7198"]
-			description: ["The Configurator is the configuration tool for Mekanism machines and pipes."]
+			dependencies: ["6D1B50ABF04889CC"]
+			description: ["&5The &dConfigurator &5configures configurable blocks."]
+			hide_dependency_lines: true
 			id: "00000000000008BD"
 			rewards: [{
-				id: "3520E5DD14794008"
-				item: "mekanism:energy_tablet"
+				id: "0568B51C1B98D4F0"
+				item: "mekanism:alloy_infused"
 				type: "item"
 			}]
 			tasks: [{
@@ -962,25 +687,19 @@
 				item: "mekanism:configurator"
 				type: "item"
 			}]
-			x: 0.5d
-			y: -5.0d
+			x: 8.5d
+			y: -2.75d
 		}
 		{
 			dependencies: [
 				"00000000000008BD"
 				"00000000000008BB"
 			]
-			description: [
-				"The Meka-Tool is a multi-use tool item."
-				"It has almost no use default but can have Modules installed to give it a wide range of functions."
-				""
-				"While the Configurator is required to craft the Meka-Tool, It does not have that functionality."
-			]
+			description: ["&5The &dMeka-Tool &5is a tool that can do many things. It's basically a better paxel that uses energy as durability. Unlike the &dAtomic Disassembler&5, it can have &dUnits &5installed."]
 			id: "00000000000008BF"
 			rewards: [{
-				count: 2
-				id: "5E75217210BE5737"
-				item: "mekanism:ultimate_control_circuit"
+				id: "5B082953C8B12065"
+				item: "mekanism:pellet_polonium"
 				type: "item"
 			}]
 			tasks: [{
@@ -994,12 +713,12 @@
 				}
 				type: "item"
 			}]
-			x: 0.5d
-			y: -4.0d
+			x: 9.5d
+			y: -2.75d
 		}
 		{
 			dependencies: ["000000000000090C"]
-			description: ["Get a stack of HDPE Sheet using Ethylene, Substrate and Oxygen."]
+			description: ["&dHDPE &5is quite useful in late-game &dMekanism&5."]
 			id: "00000000000008CC"
 			rewards: [{
 				count: 32
@@ -1014,17 +733,18 @@
 				type: "item"
 			}]
 			title: "HDPE Sheet"
-			x: -1.5d
-			y: 4.0d
+			x: 5.0d
+			y: -5.75d
 		}
 		{
-			dependencies: ["4E360A9C4B0A7198"]
+			dependencies: [
+				"4E360A9C4B0A7198"
+				"00000000000008EC"
+			]
 			description: [
-				"Radioactive Waste Barrels are used to store radioactive materials."
+				"&5The &dRadioactive Waste Barrel &5slowly voids radioactive fluids over time, &oreally&r &5slowly."
 				""
-				"They delete their contents at a rate of 1 mB per minute."
-				""
-				"You can store 64,000mB in it."
+				"&5The &dDosimeter &5and the &dGeiger Counter &5both detect radiation and tell you your exposure to it."
 			]
 			id: "00000000000008CE"
 			rewards: [{
@@ -1032,24 +752,31 @@
 				item: "blocksyouneed_luna:caution_wrap"
 				type: "item"
 			}]
-			tasks: [{
-				id: "00000000000008CF"
-				item: "mekanism:radioactive_waste_barrel"
-				type: "item"
-			}]
-			x: 4.5d
-			y: -1.0d
+			subtitle: "Gamma rays aren't good for you"
+			tasks: [
+				{
+					id: "00000000000008CF"
+					item: "mekanism:radioactive_waste_barrel"
+					type: "item"
+				}
+				{
+					id: "49C2B3A25A30E655"
+					item: "mekanism:dosimeter"
+					type: "item"
+				}
+				{
+					id: "3AACE461FBD7F984"
+					item: "mekanism:geiger_counter"
+					type: "item"
+				}
+			]
+			title: "Radiation Stuff"
+			x: 6.5d
+			y: 1.25d
 		}
 		{
-			dependencies: ["4E360A9C4B0A7198"]
-			description: [
-				"The Speed Upgrade make them process items faster."
-				"The Energy Upgrade increases the power capacity of a Mekanism machine, as well as reduce its power consumption per tick."
-				"The Filter Upgrade separates Water from Heavy Water. Its only use is in the Electric Pump."
-				"The Muffling Upgrade reduces noise from Mekanism machinery."
-				"The Gas Upgrade increases the efficiency of gas-based Mekanism machinery."
-				"The Anchor Upgrade ensures that a Mekanism machine block stays chunkloaded."
-			]
+			dependencies: ["6D1B50ABF04889CC"]
+			description: ["&dUpgrades &5are used in machines to increase their performance or protect your ears. They are put into the upgrade section of the machine."]
 			id: "00000000000008DA"
 			rewards: [
 				{
@@ -1106,14 +833,22 @@
 					item: "mekanism:upgrade_anchor"
 					type: "item"
 				}
+				{
+					id: "67BD4373609E490F"
+					item: "mekanism:upgrade_stone_generator"
+					type: "item"
+				}
 			]
 			title: "Upgrades"
-			x: 0.5d
-			y: 4.0d
+			x: 3.75d
+			y: -1.75d
 		}
 		{
-			dependencies: ["0000000000000946"]
-			description: ["The Antiprotonic Nucleosynthesizer is used to transform an item into another using Antimatter."]
+			dependencies: [
+				"0000000000000946"
+				"6B56234E2759E9D7"
+			]
+			description: ["&5The &dAntiprotonic Nucleosynthesizer &5transforms an item into another using Antimatter."]
 			id: "00000000000008E2"
 			rewards: [{
 				count: 2
@@ -1126,16 +861,16 @@
 				item: "mekanism:antiprotonic_nucleosynthesizer"
 				type: "item"
 			}]
-			x: 7.5d
-			y: -6.5d
+			x: 18.25d
+			y: 1.25d
 		}
 		{
-			dependencies: ["00000000000008EC"]
-			description: ["The energized smelter is your basic electric furnace that uses energy instead of fuel to smelt items."]
+			dependencies: ["3C365563533EE419"]
+			description: ["&5The &dEnergized Smelter &5is a furnace that runs off of &cFE &5instead of coal. Enviromentalists are currently advocaating for widespread use of these."]
 			id: "00000000000008E8"
 			rewards: [{
 				id: "1D57E3CF3D63DFA3"
-				item: "mekanism:energized_smelter"
+				item: "mekanism:steel_casing"
 				type: "item"
 			}]
 			tasks: [{
@@ -1143,17 +878,16 @@
 				item: "mekanism:energized_smelter"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 0.0d
+			x: 3.0d
+			y: -3.75d
 		}
 		{
-			dependencies: ["00000000000008EC"]
-			description: ["The Purification Chamber uses oxygen to refine Ores and shards into clumps."]
+			dependencies: ["15D47FB1BBDC099A"]
+			description: ["&5The &dPurification Chamber &5is mainly used for the quintupling of ores."]
 			id: "00000000000008EA"
 			rewards: [{
-				count: 16
-				id: "69B83CC1FD69F0CF"
-				item: "mekanism:clump_osmium"
+				id: "20C07413E62CCE34"
+				item: "mekanism:enrichment_chamber"
 				type: "item"
 			}]
 			tasks: [{
@@ -1161,11 +895,14 @@
 				item: "mekanism:purification_chamber"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 0.0d
+			x: 2.25d
+			y: -1.0d
 		}
 		{
-			dependencies: ["7D0BC26B33BBB358"]
+			dependencies: [
+				"7D0BC26B33BBB358"
+				"000000000000092E"
+			]
 			description: ["The Metallurgic Infuser is a machine used to create alloys."]
 			id: "00000000000008EC"
 			rewards: [{
@@ -1173,23 +910,28 @@
 				item: "mekanism:steel_casing"
 				type: "item"
 			}]
-			size: 1.5d
+			size: 2.0d
 			tasks: [{
 				id: "00000000000008ED"
 				item: "mekanism:metallurgic_infuser"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 0.0d
+			x: 6.5d
+			y: -1.0d
 		}
 		{
-			dependencies: ["00000000000008EC"]
-			description: ["The Enrichment Chamber is used to turn Coal or Charcoal into Compressed Carbon, Redstone into Compressed Redstone, Diamond into Compressed Diamond and Refined Obsidian Dust into Compressed Obsidian, all for use in the Metallurgic Infuser."]
+			dependencies: ["3C365563533EE419"]
+			description: ["&5The &dEnrichment Chamber &5is used to abritrarily trun one item into another item."]
 			id: "00000000000008EE"
 			rewards: [{
-				count: 4
-				id: "60237D335BDA1216"
-				item: "mekanism:enriched_refined_obsidian"
+				id: "5166FBDE54402C33"
+				item: {
+					Count: 1b
+					id: "minecraft:flint_and_steel"
+					tag: {
+						Damage: 0
+					}
+				}
 				type: "item"
 			}]
 			tasks: [{
@@ -1197,12 +939,12 @@
 				item: "mekanism:enrichment_chamber"
 				type: "item"
 			}]
-			x: 7.0d
-			y: 0.0d
+			x: 2.0d
+			y: -3.75d
 		}
 		{
-			dependencies: ["00000000000008EC"]
-			description: ["The Osmium Compressor is used to create Refined Obsidian Ingots from Refined Obsidian Dust and Glowstone Ingots from Glowstone Dust."]
+			dependencies: ["15D47FB1BBDC099A"]
+			description: ["&5The &dOsmium Compressor &5combines on item with&d Osmium&5."]
 			id: "00000000000008F0"
 			rewards: [{
 				id: "43299892046F9A7B"
@@ -1214,12 +956,12 @@
 				item: "mekanism:osmium_compressor"
 				type: "item"
 			}]
-			x: 2.5d
+			x: 3.25d
 			y: -1.0d
 		}
 		{
-			dependencies: ["00000000000008EC"]
-			description: ["The Combiner allows you to create an ore block."]
+			dependencies: ["15BB897035D3C3C8"]
+			description: ["&5The &dCombiner &5is very useful in automation, especially for aluminum , osmium and iridium."]
 			id: "00000000000008F2"
 			rewards: [{
 				id: "6EDB46ECDA503C0A"
@@ -1231,21 +973,16 @@
 				item: "mekanism:combiner"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 0.0d
+			x: 4.25d
+			y: 1.25d
 		}
 		{
-			dependencies: ["00000000000008EC"]
-			description: [
-				"The Crusher is used to crush."
-				""
-				"Yep."
-			]
+			dependencies: ["3C365563533EE419"]
+			description: ["&5The &dCrusher &5is a worse version of the &6Crushing Wheels&5, but it's still necessary in some recipes."]
 			id: "00000000000008F4"
 			rewards: [{
-				count: 8
-				id: "4A507169A891FAE2"
-				item: { Count: 8b, id: "mekanism:dust_diamond" }
+				id: "3486C264C3333736"
+				item: "mekanism:dust_gold"
 				type: "item"
 			}]
 			tasks: [{
@@ -1253,12 +990,12 @@
 				item: "mekanism:crusher"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 0.0d
+			x: 1.0d
+			y: -3.75d
 		}
 		{
 			dependencies: ["00000000000008CC"]
-			description: ["The Solar Neutron Activator directs the neutron radiation of the sun into its internal reservoir, allowing for the slow creation of various isotopes."]
+			description: ["&5The &dSolar Neutron Activator &5is used in &dTritium &5and &dPolonium &5refinement."]
 			id: "00000000000008F6"
 			rewards: [{
 				id: "1D4BED43CDA3619E"
@@ -1270,19 +1007,16 @@
 				item: "mekanism:solar_neutron_activator"
 				type: "item"
 			}]
-			x: -1.5d
-			y: 5.0d
+			x: 6.0d
+			y: -5.75d
 		}
 		{
-			dependencies: ["00000000000008EC"]
-			description: [
-				"The Electrolytic Separator sends controlled amounts of direct current into a fluid, causing the atoms in the fluid to break their bonds."
-				"You can obtain, for example, oxygen and hydrogen from water."
-			]
+			dependencies: ["6D1B50ABF04889CC"]
+			description: ["&5The &dElectrolytic Separator &5seperates various water variants into their element gases."]
 			id: "00000000000008FE"
 			rewards: [{
 				id: "07D93E656271A71E"
-				item: "mekanism:electrolytic_separator"
+				item: "mekanism:electrolytic_core"
 				type: "item"
 			}]
 			tasks: [{
@@ -1290,17 +1024,17 @@
 				item: "mekanism:electrolytic_separator"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 1.5d
+			x: -0.25d
+			y: -2.5d
 		}
 		{
-			dependencies: ["00000000000008EC"]
-			description: ["The Precision Sawmill is used for reclaiming wood from wooden items and turn logs into planks."]
+			dependencies: ["3C365563533EE419"]
+			description: ["&5The &dPrecision Sawmill &5shold only be used for &dSawdust&5."]
 			id: "0000000000000900"
 			rewards: [{
-				count: 32
-				id: "39FA78C64271C985"
-				item: "minecraft:oak_log"
+				count: 16
+				id: "3DA7E8D4D9FFA0E4"
+				item: "minecraft:acacia_log"
 				type: "item"
 			}]
 			tasks: [{
@@ -1308,16 +1042,16 @@
 				item: "mekanism:precision_sawmill"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 0.0d
+			x: 4.0d
+			y: -3.75d
 		}
 		{
-			dependencies: ["7D0BC26B33BBB358"]
-			description: ["The Chemical Dissolution Chamber turns raw ores into slurry or Fluorite and Hydrofluoric Acid using Sulfuric Acid."]
+			dependencies: ["6B56234E2759E9D7"]
+			description: ["&5The &dChemical Dissolution Chamber &5is part of the ore quintupling process."]
 			id: "0000000000000902"
 			rewards: [{
-				id: "6CF384D22C554C91"
-				item: "mekanism:chemical_dissolution_chamber"
+				id: "42A8CD2E17292E01"
+				item: "mekanism:dust_sulfur"
 				type: "item"
 			}]
 			tasks: [{
@@ -1325,38 +1059,35 @@
 				item: "mekanism:chemical_dissolution_chamber"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 1.5d
+			x: 8.75d
+			y: 1.25d
 		}
 		{
-			dependencies: ["7D0BC26B33BBB358"]
-			description: ["The Chemical Washer turns Slurry into Clean Slurry using Water."]
+			dependencies: ["6B56234E2759E9D7"]
+			description: ["&5The &dChemical Washer &5is part of the ore quintupling process."]
 			id: "0000000000000904"
 			rewards: [{
-				id: "30B8A3236522DD66"
-				type: "xp"
-				xp: 100
+				id: "536D752E7246EC4D"
+				item: "mekanism:dust_obsidian"
+				type: "item"
 			}]
 			tasks: [{
 				id: "0000000000000905"
 				item: "mekanism:chemical_washer"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 2.5d
+			x: 9.75d
+			y: 1.25d
 		}
 		{
-			dependencies: ["7D0BC26B33BBB358"]
-			description: [
-				"The Chemical Crystallizer turns Clean Slurry into Crystals and Lithium into Lithium Dust."
-				""
-				"You can turn Antimatter into Antimatter Pellet."
-			]
+			dependencies: ["6B56234E2759E9D7"]
+			description: ["&5The &dChemical Crystallizer &5crystallises &dLiquids &5and &dSlurries&5."]
+			hide_dependent_lines: true
 			id: "0000000000000906"
 			rewards: [{
-				count: 64
+				count: 4
 				id: "7FF160DB4ABEBB89"
-				item: "mekanism:fluorite_gem"
+				item: "mekanism:salt"
 				type: "item"
 			}]
 			tasks: [{
@@ -1364,29 +1095,32 @@
 				item: "mekanism:chemical_crystallizer"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -6.5d
+			x: 11.75d
+			y: 1.25d
 		}
 		{
-			dependencies: ["00000000000008EC"]
-			description: ["The Isotopic Centrifuge is used with a Fission Reactor, wither processing Uranium Hexafluoride into Fissile Fuel, OR processing Nuclear Waste into Plutonium. "]
+			dependencies: ["6B56234E2759E9D7"]
+			description: ["&5The &dIsotopic Centrifuge &5is used in nuclear refinement."]
 			id: "000000000000090A"
 			rewards: [{
-				id: "342BFD57CEC95024"
-				type: "xp_levels"
-				xp_levels: 5
+				id: "1F8122C4C0EEC08B"
+				item: "mekanism:ingot_lead"
+				type: "item"
 			}]
 			tasks: [{
 				id: "000000000000090B"
 				item: "mekanism:isotopic_centrifuge"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 1.0d
+			x: 10.75d
+			y: 1.25d
 		}
 		{
-			dependencies: ["7D0BC26B33BBB358"]
-			description: ["The Pressurized Reaction Chamber is used primarily to create Substrate, HDPE Pellets and Ethylene."]
+			dependencies: [
+				"3C365563533EE419"
+				"0000000000000900"
+			]
+			description: ["&5The &dPressurized Reaction Chamber &5is often used in &3ToasTech &5progression and automation, so get used to it."]
 			id: "000000000000090C"
 			rewards: [{
 				id: "0C53FE33FF669C97"
@@ -1398,17 +1132,16 @@
 				item: "mekanism:pressurized_reaction_chamber"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 4.5d
+			x: 4.5d
+			y: -4.75d
 		}
 		{
-			dependencies: ["00000000000008EC"]
-			description: ["The Chemical Injection Chamber uses Hydrogen Chloride gas to turn ores into 4 Shards."]
+			dependencies: ["15BB897035D3C3C8"]
+			description: ["&5The &dChemical Injection Chamber &5is also very useful for automation."]
 			id: "000000000000090E"
 			rewards: [{
-				count: 8
-				id: "53B1AA9F59AB3CF0"
-				item: "mekanism:shard_osmium"
+				id: "378303107DC15675"
+				item: "minecraft:clay"
 				type: "item"
 			}]
 			tasks: [{
@@ -1416,12 +1149,12 @@
 				item: "mekanism:chemical_injection_chamber"
 				type: "item"
 			}]
-			x: 9.0d
-			y: 0.0d
+			x: 3.25d
+			y: 1.25d
 		}
 		{
-			dependencies: ["7D0BC26B33BBB358"]
-			description: ["The Chemical Infuser combines or reacts two gases to create another gas."]
+			dependencies: ["3C365563533EE419"]
+			description: ["&5The &dChemical Infuser &5mixes two gases into a new gas."]
 			id: "0000000000000910"
 			rewards: [{
 				id: "056AABEF7687BED5"
@@ -1433,16 +1166,16 @@
 				item: "mekanism:chemical_infuser"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 3.5d
+			x: 8.0d
+			y: -3.75d
 		}
 		{
-			dependencies: ["00000000000008EC"]
-			description: ["The Rotary Condensentrator is used for converting substances between liquid and gaseous forms at a rate of 1:1."]
+			dependencies: ["3C365563533EE419"]
+			description: ["&5The &dRotary Condensentrator &5turns liquids into gases and vice-versa."]
 			id: "0000000000000914"
 			rewards: [{
 				id: "405EE06CA87C9765"
-				item: "minecraft:water_bucket"
+				item: "mekanism:upgrade_energy"
 				type: "item"
 			}]
 			tasks: [{
@@ -1450,12 +1183,12 @@
 				item: "mekanism:rotary_condensentrator"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 2.5d
+			x: 6.0d
+			y: -3.75d
 		}
 		{
-			dependencies: ["00000000000008EC"]
-			description: ["The Chemical Oxidizer is used for making gases from materials."]
+			dependencies: ["3C365563533EE419"]
+			description: ["&5The &dChemical Oxidizer &5should only be used for &dGaseous Infinity&5."]
 			id: "0000000000000916"
 			rewards: [{
 				count: 16
@@ -1468,128 +1201,16 @@
 				item: "mekanism:chemical_oxidizer"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 3.5d
+			x: 7.0d
+			y: -3.75d
 		}
 		{
-			dependencies: ["4E360A9C4B0A7198"]
-			description: [
-				"The Basic Induction Cell has a capacity of 3.20GRF."
-				""
-				"The Basic Induction Provider can transfer 102.40kRF/t."
-			]
-			id: "0000000000000918"
-			rewards: [{
-				id: "06BF4723F5E1AD85"
-				item: "mekanism:basic_induction_provider"
-				type: "item"
-			}]
-			tasks: [
-				{
-					id: "0000000000000919"
-					item: "mekanism:basic_induction_cell"
-					type: "item"
-				}
-				{
-					id: "000000000000091A"
-					item: "mekanism:basic_induction_provider"
-					type: "item"
-				}
-			]
-			x: 3.5d
-			y: 1.0d
-		}
-		{
-			dependencies: ["0000000000000918"]
-			description: [
-				"The Advanced Induction Cell has a capacity of 25.6GRF."
-				""
-				"The Advanced Induction Provider can transfer 819.20kRF/t."
-			]
-			id: "000000000000091B"
-			rewards: [{
-				id: "7584FB089B2025A9"
-				item: "mekanism:advanced_induction_provider"
-				type: "item"
-			}]
-			tasks: [
-				{
-					id: "000000000000091C"
-					item: "mekanism:advanced_induction_cell"
-					type: "item"
-				}
-				{
-					id: "000000000000091D"
-					item: "mekanism:advanced_induction_provider"
-					type: "item"
-				}
-			]
-			x: 3.5d
-			y: 2.0d
-		}
-		{
-			dependencies: ["000000000000091B"]
-			description: [
-				"The Elite Induction Cell has a capacity of 204.80GRF."
-				""
-				"The Elite Induction Provider can transfer 6.55MRF/t."
-			]
-			id: "000000000000091E"
-			rewards: [{
-				id: "65D47726944C8642"
-				item: "mekanism:elite_induction_provider"
-				type: "item"
-			}]
-			tasks: [
-				{
-					id: "000000000000091F"
-					item: "mekanism:elite_induction_cell"
-					type: "item"
-				}
-				{
-					id: "0000000000000922"
-					item: "mekanism:elite_induction_provider"
-					type: "item"
-				}
-			]
-			x: 3.5d
-			y: 3.0d
-		}
-		{
-			dependencies: ["000000000000091E"]
-			description: [
-				"The ultimate Induction Cell has a capacity of 1.60TRF."
-				""
-				"The Ultimate  Induction Provider can transfer 52.42MRF/t."
-			]
-			id: "0000000000000920"
-			rewards: [{
-				id: "476B2FBAA35DF1DE"
-				item: "mekanism:ultimate_induction_provider"
-				type: "item"
-			}]
-			tasks: [
-				{
-					id: "0000000000000921"
-					item: "mekanism:ultimate_induction_cell"
-					type: "item"
-				}
-				{
-					id: "0000000000000923"
-					item: "mekanism:ultimate_induction_provider"
-					type: "item"
-				}
-			]
-			x: 3.5d
-			y: 4.0d
-		}
-		{
-			dependencies: ["00000000000008EC"]
-			description: ["The Solar Generator harnesses sunlight to create power."]
+			dependencies: ["6D1B50ABF04889CC"]
+			description: ["&5The &dSolar Generator &5tastes the sun and emits power in return."]
 			id: "0000000000000924"
 			rewards: [{
-				id: "404F80366E8438F6"
-				item: "mekanismgenerators:solar_generator"
+				id: "2CF094ED860EEC03"
+				item: "mekanismgenerators:solar_panel"
 				type: "item"
 			}]
 			tasks: [{
@@ -1597,16 +1218,16 @@
 				item: "mekanismgenerators:solar_generator"
 				type: "item"
 			}]
-			x: 1.5d
-			y: -1.5d
+			x: 3.25d
+			y: -2.5d
 		}
 		{
 			dependencies: ["0000000000000924"]
-			description: ["The Advanced Solar Generator is a highly upgraded version of the basic Solar Generator. Construction of an Advanced Solar Generator requires four Solar Generators, but it produces six times the power of its smaller counterpart."]
+			description: ["&5The &dAdvanced Solar Generator &5is more efficient than the &dSolar Generator&5."]
 			id: "0000000000000926"
 			rewards: [{
-				id: "7A5070A3F7C86266"
-				item: "mekanismgenerators:advanced_solar_generator"
+				id: "55567787AB2D97CC"
+				item: "mekanismgenerators:solar_panel"
 				type: "item"
 			}]
 			tasks: [{
@@ -1614,20 +1235,16 @@
 				item: "mekanismgenerators:advanced_solar_generator"
 				type: "item"
 			}]
-			x: 1.5d
+			x: 2.25d
 			y: -2.5d
 		}
 		{
-			dependencies: ["00000000000008EC"]
-			description: [
-				"The Wind Generator is used to generate passively energy with wind."
-				""
-				"The highest you go, the more energy you can get."
-			]
+			dependencies: ["6D1B50ABF04889CC"]
+			description: ["&5The &dWind Generator &5is straight up free energy. Build it as high as possible to generate the maximum amount of energy."]
 			id: "0000000000000928"
 			rewards: [{
 				id: "2F2D539A87B2C409"
-				item: "mekanismgenerators:wind_generator"
+				item: "mekanism:block_osmium"
 				type: "item"
 			}]
 			tasks: [{
@@ -1635,51 +1252,16 @@
 				item: "mekanismgenerators:wind_generator"
 				type: "item"
 			}]
-			x: 0.5d
-			y: -1.0d
+			x: 1.25d
+			y: -2.5d
 		}
 		{
-			dependencies: ["00000000000008EC"]
-			description: ["The Bio-Generators produce electricity from Bio Fuel."]
-			id: "000000000000092A"
-			rewards: [{
-				count: 8
-				id: "309B9735E4AACD83"
-				item: "mekanism:bio_fuel"
-				type: "item"
-			}]
-			tasks: [{
-				id: "000000000000092B"
-				item: "mekanismgenerators:bio_generator"
-				type: "item"
-			}]
-			x: 1.5d
-			y: -4.5d
-		}
-		{
-			dependencies: ["00000000000008EC"]
-			description: ["The Gas-Burning Generator creates power by consuming any burnable gas for example the Hydrogen produced by an Electrolytic Separator or Ethylene."]
-			id: "000000000000092C"
-			rewards: [{
-				id: "43B32969581DD67F"
-				type: "xp"
-				xp: 100
-			}]
-			tasks: [{
-				id: "000000000000092D"
-				item: "mekanismgenerators:gas_burning_generator"
-				type: "item"
-			}]
-			x: 1.5d
-			y: -5.5d
-		}
-		{
-			dependencies: ["00000000000008EC"]
-			description: ["The Heat Generator converts heat energy into power."]
+			dependencies: ["4E360A9C4B0A7198"]
+			description: ["&5The &dHeat Generator &5should be your first source of energy, and will power to &dMetallurgic Infuser&5."]
 			id: "000000000000092E"
 			rewards: [{
-				id: "08A1AAE36D5B3367"
-				item: "mekanismgenerators:heat_generator"
+				id: "4106D53A80E04AEB"
+				item: "mekanism:osmium_ore"
 				type: "item"
 			}]
 			tasks: [{
@@ -1687,60 +1269,20 @@
 				item: "mekanismgenerators:heat_generator"
 				type: "item"
 			}]
-			x: 1.5d
-			y: -3.5d
+			x: 6.5d
+			y: -2.75d
 		}
 		{
 			dependencies: ["4E360A9C4B0A7198"]
-			description: [
-				"The Induction Matrix is a highly configurable multi-block energy storage structure."
-				""
-				"The Induction Matrix will only form if the cell structure is a rectangular prism 16x16x16 or smaller and the casing structure is a rectangular prism 18x18x18 or smaller."
-				""
-				"The inside of the cube can be filled with either Induction Providers, Induction Cells or air blocks."
-			]
-			id: "0000000000000930"
-			rewards: [{
-				count: 32
-				id: "6EC2A2BE0645AD4F"
-				item: "mekanism:induction_casing"
-				type: "item"
-			}]
-			tasks: [
-				{
-					count: 34L
-					id: "0000000000000931"
-					item: "mekanism:induction_casing"
-					type: "item"
-				}
-				{
-					count: 2L
-					id: "0000000000000932"
-					item: "mekanism:induction_port"
-					type: "item"
-				}
-			]
-			title: "Induction Matrix"
-			x: 9.0d
-			y: -4.5d
-		}
-		{
-			dependencies: ["4E360A9C4B0A7198"]
-			description: [
-				"The Thermal Evaporation Plant is a multiblock structure with the purpose of converting Water to Brine, which can be further converted to Lithium by the use of a second Thermal Evaporation Plant."
-				""
-				"The structure has a 4 by 4 block base with a height of 3 blocks to a maximum height of 18."
-			]
+			description: ["&5The &dThermal Evaporation Plant &5is a multiblock machine that gradually removes water from water."]
 			id: "0000000000000933"
 			rewards: [{
-				count: 64
-				id: "300E2ED52F36BBE3"
-				item: "mekanism:thermal_evaporation_block"
+				id: "50FDB914361B192E"
+				item: "mekanismgenerators:solar_panel"
 				type: "item"
 			}]
 			tasks: [
 				{
-					count: 217L
 					id: "0000000000000935"
 					item: "mekanism:thermal_evaporation_block"
 					type: "item"
@@ -1751,30 +1293,23 @@
 					type: "item"
 				}
 				{
-					count: 2L
 					id: "0000000000000937"
 					item: "mekanism:thermal_evaporation_valve"
 					type: "item"
 				}
 			]
 			title: "Thermal Evaporation Plant"
-			x: 11.0d
-			y: -4.5d
+			x: 15.25d
+			y: -5.0d
 		}
 		{
 			dependencies: ["4E360A9C4B0A7198"]
-			description: [
-				"The Fusion Reactor is a multiblock structure that allows for variable input rates of 3 types of fuel: Deuterium, Tritium and D-T Fuel."
-				""
-				"The Fusion Reactor will not start on its own."
-				"It requires an outside burst of energy from a charged Laser Amplifier and a small amount of D-T Fuel to begin the fusion process."
-				"Once the reaction is jump started, it will begin consuming supplied Deuterium and Tritium, creating plasma and generating power."
-			]
+			description: ["&5The &dFusion Reactor &5is a multiblock reactor that generates &cFE &5from a continuous source of &dDeuterium &5and &dTritium&5."]
 			id: "0000000000000938"
 			rewards: [{
-				count: 15
-				id: "461D13D3E6C9A417"
-				item: "mekanismgenerators:reactor_glass"
+				count: 4
+				id: "24732063E3FE1A4A"
+				item: "mekanism:laser_amplifier"
 				type: "item"
 			}]
 			tasks: [
@@ -1789,24 +1324,16 @@
 					type: "item"
 				}
 				{
-					count: 15L
 					id: "000000000000093B"
 					item: "mekanismgenerators:reactor_glass"
 					type: "item"
 				}
 				{
-					id: "000000000000093C"
-					item: "mekanismgenerators:fusion_reactor_logic_adapter"
-					type: "item"
-				}
-				{
-					count: 4L
 					id: "000000000000093D"
 					item: "mekanismgenerators:fusion_reactor_port"
 					type: "item"
 				}
 				{
-					count: 45L
 					id: "000000000000093E"
 					item: "mekanismgenerators:fusion_reactor_frame"
 					type: "item"
@@ -1832,63 +1359,48 @@
 				}
 			]
 			title: "Fusion Reactor"
-			x: 3.0d
-			y: -4.5d
+			x: 15.25d
+			y: -1.75d
 		}
 		{
 			dependencies: ["4E360A9C4B0A7198"]
-			description: [
-				"The Fission Reactor is a multiblock structure that generates massive amounts of heat but does not produce power on its own."
-				""
-				"The structure must be a cuboid of minimum outside size 3x4x3 (along X, Y and Z), up to 18x18x18."
-			]
+			description: ["&5The &dFission Reactor &5is a multiblock reactor that generates heat. And &dNuclear Waste&5, which is arguably more useful."]
 			id: "000000000000093F"
 			rewards: [{
-				count: 24
 				id: "3785F2192CA2549F"
-				item: "mekanismgenerators:fission_reactor_casing"
+				item: "mekanism:yellow_cake_uranium"
 				type: "item"
 			}]
 			tasks: [
 				{
-					count: 62L
 					id: "0000000000000940"
 					item: "mekanismgenerators:fission_reactor_casing"
 					type: "item"
 				}
 				{
-					count: 5L
 					id: "0000000000000941"
 					item: "mekanismgenerators:control_rod_assembly"
 					type: "item"
 				}
 				{
-					count: 10L
 					id: "0000000000000942"
 					item: "mekanismgenerators:fission_fuel_assembly"
 					type: "item"
 				}
 				{
-					count: 31L
 					id: "0000000000000943"
 					item: "mekanismgenerators:reactor_glass"
 					type: "item"
 				}
 				{
-					id: "0000000000000944"
-					item: "mekanismgenerators:fission_reactor_logic_adapter"
-					type: "item"
-				}
-				{
-					count: 4L
 					id: "0000000000000945"
 					item: "mekanismgenerators:fission_reactor_port"
 					type: "item"
 				}
 			]
 			title: "Fission Reactor"
-			x: 5.0d
-			y: -4.5d
+			x: 15.25d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -1908,16 +1420,12 @@
 				item: "mekanism:pellet_antimatter"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -6.5d
+			x: 17.0d
+			y: 1.25d
 		}
 		{
 			dependencies: ["00000000000008F6"]
-			description: [
-				"Obtain a Polonium Pellet using a Pressurized Reaction Chamber with Water, Polonium and Fluorite Dust."
-				""
-				"Be aware that this process create Spent Nuclear Waste."
-			]
+			description: ["&dPolonium Pellets &5are used in many late game &dMekanism &5recipes."]
 			id: "0000000000000948"
 			rewards: [{
 				id: "4C2FF56FCDD5592F"
@@ -1929,65 +1437,48 @@
 				item: "mekanism:pellet_polonium"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 5.5d
+			x: 7.0d
+			y: -5.75d
 		}
 		{
 			dependencies: ["4E360A9C4B0A7198"]
-			description: ["The Supercritical Phase Shifter is a multiblock structure that consumes large amount of energy and polonium gas to create antimatter gas,"]
+			description: ["&5The &dSupercritical Phase Shifter &5is a multiblock machine that turns &dPolonium &5into &dAntimatter&5."]
 			id: "000000000000094B"
 			rewards: [{
-				id: "4077CAEB7CF2272D"
-				item: {
-					Count: 1b
-					id: "mekanism:gauge_dropper"
-					tag: {
-						mekData: {
-							GasTanks: [{
-								Tank: 0b
-								stored: {
-									amount: 256L
-									gasName: "mekanism:antimatter"
-								}
-							}]
-						}
-					}
-				}
+				id: "08C855A8DB54CF33"
+				item: "blocksyouneed_luna:waxed_copper_coil"
 				type: "item"
 			}]
 			tasks: [
 				{
-					count: 92L
 					id: "000000000000094C"
 					item: "mekanism:sps_casing"
 					type: "item"
 				}
 				{
-					count: 118L
 					id: "000000000000094D"
 					item: "mekanism:structural_glass"
 					type: "item"
 				}
 				{
-					count: 6L
 					id: "000000000000094E"
 					item: "mekanism:supercharged_coil"
 					type: "item"
 				}
 				{
-					count: 8L
 					id: "000000000000094F"
 					item: "mekanism:sps_port"
 					type: "item"
 				}
 			]
 			title: "Supercritical Phase Shifter"
-			x: 7.0d
-			y: -4.5d
+			x: 15.25d
+			y: 2.25d
 		}
 		{
 			dependencies: ["0000000000000948"]
-			description: ["The Modification Station is used for applying modular upgrades to the Meka-Suit in exchange for energy."]
+			description: ["&5The &dModification Station &5is the machine to use when applying &dUnits &5onto &dMekanism &5items."]
+			hide_dependent_lines: true
 			id: "36D86F3E65554DF4"
 			rewards: [{
 				id: "320C25A3E430E58C"
@@ -1999,99 +1490,46 @@
 				item: "mekanism:modification_station"
 				type: "item"
 			}]
-			x: -3.5d
-			y: 5.5d
+			x: 7.5d
+			y: -6.75d
 		}
 		{
-			dependencies: ["4E360A9C4B0A7198"]
-			description: [
-				"Robit is Mekanism's mechanical companion."
-				"He can act as a crafting grid, a furnace, an anvil, a chest, or simply a cute little buddy."
-			]
+			dependencies: ["7D0BC26B33BBB358"]
+			description: ["&5The &dRobit &5is an droid-like thing that does stuff and help you do things. It also migh have a soul..."]
 			id: "74BCE9E73DCDF3E0"
 			rewards: [{
-				id: "2E6E5B330E4ACE7C"
-				type: "xp_levels"
-				xp_levels: 5
+				id: "547461AAEF88A8E7"
+				item: "mekanism:steel_casing"
+				type: "item"
 			}]
 			tasks: [{
 				id: "22A87938CC3C9A37"
 				item: "mekanism:robit"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 3.0d
-		}
-		{
-			description: ["To begin in Mekanism you need the Sturdy Sheets from Create. A lot of Sturdy Sheets..."]
-			icon: "create:brass_hand"
-			id: "0BCA5DEBCE5B5B2A"
-			rewards: [{
-				count: 3
-				id: "3B1CBB45A34C39BE"
-				item: "create:experience_nugget"
-				type: "item"
-			}]
-			shape: "circle"
-			tasks: [{
-				id: "74EACCE56DD6E773"
-				type: "checkmark"
-			}]
-			title: "How do I begin Mekanism ?"
-			x: 0.5d
+			x: 12.0d
 			y: -2.0d
 		}
 		{
-			dependencies: ["4E360A9C4B0A7198"]
-			description: ["To make a Sturdy Andesite Casing, you must make Sturdy Sheet Blocks and apply an Andesite Casing to it."]
+			dependencies: [
+				"4E360A9C4B0A7198"
+				"4DE917F309C5DBCC"
+			]
+			description: ["&5To make &dSturdy Andesite Casings&5, you must make &6Sturdy Sheet Blocks &5and apply &6Andesite Casings &5to them."]
 			id: "7D0BC26B33BBB358"
 			rewards: [{
 				count: 4
 				id: "2CA8C98F2729F2C0"
-				item: "minecraft:redstone"
+				item: { Count: 5b, id: "create:sturdy_sheet" }
 				type: "item"
 			}]
-			size: 1.5d
+			size: 1.0d
 			tasks: [{
 				id: "4C08EEB74DFC980F"
 				item: "mekanism:steel_casing"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["00000000000008F0"]
-			description: ["Collect 8 ingots of each from the Osmium Compressor."]
-			id: "022B48C17014A9F7"
-			rewards: [
-				{
-					id: "73946EBD5CDE9B7B"
-					item: "mekanism:ingot_refined_obsidian"
-					type: "item"
-				}
-				{
-					id: "765E4AED0C4398A4"
-					item: "mekanism:ingot_refined_glowstone"
-					type: "item"
-				}
-			]
-			tasks: [
-				{
-					count: 8L
-					id: "073FB78E25F6D0F7"
-					item: "mekanism:ingot_refined_obsidian"
-					type: "item"
-				}
-				{
-					count: 8L
-					id: "79AE4BF61B2BDCB0"
-					item: "mekanism:ingot_refined_glowstone"
-					type: "item"
-				}
-			]
-			title: "Refined Ingots"
-			x: 3.5d
+			x: 11.5d
 			y: -1.0d
 		}
 		{
@@ -2114,52 +1552,15 @@
 				}
 				type: "item"
 			}]
-			x: -1.5d
-			y: 3.0d
+			x: 4.5d
+			y: -6.75d
 		}
 		{
-			dependencies: ["0000000000000898"]
-			description: [
-				"Harnesses geothermal energy from the surrounding environment, and improves protection against damage from heat sources."
-				"Install multiple for faster charging and greater protection."
+			dependencies: [
+				"36D86F3E65554DF4"
+				"00000000000008BF"
 			]
-			id: "79BF5B0A24AD0FDA"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "737175A89095360E"
-				table_id: 2083281975516645662L
-				type: "random"
-			}]
-			tasks: [{
-				count: 8L
-				id: "27EA0671878D00F6"
-				item: "mekanismgenerators:module_geothermal_generator_unit"
-				type: "item"
-			}]
-			x: -3.0d
-			y: -3.0d
-		}
-		{
-			dependencies: ["0000000000000898"]
-			description: ["Refracts and safely dissipates lasers that hit any MekaSuit armor piece."]
-			id: "0DB12B262A1AC297"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "11C12F3B8FA52D09"
-				table_id: 2083281975516645662L
-				type: "random"
-			}]
-			tasks: [{
-				id: "4AB00C1AA3A11A78"
-				item: "mekanism:module_laser_dissipation_unit"
-				type: "item"
-			}]
-			x: -2.0d
-			y: -3.5d
-		}
-		{
-			dependencies: ["0000000000000898"]
-			description: ["Allows the creation of energy blades for precise cutting jubs."]
+			description: ["&5These &dUnits &5can be applied to the &dMeka-Tool&5. Many of them conflict with others, so find the ones you need!"]
 			id: "22343753159A7CED"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -2167,76 +1568,69 @@
 				table_id: 2083281975516645662L
 				type: "random"
 			}]
-			tasks: [{
-				id: "1BEED4CB34D1E099"
-				item: "mekanism:module_shearing_unit"
-				type: "item"
-			}]
-			x: -4.0d
-			y: -3.5d
-		}
-		{
-			dependencies: ["0000000000000898"]
-			description: ["Displays the ambient radiation level in the HUD."]
-			id: "1C325F20C9A346EF"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "76CCAE9D142A6C3D"
-				table_id: 2083281975516645662L
-				type: "random"
-			}]
-			tasks: [{
-				id: "7C1545525AD96F84"
-				item: "mekanism:module_geiger_unit"
-				type: "item"
-			}]
-			x: -2.0d
-			y: -2.5d
+			tasks: [
+				{
+					id: "1BEED4CB34D1E099"
+					item: "mekanism:module_shearing_unit"
+					type: "item"
+				}
+				{
+					id: "2312964F344F566F"
+					item: "mekanism:module_energy_unit"
+					type: "item"
+				}
+				{
+					id: "18B3BDABB0FE141F"
+					item: "mekanism:module_excavation_escalation_unit"
+					type: "item"
+				}
+				{
+					id: "055471F4F2BE76B7"
+					item: "mekanism:module_attack_amplification_unit"
+					type: "item"
+				}
+				{
+					id: "7811684E063558E3"
+					item: "mekanism:module_farming_unit"
+					type: "item"
+				}
+				{
+					id: "1AF13190ED464CBE"
+					item: "mekanism:module_silk_touch_unit"
+					type: "item"
+				}
+				{
+					id: "599F89C843161D15"
+					item: "mekanism:module_fortune_unit"
+					type: "item"
+				}
+				{
+					id: "23924C04E21D4D75"
+					item: "mekanism:module_blasting_unit"
+					type: "item"
+				}
+				{
+					id: "1F970011B77755CD"
+					item: "mekanism:module_vein_mining_unit"
+					type: "item"
+				}
+				{
+					id: "607740D3D8F95085"
+					item: "mekanism:module_teleportation_unit"
+					type: "item"
+				}
+			]
+			title: "Meka-Tool Units"
+			x: 10.0d
+			y: -3.75d
 		}
 		{
 			dependencies: [
-				"0000000000000898"
-				"4F1F15BEC0AB428B"
+				"4C08EEB74DFC980F"
+				"3C365563533EE419"
 			]
-			description: ["Applies an HDPE Reinforced Elytra to the MekaSuit."]
-			id: "0911324582B6823E"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "0FED86E289189FB0"
-				table_id: 2083281975516645662L
-				type: "random"
-			}]
-			tasks: [{
-				id: "5CF64C0FB8E8C5A7"
-				item: "mekanism:module_elytra_unit"
-				type: "item"
-			}]
-			x: -1.5d
-			y: 2.0d
-		}
-		{
-			dependencies: ["0000000000000898"]
-			description: ["Uses liquid hydrogen to freeze any water the player walks on."]
-			id: "5DA1D8E371639EB5"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "67B63B214C7D5E55"
-				table_id: 2083281975516645662L
-				type: "random"
-			}]
-			tasks: [{
-				count: 2L
-				id: "61603902FEB8892D"
-				item: "mekanism:module_frost_walker_unit"
-				type: "item"
-			}]
-			title: "Frost Walker Unit"
-			x: -4.0d
-			y: -2.5d
-		}
-		{
-			dependencies: ["4C08EEB74DFC980F"]
-			description: ["The Pigment Extractor is a machine used to extract pigments from blocks and items."]
+			description: ["&5The &dPigment Extractor &5turns colored items into pure color."]
+			hide_dependent_lines: true
 			id: "101CF231B6979E47"
 			rewards: [{
 				id: "7C2FAA99B4003E69"
@@ -2254,16 +1648,19 @@
 				}
 				type: "item"
 			}]
-			x: 2.5d
-			y: 1.0d
+			x: -1.0d
+			y: -3.75d
 		}
 		{
-			dependencies: ["101CF231B6979E47"]
-			description: ["The Pigment Mixer is a sturdy machine capable of mixing two pigments together to produce a new pigment."]
+			dependencies: [
+				"101CF231B6979E47"
+				"15BB897035D3C3C8"
+			]
+			description: ["&5The &dPigment Mixer &5mixes two colors into a new color."]
 			id: "2FED2D289CE88D89"
 			rewards: [{
-				id: "00F4EE95CC3A0D97"
-				item: "mekanism:steel_casing"
+				id: "1847D7E759A211E2"
+				item: "mekanism:hdpe_pellet"
 				type: "item"
 			}]
 			tasks: [{
@@ -2277,12 +1674,12 @@
 				}
 				type: "item"
 			}]
-			x: 2.5d
-			y: 2.0d
+			x: 1.75d
+			y: 1.25d
 		}
 		{
-			dependencies: ["101CF231B6979E47"]
-			description: ["The Painting Machine is used to color blocks and items. &5But it's also used to make &0Black Iron &5form &0Extended Crafting! &o&8(ToasTech exclusive recipe)"]
+			dependencies: ["15D47FB1BBDC099A"]
+			description: ["&5The &dPainting Machine &5is mainly going to be used to make &0Black Iron &5form &0Extended Crafting! &o&8(ToasTech exclusive recipe)"]
 			icon: {
 				Count: 1b
 				id: "mekanism:painting_machine"
@@ -2292,42 +1689,38 @@
 			}
 			id: "6E8B8B1CA176AADC"
 			rewards: [{
-				count: 64
-				id: "00A71326D041C9EA"
-				item: "mekanism:dye_base"
+				id: "78ED485E3BA1040C"
+				item: "minecraft:iron_ingot"
 				type: "item"
 			}]
-			tasks: [
-				{
-					id: "23BBA47701900648"
-					item: {
-						Count: 1b
-						id: "mekanism:painting_machine"
-						tag: {
-							mekData: { }
-						}
+			tasks: [{
+				id: "23BBA47701900648"
+				item: {
+					Count: 1b
+					id: "mekanism:painting_machine"
+					tag: {
+						mekData: { }
 					}
-					type: "item"
 				}
-				{
-					count: 64L
-					id: "32D6A2CF8096638C"
-					item: "mekanism:dye_base"
-					type: "item"
-				}
-			]
-			x: 2.5d
-			y: 3.0d
+				type: "item"
+			}]
+			x: 0.5d
+			y: -1.0d
 		}
 		{
 			description: [
-				"&5Welcome to &dMekanism&5, a Factory Maker's Dream! The Middle Game of &6ToasTech&5 will be all about &dMekanism&5, so get your configurators ready, because this is going to get complicated &4fast."
+				"&5Welcome to &dMekanism&5, a Factory Maker's Dream! The Middle Game of &3ToasTech&5 will be all about &dMekanism&5, so get your configurators ready, because this is going to get complicated &4fast."
 				"{@pagebreak}"
 				"&8&o(also you can zoom out with ctrl + scroll wheel)"
 			]
 			hide_dependent_lines: true
 			icon: "mekanismgenerators:control_rod_assembly"
 			id: "4E360A9C4B0A7198"
+			rewards: [{
+				id: "679E22A2B63CF117"
+				item: "create:blaze_cake"
+				type: "item"
+			}]
 			shape: "circle"
 			size: 2.5d
 			tasks: [{
@@ -2336,11 +1729,12 @@
 				type: "checkmark"
 			}]
 			x: 11.25d
-			y: 3.75d
+			y: -5.0d
 		}
 		{
 			dependencies: ["000000000000093F"]
 			description: ["&5Gaseous Polonium is used to make Antimatter."]
+			hide_dependent_lines: true
 			id: "6F34D924F80BAD00"
 			rewards: [{
 				id: "1973CBDF809ABDE7"
@@ -2355,8 +1749,8 @@
 				type: "fluid"
 			}]
 			title: "Polonium"
-			x: 5.5d
-			y: -5.5d
+			x: 16.25d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -2377,8 +1771,8 @@
 				type: "fluid"
 			}]
 			title: "Antimatter"
-			x: 6.5d
-			y: -5.5d
+			x: 16.25d
+			y: 2.25d
 		}
 		{
 			dependencies: ["00000000000008E2"]
@@ -2399,14 +1793,14 @@
 				title: "Hellfire Book"
 				type: "item"
 			}]
-			size: 2.0d
+			size: 1.5d
 			tasks: [{
 				id: "1E77B15859127A7A"
 				item: "kubejs:atomically_perfect_grains_of_infinity"
 				type: "item"
 			}]
-			x: 10.5d
-			y: -6.5d
+			x: 17.625d
+			y: 2.25d
 		}
 		{
 			dependencies: ["7D0BC26B33BBB358"]
@@ -2429,8 +1823,8 @@
 				title: "Slow Down There!"
 				type: "checkmark"
 			}]
-			x: -3.0d
-			y: -5.0d
+			x: 3.0d
+			y: -5.5d
 		}
 		{
 			description: ["&5I'd like to thank the developpers of Ragnamod VI for the Mekanism questing tab, since I used it as a base for ToasTech."]
@@ -2438,7 +1832,7 @@
 			id: "6F98DF65C7869FE8"
 			rewards: [{
 				id: "5ABF15DE37A4165B"
-				item: "templates:cool_rivulet"
+				item: "framedblocks:framed_flat_elev_inner_double_slope_slab_corner"
 				type: "item"
 			}]
 			tasks: [{
@@ -2446,51 +1840,8 @@
 				title: "Some Credit"
 				type: "checkmark"
 			}]
-			x: 10.0d
-			y: 2.5d
-		}
-		{
-			dependencies: ["00000000000008EE"]
-			description: [
-				"&5I'll assume you've been doing the progression already."
-				"&5Use the &dEnrichment Chamber &5to make Grains of Infinity from the washed ones."
-			]
-			id: "51F51B1453E68582"
-			rewards: [{
-				id: "4E5E5FAFC8C8EE60"
-				item: "kubejs:raw_grains_of_infinity"
-				type: "item"
-			}]
-			subtitle: "Not this again..."
-			tasks: [{
-				id: "110B6F57A37C927D"
-				item: "enderio:grains_of_infinity"
-				type: "item"
-			}]
-			x: 6.5d
-			y: -1.0d
-		}
-		{
-			dependencies: ["00000000000008EA"]
-			id: "7F0F8AA20F71D168"
-			tasks: [{
-				id: "6A4068E8D5BE7820"
-				item: "kubejs:pure_grains_of_infinity"
-				type: "item"
-			}]
-			x: 7.5d
-			y: -1.0d
-		}
-		{
-			dependencies: ["000000000000090E"]
-			id: "2BD9CDD0DC14A4C0"
-			tasks: [{
-				id: "08931D968F83B445"
-				item: "kubejs:enchanted_grains_of_infinity"
-				type: "item"
-			}]
-			x: 8.5d
-			y: -1.0d
+			x: 12.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["0000000000000916"]
@@ -2509,8 +1860,8 @@
 				type: "fluid"
 			}]
 			title: "Gaseous Infinity"
-			x: 1.5d
-			y: 4.5d
+			x: 7.5d
+			y: -4.75d
 		}
 		{
 			dependencies: ["0000000000000906"]
@@ -2526,8 +1877,271 @@
 				item: "kubejs:crystal_of_infinity"
 				type: "item"
 			}]
-			x: -2.0d
-			y: -6.5d
+			x: 12.25d
+			y: 2.0d
+		}
+		{
+			dependencies: ["00000000000008EC"]
+			id: "3C365563533EE419"
+			rewards: [{
+				id: "2F29F825751AF261"
+				item: "mekanism:enriched_redstone"
+				type: "item"
+			}]
+			tasks: [{
+				id: "59A6A6269FB859D4"
+				item: "mekanism:basic_control_circuit"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -3.75d
+		}
+		{
+			dependencies: ["00000000000008EC"]
+			id: "15D47FB1BBDC099A"
+			rewards: [{
+				id: "5BB1AF8BD76F403A"
+				item: "mekanism:enriched_redstone"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5D06463B4261C96C"
+				item: "mekanism:advanced_control_circuit"
+				type: "item"
+			}]
+			x: 4.25d
+			y: -1.0d
+		}
+		{
+			dependencies: ["00000000000008EC"]
+			id: "15BB897035D3C3C8"
+			rewards: [{
+				id: "6983FAF1862E3826"
+				item: "mekanism:enriched_diamond"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7465EDF1D14ABB19"
+				item: "mekanism:elite_control_circuit"
+				type: "item"
+			}]
+			x: 5.25d
+			y: 1.25d
+		}
+		{
+			dependencies: ["00000000000008EC"]
+			id: "6B56234E2759E9D7"
+			rewards: [{
+				id: "777D6FBD957ED1A8"
+				item: "mekanism:dust_refined_obsidian"
+				type: "item"
+			}]
+			tasks: [{
+				id: "33BF540FE6AEB1A9"
+				item: "mekanism:ultimate_control_circuit"
+				type: "item"
+			}]
+			x: 7.75d
+			y: 1.25d
+		}
+		{
+			dependencies: ["00000000000008EC"]
+			id: "6D1B50ABF04889CC"
+			rewards: [{
+				id: "7EFFE850ECAC365E"
+				item: "mekanism:enriched_redstone"
+				type: "item"
+			}]
+			tasks: [{
+				id: "57ACF177DA191BD9"
+				item: "mekanism:alloy_infused"
+				type: "item"
+			}]
+			x: 4.25d
+			y: -2.5d
+		}
+		{
+			dependencies: ["0000000000000948"]
+			description: ["&5The &dMeka-Tana &5is a sword that deals illegal amounts of damage. Like other &dMekanism&5 items, it's durability is energy."]
+			id: "14381F5DDB3FC4E0"
+			rewards: [{
+				id: "2CED69F1E97CEC69"
+				item: "mekanism:pellet_polonium"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6114D5CD5B8727F6"
+				item: "mekaweapons:mekatana"
+				type: "item"
+			}]
+			x: 8.75d
+			y: -5.75d
+		}
+		{
+			dependencies: ["0000000000000948"]
+			description: ["&5The &dMeka-Bow &5is a bow that can be optimised with &dAntimatter &5and energy. It's durability is energy."]
+			id: "7FDAB7ABCC2E7FC6"
+			rewards: [{
+				id: "5BA3A9F45E3FCEE3"
+				item: "mekanism:pellet_polonium"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5C62DFB5E860528F"
+				item: "mekaweapons:mekabow"
+				type: "item"
+			}]
+			x: 9.75d
+			y: -5.75d
+		}
+		{
+			dependencies: [
+				"36D86F3E65554DF4"
+				"14381F5DDB3FC4E0"
+			]
+			description: ["&5These &dUnits &5can be applied to the &dMeka-Tana&5."]
+			id: "049405B9DC17774A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "73BE17375D950F49"
+				table_id: 2083281975516645662L
+				type: "random"
+			}]
+			tasks: [
+				{
+					id: "4CBCDB44FFF09AFD"
+					item: "mekanism:module_energy_unit"
+					type: "item"
+				}
+				{
+					id: "393D16B018CAA1AD"
+					item: "mekanism:module_attack_amplification_unit"
+					type: "item"
+				}
+				{
+					id: "43946DA133FA0CDD"
+					item: "mekanism:module_teleportation_unit"
+					type: "item"
+				}
+			]
+			x: 8.75d
+			y: -6.75d
+		}
+		{
+			dependencies: [
+				"36D86F3E65554DF4"
+				"7FDAB7ABCC2E7FC6"
+			]
+			description: ["&5These &dUnits &5can be applied to the &dMeka-Bow&5. None of them conflict with others, so apply all of them!"]
+			id: "55E07FDFED76DD4F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1B6C3381C5C96479"
+				table_id: 2083281975516645662L
+				type: "random"
+			}]
+			tasks: [
+				{
+					id: "6A62A756822DC877"
+					item: "mekanism:module_energy_unit"
+					type: "item"
+				}
+				{
+					id: "4F933E737E8FDC79"
+					item: "mekanism:module_attack_amplification_unit"
+					type: "item"
+				}
+				{
+					id: "57286CCB9ABB284F"
+					item: "mekaweapons:module_arrowenergy_unit"
+					type: "item"
+				}
+				{
+					id: "78BEBB9A72009491"
+					item: "mekaweapons:module_autofire_unit"
+					type: "item"
+				}
+				{
+					id: "203D38FF2BE7DEB0"
+					item: "mekaweapons:module_drawspeed_unit"
+					type: "item"
+				}
+				{
+					id: "478F15E6879296DE"
+					item: "mekaweapons:module_gravitydampener_unit"
+					type: "item"
+				}
+			]
+			x: 9.75d
+			y: -6.75d
+		}
+		{
+			dependencies: [
+				"00000000000008EE"
+				"22F4E20F03ECBFA0"
+			]
+			description: [
+				"&5I'll assume you've been doing the progression already."
+				"&5Use the &dEnrichment Chamber &5to make Grains of Infinity from the washed ones."
+			]
+			hide_dependent_lines: true
+			id: "1A2FC5DC8B2C175F"
+			rewards: [{
+				id: "61A0E6BCA21A8EB8"
+				item: "kubejs:raw_grains_of_infinity"
+				type: "item"
+			}]
+			subtitle: "Not this again..."
+			tasks: [{
+				id: "0C91AE62086F606F"
+				item: "enderio:grains_of_infinity"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -4.75d
+		}
+		{
+			dependencies: [
+				"000000000000090E"
+				"18389734DFB5C9A1"
+				"2CC9A16FBCE99161"
+			]
+			description: ["&5Use the &dInjection Chamber &5to inject &6Hyper Experience Gas &5into the Grains."]
+			id: "7A3984D5CF680938"
+			rewards: [{
+				id: "5DF2F9ED2746DC98"
+				item: "kubejs:raw_grains_of_infinity"
+				type: "item"
+			}]
+			tasks: [{
+				id: "53EDCE6028EB517A"
+				item: "kubejs:enchanted_grains_of_infinity"
+				type: "item"
+			}]
+			x: 2.75d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"00000000000008EA"
+				"151AF64607B63F77"
+				"1A2FC5DC8B2C175F"
+			]
+			description: ["&5Purify the Grains using &dHydrofluoric Acid."]
+			hide_dependent_lines: true
+			id: "2CC9A16FBCE99161"
+			rewards: [{
+				id: "614E9C9418380DCA"
+				item: "kubejs:raw_grains_of_infinity"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1A40F6FB9EE75DD8"
+				item: "kubejs:pure_grains_of_infinity"
+				type: "item"
+			}]
+			x: 1.75d
+			y: -0.25d
 		}
 	]
 	title: "Mekanism"

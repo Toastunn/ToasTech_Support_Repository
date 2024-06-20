@@ -206,6 +206,11 @@
 				"247F282D69F66884"
 			]
 			id: "158A07C739962FFF"
+			rewards: [{
+				id: "17C9804FE2FAF072"
+				item: "enderio:empty_soul_vial"
+				type: "item"
+			}]
 			subtitle: "Pretty Self Explanitory"
 			tasks: [{
 				id: "59D4D4962105B3ED"
@@ -222,6 +227,13 @@
 				"0000000000000906"
 			]
 			id: "39298437B55B2F45"
+			rewards: [{
+				count: 2
+				id: "21D9C8760505C079"
+				item: "enderio:empty_soul_vial"
+				type: "item"
+			}]
+			subtitle: "One of many"
 			tasks: [{
 				id: "77108045C354B3C5"
 				item: "enderio:prescient_crystal"

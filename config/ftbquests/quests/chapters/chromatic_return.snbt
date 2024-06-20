@@ -3,9 +3,279 @@
 	default_quest_shape: ""
 	filename: "chromatic_return"
 	group: "6EC53AEFE78C5F36"
+	icon: "createchromaticreturn:radiant_glow_claws"
 	id: "7B2F1459EB04698A"
-	order_index: 3
+	images: [
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 11.0d
+			hover: [ ]
+			image: "kubejs:textures/ftbquests/claw_recipe_fr.png"
+			order: 12
+			rotation: 0.0d
+			width: 11.0d
+			x: 0.5d
+			y: 1.5d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 50.0d
+			hover: [ ]
+			image: "kubejs:textures/ftbquests/totally_not_filler_background.png"
+			rotation: 0.0d
+			width: 50.0d
+			x: 0.0d
+			y: 2.5d
+		}
+	]
+	order_index: 2
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			dependencies: [
+				"4D05E7704AC89227"
+				"40D0AC9BC2DB3DEC"
+			]
+			id: "45D5EC91A10ADE34"
+			rewards: [{
+				id: "422C473505ADEA49"
+				item: "mekanism:pellet_antimatter"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5910251D00B8BC58"
+				item: "createchromaticreturn:shadow_steel"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["45D5EC91A10ADE34"]
+			id: "498DC90F1F3A17E8"
+			rewards: [{
+				id: "29BF2FE4882ED853"
+				item: "avaritia:infinity_nugget"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4031C6FD723DFF28"
+				item: "createchromaticreturn:refined_radiance"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["498DC90F1F3A17E8"]
+			id: "2CCF0107D9264D01"
+			rewards: [{
+				id: "3552E7EAED8FC7C6"
+				item: "minecraft:nether_star"
+				type: "item"
+			}]
+			tasks: [{
+				id: "404946D0338EAE27"
+				item: "createchromaticreturn:chromatic_compound"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2CCF0107D9264D01"]
+			id: "36D6126AA1D51BA0"
+			rewards: [{
+				id: "45EE75C5D5D3EDD5"
+				item: "extendedcrafting:flux_star"
+				type: "item"
+			}]
+			tasks: [{
+				id: "72AC54F816EA21C8"
+				item: {
+					Count: 1b
+					id: "avaritia:singularity"
+					tag: {
+						Id: "avaritia:chromatic"
+					}
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2CCF0107D9264D01"]
+			id: "66A74133E5B7C240"
+			rewards: [{
+				id: "3191146A5D80505A"
+				item: "minecraft:netherite_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2C59FFE53CD2215A"
+				item: "createchromaticreturn:durasteel_ingot"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2CCF0107D9264D01"]
+			id: "29D5FEFB3A17EBC0"
+			rewards: [{
+				id: "4890020E732C7B6F"
+				item: "createchromaticreturn:four_leaf_clover"
+				type: "item"
+			}]
+			tasks: [{
+				id: "36C6459777DADFD1"
+				item: "createchromaticreturn:fortunite_bar"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2CCF0107D9264D01"]
+			hide_dependency_lines: true
+			id: "05C2FFE58439496E"
+			rewards: [{
+				id: "10D77492A4D70721"
+				item: "mekanism:block_refined_glowstone"
+				type: "item"
+			}]
+			tasks: [{
+				id: "254F4835F3C841F7"
+				item: "createchromaticreturn:silkstrum"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2CCF0107D9264D01"]
+			id: "5D392C318B8B2ED7"
+			rewards: [{
+				id: "14BB69C753336668"
+				item: "create:wrench"
+				type: "item"
+			}]
+			tasks: [{
+				id: "40243A0444D0220B"
+				item: "createchromaticreturn:industrium_ingot"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["36D6126AA1D51BA0"]
+			id: "2B427700A23E7EA0"
+			rewards: [{
+				id: "43969C0EDC840D16"
+				item: "enderio:vibrant_crystal"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3C6EFFB23A9A7061"
+				item: "createchromaticreturn:multiplite_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2B427700A23E7EA0"]
+			id: "618BFC3016A2F855"
+			rewards: [{
+				id: "49CB480A3C9B6B6C"
+				item: "minecraft:nether_star"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2DBAB12208A9AAA2"
+				item: "createchromaticreturn:multiplite_charm"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["2B427700A23E7EA0"]
+			id: "43BE156B020D35BE"
+			rewards: [{
+				id: "2185752D0F4D68BC"
+				item: "mekanism:pellet_antimatter"
+				type: "item"
+			}]
+			tasks: [{
+				id: "653ACAAB6B7FD2BC"
+				item: "createchromaticreturn:antiplite_ingot"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 3.0d
+		}
+		{
+			id: "40D0AC9BC2DB3DEC"
+			rewards: [{
+				id: "2ED961F4CA08D3D4"
+				item: "createchromaticreturn:charm_cast"
+				type: "item"
+			}]
+			tasks: [{
+				id: "16A3E747550FCCDF"
+				title: "Create: Chromatic Return"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"1F9E4B44F2AF4CB2"
+				"43BE156B020D35BE"
+			]
+			description: ["&9The &bEelemental Transfigurator &9is a multiblock that turns various materials into an &dElemental Form&9. Are the elements completely arbitrary? Maybe. &m&8&oI'm just an intern here."]
+			hide_dependent_lines: true
+			id: "63AFD224A701F687"
+			rewards: [{
+				count: 4
+				id: "5B9747194E580955"
+				item: "createchromaticreturn:refined_radiance"
+				type: "item"
+			}]
+			subtitle: "What is an element?"
+			tasks: [{
+				id: "4825C99035FA40A7"
+				item: "mm:elemental_transfigurator"
+				type: "item"
+			}]
+			title: "Elemental Transfigurator"
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["43BE156B020D35BE"]
+			id: "59FEACE3F5941C78"
+			rewards: [{
+				id: "6BF49D3B95C4E5A0"
+				item: "avaritia:infinity_catalyst"
+				type: "item"
+			}]
+			tasks: [{
+				id: "33FE45AB82AA53EF"
+				item: "createchromaticreturn:radiant_glow_saber"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.0d
+		}
+	]
 	title: "Chromatic Return"
 }
