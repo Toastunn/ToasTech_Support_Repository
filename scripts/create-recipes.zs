@@ -25,6 +25,7 @@ import mods.create.PressingManager;
     <recipetype:create:mixing>.remove(<fluid:createchromaticreturn:shadow_essence>);
     <recipetype:create:mixing>.remove(<item:createchromaticreturn:shadow_steel>);
     <recipetype:create:mixing>.remove(<item:createchromaticreturn:refined_radiance>);
+    <recipetype:create:mixing>.remove(<item:createchromaticreturn:chromatic_compound>);
     <recipetype:create:mixing>.remove(<item:createchromaticreturn:shadow_mechanism>);
     <recipetype:create:mixing>.remove(<item:createchromaticreturn:refined_mechanism>);
     <recipetype:create:mixing>.remove(<item:createchromaticreturn:creative_flour>);
@@ -37,6 +38,7 @@ import mods.create.PressingManager;
     <recipetype:create:mixing>.remove(<item:mekanism:pellet_antimatter>);
     <recipetype:create:mixing>.remove(<item:create:creative_blaze_cake>);
     <recipetype:create:mixing>.remove(<item:create_sa:creative_filling_tank>);
+    <recipetype:create:mixing>.remove(<item:create:zinc_nugget>);
   //crushing
     <recipetype:create:crushing>.remove(<item:garnished:crushed_salt>);
   //filling
@@ -274,70 +276,83 @@ import mods.create.PressingManager;
       [<item:tougherglass:stronger_glass>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket> ,<item:tougherglass:stronger_glass>],
       [<item:tougherglass:stronger_glass>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket> ,<item:tougherglass:stronger_glass>],
       [<item:createchromaticreturn:andesite_component>, <item:createchromaticreturn:andesite_component>, <item:createchromaticreturn:andesite_component>, <item:createchromaticreturn:andesite_component>, <item:createchromaticreturn:andesite_component>, <item:createchromaticreturn:andesite_component>, <item:createchromaticreturn:andesite_component>, <item:createchromaticreturn:andesite_component>, <item:createchromaticreturn:andesite_component>, <item:createchromaticreturn:andesite_component>, <item:createchromaticreturn:andesite_component>]]);
-    <recipetype:create:mechanical_crafting>.addRecipe("breaker_module", <item:modularrouters:breaker_module>, [
-      [<item:modularrouters:vacuum_module>, <item:mekanismtools:refined_obsidian_pickaxe>],
-      [<item:itemfilters:block>, <item:create:content_observer>]]);
-    <recipetype:create:mechanical_crafting>.addRecipe("energy_distributor_module", <item:modularrouters:energy_distributor_module>, [
-      [<item:modularrouters:energy_output_module>, <item:fluxnetworks:flux_point>]]);
-    <recipetype:create:mechanical_crafting>.addRecipe("energy_output_module", <item:modularrouters:energy_output_module>, [
-      [<item:modularrouters:blank_module>, <item:enderio:energy_conduit>]]);
-    <recipetype:create:mechanical_crafting>.addRecipe("extruder_module", <item:modularrouters:extruder_module_1>, [
-      [<item:minecraft:sticky_piston>, <item:modularrouters:placer_module>],
-      [<item:modularrouters:breaker_module>, <item:minecraft:lever>]]);
-    <recipetype:create:mechanical_crafting>.addRecipe("extruder_module_mk2", <item:modularrouters:extruder_module_2>, [
-      [<item:modularrouters:extruder_module_1>, <item:ae2:facade>],
-      [<item:blocksyouneed_luna:iron_crate>, <item:minecraft:sticky_piston>]]);
-    <recipetype:create:mechanical_crafting>.addRecipe("puller_module", <item:modularrouters:puller_module_1>, [
-      [<item:modularrouters:blank_module>, <item:minecraft:hopper>]]);
-    <recipetype:create:mechanical_crafting>.addRecipe("puller_module_mk2", <item:modularrouters:puller_module_2>, [
-      [<item:enderio:coordinate_selector>, <item:modularrouters:puller_module_1>],
-      [<item:modularrouters:vacuum_module>, air]]);
-    <recipetype:create:mechanical_crafting>.addRecipe("sender_module", <item:modularrouters:sender_module_1>, [
-      [<item:modularrouters:flinger_module>, <item:ae2:quantum_link>]]);
-    <recipetype:create:mechanical_crafting>.addRecipe("sender_module_mk2", <item:modularrouters:sender_module_2>, [
-      [<item:modularrouters:sender_module_1>, <item:ae2:facade>],
-      [<item:industrialforegoing:range_addon10>.withTag({TitaniumAugment: {Range: 10.0}}), air]]);
-    <recipetype:create:mechanical_crafting>.addRecipe("sender_module_mk3", <item:modularrouters:sender_module_3>, [
-      [<item:ae2:quantum_ring>, <item:mekanism:teleporter>, <item:ae2:quantum_ring>],
-      [<item:ae2:quantum_ring>, <item:modularrouters:sender_module_2>, <item:ae2:quantum_ring>],
-      [<item:ae2:quantum_ring>, <item:mekanism:dimensional_stabilizer>, <item:ae2:quantum_ring>]]);
-    <recipetype:create:mechanical_crafting>.addRecipe("flinger_module", <item:modularrouters:flinger_module>, [
-      [<item:modularrouters:dropper_module>, <item:enderio:coordinate_selector>],
-      [<item:create_connected:control_chip>, <item:create:weighted_ejector>]]);  
-    <recipetype:create:mechanical_crafting>.addRecipe("vacuum_module", <item:modularrouters:vacuum_module>, [
-      [<item:modularrouters:blank_module>, <item:enderio:vacuum_chest>],
-      [<item:enderio:redstone_filter_base>, air]]);
-    <recipetype:create:mechanical_crafting>.addRecipe("void_module", <item:modularrouters:void_module>, [
-      [<item:modularrouters:blank_module>, <item:mekanism:ultimate_bin>],
-      [<item:enderio:redstone_filter_base>, air]]);   
-    <recipetype:create:mechanical_crafting>.addRecipe("activator_module", <item:modularrouters:activator_module>, [
-      [<item:modularrouters:blank_module>, <item:modularrouters:placer_module>],
-      [<item:modularrouters:breaker_module>, <item:enderio:filled_soul_vial>.withTag({BlockEntityTag: {EntityStorage: {Entity: {id: "mekanism:robit"}}}})]]);
-    <recipetype:create:mechanical_crafting>.addRecipe("detector_module", <item:modularrouters:detector_module>, [
-      [<item:modularrouters:blank_module>, <item:create:content_observer>],
-      [<item:create:analog_lever>, air]]);    
-    <recipetype:create:mechanical_crafting>.addRecipe("placer_module", <item:modularrouters:placer_module>, [
-      [<item:modularrouters:blank_module>, <item:rats:rat_upgrade_placer>]]);
-    <recipetype:create:mechanical_crafting>.addRecipe("distributor_module", <item:modularrouters:distributor_module>, [
-      [air, <item:modularrouters:sender_module_2>, air],
-      [<item:modularrouters:sender_module_2>, air, <item:modularrouters:sender_module_2>],
-      [air, <item:modularrouters:sender_module_2>, air]]);
-    <recipetype:create:mechanical_crafting>.addRecipe("fluid_module", <item:modularrouters:fluid_module>, [
-      [<item:mekanism:ultimate_mechanical_pipe>, <item:modularrouters:blank_module>, <item:mekanism:ultimate_mechanical_pipe>],
-      [air, <item:enderio:pressurized_fluid_tank>, air]]);
-    <recipetype:create:mechanical_crafting>.addRecipe("fluid_module_mk2", <item:modularrouters:fluid_module_2>, [
-      [<item:industrialforegoing:range_addon10>.withTag({TitaniumAugment: {Range: 10.0}}), <item:modularrouters:fluid_module>, <item:industrialforegoing:range_addon10>.withTag({TitaniumAugment: {Range: 10.0}})]]);
-    <recipetype:create:mechanical_crafting>.addRecipe("player_module", <item:modularrouters:player_module>, [
-      [<item:modularrouters:puller_module_2>, <item:modularrouters:activator_module>, <item:modularrouters:sender_module_2>],
-      [air, <item:minecraft:ender_chest>, air]]);
-    <recipetype:create:mechanical_crafting>.addRecipe("blank_module", <item:modularrouters:blank_module>, [
-      [air, <item:alltheores:signalum_dust>, air],
-      [<item:alltheores:platinum_plate>, <item:alltheores:platinum_plate>, <item:alltheores:platinum_plate>],
-      [<item:alltheores:lumium_nugget>, <item:alltheores:platinum_plate>, <item:alltheores:lumium_nugget>]]); 
-    <recipetype:create:mechanical_crafting>.addRecipe("blank_upgrade", <item:modularrouters:blank_upgrade>, [
-      [<item:alltheores:lumium_nugget>, <item:alltheores:platinum_plate>, <item:alltheores:lumium_nugget>],
-      [<item:alltheores:platinum_plate>, <item:kubejs:lazurite>, <item:alltheores:platinum_plate>],
-      [air, <item:alltheores:platinum_plate>, <item:alltheores:lumium_nugget>]]);          
+    //modular routers
+      <recipetype:create:mechanical_crafting>.addRecipe("breaker_module", <item:modularrouters:breaker_module>, [
+        [<item:modularrouters:vacuum_module>, <item:mekanismtools:refined_obsidian_pickaxe>],
+        [<item:itemfilters:block>, <item:create:content_observer>]]);
+      <recipetype:create:mechanical_crafting>.addRecipe("energy_distributor_module", <item:modularrouters:energy_distributor_module>, [
+        [<item:modularrouters:energy_output_module>, <item:fluxnetworks:flux_point>]]);
+      <recipetype:create:mechanical_crafting>.addRecipe("energy_output_module", <item:modularrouters:energy_output_module>, [
+        [<item:modularrouters:blank_module>, <item:enderio:energy_conduit>]]);
+      <recipetype:create:mechanical_crafting>.addRecipe("extruder_module", <item:modularrouters:extruder_module_1>, [
+        [<item:minecraft:sticky_piston>, <item:modularrouters:placer_module>],
+        [<item:modularrouters:breaker_module>, <item:minecraft:lever>]]);
+      <recipetype:create:mechanical_crafting>.addRecipe("extruder_module_mk2", <item:modularrouters:extruder_module_2>, [
+        [<item:modularrouters:extruder_module_1>, <item:ae2:facade>],
+        [<item:blocksyouneed_luna:iron_crate>, <item:minecraft:sticky_piston>]]);
+      <recipetype:create:mechanical_crafting>.addRecipe("puller_module", <item:modularrouters:puller_module_1>, [
+        [<item:modularrouters:blank_module>, <item:minecraft:hopper>]]);
+      <recipetype:create:mechanical_crafting>.addRecipe("puller_module_mk2", <item:modularrouters:puller_module_2>, [
+        [<item:enderio:coordinate_selector>, <item:modularrouters:puller_module_1>],
+        [<item:modularrouters:vacuum_module>, air]]);
+      <recipetype:create:mechanical_crafting>.addRecipe("sender_module", <item:modularrouters:sender_module_1>, [
+        [<item:modularrouters:flinger_module>, <item:ae2:quantum_link>]]);
+      <recipetype:create:mechanical_crafting>.addRecipe("sender_module_mk2", <item:modularrouters:sender_module_2>, [
+        [<item:modularrouters:sender_module_1>, <item:ae2:facade>],
+        [<item:industrialforegoing:range_addon10>.withTag({TitaniumAugment: {Range: 10.0}}), air]]);
+      <recipetype:create:mechanical_crafting>.addRecipe("sender_module_mk3", <item:modularrouters:sender_module_3>, [
+        [<item:ae2:quantum_ring>, <item:mekanism:teleporter>, <item:ae2:quantum_ring>],
+        [<item:ae2:quantum_ring>, <item:modularrouters:sender_module_2>, <item:ae2:quantum_ring>],
+        [<item:ae2:quantum_ring>, <item:mekanism:dimensional_stabilizer>, <item:ae2:quantum_ring>]]);
+      <recipetype:create:mechanical_crafting>.addRecipe("flinger_module", <item:modularrouters:flinger_module>, [
+        [<item:modularrouters:dropper_module>, <item:enderio:coordinate_selector>],
+        [<item:create_connected:control_chip>, <item:create:weighted_ejector>]]);  
+      <recipetype:create:mechanical_crafting>.addRecipe("vacuum_module", <item:modularrouters:vacuum_module>, [
+        [<item:modularrouters:blank_module>, <item:enderio:vacuum_chest>],
+        [<item:enderio:redstone_filter_base>, air]]);
+      <recipetype:create:mechanical_crafting>.addRecipe("void_module", <item:modularrouters:void_module>, [
+        [<item:modularrouters:blank_module>, <item:mekanism:ultimate_bin>],
+        [<item:enderio:redstone_filter_base>, air]]);   
+      <recipetype:create:mechanical_crafting>.addRecipe("activator_module", <item:modularrouters:activator_module>, [
+        [<item:modularrouters:blank_module>, <item:modularrouters:placer_module>],
+        [<item:modularrouters:breaker_module>, <item:enderio:filled_soul_vial>.withTag({BlockEntityTag: {EntityStorage: {Entity: {id: "mekanism:robit"}}}})]]);
+      <recipetype:create:mechanical_crafting>.addRecipe("detector_module", <item:modularrouters:detector_module>, [
+        [<item:modularrouters:blank_module>, <item:create:content_observer>],
+        [<item:create:analog_lever>, air]]);    
+      <recipetype:create:mechanical_crafting>.addRecipe("placer_module", <item:modularrouters:placer_module>, [
+        [<item:modularrouters:blank_module>, <item:rats:rat_upgrade_placer>]]);
+      <recipetype:create:mechanical_crafting>.addRecipe("distributor_module", <item:modularrouters:distributor_module>, [
+        [air, <item:modularrouters:sender_module_2>, air],
+        [<item:modularrouters:sender_module_2>, air, <item:modularrouters:sender_module_2>],
+        [air, <item:modularrouters:sender_module_2>, air]]);
+      <recipetype:create:mechanical_crafting>.addRecipe("fluid_module", <item:modularrouters:fluid_module>, [
+        [<item:mekanism:ultimate_mechanical_pipe>, <item:modularrouters:blank_module>, <item:mekanism:ultimate_mechanical_pipe>],
+        [air, <item:enderio:pressurized_fluid_tank>, air]]);
+      <recipetype:create:mechanical_crafting>.addRecipe("fluid_module_mk2", <item:modularrouters:fluid_module_2>, [
+        [<item:industrialforegoing:range_addon10>.withTag({TitaniumAugment: {Range: 10.0}}), <item:modularrouters:fluid_module>, <item:industrialforegoing:range_addon10>.withTag({TitaniumAugment: {Range: 10.0}})]]);
+      <recipetype:create:mechanical_crafting>.addRecipe("player_module", <item:modularrouters:player_module>, [
+        [<item:modularrouters:puller_module_2>, <item:modularrouters:activator_module>, <item:modularrouters:sender_module_2>],
+        [air, <item:minecraft:ender_chest>, air]]);
+      <recipetype:create:mechanical_crafting>.addRecipe("blank_module", <item:modularrouters:blank_module>, [
+        [air, <item:alltheores:signalum_dust>, air],
+        [<item:alltheores:platinum_plate>, <item:alltheores:platinum_plate>, <item:alltheores:platinum_plate>],
+        [<item:alltheores:lumium_nugget>, <item:alltheores:platinum_plate>, <item:alltheores:lumium_nugget>]]); 
+      <recipetype:create:mechanical_crafting>.addRecipe("blank_upgrade", <item:modularrouters:blank_upgrade>, [
+        [<item:alltheores:lumium_nugget>, <item:alltheores:platinum_plate>, <item:alltheores:lumium_nugget>],
+        [<item:alltheores:platinum_plate>, <item:kubejs:lazurite>, <item:alltheores:platinum_plate>],
+        [air, <item:alltheores:platinum_plate>, <item:alltheores:lumium_nugget>]]);
+    //mm
+      var casing = <item:blocksyouneed_luna:wrought_iron_boiler_plate>;
+      <recipetype:create:mechanical_crafting>.addRecipe("industrial_alloy_smelter", <item:mm:industrial_alloy_smelter>, 
+      [
+        [casing, <item:blocksyouneed_luna:cable>, casing, casing, casing, casing, casing],
+        [casing, <item:blocksyouneed_luna:cable>, <item:enderio:industrial_insulation_block>, <item:mekanismgenerators:fission_reactor_logic_adapter>, <item:create:copper_sheet>, <item:blocksyouneed_luna:ventilation_fan_block>, casing],
+        [casing, <item:blocksyouneed_luna:cable>, <item:enderio:industrial_insulation_block>, <item:ae2:black_glass_cable>, <item:create:copper_sheet>, <item:blocksyouneed_luna:ventilation_fan_block>, casing],
+        [casing, <item:blocksyouneed_luna:cable>, <item:enderio:industrial_insulation_block>, <item:ae2:black_glass_cable>, <item:create:copper_sheet>, <item:blocksyouneed_luna:ventilation_fan_block>, casing],
+        [casing, <item:blocksyouneed_luna:cable>, <item:enderio:industrial_insulation_block>, <item:ae2:logic_processor>, <item:create_sa:fan_component>, <item:create_sa:fan_component>, casing],
+        [casing, <item:ae2:energy_acceptor>, <item:mekanism:advanced_universal_cable>, <item:ae2:cable_interface>, <item:create_connected:control_chip>, <item:mekanism:advanced_control_circuit>, casing],
+        [casing, casing, casing, casing, casing, casing, casing]
+      ]);
   //draining | <recipetype:create:emptying>.addRecipe(name as string, outputItem as Percentaged<IItemStack>, outputFluid as IFluidStack, inputContainer as IIngredient, duration as int)  
     <recipetype:create:emptying>.addRecipe('dragons_breath/emptying', <item:minecraft:glass_bottle>, <fluid:kubejs:liquid_dragons_breath> * 250, <item:minecraft:dragon_breath>);
     <recipetype:create:emptying>.addRecipe('void_in_a_bottle/emptying', <item:minecraft:glass_bottle>, <fluid:kubejs:liquid_void> * 250, <item:kubejs:void_in_a_bottle>);

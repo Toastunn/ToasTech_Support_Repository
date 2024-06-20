@@ -260,10 +260,10 @@ import crafttweaker.api.ingredient.IIngredient;
       [<item:extendedcrafting:crystaltine_component>, <item:extendedcrafting:flux_crafter>, <item:extendedcrafting:crystaltine_component>], 
       [<item:extendedcrafting:black_iron_ingot>, <item:extendedcrafting:redstone_component>, <item:extendedcrafting:black_iron_ingot>]], 250000);
     <recipetype:extendedcrafting:flux_crafter>.addShaped("enhanced_redstone_ingot", <item:extendedcrafting:enhanced_redstone_ingot> * 4, [
-      [air, <item:enderio:redstone_alloy_ingot>, air], 
+      [air, <item:alltheores:signalum_ingot>, air], 
       [<item:enderio:redstone_alloy_ingot>, <item:extendedcrafting:flux_star>, <item:enderio:redstone_alloy_ingot>], 
-      [air, <item:enderio:redstone_alloy_ingot>, air]], 800000);
-    <recipetype:extendedcrafting:flux_crafter>.addShaped('blsck_hole_controller', <item:industrialforegoing:black_hole_controller>, [
+      [air, <item:alltheores:signalum_ingot>, air]], 800000);
+    <recipetype:extendedcrafting:flux_crafter>.addShaped('black_hole_controller', <item:industrialforegoing:black_hole_controller>, [
       [<item:industrialforegoing:supreme_black_hole_unit>, <item:industrialforegoing:pity_black_hole_tank>, <item:industrialforegoing:simple_black_hole_tank>],
       [<item:industrialforegoing:advanced_black_hole_unit>, <item:storagedrawers:controller>, <item:industrialforegoing:advanced_black_hole_tank>],
       [<item:industrialforegoing:simple_black_hole_unit>, <item:industrialforegoing:pity_black_hole_unit>, <item:industrialforegoing:supreme_black_hole_tank>]], 400000);

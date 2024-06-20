@@ -310,6 +310,19 @@ import crafttweaker.api.util.random.Percentaged;
       [<tag:items:minecraft:planks>, <tag:items:minecraft:planks>, <tag:items:minecraft:planks>],
       [<tag:items:minecraft:planks>, <tag:items:forge:gears/iron>, <tag:items:minecraft:planks>],
       [<tag:items:minecraft:planks>, <tag:items:minecraft:planks>, <tag:items:minecraft:planks>]]);
+  //mm
+    craftingTable.addShaped("ias_energy", <item:mm:ias_energy_port_input>, [
+      [<item:blocksyouneed_luna:wrought_iron_boiler_plate>, <item:enderio:energy_conduit>, <item:blocksyouneed_luna:wrought_iron_boiler_plate>],
+      [<item:blocksyouneed_luna:wrought_iron_boiler_plate>, <item:mekanism:basic_energy_cube>, <item:blocksyouneed_luna:wrought_iron_boiler_plate>],
+      [<item:blocksyouneed_luna:wrought_iron_boiler_plate>, <item:blocksyouneed_luna:wrought_iron_boiler_plate>, <item:blocksyouneed_luna:wrought_iron_boiler_plate>]]);
+    craftingTable.addShaped("ias_item_out", <item:mm:ias_item_port_output>, [
+      [<item:blocksyouneed_luna:wrought_iron_boiler_plate>, <item:blocksyouneed_luna:wrought_iron_boiler_plate>, <item:blocksyouneed_luna:wrought_iron_boiler_plate>],
+      [<item:blocksyouneed_luna:wrought_iron_boiler_plate>, <item:blocksyouneed_luna:wrought_iron_crate>, <item:blocksyouneed_luna:wrought_iron_boiler_plate>],
+      [<item:blocksyouneed_luna:wrought_iron_boiler_plate>, <item:minecraft:hopper>, <item:blocksyouneed_luna:wrought_iron_boiler_plate>]]);
+    craftingTable.addShaped("ias_item_in", <item:mm:ias_item_port_input>, [
+      [<item:blocksyouneed_luna:wrought_iron_boiler_plate>, <item:minecraft:hopper>, <item:blocksyouneed_luna:wrought_iron_boiler_plate>],
+      [<item:blocksyouneed_luna:wrought_iron_boiler_plate>, <item:blocksyouneed_luna:wrought_iron_crate>, <item:blocksyouneed_luna:wrought_iron_boiler_plate>],
+      [<item:blocksyouneed_luna:wrought_iron_boiler_plate>, <item:blocksyouneed_luna:wrought_iron_boiler_plate>, <item:blocksyouneed_luna:wrought_iron_boiler_plate>]]);
   //replacer | this shit is fricking complicated so refer to https://docs.blamejared.com/1.20.1/en/vanilla/api/recipe/replacement/Replacer for reference.
     // forge:gears/stone to enderio:iron_gear
       Replacer.create()
