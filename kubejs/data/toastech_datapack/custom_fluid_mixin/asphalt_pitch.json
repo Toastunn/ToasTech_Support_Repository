@@ -1,0 +1,11 @@
+{
+  "type": "flowing_block",
+  "flowing": "kubejs:magical_water",
+  "blocks_nearby": [
+    "blocksyouneed_luna:tar_fluid"
+  ],
+  "result": {
+    "type": "block",
+    "block": "blocksyouneed_luna:asphalt_pitch"
+  }
+}

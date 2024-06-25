@@ -1,0 +1,9 @@
+{
+  "type": "flowing_block",
+  "flowing": "#minecraft:lava",
+  "blocks_nearby": ["mekanism:heavy_water"],
+  "result": {
+    "type": "block",
+    "block": "minecraft:dripstone_block"
+  }
+}

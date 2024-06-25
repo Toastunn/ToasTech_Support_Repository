@@ -1,0 +1,9 @@
+{
+  "type": "flowing_block",
+  "flowing": "#forge:honey",
+  "blocks_nearby": ["mekanism:superheated_sodium"],
+  "result": {
+    "type": "block",
+    "block": "blocksyouneed_luna:achoria"
+  }
+}

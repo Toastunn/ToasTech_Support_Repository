@@ -32,11 +32,11 @@
 		}
 		{
 			dependencies: ["7E9AD5B815F40263"]
-			description: ["The Quantum Entangloporter is a machine that allows liquids/items/energy/gas to be sent from one Quantum Entangloporter to another through a channel."]
+			description: ["&5The &dQuantum Entangloporter &5is a device that uses quantum channels to transport &oalmost anything&r &5from one Entangloporter to the other."]
 			id: "00000000000008F8"
 			rewards: [{
-				id: "32A1D06138C19C68"
-				item: "mekanism:quantum_entangloporter"
+				id: "249D9A2D08495C74"
+				item: "mekanism:teleportation_core"
 				type: "item"
 			}]
 			tasks: [{
@@ -49,18 +49,8 @@
 		}
 		{
 			dependencies: ["7E9AD5B815F40263"]
-			description: [
-				"&4The &dDigital Miner &4has a pretty hard recipe in &3ToasTech&4."
-				"&4It can be configured to mine ores only within a certain area. "
-				"&4It can also be set to silk touch ores, but this results in higher power consumption."
-				"&4Good luck..."
-			]
+			description: ["&5The &dDigital Miner &5has a pretty hard recipe in &3ToasTech&5. It will excavate the area underneath it and gather what it finds automatically."]
 			id: "00000000000008FA"
-			rewards: [{
-				id: "076DB8B6398A4A9A"
-				type: "xp_levels"
-				xp_levels: 5
-			}]
 			size: 1.5d
 			tasks: [{
 				id: "00000000000008FB"
@@ -91,134 +81,6 @@
 			}]
 			x: 2.732142857142861d
 			y: -0.9821428571428541d
-		}
-		{
-			dependencies: [
-				"0000000000000948"
-				"7E9AD5B815F40263"
-			]
-			description: ["QIO is a way of storing large amounts of items that can be stored, searched, and accessed remotely in late game."]
-			id: "00000000000008C1"
-			rewards: [{
-				count: 4
-				id: "1198B4A6798E082C"
-				item: "mekanism:pellet_polonium"
-				type: "item"
-			}]
-			tasks: [
-				{
-					id: "00000000000008C2"
-					item: "mekanism:qio_drive_array"
-					type: "item"
-				}
-				{
-					id: "00000000000008C3"
-					item: "mekanism:qio_dashboard"
-					type: "item"
-				}
-			]
-			x: -2.0d
-			y: 1.0d
-		}
-		{
-			dependencies: ["00000000000008C1"]
-			description: ["In this basic QIO Drive, you can store 16k items for 128 different types."]
-			id: "00000000000008C4"
-			rewards: [{
-				id: "5522CD4169C537A2"
-				item: "mekanism:pellet_polonium"
-				type: "item"
-			}]
-			tasks: [{
-				id: "00000000000008C5"
-				item: "mekanism:qio_drive_base"
-				type: "item"
-			}]
-			x: -1.0d
-			y: 1.0d
-		}
-		{
-			dependencies: ["00000000000008C4"]
-			description: ["In the Hyper-Dense QIO Drive, you can store 128k items for 256 different types."]
-			id: "00000000000008C6"
-			rewards: [{
-				count: 2
-				id: "20865B9BC588E6B1"
-				item: "mekanism:pellet_polonium"
-				type: "item"
-			}]
-			tasks: [{
-				id: "00000000000008C7"
-				item: "mekanism:qio_drive_hyper_dense"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 1.0d
-		}
-		{
-			dependencies: ["00000000000008C6"]
-			description: ["In the Time-Dilating QIO Drive, you can store 1048k items for 1024 different types."]
-			id: "00000000000008C8"
-			rewards: [{
-				count: 4
-				id: "29A08220B1CDC997"
-				item: "mekanism:pellet_polonium"
-				type: "item"
-			}]
-			tasks: [{
-				id: "00000000000008C9"
-				item: "mekanism:qio_drive_time_dilating"
-				type: "item"
-			}]
-			x: 1.0d
-			y: 1.0d
-		}
-		{
-			dependencies: ["00000000000008C8"]
-			description: ["In the Supermassive QIO Drive, you can store 16 billion items for 8192 different types."]
-			id: "00000000000008CA"
-			rewards: [{
-				id: "4F8753971066D217"
-				item: "mekanism:pellet_antimatter"
-				type: "item"
-			}]
-			tasks: [{
-				id: "00000000000008CB"
-				item: "mekanism:qio_drive_supermassive"
-				type: "item"
-			}]
-			x: 2.0d
-			y: 1.0d
-		}
-		{
-			dependencies: ["00000000000008C1"]
-			description: ["QIO Importers are attached to a block with inventory and wirelessly transmit their contents to a drive array. The importer must be set to the same frequency as the drive array."]
-			id: "00000000000008DC"
-			rewards: [{
-				count: 4
-				id: "08028A9BBDBACE22"
-				item: "mekanism:pellet_polonium"
-				type: "item"
-			}]
-			tasks: [
-				{
-					id: "00000000000008DD"
-					item: "mekanism:qio_importer"
-					type: "item"
-				}
-				{
-					id: "00000000000008DE"
-					item: "mekanism:qio_exporter"
-					type: "item"
-				}
-				{
-					id: "00000000000008DF"
-					item: "mekanism:qio_redstone_adapter"
-					type: "item"
-				}
-			]
-			x: -1.5d
-			y: 2.0d
 		}
 		{
 			dependencies: ["19F5DDF4204F6E56"]
@@ -460,7 +322,15 @@
 		}
 		{
 			dependencies: ["7E9AD5B815F40263"]
+			description: ["&5The &6Schematicannon &5is a very useful tool that can paste schematics from your schematics folder or from ones you've made."]
 			id: "7C6740D20B44003F"
+			rewards: [{
+				count: 10
+				id: "7FE59B09E54B2C9F"
+				item: "minecraft:gunpowder"
+				type: "item"
+			}]
+			subtitle: "That's not to hard"
 			tasks: [{
 				id: "25FF5167485C3B16"
 				item: "create:schematicannon"
@@ -786,6 +656,28 @@
 			}]
 			x: 8.5d
 			y: 3.5d
+		}
+		{
+			dependencies: [
+				"4D7A6E914CD8DB0F"
+				"2B427700A23E7EA0"
+			]
+			description: ["&4What would be a simple table to draw on now requires a &9Multiversal Extractor&4. You can't expect to be able to access otherworldly powers like if it was any other day, no? Make your own schematics, it's fun."]
+			hide_dependency_lines: true
+			id: "234CE1AB29426671"
+			rewards: [{
+				id: "7BDACB692C4E6E24"
+				item: "enderio:player_token"
+				type: "item"
+			}]
+			subtitle: "Why..."
+			tasks: [{
+				id: "22B74156253B3567"
+				item: "create:schematic_table"
+				type: "item"
+			}]
+			x: -1.75d
+			y: 1.0d
 		}
 	]
 	title: "Machinery"

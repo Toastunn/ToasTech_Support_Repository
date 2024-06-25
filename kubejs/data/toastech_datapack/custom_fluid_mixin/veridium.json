@@ -1,0 +1,9 @@
+{
+  "type": "flowing_block",
+  "flowing": "#minecraft:lava",
+  "blocks_nearby": ["#toastech:pulsating_liquid"],
+  "result": {
+    "type": "block",
+    "block": "create:veridium"
+  }
+}

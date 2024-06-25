@@ -1,0 +1,12 @@
+{
+  "type": "flowing_block",
+  "flowing": "#minecraft:lava",
+  "blocks_nearby": [
+    "kubejs:magical_water",
+    "minecraft:crimson_nylium"
+  ],
+  "result": {
+    "type": "block",
+    "block": "create:crimsite"
+  }
+}

@@ -14,11 +14,13 @@ PlayerEvents.loggedIn(event => {
       persistentData.firstjoin = true
     }
 })
+
 PlayerEvents.respawned(event => {
   const { player } = event
   const worldSpawn = player.level.getSharedSpawnPos()
   const playerName = player.name.string
-    if(player.block.pos.toShortString() == worldSpawn.offset(0,7,0).toShortString()) {//better way of doing this?
-      player.runCommandSilent(`tp ${playerName} ~ ~-6 ~`)
+  console.log(player.block.pos.y, worldSpawn.offset(0,5,0).getY())
+    if(player.block.pos.y >= worldSpawn.offset(0,5,0).getY()) {//better way of doing this?
+      player.runCommandSilent(`tp ${playerName} ~ ~-7 ~`)
     }
 })

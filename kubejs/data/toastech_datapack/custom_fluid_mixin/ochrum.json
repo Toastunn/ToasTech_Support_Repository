@@ -1,0 +1,13 @@
+{
+  "type": "flowing_block",
+  "flowing": "#minecraft:lava",
+  "blocks_nearby": [
+    "kubejs:magical_water",
+    "minecraft:clay",
+    "minecraft:sand"
+  ],
+  "result": {
+    "type": "block",
+    "block": "create:ochrum"
+  }
+}

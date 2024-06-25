@@ -72,6 +72,7 @@ Synthesizing.removeByName("mekanism:nucleosynthesizing/end_crystal");
     Combining.addRecipe("toast/combining", <item:minecraft:bread>, <item:kubejs:star>, <item:kubejs:toast>);
     Combining.addRecipe("silver_iodide/combining", <tag:items:forge:ingots/silver>, <item:kubejs:iodine>, <item:kubejs:silver_iodide>);
     Combining.addRecipe("kaolin/combining", <item:minecraft:clay>, <item:minecraft:granite>, <item:kubejs:kaolin>);
+    Combining.addRecipe("radiant_catalyst/combining", <item:alltheores:iridium_plate>, <item:alltheores:lumium_plate>, <item:kubejs:radiant_catalyst>);
   //crushing
     Crushing.addRecipe("crushed_salt/mekanism", <item:mekanism:salt>, <item:garnished:crushed_salt>);
     Crushing.addRecipe("crushed_salt/block/mekanism", <item:mekanism:block_salt>, <item:garnished:crushed_salt> * 5);

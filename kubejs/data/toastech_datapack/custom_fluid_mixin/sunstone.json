@@ -1,0 +1,9 @@
+{
+  "type": "flowing_block",
+  "flowing": "#minecraft:lava",
+  "blocks_nearby": ["enderio:liquid_sunshine"],
+  "result": {
+    "type": "block",
+    "block": "blocksyouneed_luna:sunstone"
+  }
+}

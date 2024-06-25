@@ -1,0 +1,9 @@
+{
+  "type": "flowing_block",
+  "flowing": "#minecraft:lava",
+  "blocks_nearby": ["kubejs:liquid_void"],
+  "result": {
+    "type": "block",
+    "block": "garnished:abyssal_stone"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "flowing_block",
+  "flowing": "#minecraft:lava",
+  "blocks_nearby": ["mekanism:nutritional_paste"],
+  "result": {
+    "type": "block",
+    "block": "garnished:carnotite"
+  }
+}

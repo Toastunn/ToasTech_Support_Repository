@@ -231,6 +231,16 @@ import mods.create.PressingManager;
     <recipetype:create:cutting>.addRecipe("brass_rod_with_cutting", [(<item:kubejs:brass_rod> * 8) %100], <item:create:brass_ingot> * 2, 100);
   //mechanical crafting | <recipetype:create:mechanical_crafting>.addRecipe(name as string, output as IItemStack, ingredients as IIngredient[][])
     val air = <item:minecraft:air>;
+    <recipetype:create:mechanical_crafting>.addRecipe("schematicannon", <item:create:schematicannon>, [
+      [air, air, air, air, air, air, air, <item:createdeco:industrial_iron_ingot>, air],
+      [air, air, air, air, air, air, <item:createdeco:industrial_iron_ingot>, air, <item:createdeco:industrial_iron_ingot>],
+      [air, air, air, air, air, <item:createdeco:industrial_iron_ingot>, air, <item:createdeco:industrial_iron_ingot>, air],
+      [air, air, <item:blocksyouneed_luna:spruce_panel>, <item:blocksyouneed_luna:spruce_panel>, <item:blocksyouneed_luna:spruce_panel>, air, <item:createdeco:industrial_iron_ingot>, air, air],
+      [air, air, <item:blocksyouneed_luna:spruce_panel>, <item:createdeco:industrial_iron_ingot>, <item:blocksyouneed_luna:spruce_panel>, <item:createdeco:industrial_iron_ingot>, air, air, air],
+      [air ,air, <item:blocksyouneed_luna:spruce_panel>, <item:ae2:sky_stone_tank>, <item:blocksyouneed_luna:spruce_panel>, air, air, air, air],
+      [<item:create:polished_cut_andesite>, <item:minecraft:spruce_wood>, <item:minecraft:spruce_wood>, <item:minecraft:spruce_wood>, <item:minecraft:spruce_wood>, <item:minecraft:spruce_wood>, <item:create:polished_cut_andesite>, air, air],
+      [<item:create:polished_cut_andesite>, <item:create:item_vault>, <item:mekanism:teleportation_core>, <item:create:shaft>, <item:create_connected:control_chip>, <item:create:precision_mechanism>, <item:create:polished_cut_andesite>, air, air],
+      [<item:create:polished_cut_andesite>, <item:create:polished_cut_andesite>, <item:create:polished_cut_andesite>, <item:create:large_cogwheel>, <item:create:polished_cut_andesite>, <item:create:polished_cut_andesite>, <item:create:polished_cut_andesite>, air ,air]]);
     <recipetype:create:mechanical_crafting>.addRecipe("digital_miner", <item:mekanism:digital_miner>, [
       [<item:create:andesite_alloy>, <item:mekanismgenerators:turbine_vent>, <item:mekanism:steel_casing>, <item:mekanismgenerators:turbine_vent>, <item:create:andesite_alloy>],
       [<item:mekanism:steel_casing>, <item:mekanism:alloy_atomic>, <item:mekanism:ultimate_control_circuit>, <item:mekanism:alloy_atomic>, <item:ae2:cable_interface>],

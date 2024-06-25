@@ -110,6 +110,7 @@ import crafttweaker.api.util.random.Percentaged;
         <item:industrialforegoing:black_hole_controller>,
       //create
         <item:create:schematicannon>,
+        <item:create:schematic_table>,
         <item:createchromaticreturn:multiplite_tube>,
       //mm
         <item:watersources:water_source_tier_1>,
@@ -186,6 +187,11 @@ import crafttweaker.api.util.random.Percentaged;
         [<item:createchromaticreturn:multiplite_ingot>],
         [<item:alltheores:silver_plate>],
         [<item:minecraft:redstone>]]);
+      craftingTable.addShaped("schematic_table", <item:create:schematic_table>, [
+        [<tag:items:minecraft:wooden_slabs>, <tag:items:minecraft:wooden_slabs>, <tag:items:minecraft:wooden_slabs>],
+        [air, <item:kubejs:multiversal_extractor>, air],
+        [air, <item:minecraft:smooth_stone>, air]]);
+
   //mekanism
     craftingTable.addShaped('metallurgic_infuser', <item:mekanism:metallurgic_infuser>, [
       [<item:create:andesite_alloy>, <item:create:spout>, <item:create:andesite_alloy>],

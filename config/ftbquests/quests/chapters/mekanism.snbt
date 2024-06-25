@@ -80,6 +80,7 @@
 				item: "mekanism:ingot_steel"
 				type: "item"
 			}]
+			subtitle: "Tier 1"
 			tasks: [
 				{
 					id: "000000000000086F"
@@ -116,6 +117,7 @@
 				item: "mekanism:alloy_infused"
 				type: "item"
 			}]
+			subtitle: "Tier 2"
 			tasks: [
 				{
 					id: "0000000000000871"
@@ -152,6 +154,7 @@
 				item: "mekanism:alloy_reinforced"
 				type: "item"
 			}]
+			subtitle: "Tier 3"
 			tasks: [
 				{
 					id: "0000000000000873"
@@ -188,6 +191,7 @@
 				item: "mekanism:alloy_atomic"
 				type: "item"
 			}]
+			subtitle: "Tier 4"
 			tasks: [
 				{
 					id: "0000000000000875"
@@ -226,6 +230,7 @@
 				item: "minecraft:redstone_block"
 				type: "item"
 			}]
+			subtitle: "Tier 1"
 			tasks: [
 				{
 					id: "000000000000088B"
@@ -257,6 +262,7 @@
 				item: "mekanism:alloy_infused"
 				type: "item"
 			}]
+			subtitle: "Tier 2"
 			tasks: [
 				{
 					id: "000000000000088D"
@@ -288,6 +294,7 @@
 				item: "mekanism:alloy_reinforced"
 				type: "item"
 			}]
+			subtitle: "Tier 3"
 			tasks: [
 				{
 					id: "000000000000088F"
@@ -319,6 +326,7 @@
 				item: "mekanism:alloy_atomic"
 				type: "item"
 			}]
+			subtitle: "Tier 4"
 			tasks: [
 				{
 					id: "0000000000000891"
@@ -1827,7 +1835,7 @@
 			y: -5.5d
 		}
 		{
-			description: ["&5I'd like to thank the developpers of Ragnamod VI for the Mekanism questing tab, since I used it as a base for ToasTech."]
+			description: ["&5I'd like to thank the developpers of Ragnamod VI for their Mekanism questing tab, since I used it as a base for ToasTech."]
 			icon: "create:clipboard"
 			id: "6F98DF65C7869FE8"
 			rewards: [{
@@ -2142,6 +2150,104 @@
 			}]
 			x: 1.75d
 			y: -0.25d
+		}
+		{
+			dependencies: ["3C365563533EE419"]
+			description: ["&dMekanism Factories &5are the upgrades to the base machines. They allow for more input and output &o&8(I/O)&r&5, therefore increasing efficiency. And &3Toastech &5is all about efficiency."]
+			id: "15FD7C897045F7F0"
+			rewards: [{
+				id: "28493845216F07F9"
+				item: "mekanism:basic_control_circuit"
+				type: "item"
+			}]
+			subtitle: "Tier 1"
+			tasks: [{
+				id: "371120993A318535"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "toastech:basic_factory"
+					}
+				}
+				title: "Any #toastech:basic_factory"
+				type: "item"
+			}]
+			title: "Basic Factories"
+			x: 5.5d
+			y: -4.75d
+		}
+		{
+			dependencies: ["15D47FB1BBDC099A"]
+			id: "3ED2D2B3DF7063C6"
+			rewards: [{
+				id: "4CA0049E5B1EAC49"
+				item: "mekanism:advanced_control_circuit"
+				type: "item"
+			}]
+			subtitle: "Tier 2"
+			tasks: [{
+				id: "7EF3AAB466A1A5B8"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "toastech:advanced_factory"
+					}
+				}
+				title: "Any #toastech:advanced_factory"
+				type: "item"
+			}]
+			x: 3.75d
+			y: -0.25d
+		}
+		{
+			dependencies: ["15BB897035D3C3C8"]
+			id: "22073E2FFB24D611"
+			rewards: [{
+				id: "3692387CED23EFD9"
+				item: "mekanism:elite_control_circuit"
+				type: "item"
+			}]
+			subtitle: "Tier 3"
+			tasks: [{
+				id: "0CF437B94375D1F2"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "toastech:elite_factory"
+					}
+				}
+				title: "Any #toastech:elite_factory"
+				type: "item"
+			}]
+			x: 4.75d
+			y: 0.5d
+		}
+		{
+			dependencies: ["6B56234E2759E9D7"]
+			id: "117F200E82B0AE4B"
+			rewards: [{
+				id: "3FC9557F449AB9A5"
+				item: "mekanism:ultimate_control_circuit"
+				type: "item"
+			}]
+			subtitle: "Tier 4"
+			tasks: [{
+				id: "1FE30D9911ADF7C3"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "toastech:ultimate_factory"
+					}
+				}
+				title: "Any #toastech:ultimate_factory"
+				type: "item"
+			}]
+			x: 8.25d
+			y: 2.0d
 		}
 	]
 	title: "Mekanism"

@@ -1,0 +1,10 @@
+{
+  "type": "block_transform",
+  "flowing": "kubejs:magical_water",
+  "block_to_transform": "minecraft:moss_block",
+  "blocks_nearby": ["minecraft:air"],
+  "result": {
+    "type": "block",
+    "block": "minecraft:dirt"
+  }
+}

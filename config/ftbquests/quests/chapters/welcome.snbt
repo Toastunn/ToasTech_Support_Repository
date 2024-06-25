@@ -3,12 +3,18 @@
 	default_quest_shape: ""
 	filename: "welcome"
 	group: ""
-	icon: "minecraft:bread"
+	icon: "kubejs:toast"
 	id: "7E246CF4602950CE"
 	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
+			description: [
+				"&bWhat you are about to experience is the culmination of me suffering for over a year, concocting the absolute WORST modpack of all Minecraft. &3ToasTech &bwill probably not be fun or enjoyable, and many things will make you ask: \"WHY?????\". And I can't give you an answer."
+				""
+				"{@pagebreak}"
+				"&bSo, if you find any bugs or an item that's not automateable within the progression, let me know on the &6CurseForge &bpage and i'll probalby never read it."
+			]
 			icon: "minecraft:campfire"
 			id: "4581275E09079C65"
 			rewards: [{
@@ -78,6 +84,24 @@
 				type: "checkmark"
 			}]
 			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4581275E09079C65"]
+			description: ["&bMany &6Ponder &bscenes have been added for &dMekanism &band &9Masterful Machinery&b. So use them."]
+			id: "1D1B4BF44F2EB767"
+			rewards: [{
+				id: "5BD6B954527A1934"
+				item: "create:goggles"
+				type: "item"
+			}]
+			subtitle: "Please"
+			tasks: [{
+				id: "527EC12445139F8D"
+				title: "Use Ponder"
+				type: "checkmark"
+			}]
+			x: 3.5d
 			y: 0.0d
 		}
 	]
