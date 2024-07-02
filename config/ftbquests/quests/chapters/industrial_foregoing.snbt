@@ -3,15 +3,13 @@
 	default_quest_shape: ""
 	filename: "industrial_foregoing"
 	group: "7BA7C5ADDAE03ED6"
+	hide_quest_until_deps_visible: true
 	icon: "industrialforegoing:plastic"
 	id: "1B23130CC9B4BC8B"
 	images: [
 		{
 			click: "#2DF03915CEE99947"
-			corner: false
-			dev: false
 			height: 3.6d
-			hover: [ ]
 			image: "kubejs:textures/ftbquests/wither-cage-schema.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -19,11 +17,7 @@
 			y: -11.0d
 		}
 		{
-			click: ""
-			corner: false
-			dev: false
 			height: 15.965104166666666d
-			hover: [ ]
 			image: "kubejs:textures/ftbquests/latex_unit.png"
 			order: -3
 			rotation: 0.0d
@@ -36,6 +30,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["7D0BC26B33BBB358"]
 			description: [
 				"&aIndustrial Foregoing &2is one of the tech mods of all time. I included it for a couple of reasons, mainly the stasis chamber and the black hole units. So, let me show you how to get there."
 				"{@pagebreak}"
@@ -70,7 +65,7 @@
 			rewards: [{
 				count: 16
 				id: "303FF57C834A3BFC"
-				item: { Count: 16b, id: "minecraft:acacia_sapling" }
+				item: { Count: 16, id: "minecraft:acacia_sapling" }
 				type: "item"
 			}]
 			subtitle: "first machine yipee"
@@ -120,6 +115,7 @@
 		}
 		{
 			dependencies: ["0028EFDC18891010"]
+			hide_dependent_lines: true
 			id: "2C44D1F099F86CFE"
 			rewards: [{
 				count: 10
@@ -397,8 +393,8 @@
 		}
 		{
 			dependencies: [
-				"640FA0EB22A2D109"
 				"70465B0372F737D6"
+				"640FA0EB22A2D109"
 			]
 			description: [
 				"&aBlock and Fluid Placers &2have been removed from survival ToasTech for two reasons:"
@@ -422,7 +418,10 @@
 			y: -5.0d
 		}
 		{
-			dependencies: ["73D8BA023780EBDC"]
+			dependencies: [
+				"73D8BA023780EBDC"
+				"2C44D1F099F86CFE"
+			]
 			id: "60502A08CD246D11"
 			rewards: [{
 				count: 2
@@ -451,6 +450,7 @@
 			dependencies: [
 				"60502A08CD246D11"
 				"2512F8E4B6338AF0"
+				"2C44D1F099F86CFE"
 			]
 			id: "595F5776FB8951A1"
 			rewards: [
@@ -488,6 +488,7 @@
 			dependencies: [
 				"595F5776FB8951A1"
 				"1976B96532587878"
+				"2C44D1F099F86CFE"
 			]
 			id: "42651957D9B2B3B7"
 			rewards: [{
@@ -517,6 +518,7 @@
 			dependencies: [
 				"42651957D9B2B3B7"
 				"71626497D0A39189"
+				"2C44D1F099F86CFE"
 			]
 			id: "35CA25074C34F98E"
 			rewards: [{
@@ -543,7 +545,10 @@
 			y: -9.0d
 		}
 		{
-			dependencies: ["35CA25074C34F98E"]
+			dependencies: [
+				"35CA25074C34F98E"
+				"2C44D1F099F86CFE"
+			]
 			description: ["&2The &aBlack Hole Controller &2is used by putting &aBlack Hole Units &2or &aTanks &2into its inventory. The &aController &2can then receive items or fluids and store them in the respective &aBlack Hole Unit&2 or &aTank&2."]
 			id: "32C44C006C04541E"
 			rewards: [{

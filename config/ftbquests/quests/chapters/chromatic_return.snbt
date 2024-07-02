@@ -3,15 +3,12 @@
 	default_quest_shape: ""
 	filename: "chromatic_return"
 	group: "6EC53AEFE78C5F36"
+	hide_quest_until_deps_visible: true
 	icon: "createchromaticreturn:radiant_glow_claws"
 	id: "7B2F1459EB04698A"
 	images: [
 		{
-			click: ""
-			corner: false
-			dev: false
 			height: 11.0d
-			hover: [ ]
 			image: "kubejs:textures/ftbquests/claw_recipe_fr.png"
 			order: 12
 			rotation: 0.0d
@@ -20,11 +17,7 @@
 			y: 1.5d
 		}
 		{
-			click: ""
-			corner: false
-			dev: false
 			height: 50.0d
-			hover: [ ]
 			image: "kubejs:textures/ftbquests/totally_not_filler_background.png"
 			rotation: 0.0d
 			width: 50.0d
@@ -97,7 +90,7 @@
 			tasks: [{
 				id: "72AC54F816EA21C8"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "avaritia:singularity"
 					tag: {
 						Id: "avaritia:chromatic"
@@ -222,6 +215,7 @@
 			y: 3.0d
 		}
 		{
+			dependencies: ["4D05E7704AC89227"]
 			id: "40D0AC9BC2DB3DEC"
 			rewards: [{
 				id: "2ED961F4CA08D3D4"

@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "ender_io"
 	group: "7BA7C5ADDAE03ED6"
+	hide_quest_until_deps_visible: true
 	icon: "enderio:grains_of_infinity"
 	id: "28D21458ADBCB5FC"
 	order_index: 2
@@ -107,7 +108,7 @@
 			tasks: [{
 				count: 8L
 				id: "2E5AB183C40140A1"
-				item: { Count: 8b, id: "ae2:certus_quartz_dust" }
+				item: { Count: 8, id: "ae2:certus_quartz_dust" }
 				type: "item"
 			}]
 			title: "Whoops! All AE2!"
@@ -245,11 +246,18 @@
 		{
 			dependencies: ["428D59AA8460D4A1"]
 			id: "7A3E601959A03151"
-			rewards: [{
-				id: "20FE4C3F46B57766"
-				item: "minecraft:emerald"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "20FE4C3F46B57766"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "504DDFD77281DE37"
+					item: "kubejs:vibrant_liquid_bucket"
+					type: "item"
+				}
+			]
 			subtitle: "Who Doesn't Love Hydro Cloride?"
 			tasks: [{
 				amount: 1000L

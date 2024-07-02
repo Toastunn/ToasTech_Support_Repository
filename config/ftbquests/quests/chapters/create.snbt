@@ -6,11 +6,7 @@
 	icon: "create:mechanical_press"
 	id: "07C6ED8DD9E21B8C"
 	images: [{
-		click: ""
-		corner: false
-		dev: false
 		height: 16.0d
-		hover: [ ]
 		image: "kubejs:textures/ftbquests/actual_crate_factory.png"
 		rotation: 0.0d
 		width: 29.063386944181648d
@@ -111,7 +107,7 @@
 				{
 					count: 20L
 					id: "2BC8899109832D87"
-					item: { Count: 20b, id: "create:white_sail" }
+					item: { Count: 20, id: "create:white_sail" }
 					type: "item"
 				}
 			]
@@ -324,7 +320,7 @@
 			tasks: [{
 				count: 21L
 				id: "2E42F3ED3E1EAF1F"
-				item: { Count: 24b, id: "create:mechanical_crafter" }
+				item: { Count: 24, id: "create:mechanical_crafter" }
 				type: "item"
 			}]
 			title: "Mechanical Crafting"
@@ -344,7 +340,7 @@
 			tasks: [{
 				count: 32L
 				id: "66F5EF735C42CE94"
-				item: { Count: 32b, id: "create:powdered_obsidian" }
+				item: { Count: 32, id: "create:powdered_obsidian" }
 				type: "item"
 			}]
 			title: "Powdered Obsidian"
@@ -388,7 +384,7 @@
 			tasks: [{
 				count: 2L
 				id: "56E17B06B029ABA0"
-				item: { Count: 2b, id: "create:track_station" }
+				item: { Count: 2, id: "create:track_station" }
 				type: "item"
 			}]
 			title: "Trains"
@@ -431,7 +427,7 @@
 			tasks: [{
 				count: 8L
 				id: "0DD4B25E582BDC98"
-				item: { Count: 8b, id: "kubejs:andesite_rod" }
+				item: { Count: 8, id: "kubejs:andesite_rod" }
 				type: "item"
 			}]
 			title: "Starter Rods"
@@ -488,7 +484,7 @@
 			tasks: [{
 				count: 2L
 				id: "0AA412C8F62BF7F9"
-				item: { Count: 2b, id: "kubejs:copper_frame" }
+				item: { Count: 2, id: "kubejs:copper_frame" }
 				type: "item"
 			}]
 			title: "Copper Frames"
@@ -511,7 +507,7 @@
 			tasks: [{
 				count: 8L
 				id: "4FECFD7737B87E30"
-				item: { Count: 8b, id: "kubejs:copper_rod" }
+				item: { Count: 8, id: "kubejs:copper_rod" }
 				type: "item"
 			}]
 			title: "Copper Rods"
@@ -573,7 +569,7 @@
 			tasks: [{
 				count: 4L
 				id: "6F3D8C9E33781709"
-				item: { Count: 4b, id: "create:fluid_pipe" }
+				item: { Count: 4, id: "create:fluid_pipe" }
 				type: "item"
 			}]
 			title: "Create Pipes"

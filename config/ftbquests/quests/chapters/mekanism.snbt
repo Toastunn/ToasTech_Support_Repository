@@ -3,13 +3,12 @@
 	default_quest_shape: "hexagon"
 	filename: "mekanism"
 	group: "7BA7C5ADDAE03ED6"
+	hide_quest_until_deps_visible: true
 	icon: "mekanismgenerators:control_rod_assembly"
 	id: "0000000000000859"
 	images: [
 		{
 			click: "command:create ponder mekanismgenerators:fusion_reactor_controller"
-			corner: false
-			dev: false
 			height: 1.985239852398524d
 			hover: ["Click to Ponder"]
 			image: "kubejs:textures/ftbquests/fusion_reactor.png"
@@ -20,8 +19,6 @@
 		}
 		{
 			click: "command:create ponder mekanism:supercharged_coil"
-			corner: false
-			dev: false
 			height: 1.9875930521091811d
 			hover: ["Click to Ponder"]
 			image: "kubejs:textures/ftbquests/supercritical_phase_shifter.png"
@@ -32,8 +29,6 @@
 		}
 		{
 			click: "command:create ponder mekanismgenerators:control_rod_assembly"
-			corner: false
-			dev: false
 			height: 2.139130434782609d
 			hover: ["Click to Ponder"]
 			image: "kubejs:textures/ftbquests/fission_reactor.png"
@@ -43,11 +38,8 @@
 			y: 0.25d
 		}
 		{
-			click: ""
 			corner: true
-			dev: false
 			height: 25.0d
-			hover: [ ]
 			image: "kubejs:textures/ftbquests/sps_uses_too_much_power.png"
 			order: -1
 			rotation: 0.0d
@@ -57,8 +49,6 @@
 		}
 		{
 			click: "command:create ponder mekanism:thermal_evaporation_controller"
-			corner: false
-			dev: false
 			height: 5.160883280757098d
 			hover: ["Click to Ponder"]
 			image: "kubejs:textures/ftbquests/thermal_evaporation.png"
@@ -361,7 +351,7 @@
 				{
 					id: "0000000000000893"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "mekanism:hazmat_mask"
 						tag: {
 							HideFlags: 2
@@ -372,7 +362,7 @@
 				{
 					id: "0000000000000894"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "mekanism:hazmat_gown"
 						tag: {
 							HideFlags: 2
@@ -383,7 +373,7 @@
 				{
 					id: "0000000000000895"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "mekanism:hazmat_pants"
 						tag: {
 							HideFlags: 2
@@ -394,7 +384,7 @@
 				{
 					id: "0000000000000896"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "mekanism:hazmat_boots"
 						tag: {
 							HideFlags: 2
@@ -426,7 +416,7 @@
 				{
 					id: "0000000000000899"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "mekanism:mekasuit_helmet"
 						tag: {
 							HideFlags: 2
@@ -437,7 +427,7 @@
 				{
 					id: "000000000000089A"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "mekanism:mekasuit_bodyarmor"
 						tag: {
 							HideFlags: 2
@@ -448,7 +438,7 @@
 				{
 					id: "000000000000089B"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "mekanism:mekasuit_pants"
 						tag: {
 							HideFlags: 2
@@ -459,7 +449,7 @@
 				{
 					id: "000000000000089C"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "mekanism:mekasuit_boots"
 						tag: {
 							HideFlags: 2
@@ -669,7 +659,7 @@
 			tasks: [{
 				id: "00000000000008BC"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "mekanism:atomic_disassembler"
 					tag: {
 						HideFlags: 2
@@ -713,7 +703,7 @@
 			tasks: [{
 				id: "00000000000008C0"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "mekanism:meka_tool"
 					tag: {
 						HideFlags: 2
@@ -934,7 +924,7 @@
 			rewards: [{
 				id: "5166FBDE54402C33"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "minecraft:flint_and_steel"
 					tag: {
 						Damage: 0
@@ -1201,7 +1191,7 @@
 			rewards: [{
 				count: 16
 				id: "614335906025DE23"
-				item: { Count: 16b, id: "mekanism:dust_sulfur" }
+				item: { Count: 16, id: "mekanism:dust_sulfur" }
 				type: "item"
 			}]
 			tasks: [{
@@ -1349,7 +1339,7 @@
 				{
 					id: "000000000000094A"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "mekanismgenerators:hohlraum"
 						tag: {
 							mekData: {
@@ -1519,16 +1509,13 @@
 			y: -2.0d
 		}
 		{
-			dependencies: [
-				"4E360A9C4B0A7198"
-				"4DE917F309C5DBCC"
-			]
+			dependencies: ["4E360A9C4B0A7198"]
 			description: ["&5To make &dSturdy Andesite Casings&5, you must make &6Sturdy Sheet Blocks &5and apply &6Andesite Casings &5to them."]
 			id: "7D0BC26B33BBB358"
 			rewards: [{
 				count: 4
 				id: "2CA8C98F2729F2C0"
-				item: { Count: 5b, id: "create:sturdy_sheet" }
+				item: { Count: 5, id: "create:sturdy_sheet" }
 				type: "item"
 			}]
 			size: 1.0d
@@ -1552,7 +1539,7 @@
 			tasks: [{
 				id: "4171D45EBC771DBE"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "mekanism:hdpe_elytra"
 					tag: {
 						Damage: 0
@@ -1648,7 +1635,7 @@
 			tasks: [{
 				id: "6737D4D80A9393FD"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "mekanism:pigment_extractor"
 					tag: {
 						mekData: { }
@@ -1674,7 +1661,7 @@
 			tasks: [{
 				id: "7373A2A69C03B1DF"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "mekanism:pigment_mixer"
 					tag: {
 						mekData: { }
@@ -1689,7 +1676,7 @@
 			dependencies: ["15D47FB1BBDC099A"]
 			description: ["&5The &dPainting Machine &5is mainly going to be used to make &0Black Iron &5form &0Extended Crafting! &o&8(ToasTech exclusive recipe)"]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "mekanism:painting_machine"
 				tag: {
 					mekData: { }
@@ -1704,7 +1691,7 @@
 			tasks: [{
 				id: "23BBA47701900648"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "mekanism:painting_machine"
 					tag: {
 						mekData: { }
@@ -1716,6 +1703,7 @@
 			y: -1.0d
 		}
 		{
+			dependencies: ["4DE917F309C5DBCC"]
 			description: [
 				"&5Welcome to &dMekanism&5, a Factory Maker's Dream! The Middle Game of &3ToasTech&5 will be all about &dMekanism&5, so get your configurators ready, because this is going to get complicated &4fast."
 				"{@pagebreak}"
@@ -1744,11 +1732,18 @@
 			description: ["&5Gaseous Polonium is used to make Antimatter."]
 			hide_dependent_lines: true
 			id: "6F34D924F80BAD00"
-			rewards: [{
-				id: "1973CBDF809ABDE7"
-				item: "mekanism:ingot_uranium"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "1973CBDF809ABDE7"
+					item: "mekanism:ingot_uranium"
+					type: "item"
+				}
+				{
+					id: "5688338F8F7DE2AB"
+					item: "kubejs:liquid_polonium_bucket"
+					type: "item"
+				}
+			]
 			subtitle: "The following quests intake the liquid versions because FTB Quests doesn't support gases."
 			tasks: [{
 				amount: 1000L
@@ -1767,11 +1762,18 @@
 			]
 			description: ["&5Antimatter is used in endgame refinement."]
 			id: "11E9A3216FB47E41"
-			rewards: [{
-				id: "37C693D0C463D178"
-				item: "mekanism:ingot_uranium"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "37C693D0C463D178"
+					item: "mekanism:ingot_uranium"
+					type: "item"
+				}
+				{
+					id: "1D8944CF1E5B7A18"
+					item: "kubejs:liquid_antimatter_bucket"
+					type: "item"
+				}
+			]
 			tasks: [{
 				amount: 1000L
 				fluid: "kubejs:liquid_antimatter"
@@ -1789,7 +1791,7 @@
 			rewards: [{
 				id: "54A59518219F3816"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "minecraft:enchanted_book"
 					tag: {
 						StoredEnchantments: [{
@@ -1835,6 +1837,10 @@
 			y: -5.5d
 		}
 		{
+			dependencies: [
+				"4DE917F309C5DBCC"
+				"7D0BC26B33BBB358"
+			]
 			description: ["&5I'd like to thank the developpers of Ragnamod VI for their Mekanism questing tab, since I used it as a base for ToasTech."]
 			icon: "create:clipboard"
 			id: "6F98DF65C7869FE8"
@@ -1855,11 +1861,18 @@
 			dependencies: ["0000000000000916"]
 			description: ["&5You know the drill."]
 			id: "751F727AA5319B80"
-			rewards: [{
-				id: "6B8E73B4F25E2FBF"
-				type: "xp_levels"
-				xp_levels: 3
-			}]
+			rewards: [
+				{
+					id: "6B8E73B4F25E2FBF"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+				{
+					id: "09E1A6FED419F85C"
+					item: "kubejs:liquid_infinity_bucket"
+					type: "item"
+				}
+			]
 			subtitle: "FTB quests forcing liquids once again."
 			tasks: [{
 				amount: 1000L
@@ -2164,7 +2177,7 @@
 			tasks: [{
 				id: "371120993A318535"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "toastech:basic_factory"
@@ -2189,7 +2202,7 @@
 			tasks: [{
 				id: "7EF3AAB466A1A5B8"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "toastech:advanced_factory"
@@ -2213,7 +2226,7 @@
 			tasks: [{
 				id: "0CF437B94375D1F2"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "toastech:elite_factory"
@@ -2237,7 +2250,7 @@
 			tasks: [{
 				id: "1FE30D9911ADF7C3"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "toastech:ultimate_factory"

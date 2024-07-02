@@ -1,0 +1,9 @@
+{
+  "type": "flowing_block",
+  "flowing": "#minecraft:lava",
+  "blocks_nearby": ["create:chocolate", "minecraft:netherrack"],
+  "result": {
+    "type": "block",
+    "block": "garnished:ritualistic_stone"
+  }
+}

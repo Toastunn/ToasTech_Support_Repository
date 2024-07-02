@@ -46,7 +46,7 @@ JEIEvents.hideItems(event => {
     '#enderio:fused_quartz_na'
   ])
   event.hide('ae2:facade')
-  const removedItems = Utils.server.persistentData.removedItems
+  let removedItems = JsonIO.read('kubejs/client_scripts/removedItems.json').get("removedItems")
   removedItems.forEach(item => {
     event.hide(item)
   })

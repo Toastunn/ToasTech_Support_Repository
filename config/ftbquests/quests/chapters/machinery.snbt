@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "machinery"
 	group: "6EC53AEFE78C5F36"
+	hide_quest_until_deps_visible: true
 	icon: "mekanism:digital_miner"
 	id: "6CE92DDB57980D70"
 	order_index: 4
@@ -157,7 +158,7 @@
 			rewards: [{
 				id: "7A9E74DB392F8E8D"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "minecraft:enchanted_book"
 					tag: {
 						StoredEnchantments: [{
@@ -188,7 +189,7 @@
 			rewards: [{
 				id: "5432DDA9B7AC9A84"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "minecraft:enchanted_book"
 					tag: {
 						StoredEnchantments: [{
@@ -542,7 +543,7 @@
 			tasks: [{
 				id: "1D2F37F10FFB2861"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "avaritia:singularity"
 					tag: {
 						Id: "avaritia:chromatic"

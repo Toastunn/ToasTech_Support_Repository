@@ -6,11 +6,7 @@
 	icon: "minecraft:blaze_powder"
 	id: "3911C38ABFEB3292"
 	images: [{
-		click: ""
-		corner: false
-		dev: false
 		height: 15.965104166666666d
-		hover: [ ]
 		image: "kubejs:textures/ftbquests/nether.png"
 		rotation: 0.0d
 		width: 29.0d
@@ -27,7 +23,7 @@
 			rewards: [{
 				id: "561771AA13772240"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "minecraft:golden_boots"
 					tag: {
 						Damage: 0
@@ -55,7 +51,7 @@
 			tasks: [{
 				id: "42D3605189DF06E4"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "forge:mushrooms"
@@ -76,6 +72,11 @@
 			]
 			description: ["&7You'll need to know a little about &6Create&7 to do this but since you got here, you should know how to &6mix&7 stuff"]
 			id: "7AA58D959E2019F9"
+			rewards: [{
+				id: "7EDF6793F51C64CD"
+				item: "kubejs:fungal_mixture_bucket"
+				type: "item"
+			}]
 			subtitle: "Liquid Shrooms"
 			tasks: [{
 				amount: 1000L
@@ -101,7 +102,7 @@
 			tasks: [{
 				id: "4128E45CA4BA169C"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "crafttweaker:task_screens_craftable_3x3"
@@ -121,11 +122,18 @@
 			]
 			description: ["&dMycelium&7 is produced by filling &fdirt&7 with the &fFungal Mixture&7 you just made."]
 			id: "490FB864F2AEF3C7"
-			rewards: [{
-				id: "1433811ECCC41A54"
-				item: "garnished:salt_compound"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "1433811ECCC41A54"
+					item: "garnished:salt_compound"
+					type: "item"
+				}
+				{
+					id: "039B794915560F87"
+					item: "kubejs:liquid_void_bucket"
+					type: "item"
+				}
+			]
 			subtitle: "Mobs still spawn on it."
 			tasks: [{
 				id: "704D7C126B076D28"
@@ -139,12 +147,19 @@
 			dependencies: ["490FB864F2AEF3C7"]
 			description: ["&5Magical Water&7 is used in a variety of ways. Consult &2JEI&7 for more information."]
 			id: "6FCDF7909EBE792A"
-			rewards: [{
-				count: 5
-				id: "5A04FCB6B14C9349"
-				item: "minecraft:obsidian"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 5
+					id: "5A04FCB6B14C9349"
+					item: "minecraft:obsidian"
+					type: "item"
+				}
+				{
+					id: "2E8983AD525E8C8A"
+					item: "kubejs:magical_water_bucket"
+					type: "item"
+				}
+			]
 			subtitle: "It does Magical Things!"
 			tasks: [{
 				amount: 1000L
@@ -160,6 +175,12 @@
 			dependencies: ["6FCDF7909EBE792A"]
 			description: ["&6Fire Water&7 is made by cooking &5Magical Water&7 on a campfire &8&o(since you dont have a blaze burner or a brewing stand yet)&r&7 It's only purpose is for your next &cquest..."]
 			id: "4611177B930A472A"
+			rewards: [{
+				count: 2
+				id: "682BF517BABBE663"
+				item: "garnished:ethereal_compound"
+				type: "item"
+			}]
 			subtitle: "It won't burn you..."
 			tasks: [{
 				id: "2AD55A03F0D714D0"
@@ -188,7 +209,7 @@
 			tasks: [{
 				id: "410F891235C2AA2C"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "minecraft:flint_and_steel"
 					tag: {
 						Damage: 0

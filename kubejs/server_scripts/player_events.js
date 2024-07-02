@@ -9,8 +9,8 @@ PlayerEvents.loggedIn(event => {
       persistentData.gotBooks = true
     }
     if(!persistentData.firstjoin || persistentData.firstjoin == false) {
-      const playerName = player.name.string
-      player.runCommandSilent(`tp ${playerName} ~ ~-5 ~`)
+      const {x ,y ,z} = player.level.getSharedSpawnPos()
+      player.runCommandSilent(`tp ${player.username} ${x} ${y} ${z}`)
       persistentData.firstjoin = true
     }
 })
@@ -18,9 +18,10 @@ PlayerEvents.loggedIn(event => {
 PlayerEvents.respawned(event => {
   const { player } = event
   const worldSpawn = player.level.getSharedSpawnPos()
-  const playerName = player.name.string
+  const {x, y, z} = worldSpawn
+  const playerName = player.username
   console.log(player.block.pos.y, worldSpawn.offset(0,5,0).getY())
-    if(player.block.pos.y >= worldSpawn.offset(0,5,0).getY()) {//better way of doing this?
-      player.runCommandSilent(`tp ${playerName} ~ ~-7 ~`)
+    if(player.block.pos.y >= worldSpawn.offset(0,5,0).getY() && player.block.pos.x == x && player.block.pos.z == z) {//better way of doing this?
+      player.runCommandSilent(`tp ${playerName} ${x} ${y} ${z}`)
     }
 })

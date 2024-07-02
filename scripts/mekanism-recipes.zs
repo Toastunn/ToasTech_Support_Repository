@@ -77,6 +77,7 @@ Synthesizing.removeByName("mekanism:nucleosynthesizing/end_crystal");
     Crushing.addRecipe("crushed_salt/mekanism", <item:mekanism:salt>, <item:garnished:crushed_salt>);
     Crushing.addRecipe("crushed_salt/block/mekanism", <item:mekanism:block_salt>, <item:garnished:crushed_salt> * 5);
     Crushing.addRecipe("creative_flour/mekanism", <item:kubejs:creative_essence>, <item:createchromaticreturn:creative_flour>);
+    Crushing.addRecipe("ender_dust/mekanism", <item:minecraft:ender_pearl>, <item:ae2:ender_dust>);
   //item to gas
     ItemToGas.addRecipe("ethylene_from_biofuel/gas_conversion", <item:mekanism:bio_fuel>, <gas:mekanism:ethene> * 10);
   //dissolution

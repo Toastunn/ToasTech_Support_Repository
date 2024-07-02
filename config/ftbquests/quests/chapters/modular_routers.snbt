@@ -3,14 +3,11 @@
 	default_quest_shape: ""
 	filename: "modular_routers"
 	group: "7BA7C5ADDAE03ED6"
+	hide_quest_until_deps_visible: true
 	icon: "modularrouters:modular_router"
 	id: "32429317E2A67748"
 	images: [{
-		click: ""
-		corner: false
-		dev: false
 		height: 16.3125d
-		hover: [ ]
 		image: "kubejs:textures/ftbquests/router_meeting.png"
 		rotation: 0.0d
 		width: 29.0d
@@ -21,13 +18,17 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: [
+				"158A07C739962FFF"
+				"4C42F17C2A3844D2"
+			]
 			description: [
 				"You have probably noticed that there are very few quests in this tab, and that's because the Modular Routers Manual does a great job at explaining how to use the items from the mod. So you can just use it as guide. "
 				""
 				"As for the quests, they are there to give you some return on investment. You're welcome!"
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "patchouli:guide_book"
 				tag: {
 					"patchouli:book": "modularrouters:book"
@@ -83,7 +84,7 @@
 				{
 					id: "50225D48D5BA9FBE"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "modularrouters:puller_module_1"
 						tag: {
 							modularrouters: {
@@ -96,7 +97,7 @@
 				{
 					id: "5F400666302AF0BA"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "modularrouters:sender_module_1"
 						tag: {
 							modularrouters: {
@@ -109,7 +110,7 @@
 				{
 					id: "772AF484B13A09AD"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "modularrouters:activator_module"
 						tag: {
 							modularrouters: {
@@ -123,7 +124,7 @@
 				{
 					id: "39A626A05B7CAC82"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "modularrouters:vacuum_module"
 						tag: {
 							modularrouters: {
@@ -137,7 +138,7 @@
 				{
 					id: "00FAA38991343CCA"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "modularrouters:placer_module"
 						tag: {
 							modularrouters: {
@@ -151,7 +152,7 @@
 				{
 					id: "3A1F59F3408CCA58"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "modularrouters:fluid_module"
 						tag: {
 							modularrouters: {
@@ -167,7 +168,7 @@
 				{
 					id: "7EC9AFAEF80EB26E"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "modularrouters:breaker_module"
 						tag: {
 							modularrouters: {
@@ -181,7 +182,7 @@
 				{
 					id: "398C08E1E33C02A2"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "modularrouters:player_module"
 						tag: {
 							modularrouters: {

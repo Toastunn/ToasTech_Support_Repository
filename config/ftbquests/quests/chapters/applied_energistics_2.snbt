@@ -3,14 +3,11 @@
 	default_quest_shape: "hexagon"
 	filename: "applied_energistics_2"
 	group: "7BA7C5ADDAE03ED6"
+	hide_quest_until_deps_visible: true
 	icon: "ae2:controller"
 	id: "4F361B4FF0C62E3F"
 	images: [{
-		click: ""
-		corner: false
-		dev: false
 		height: 15.0d
-		hover: [ ]
 		image: "kubejs:textures/ftbquests/ae2_good_background.png"
 		rotation: 0.0d
 		width: 26.666666666666668d
@@ -28,6 +25,7 @@
 				item: "minecraft:iron_block"
 				type: "item"
 			}]
+			subtitle: "Press [G] to open guide"
 			tasks: [{
 				id: "07927C9D3E72CA38"
 				item: "ae2:charger"
@@ -115,7 +113,7 @@
 			tasks: [{
 				id: "3BC686E5F5ACF512"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "ae2:inscriber_presses"
@@ -161,7 +159,7 @@
 			tasks: [{
 				count: 32L
 				id: "04D317B84DA711F9"
-				item: { Count: 32b, id: "ae2:sky_stone_block" }
+				item: { Count: 32, id: "ae2:sky_stone_block" }
 				type: "item"
 			}]
 			title: "Sky Stone"
@@ -741,7 +739,7 @@
 				{
 					count: 16L
 					id: "79C9B263966EA1DC"
-					item: { Count: 16b, id: "ae2:quantum_ring" }
+					item: { Count: 16, id: "ae2:quantum_ring" }
 					type: "item"
 				}
 			]

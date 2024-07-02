@@ -3,13 +3,12 @@
 	default_quest_shape: ""
 	filename: "masterful_machinery"
 	group: "6EC53AEFE78C5F36"
+	hide_quest_until_deps_visible: true
 	icon: "kubejs:multiversal_extractor"
 	id: "060161093415B969"
 	images: [
 		{
 			click: "command:create ponder mm:cloud_condenser"
-			corner: false
-			dev: false
 			height: 3.0d
 			hover: ["Click to Ponder"]
 			image: "kubejs:textures/ftbquests/cloud_condenser.png"
@@ -20,8 +19,6 @@
 		}
 		{
 			click: "command:create ponder mm:cmc_controller"
-			corner: false
-			dev: false
 			height: 3.0d
 			hover: ["Click to Ponder"]
 			image: "kubejs:textures/ftbquests/creative_meta-combiner.png"
@@ -32,8 +29,6 @@
 		}
 		{
 			click: "command:create ponder mm:elemental_transfigurator"
-			corner: false
-			dev: false
 			height: 3.0d
 			hover: ["Click to Ponder"]
 			image: "kubejs:textures/ftbquests/elemental_transfigurator.png"
@@ -44,8 +39,6 @@
 		}
 		{
 			click: "command:create ponder mm:industrial_alloy_smelter"
-			corner: false
-			dev: false
 			height: 3.0d
 			hover: ["Click to Ponder"]
 			image: "kubejs:textures/ftbquests/industrial_alloy_smelter.png"
@@ -56,11 +49,7 @@
 			y: 9.5d
 		}
 		{
-			click: ""
-			corner: false
-			dev: false
 			height: 40.0d
-			hover: [ ]
 			image: "kubejs:textures/ftbquests/totally_not_filler_background_pt2.png"
 			order: -3
 			rotation: 0.0d
@@ -69,11 +58,7 @@
 			y: 14.0d
 		}
 		{
-			click: ""
-			corner: false
-			dev: false
 			height: 1.0d
-			hover: [ ]
 			image: "itemfilters:item/xor"
 			rotation: 0.0d
 			width: 1.0d
@@ -105,7 +90,10 @@
 			y: 7.0d
 		}
 		{
-			dependencies: ["1F9E4B44F2AF4CB2"]
+			dependencies: [
+				"1F9E4B44F2AF4CB2"
+				"2B427700A23E7EA0"
+			]
 			description: ["&9The &bEelemental Transfigurator &9is a multiblock that turns various materials into an &dElemental Form&9. Are the elements completely arbitrary? Maybe. &m&8&oI'm just an intern here."]
 			hide_dependent_lines: true
 			id: "2B2E1A91A3FF0E61"
@@ -126,7 +114,10 @@
 			y: 7.0d
 		}
 		{
-			dependencies: ["1F9E4B44F2AF4CB2"]
+			dependencies: [
+				"1F9E4B44F2AF4CB2"
+				"2B427700A23E7EA0"
+			]
 			description: ["&9The &bCloud Condenser &9forms clouds out of water, seeds them with cloud seed, and liquifies the cloud to form &bSeeded Cloud Conentrate&9."]
 			hide_dependent_lines: true
 			id: "6DAB9BBC68E65B88"
@@ -146,7 +137,10 @@
 			y: 7.0d
 		}
 		{
-			dependencies: ["1F9E4B44F2AF4CB2"]
+			dependencies: [
+				"1F9E4B44F2AF4CB2"
+				"2B427700A23E7EA0"
+			]
 			description: ["&9The &bCreative Meta-Combiner &9extracts &dCreative Essence &9from players in alternate universes to imbue items with the power of &dCreative&9."]
 			hide_dependent_lines: true
 			id: "76A8522846383F6E"
@@ -166,13 +160,14 @@
 			y: 7.0d
 		}
 		{
+			dependencies: ["4E360A9C4B0A7198"]
 			description: ["&bMasterful Machinery &9adds four new mumltiblock machines to &3ToasTech&9. Get used to them, since you will be using quite a few of them."]
 			icon: "mm:blueprint"
 			id: "1F9E4B44F2AF4CB2"
 			rewards: [{
 				id: "3B72F8345E9B41E5"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "mekanism:ultimate_energy_cube"
 					tag: {
 						mekData: {
@@ -218,6 +213,11 @@
 				"7EA97E4D62A5DA31"
 			]
 			id: "6BB649110E900DB9"
+			rewards: [{
+				id: "1903A0EABC2E7F3B"
+				item: "enderio:cloud_seed_concentrated_bucket"
+				type: "item"
+			}]
 			subtitle: "useless for now"
 			tasks: [{
 				amount: 1000L
@@ -258,7 +258,7 @@
 			rewards: [{
 				id: "3F435EC3D6EF1A4C"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "mekanism:energy_tablet"
 					tag: {
 						mekData: {
@@ -444,7 +444,7 @@
 				{
 					id: "1127552C001A2B32"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "mekanism:creative_energy_cube"
 						tag: {
 							mekData: {
