@@ -226,9 +226,9 @@ import mods.create.PressingManager;
     <recipetype:create:filling>.addRecipe('void_in_a_bottle/filling', <item:kubejs:void_in_a_bottle>, <item:minecraft:glass_bottle>, <fluid:kubejs:liquid_void> * 250, 20);
     <recipetype:create:filling>.addRecipe('fan_haunting_catalyst/filling', <item:create_connected:fan_haunting_catalyst>, <item:create_connected:empty_fan_catalyst>, <fluid:kubejs:magical_water> * 1000, 100);
   //cutting | <recipetype:create:cutting>.addRecipe(name as string, output as Percentaged<IItemStack>, input as IIngredient, duration as int);
-    <recipetype:create:cutting>.addRecipe("andesite_rod_with_cutting", [(<item:kubejs:andesite_rod> *8) %100], <item:create:andesite_alloy> * 2, 100);
-    <recipetype:create:cutting>.addRecipe("copper_rod_with_cutting", [(<item:kubejs:copper_rod> * 8) %100], <item:minecraft:copper_ingot> * 2, 60);
-    <recipetype:create:cutting>.addRecipe("brass_rod_with_cutting", [(<item:kubejs:brass_rod> * 8) %100], <item:create:brass_ingot> * 2, 100);
+    <recipetype:create:cutting>.addRecipe("andesite_rod_with_cutting", [(<item:kubejs:andesite_rod> *4) %100], <item:create:andesite_alloy>, 100);
+    <recipetype:create:cutting>.addRecipe("copper_rod_with_cutting", [(<item:kubejs:copper_rod> * 4) %100], <item:minecraft:copper_ingot>, 60);
+    <recipetype:create:cutting>.addRecipe("brass_rod_with_cutting", [(<item:kubejs:brass_rod> * 4) %100], <item:create:brass_ingot>, 100);
   //mechanical crafting | <recipetype:create:mechanical_crafting>.addRecipe(name as string, output as IItemStack, ingredients as IIngredient[][])
     val air = <item:minecraft:air>;
     <recipetype:create:mechanical_crafting>.addRecipe("schematicannon", <item:create:schematicannon>, [
