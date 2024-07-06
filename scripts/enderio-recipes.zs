@@ -141,6 +141,17 @@ import crafttweaker.api.ingredient.IIngredientWithAmount;
     }
   }
 });
+<recipetype:enderio:enchanting>.addJsonRecipe('arcbolt', {
+  "type": "enderio:enchanting",
+  "cost_multiplier": 1,
+  "enchantment": "kubejs:arcbolt",
+  "input": {
+    "count": 1,
+    "ingredient": {
+      "item": "kubejs:lightning"
+    }
+  }
+});
 <recipetype:enderio:sag_milling>.addJsonRecipe('netherite_scrap/sag_milling', {
   "type": "enderio:sag_milling",
   "energy": 2400,
