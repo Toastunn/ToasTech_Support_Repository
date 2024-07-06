@@ -96,14 +96,6 @@ ClientEvents.lang("en_us", (event) => {
    .build()
   */
   event.addAll(
-   createTooltip("minecraft:beacon")
-     .addSummary("Create Beneficial Effects for Nearby Players!") 
-     .addBehaviour(["When Placed on a Block Pyramid", "It Shoots a Beam of Light Into the Sky."])
-     .addBehaviour(["When Interacted With", "Opens a GUI allowing the Activation of _Beneficial Abilities_."]) 
-     .setPalette($Palette.ofColors(Color.AQUA, Color.DARK_AQUA))
-     .build()
-  )
-  event.addAll(
     createTooltip('ae2:facade')
       .addSummary("Facades can be crafted using any block, but the Infinity Block Facade is the only one that will show up in JEI.")
       .build()
