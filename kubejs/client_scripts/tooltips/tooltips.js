@@ -74,6 +74,9 @@ ItemEvents.tooltip((e) => {
   e.addAdvanced('createchromaticreturn:bedrock_charm_base', (item, isAdvanced, text) => {
     text.remove(1)
   });
+  e.addAdvanced('kubejs:wormhole', (item, isAdvanced, text) => {
+    text.add(Text.of('§6W§r coordinate: ').append(Text.aqua(item.nbt.get('w').asString)))
+  })
   // cut this out when release
   e.addAdvanced(Ingredient.all, (item, advanced, text) => {
     if (e.alt && item.nbt && advanced) {

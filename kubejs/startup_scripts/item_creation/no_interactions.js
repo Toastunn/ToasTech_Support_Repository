@@ -29,7 +29,7 @@ StartupEvents.registry('item', e => {
       e.create("uraninite")
   //endgame stuff
     //lightning
-    e.create('lightning').glow(true).rarity('epic').tooltip(Text.darkGray("§o...in the palm of your hand."))
+    e.create('lightning').glow(true).rarity('epic').tooltip(Text.darkGray("§oFast Fire."))
     //crystal of desolation
     e.create('crystal_of_desolation').glow(true).rarity('uncommon')
     //mass
@@ -38,6 +38,12 @@ StartupEvents.registry('item', e => {
     e.create("creative_essence").glow(true).rarity("cosmic").tooltip(Text.darkGray("§oAn alternate universe was needed to make this..."))
     //creativium
     e.create('creativium').glow(true).rarity("chromatic").tooltip(Text.darkGray("§oPush beyond Infinity."))
+    //Black Hole
+    e.create("black_hole").rarity("cosmic").tooltip(Text.darkGray("§oNothing escapes Infinity.")).maxStackSize(1)
+    //White Hole
+    e.create("white_hole").rarity("cosmic").tooltip(Text.darkGray("§oNothing enters Infinity.")).maxStackSize(1)
+    //Wormhole
+    e.create("wormhole").rarity("cosmic").tooltip(Text.darkGray("§oFold the universe.")).displayName("Wormhole Container").maxStackSize(2)
   //progression
     //Raw Grains
     e.create('raw_grains_of_infinity')
