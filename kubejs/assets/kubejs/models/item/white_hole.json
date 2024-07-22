@@ -1,0 +1,6 @@
+{
+  "parent": "kubejs:item/hole_base",
+  "textures": {
+    "0": "kubejs:item/white"
+  }
+}

@@ -101,6 +101,7 @@ import mods.create.PressingManager;
   //Item Application | if you add a recipe from <recipetype:create:item_application>, it will also add it to <recipetype:create:deploying>, but not vice-versa. The recipe created will have using_deployer attached to it.
     //deploying | <recipetype:create:deploying>.addRecipe(name as string, processedItem as IIngredient, heldItem as IIngredient, outputs as Percentaged<IItemStack>[], keepHeldItem as boolean);
       <recipetype:create:deploying>.addRecipe("being_lonely", <item:enderio:enticing_crystal>, <item:garnished:desolate_spread>, [<item:kubejs:crystal_of_desolation> % 100], false);
+      <recipetype:create:deploying>.addRecipe("wormhole", <item:kubejs:white_hole>, <item:kubejs:black_hole>, [<item:kubejs:wormhole>.withTag({"temp":"INCOMPLETEVOIDSTEEL"}) * 2 % 100], false);
     //manual application | <recipetype:create:item_application>.addRecipe(name as string, outputs as Percentaged<IItemStack>[], block{item} as IIngredient, heldItem as IIngredient, keepHeldItem as boolean);
       <recipetype:create:item_application>.addRecipe("brass_casing_with_frame", [<item:create:brass_casing> %100], <item:create:copper_casing>, <item:kubejs:brass_frame>, false);
       <recipetype:create:item_application>.addRecipe("brass_casing_with_frame/advantage", [<item:create:brass_casing> %100], <item:minecraft:dark_oak_planks>, <item:kubejs:brass_frame>, false);
@@ -286,9 +287,6 @@ import mods.create.PressingManager;
       [<item:tougherglass:stronger_glass>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket>, <item:minecraft:water_bucket> ,<item:tougherglass:stronger_glass>],
       [<item:createchromaticreturn:andesite_component>, <item:createchromaticreturn:andesite_component>, <item:createchromaticreturn:andesite_component>, <item:createchromaticreturn:andesite_component>, <item:createchromaticreturn:andesite_component>, <item:createchromaticreturn:andesite_component>, <item:createchromaticreturn:andesite_component>, <item:createchromaticreturn:andesite_component>, <item:createchromaticreturn:andesite_component>, <item:createchromaticreturn:andesite_component>, <item:createchromaticreturn:andesite_component>]]);
     //modular routers
-      <recipetype:create:mechanical_crafting>.addRecipe("breaker_module", <item:modularrouters:breaker_module>, [
-        [<item:modularrouters:vacuum_module>, <item:mekanismtools:refined_obsidian_pickaxe>],
-        [<item:itemfilters:block>, <item:create:content_observer>]]);
       <recipetype:create:mechanical_crafting>.addRecipe("energy_distributor_module", <item:modularrouters:energy_distributor_module>, [
         [<item:modularrouters:energy_output_module>, <item:fluxnetworks:flux_point>]]);
       <recipetype:create:mechanical_crafting>.addRecipe("energy_output_module", <item:modularrouters:energy_output_module>, [

@@ -72,7 +72,6 @@ import crafttweaker.api.util.random.Percentaged;
         <item:alltheores:invar_dust>,
       //modularrouters
         <item:modularrouters:modular_router>,
-        <item:modularrouters:breaker_module>,
         <item:modularrouters:flinger_module>,
         <item:modularrouters:extruder_module_2>,
         <item:modularrouters:extruder_module_1>,
@@ -92,6 +91,8 @@ import crafttweaker.api.util.random.Percentaged;
         <item:modularrouters:fluid_module>,
         <item:modularrouters:void_module>,
         <item:modularrouters:vacuum_module>,
+        <item:modularrouters:blank_module>,
+        <item:modularrouters:blank_upgrade>,
       //industrialforegoing
         <item:industrialforegoing:fluid_laser_base>,
         <item:industrialforegoing:laser_drill>,

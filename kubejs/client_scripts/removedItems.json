@@ -19,6 +19,14 @@
     "mm:cmc_energy_port_output",
     "mm:cmc_fluid_port_output",
     "mm:cmc_kinetic_port_output",
-    "mm:ias_energy_port_output"
+    "mm:ias_energy_port_output",
+    "kubejs:portal_plane",
+    "kubejs:infinite_chassis",
+    "kubejs:incomplete_ingot_of_infinity",
+    "kubejs:ingots_of_steel_1",
+    "kubejs:ingots_of_steel_2",
+    "kubejs:limbo_steel",
+    "kubejs:glowing_steel", 
+    "kubejs:incomplete_shadow_mechanism"
  ]
 }

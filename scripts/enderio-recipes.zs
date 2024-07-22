@@ -152,6 +152,28 @@ import crafttweaker.api.ingredient.IIngredientWithAmount;
     }
   }
 });
+<recipetype:enderio:enchanting>.addJsonRecipe('attraction', {
+  "type": "enderio:enchanting",
+  "cost_multiplier": 1,
+  "enchantment": "kubejs:attraction",
+  "input": {
+    "count": 1,
+    "ingredient": {
+      "item": "kubejs:black_hole"
+    }
+  }
+});
+<recipetype:enderio:enchanting>.addJsonRecipe('repulsion', {
+  "type": "enderio:enchanting",
+  "cost_multiplier": 1,
+  "enchantment": "kubejs:repulsion",
+  "input": {
+    "count": 1,
+    "ingredient": {
+      "item": "kubejs:white_hole"
+    }
+  }
+});
 <recipetype:enderio:sag_milling>.addJsonRecipe('netherite_scrap/sag_milling', {
   "type": "enderio:sag_milling",
   "energy": 2400,

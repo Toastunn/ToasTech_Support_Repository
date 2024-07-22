@@ -1,0 +1,50 @@
+{
+	"-77194887": {
+		"x": 607,
+		"y": 76,
+		"z": 1349,
+		"dimension": "minecraft:overworld"
+	},
+	"-92516958": {
+		"x": 688,
+		"y": 71,
+		"z": 1376,
+		"dimension": "minecraft:overworld"
+	},
+	"92516958": {
+		"x": 633,
+		"y": 71,
+		"z": 1365,
+		"dimension": "minecraft:overworld"
+	},
+	"16555212": {
+		"x": 653,
+		"y": 69,
+		"z": 1352,
+		"dimension": "minecraft:overworld"
+	},
+	"-16555212": {
+		"x": 656,
+		"y": 71,
+		"z": 1361,
+		"dimension": "minecraft:overworld"
+	},
+	"77194887": {
+		"x": 82,
+		"y": 60,
+		"z": 183,
+		"dimension": "minecraft:the_nether"
+	},
+	"84022981": {
+		"x": 532,
+		"y": 68,
+		"z": 1313,
+		"dimension": "minecraft:overworld"
+	},
+	"-84022981": {
+		"x": 520,
+		"y": 71,
+		"z": 1305,
+		"dimension": "minecraft:overworld"
+	}
+}

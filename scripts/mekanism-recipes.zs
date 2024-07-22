@@ -58,7 +58,8 @@ Synthesizing.removeByName("mekanism:nucleosynthesizing/end_crystal");
     Synthesizing.addRecipe("perfecting_the_infinite", <item:kubejs:superheated_grains_of_infinity>, <gas:mekanism:antimatter> * 750, <item:kubejs:atomically_perfect_grains_of_infinity>, 2000);
     Synthesizing.addRecipe("end_crystal", <item:minecraft:beacon>, <gas:mekanism:antimatter> * 1500, <item:minecraft:end_crystal>, 4000);
     Synthesizing.addRecipe("antimetal", <item:minecraft:crying_obsidian>, <gas:mekanism:antimatter> * 1, <item:blocksyouneed_luna:antimetal_ingot>, 2000);
-    Synthesizing.addRecipe("antiplite", <item:createchromaticreturn:multiplite_ingot>, <gas:mekanism:antimatter> * 2000, <item:createchromaticreturn:antiplite_ingot>, 2500);
+    Synthesizing.addRecipe("antiplite", <item:createchromaticreturn:multiplite_ingot>, <gas:mekanism:antimatter> * 2000, <item:createchromaticreturn:antiplite_ingot>, 1500);
+    Synthesizing.addRecipe("white_hole", <item:kubejs:black_hole>, <gas:mekanism:antimatter> * 10000, <item:kubejs:white_hole>, 2400);
   //oxidisation
     Oxidizing.addRecipe("infinite_gasification", <item:kubejs:atomically_perfect_grains_of_infinity>, <gas:kubejs:gaseous_infinity> * 60);
   //crystallisation

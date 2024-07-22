@@ -11,6 +11,8 @@ PlayerEvents.loggedIn(event => {
     if(!persistentData.firstjoin || persistentData.firstjoin == false) {
       const {x ,y ,z} = player.level.getSharedSpawnPos()
       player.runCommandSilent(`tp ${player.username} ${x} ${y} ${z}`)
+      player.persistentData.put("portalMute", {startup: true, validate: true, linking: true, linked: true, all: true})
+      player.persistentData.putBoolean("recentTeleportJS", false)
       persistentData.firstjoin = true
     }
 })
