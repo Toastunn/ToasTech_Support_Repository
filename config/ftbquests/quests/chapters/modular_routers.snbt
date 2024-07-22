@@ -231,7 +231,7 @@
 		}
 		{
 			dependencies: ["16802325908D3CCB"]
-			description: ["The usual recipe for blank modules has been changed to the recent updates [SERVER] had made the to ores in ToasTech. You may&8(&owill)&r need an Industrial Alloy Smelter to make the ingredients for the recipe, so here's a link to it."]
+			description: ["The usual recipe for blank modules has been changed due to the recent updates [SERVER] has made to the ores in &3ToasTech&r. You may&8(&owill)&r need an Industrial Alloy Smelter to make the ingredients for the recipe, so here's a link to it."]
 			id: "7018972BEA03898D"
 			rewards: [{
 				id: "1B66FCC9EBB3EF43"

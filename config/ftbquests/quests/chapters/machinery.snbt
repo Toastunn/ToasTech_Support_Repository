@@ -86,6 +86,12 @@
 		{
 			dependencies: ["19F5DDF4204F6E56"]
 			id: "1DA876F3AD8802E0"
+			rewards: [{
+				id: "6A05203634C84A4E"
+				item: "enderio:ender_crystal_powder"
+				type: "item"
+			}]
+			subtitle: "Wish Infinity Ingot"
 			tasks: [{
 				id: "03213A9D38FB1AC7"
 				item: "kubejs:ingot_of_infinity"
@@ -97,6 +103,12 @@
 		{
 			dependencies: ["1DA876F3AD8802E0"]
 			id: "0A15C9E8C61834AE"
+			rewards: [{
+				id: "11731255C81264BE"
+				item: "enderio:enticing_crystal"
+				type: "item"
+			}]
+			subtitle: "So close..."
 			tasks: [{
 				id: "270F09E98841BE4B"
 				item: "kubejs:alloy_of_infinity"
@@ -254,10 +266,7 @@
 				"00000000000008EE"
 				"22F4E20F03ECBFA0"
 			]
-			description: [
-				"&5I'll assume you've been doing the progression already."
-				"&5Use the &dEnrichment Chamber &5to make Grains of Infinity from the washed ones."
-			]
+			description: ["&5Use the &dEnrichment Chamber &5to make Grains of Infinity from the washed ones."]
 			id: "151AF64607B63F77"
 			rewards: [{
 				id: "6DD02105DB90EEF4"
@@ -679,6 +688,44 @@
 			}]
 			x: -1.75d
 			y: 1.0d
+		}
+		{
+			dependencies: ["0BD6270D6EF87925"]
+			description: ["&9The &bPortal Interface&9 is the brain of the &bDynamic Portal&9. It has an integrated AI that will guide you through the steps of making a&b portal&9."]
+			id: "6B0906FBB474FEEB"
+			rewards: [{
+				count: 2
+				id: "64E0E71B0AA60F6A"
+				item: "createchromaticreturn:andesite_component"
+				type: "item"
+			}]
+			subtitle: "[PORTAL] Hello!"
+			tasks: [{
+				id: "404A7E9FA61EA45E"
+				item: "kubejs:portal_controller"
+				type: "item"
+			}]
+			x: -2.25d
+			y: -4.25d
+		}
+		{
+			dependencies: ["7E9AD5B815F40263"]
+			description: ["&9The &bSpark Ring&9 (aka the &bPortal Frame&9) is part of the &bDynamic Portal&9."]
+			id: "0BD6270D6EF87925"
+			rewards: [{
+				count: 9
+				id: "5C38357159183E57"
+				item: "alltheores:signalum_ingot"
+				type: "item"
+			}]
+			subtitle: "Tearing spacetime since 2024"
+			tasks: [{
+				id: "2E164BEFB05B6AF1"
+				item: "kubejs:portal_frame"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -4.25d
 		}
 	]
 	title: "Machinery"

@@ -719,7 +719,7 @@
 				""
 				"&bConnect one end to your ME System and the other end will be able to interact with the System."
 				""
-				"&bDon't forget to &5Dimensionaly Stabilize &bthe ME System if you're using it through dimensions."
+				"&bDon't forget to &5Dimensionaly Stabilize &bthe ME System if you're using it through dimensions. &8&o(you can also use a Spatial Anchor if you want)"
 			]
 			icon: "ae2:quantum_ring"
 			id: "2C6FD4883D42F892"
