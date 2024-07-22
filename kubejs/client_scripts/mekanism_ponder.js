@@ -3,7 +3,7 @@ Ponder.registry(event => {
   let layerText = PonderPalette.RED
 
   //mekanism multiblock basics
-  event.create("mekanism:structural_glass").tag('kubejs:multiblocks', "kubejs:mekanism_multiblock")
+  event.create("mekanism:structural_glass").tag("kubejs:mekanism_multiblock")
 
   //part 1
   .scene("basics_overview_scene", "Mekanaism Multiblock Basics: The parts of a multiblock", "kubejs:tank6_ponder", (scene, util) => {
@@ -118,7 +118,7 @@ Ponder.registry(event => {
   })
 
   //thermal evaporation
-  event.create("mekanism:thermal_evaporation_controller").tag('kubejs:multiblocks', "kubejs:mekanism_multiblock")
+  event.create("mekanism:thermal_evaporation_controller").tag("kubejs:mekanism_multiblock")
   .scene("evaporation_scene", "How to build the Thermal Evaporation Plant", "kubejs:evaporation_ponder", (scene, util) => {
     scene.scaleSceneView(0.4)
     scene.setSceneOffsetY(-6)
@@ -168,7 +168,7 @@ Ponder.registry(event => {
   })
 
   //dynamic tank
-  event.create("mekanism:dynamic_valve").tag('kubejs:multiblocks', "kubejs:mekanism_multiblock")
+  event.create("mekanism:dynamic_valve").tag("kubejs:mekanism_multiblock")
   .scene("dynamic_tank_scene", "How to build the Dynamic Tank", "kubejs:tank6_ponder", (scene, util) => {
     scene.scaleSceneView(0.7)
     scene.setSceneOffsetY(-2.5)
@@ -208,7 +208,7 @@ Ponder.registry(event => {
   })
 
   //induction matrix
-  event.create("mekanism:basic_induction_cell").tag('kubejs:multiblocks', "kubejs:mekanism_multiblock")
+  event.create("mekanism:basic_induction_cell").tag("kubejs:mekanism_multiblock")
   .scene("induction_matrix_scene", "How to build the Induction Matrix", "kubejs:matrix6_ponder", (scene, util) => {
     scene.scaleSceneView(0.7)
     scene.setSceneOffsetY(-2.5)
@@ -267,7 +267,7 @@ Ponder.registry(event => {
   })
 
   //thermoelectric boiler
-  event.create("mekanism:superheating_element").tag('kubejs:multiblocks', "kubejs:mekanism_multiblock") 
+  event.create("mekanism:superheating_element").tag("kubejs:mekanism_multiblock") 
   .scene("thermoelectric_boiler_scene", "How to build the Thermoelectric Boiler", "kubejs:boiler6_ponder", (scene, util) => {
     scene.scaleSceneView(0.7)
     scene.setSceneOffsetY(-2.5)
@@ -500,7 +500,7 @@ Ponder.registry(event => {
   })
 
   //turbine
-  event.create("mekanismgenerators:turbine_blade").tag('kubejs:multiblocks', "kubejs:mekanism_multiblock")
+  event.create("mekanismgenerators:turbine_blade").tag("kubejs:mekanism_multiblock")
     .scene("turbine_scene", "How to build the Turbine", "kubejs:turbine9_ponder", (scene, util) => {
     scene.scaleSceneView(0.6)
     scene.setSceneOffsetY(-2)
@@ -547,7 +547,7 @@ Ponder.registry(event => {
     })
 
   //fission reactor
-  event.create("mekanismgenerators:control_rod_assembly").tag('kubejs:multiblocks', "kubejs:mekanism_multiblock")
+  event.create("mekanismgenerators:control_rod_assembly").tag("kubejs:mekanism_multiblock")
   .scene("fission_reactor_scene", "How to build the Fission Reactor", "kubejs:fission7_ponder", (scene, util) => {
     scene.scaleSceneView(0.7)
     scene.setSceneOffsetY(-2.5)
@@ -613,7 +613,7 @@ Ponder.registry(event => {
   })
 
   //fusion reactor
-  event.create("mekanismgenerators:fusion_reactor_controller").tag('kubejs:multiblocks', "kubejs:mekanism_multiblock")
+  event.create("mekanismgenerators:fusion_reactor_controller").tag("kubejs:mekanism_multiblock")
   .scene("fusion_reactor_scene", "How to build the Fusion Reactor", "kubejs:fusion5_laser_ponder", (scene, util) => {
     scene.scaleSceneView(0.7)
     scene.setSceneOffsetY(-1.5)
@@ -683,7 +683,7 @@ Ponder.registry(event => {
     
     text(scene, 80, "1 billion FE devilered by laser is required to ignite the fusion process.", null, false, descriptiveText)
 
-    text(scene, 80, "The laser must enter by the Laser focus Matrix.", util.vector.blockSurface([6,3,3], Direction.west), false, descriptiveText)
+    text(scene, 80, "The laser must enter by the Laser Focus Matrix.", util.vector.blockSurface([6,3,3], Direction.west), false, descriptiveText)
 
     text(scene, 80, "A hohlraum filled with D-T Fuel is reqired to start the fusion process.", util.vector.blockSurface([8,5,3], Direction.up), true, descriptiveText)
 
@@ -711,7 +711,7 @@ Ponder.registry(event => {
   })
 
   //sps
-  event.create("mekanism:supercharged_coil").tag('kubejs:multiblocks', "kubejs:mekanism_multiblock")
+  event.create("mekanism:supercharged_coil").tag("kubejs:mekanism_multiblock")
   .scene("sps_scene", "How to build the Supercritical Phase Shifter", "kubejs:sps7_off_ponder", (scene, util) => {
     scene.scaleSceneView(0.7)
     scene.setSceneOffsetY(-2.5)
@@ -733,7 +733,7 @@ Ponder.registry(event => {
     scene.idle(70)
 
     scene
-      .text(80, "It turns Polonium into antimatter.", pointVec)
+      .text(80, "It turns Polonium into Antimatter.", pointVec)
       .colored(PonderPalette.BLUE)
       .placeNearTarget()
     scene.idle(90)

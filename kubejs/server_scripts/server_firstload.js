@@ -54,8 +54,8 @@ ServerEvents.loaded(event => {
 
     server.gameRules.set('spawnRadius', 0)
     server.gameRules.set('doFireTick', false)
-    server.runCommandSilent(`kjs reload startup_scritps`)
     persistentData.firstload = true
+    server.runCommandSilent(`kjs reload startup_scritps`)
   }
 })
 

@@ -8,11 +8,10 @@ EntityEvents.spawned(event => {
   
   if(entity.type == "rats:rat") {
     let pos = diamondCheck(level, entity.block)
-    console.log(pos, entity, $PatchouliAPI.getMultiblock('toastech:rat_king_summon').validate(level, pos))
 
     if (!$PatchouliAPI.getMultiblock('toastech:rat_king_summon').validate(level, pos)) return
     ratCount++
-    console.log(ratCount)
+    //console.log(ratCount)
     entity.tags.add("rat_king_summon")
 
     if(ratCount >= 16) {
@@ -50,18 +49,17 @@ EntityEvents.spawned(event => {
 })
 
 const diamondCheck = (/** @type {Internal.Level} */ level, /** @type {Internal.BlockContainerJS} */ block) => {
-    const radius = 7
-    const { x, y, z } = block
-    for (let dx = -radius; dx <= radius; dx++) {
-        for (let dy = -radius; dy <= radius; dy++) {
-            for (let dz = -radius; dz <= radius; dz++) {
-                let blockPos = new BlockPos(x + dx, y + dy, z + dz)
-                let block = level.getBlockState(blockPos).block
-
-                if (block == Blocks.DIAMOND_BLOCK) return blockPos
-            }
-        }
+  const radius = 7
+  const { x, y, z } = block
+  for (let dx = -radius; dx <= radius; dx++) {
+    for (let dy = -radius; dy <= radius; dy++) {
+      for (let dz = -radius; dz <= radius; dz++) {
+        let blockPos = new BlockPos(x + dx, y + dy, z + dz)
+        let block = level.getBlockState(blockPos).block
+        if (block == Blocks.DIAMOND_BLOCK) return blockPos
+      }
     }
+  }
 }
 
 let ratCheck2 = (/** @type {Internal.EntityArrayList} */ rats, /**@type {boolean} */ success) => {
